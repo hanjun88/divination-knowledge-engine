@@ -1,0 +1,2179 @@
+{
+  "domain": "liuyao",
+  "count": 82,
+  "rules": [
+    {
+      "rule_id": "LY-M01",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "爻临月建旺极",
+      "conditions": [
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神临月建",
+          "detail": "旺之极，逢空不空、逢伤无害（旬内仍作空论）"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "增删卜易·卷一·月将章第十六"
+    },
+    {
+      "rule_id": "LY-M02",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建生爻",
+      "conditions": [
+        {
+          "field": "wuxing_sheng",
+          "operator": "==",
+          "left": "${month_wx}",
+          "right": "${yong_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月生/相",
+          "detail": "令生者相，如春木旺火相"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "增删卜易·卷一·四时旺相章"
+    },
+    {
+      "rule_id": "LY-M03",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建扶拱",
+      "conditions": [
+        {
+          "field": "wuxing_tongqi",
+          "operator": "true",
+          "left": "${month_zh}",
+          "right": "${yong_shen.zhi}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月扶/拱",
+          "detail": "亥扶子、寅扶卯类比扶拱"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "黄金策·总断·生扶拱合"
+    },
+    {
+      "rule_id": "LY-M04",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建比和",
+      "conditions": [
+        {
+          "field": "wuxing_bihe",
+          "operator": "true",
+          "left": "${month_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.zhi",
+          "operator": "!=",
+          "value": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月比",
+          "detail": "同类帮比"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·卷一·月将章"
+    },
+    {
+      "rule_id": "LY-M05",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建克爻",
+      "conditions": [
+        {
+          "field": "wuxing_ke",
+          "operator": "==",
+          "left": "${month_wx}",
+          "right": "${yong_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月克",
+          "detail": "旺而亦衰"
+        }
+      ],
+      "weight": -2,
+      "priority": 9,
+      "source": "增删卜易·卷一·月将章"
+    },
+    {
+      "rule_id": "LY-M06",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月破",
+      "conditions": [
+        {
+          "field": "liuchong",
+          "operator": "==",
+          "left": "${month_zh}",
+          "right": "${yong_shen.zhi}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月破",
+          "detail": "当月内无功，出月/填合方解"
+        }
+      ],
+      "weight": -3,
+      "priority": 10,
+      "source": "增删卜易·卷二·月破章第二十七"
+    },
+    {
+      "rule_id": "LY-M07",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "爻入月墓",
+      "conditions": [
+        {
+          "field": "yue_mu",
+          "operator": "true",
+          "zhi": "${yong_shen.zhi}",
+          "month": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月墓",
+          "detail": "以生克为主，墓为沉滞"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "增删卜易·卷一·月将章"
+    },
+    {
+      "rule_id": "LY-M08",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "爻月绝",
+      "conditions": [
+        {
+          "field": "yue_jue",
+          "operator": "true",
+          "zhi": "${yong_shen.zhi}",
+          "month": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月绝",
+          "detail": "逢绝若得动爻生为绝处逢生"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "卜筮正宗·卷三·十八论·绝处逢生论第十六"
+    },
+    {
+      "rule_id": "LY-M09",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月生原神吉",
+      "conditions": [
+        {
+          "field": "wuxing_sheng",
+          "operator": "==",
+          "left": "${month_wx}",
+          "right": "${yuan_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "助元",
+          "detail": "月生原神，吉上加吉"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "增删卜易·卷一·月将章"
+    },
+    {
+      "rule_id": "LY-D01",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "爻临日辰",
+      "conditions": [
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${day_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "临日辰",
+          "detail": "与月建同权，中天日丽旺相之极；月冲不破、月克无伤"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "增删卜易·卷一·日辰章第十七"
+    },
+    {
+      "rule_id": "LY-D02",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日辰生爻",
+      "conditions": [
+        {
+          "field": "wuxing_sheng",
+          "operator": "==",
+          "left": "${day_wx}",
+          "right": "${yong_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日生",
+          "detail": "衰弱能生扶如时雨滋苗"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "增删卜易·卷一·日辰章"
+    },
+    {
+      "rule_id": "LY-D03a",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日合动爻绊住",
+      "conditions": [
+        {
+          "field": "liuhe",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日合绊",
+          "detail": "合住动爻=绊住为-1"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "黄金策·总断·动值合而绊住"
+    },
+    {
+      "rule_id": "LY-D03b",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日合静爻合起",
+      "conditions": [
+        {
+          "field": "liuhe",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日合起",
+          "detail": "合静爻=合起为+1"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·卷一·六合章第十九"
+    },
+    {
+      "rule_id": "LY-D04",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日冲旺相静爻为暗动",
+      "conditions": [
+        {
+          "field": "liuchong",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "暗动",
+          "detail": "冲旺相静爻则为暗动，愈得其力，按动爻计"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "增删卜易·卷一·暗动章第二十二"
+    },
+    {
+      "rule_id": "LY-D05",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日冲休囚静爻为日破",
+      "conditions": [
+        {
+          "field": "liuchong",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚",
+            "死"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日破",
+          "detail": "更加无用，同月破轻一等"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "增删卜易·卷一·日辰章"
+    },
+    {
+      "rule_id": "LY-D06",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日辰克爻",
+      "conditions": [
+        {
+          "field": "wuxing_ke",
+          "operator": "==",
+          "left": "${day_wx}",
+          "right": "${yong_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日克",
+          "detail": "强旺能克害"
+        }
+      ],
+      "weight": -2,
+      "priority": 9,
+      "source": "增删卜易·卷一·日辰章"
+    },
+    {
+      "rule_id": "LY-D07",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日冲空爻冲空则实",
+      "conditions": [
+        {
+          "field": "liuchong",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冲空则实",
+          "detail": "冲空则起，冲空则实，出空填空"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "增删卜易·卷一·旬空章第二十六"
+    },
+    {
+      "rule_id": "LY-D08",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日冲旺动爻不散",
+      "conditions": [
+        {
+          "field": "liuchong",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冲之愈动",
+          "detail": "旺动冲不散"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·卷一·动散章第二十三"
+    },
+    {
+      "rule_id": "LY-D09",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日冲休囚动爻冲散",
+      "conditions": [
+        {
+          "field": "liuchong",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚",
+            "死"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冲散",
+          "detail": "动而休囚被冲为散，百中仅一二"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "增删卜易·卷一·动散章第二十三"
+    },
+    {
+      "rule_id": "LY-D10",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "用爻入日墓",
+      "conditions": [
+        {
+          "field": "ri_mu",
+          "operator": "true",
+          "zhi": "${yong_shen.zhi}",
+          "day": "${day_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日墓",
+          "detail": "旺相入墓非真，休囚入墓方凶"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "增删卜易·卷二·随鬼入墓章第三十"
+    },
+    {
+      "rule_id": "LY-D11",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "用爻日绝",
+      "conditions": [
+        {
+          "field": "ri_jue",
+          "operator": "true",
+          "zhi": "${yong_shen.zhi}",
+          "day": "${day_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日绝",
+          "detail": "逢生扶为绝处逢生"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "卜筮正宗·卷三·十八论·第十六"
+    },
+    {
+      "rule_id": "LY-A01",
+      "domain": "liuyao",
+      "category": "dong",
+      "name": "他爻动来生用神",
+      "conditions": [
+        {
+          "field": "dong_lines_sheng_yong",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动生用神",
+          "detail": "动生有力，吉"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "增删卜易·卷一·动静生克章第十四"
+    },
+    {
+      "rule_id": "LY-A02",
+      "domain": "liuyao",
+      "category": "dong",
+      "name": "他爻动来克用神",
+      "conditions": [
+        {
+          "field": "dong_lines_ke_yong",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动克用神",
+          "detail": "动克旺静，凶"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "增删卜易·卷一·动静生克章第十四"
+    },
+    {
+      "rule_id": "LY-A03",
+      "domain": "liuyao",
+      "category": "dong",
+      "name": "动爻合住目标动爻",
+      "conditions": [
+        {
+          "field": "dong_lines_he_dong",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "合绊",
+          "detail": "合绊，不能动不能生克"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "黄金策·总断·动值合而绊住"
+    },
+    {
+      "rule_id": "LY-A04",
+      "domain": "liuyao",
+      "category": "dong",
+      "name": "动爻合起目标静爻",
+      "conditions": [
+        {
+          "field": "dong_lines_he_jing",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "合起",
+          "detail": "静而逢合谓之合起"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·卷一·六合章第十九"
+    },
+    {
+      "rule_id": "LY-A05",
+      "domain": "liuyao",
+      "category": "dong",
+      "name": "动爻冲起静爻",
+      "conditions": [
+        {
+          "field": "dong_lines_chong_jing",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冲起",
+          "detail": "静逢冲为动"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "易隐·卷首·刑害破空辨"
+    },
+    {
+      "rule_id": "LY-A06",
+      "domain": "liuyao",
+      "category": "dong",
+      "name": "动爻冲散动爻",
+      "conditions": [
+        {
+          "field": "dong_lines_chong_dong",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冲散",
+          "detail": "动逢冲为破/散（休囚方论）"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "增删卜易·卷一·动散章第二十三"
+    },
+    {
+      "rule_id": "LY-A07",
+      "domain": "liuyao",
+      "category": "dong",
+      "name": "贪生忘克/贪合忘冲",
+      "conditions": [
+        {
+          "field": "dong_lines_tan_wang",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "贪生忘克",
+          "detail": "动爻被生合牵住，忘冲忘克，原克权值归零"
+        }
+      ],
+      "weight": 0,
+      "priority": 9,
+      "source": "黄金策·总断·贪生贪合刑冲克害皆忘"
+    },
+    {
+      "rule_id": "LY-B01",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "变爻生本位动爻回头生",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "bian_sheng_benwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "回头生",
+          "detail": "最吉，化吉之一"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "增删卜易·卷一·五行相生章"
+    },
+    {
+      "rule_id": "LY-B02",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "变爻克本位动爻回头克",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "bian_ke_benwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "回头克",
+          "detail": "诸占不吉，卦化克不论旺衰皆凶"
+        }
+      ],
+      "weight": -3,
+      "priority": 10,
+      "source": "增删卜易·卷一·卦变生克墓绝章第二十四"
+    },
+    {
+      "rule_id": "LY-B03",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "变爻冲本位动爻回头冲",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "bian_chong_benwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "回头冲",
+          "detail": "动爻自化回头冲如逢仇敌"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "增删卜易·卷一·六冲章第二十"
+    },
+    {
+      "rule_id": "LY-B04",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "变爻合本位动爻化扶",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "bian_he_benwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化扶/化合",
+          "detail": "化出之爻回头相合为化扶"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·卷一·六合章第十九"
+    },
+    {
+      "rule_id": "LY-B05",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动而化进神",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_jin_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化进",
+          "detail": "吉凶倍增其势"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "增删卜易·卷二·进神退神章第二十九"
+    },
+    {
+      "rule_id": "LY-B06",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动而化退神",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_tui_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化退",
+          "detail": "吉凶渐减其威"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "增删卜易·卷二·进神退神章第二十九"
+    },
+    {
+      "rule_id": "LY-B07",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化帝旺/临官",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_diwang",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化旺",
+          "detail": "化吉之一"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "增删卜易·卷一·各门类题头总注"
+    },
+    {
+      "rule_id": "LY-B08",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化墓",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_mu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化墓",
+          "detail": "化凶之一；休囚方凶，旺相有解"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "增删卜易·卷二·随鬼入墓章第三十"
+    },
+    {
+      "rule_id": "LY-B09",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化绝",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_jue",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化绝",
+          "detail": "化凶之一"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "增删卜易·卷一·各门类题头总注"
+    },
+    {
+      "rule_id": "LY-B10",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化空",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化空",
+          "detail": "动不为空，待出空"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "增删卜易·卷一·旬空章第二十六"
+    },
+    {
+      "rule_id": "LY-B11",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化鬼（官鬼）",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_guan_gui",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化鬼",
+          "detail": "化凶之一（占功名反吉）"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "增删卜易·卷一·各门类题头总注"
+    },
+    {
+      "rule_id": "LY-B12",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化比和伏吟",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "fu_yin",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "伏吟",
+          "detail": "动如不动，焦恼呻吟"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷一·反伏章第二十五"
+    },
+    {
+      "rule_id": "LY-B13",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "回头生逢合绊",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "bian_sheng_benwei",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "he_ban",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "合住不生",
+          "detail": "不生他爻，待冲开合神方生"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·卷一·用神元神忌神仇神章第九"
+    },
+    {
+      "rule_id": "LY-P01",
+      "domain": "liuyao",
+      "category": "yuepo",
+      "name": "真破到底破",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚",
+            "死"
+          ]
+        },
+        {
+          "field": "has_ri_dong_sheng",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "真破",
+          "detail": "到底破矣，虽有日辰之生亦不能生"
+        }
+      ],
+      "weight": -3,
+      "priority": 10,
+      "source": "卜筮正宗·卷三·十八论·月破论第九"
+    },
+    {
+      "rule_id": "LY-P02",
+      "domain": "liuyao",
+      "category": "yuepo",
+      "name": "待实之破",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "OR",
+          "conditions": [
+            {
+              "field": "yong_shen.dong",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "has_ri_dong_sheng",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "yong_shen.wangshuai",
+              "operator": "in",
+              "value": [
+                "旺",
+                "相"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "待实之破",
+          "detail": "动而能生克他爻，出月/填合方解"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "增删卜易·卷二·月破章第二十七"
+    },
+    {
+      "rule_id": "LY-P03",
+      "domain": "liuyao",
+      "category": "yuepo",
+      "name": "破而逢合已解",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yuepo_feng_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "破而逢合",
+          "detail": "逢合解破"
+        }
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "增删卜易·卷二·月破章第二十七"
+    },
+    {
+      "rule_id": "LY-P04",
+      "domain": "liuyao",
+      "category": "yuepo",
+      "name": "破而填实值日",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${day_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "破而不破",
+          "detail": "爻临日建，月冲不破"
+        }
+      ],
+      "weight": 0,
+      "priority": 9,
+      "source": "增删卜易·卷一·日辰章第十七"
+    },
+    {
+      "rule_id": "LY-K01",
+      "domain": "liuyao",
+      "category": "xunkong",
+      "name": "真空到底空",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚",
+            "死"
+          ]
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        },
+        {
+          "field": "has_ri_dong_sheng",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "真空",
+          "detail": "到底空亡，即使出旬亦无气"
+        }
+      ],
+      "weight": -3,
+      "priority": 10,
+      "source": "增删卜易·卷一·旬空章第二十六"
+    },
+    {
+      "rule_id": "LY-K02",
+      "domain": "liuyao",
+      "category": "xunkong",
+      "name": "假空待用",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "OR",
+          "conditions": [
+            {
+              "field": "yong_shen.wangshuai",
+              "operator": "in",
+              "value": [
+                "旺",
+                "相"
+              ]
+            },
+            {
+              "field": "yong_shen.dong",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "has_ri_dong_sheng",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "假空",
+          "detail": "旺不为空、动不为空、有日建动爻扶者亦不为空，出旬有用"
+        }
+      ],
+      "weight": 0,
+      "priority": 8,
+      "source": "增删卜易·卷一·旬空章第二十六"
+    },
+    {
+      "rule_id": "LY-K03",
+      "domain": "liuyao",
+      "category": "xunkong",
+      "name": "冲空则实",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "liuchong",
+          "operator": "==",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冲空则实",
+          "detail": "冲空则起，冲空则实"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "黄金策·总断·空逢冲而有用"
+    },
+    {
+      "rule_id": "LY-STACK01",
+      "domain": "liuyao",
+      "category": "stack",
+      "name": "真破真空最凶",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚",
+            "死"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "真破真空",
+          "detail": "最凶，到底无用，无救"
+        }
+      ],
+      "weight": -3,
+      "priority": 10,
+      "source": "卜筮正宗·卷三·十八论·月破论第九"
+    },
+    {
+      "rule_id": "LY-STACK02",
+      "domain": "liuyao",
+      "category": "stack",
+      "name": "月破旬空发动待双填",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "待双填",
+          "detail": "出月填实+出空填实，双填之日应事"
+        }
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "增删卜易·卷二·月破章第二十七"
+    },
+    {
+      "rule_id": "LY-STACK03",
+      "domain": "liuyao",
+      "category": "stack",
+      "name": "旬空临月建旬内仍空",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "旬内毕竟为空",
+          "detail": "增删修正：在旬内者毕竟为空，出旬不为空"
+        }
+      ],
+      "weight": -1,
+      "priority": 8,
+      "source": "增删卜易·卷一·月将章第十六"
+    },
+    {
+      "rule_id": "LY-G01",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "原神有力五条件",
+      "conditions": [
+        {
+          "field": "yuan_shen.you_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神有力",
+          "detail": "能生用神，吉"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "增删卜易·卷一·元神忌神衰旺章第十"
+    },
+    {
+      "rule_id": "LY-G02",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "原神无力六条件",
+      "conditions": [
+        {
+          "field": "yuan_shen.wu_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神无力",
+          "detail": "见生不生，虽有如无，不能生用"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "增删卜易·卷一·元神忌神衰旺章第十"
+    },
+    {
+      "rule_id": "LY-G03",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "忌神有力五条件",
+      "conditions": [
+        {
+          "field": "ji_shen.you_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌神有力",
+          "detail": "如斧钺，诸占大凶"
+        }
+      ],
+      "weight": -2,
+      "priority": 9,
+      "source": "增删卜易·卷一·元神忌神衰旺章第十"
+    },
+    {
+      "rule_id": "LY-G04",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "忌神无力七条件",
+      "conditions": [
+        {
+          "field": "ji_shen.wu_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌神无力",
+          "detail": "不能克用，化凶为吉"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "增删卜易·卷一·元神忌神衰旺章第十"
+    },
+    {
+      "rule_id": "LY-G05",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "仇神发动",
+      "conditions": [
+        {
+          "field": "chou_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "仇神发动",
+          "detail": "克原神生忌神：原神被伤，用神无根，忌神倍力"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "卜筮正宗·卷三·十八论·原忌仇神论第四"
+    },
+    {
+      "rule_id": "LY-G06",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "用神无根铁律",
+      "conditions": [
+        {
+          "field": "AND",
+          "conditions": [
+            {
+              "field": "yong_shen.yue_po",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "wuxing_ke",
+              "operator": "==",
+              "left": "${day_wx}",
+              "right": "${yong_shen.wx}"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神无根",
+          "detail": "值月破而被克，虽有生扶之不起，元神有力亦难生，直断凶"
+        }
+      ],
+      "weight": -3,
+      "priority": 10,
+      "source": "增删卜易·卷一·元神忌神衰旺章第十"
+    },
+    {
+      "rule_id": "LY-G07",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "贪生忘克忌反生原",
+      "conditions": [
+        {
+          "field": "ji_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "wuxing_sheng",
+          "operator": "==",
+          "left": "${ji_shen.wx}",
+          "right": "${yuan_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "贪生忘克",
+          "detail": "忌神贪生原神，忘克用神，化凶为吉"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "增删卜易·卷一·用神元神忌神仇神章第九"
+    },
+    {
+      "rule_id": "LY-G08",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "忌神独发用神避空",
+      "conditions": [
+        {
+          "field": "ji_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "避空避凶",
+          "detail": "用神避空避凶，不受其克，待出空出透方受其毒"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "卜筮正宗·卷三·十八论·原忌仇神论第四"
+    },
+    {
+      "rule_id": "LY-G09",
+      "domain": "liuyao",
+      "category": "four_god",
+      "name": "寡不敌众",
+      "conditions": [
+        {
+          "field": "ke_yong_dong_count",
+          "operator": ">=",
+          "value": 3
+        },
+        {
+          "field": "OR",
+          "conditions": [
+            {
+              "field": "yong_shen.zhi",
+              "operator": "==",
+              "value": "${month_zh}"
+            },
+            {
+              "field": "yong_shen.zhi",
+              "operator": "==",
+              "value": "${day_zh}"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "寡不敌众",
+          "detail": "虽临日月，卦中动爻成群克之，双拳不敌四手"
+        }
+      ],
+      "weight": -2,
+      "priority": 9,
+      "source": "增删卜易·卷一·日辰章第十七"
+    },
+    {
+      "rule_id": "LY-YQ01",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神静而应逢值逢冲",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：逢值逢冲",
+          "detail": "用神静而不动，逢值逢冲之日月应"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ02",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神动而应逢合逢值",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：逢合逢值",
+          "detail": "用神发动，逢合逢值之日月应"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ03",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神太旺应墓应冲",
+      "conditions": [
+        {
+          "field": "yong_shen.score",
+          "operator": ">=",
+          "value": 5
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：逢墓逢冲",
+          "detail": "太旺者喜墓库收藏，应期逢墓逢冲"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ04",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神衰绝应生应旺",
+      "conditions": [
+        {
+          "field": "yong_shen.score",
+          "operator": "<=",
+          "value": -3
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：遇生遇旺",
+          "detail": "衰绝者遇生遇旺之月日应"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "黄金策·总断·若遇休囚必生旺而成事"
+    },
+    {
+      "rule_id": "LY-YQ05",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神入墓应冲开墓",
+      "conditions": [
+        {
+          "field": "yong_shen.ru_mu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：冲开墓库",
+          "detail": "用神入三墓，冲开墓库之日月应"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ06",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神逢合应冲开合",
+      "conditions": [
+        {
+          "field": "yong_shen.feng_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：冲开合神",
+          "detail": "用神逢合住，冲开合神之日应"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ07",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神月破应填实逢合",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：填实逢合",
+          "detail": "用神月破，填实/逢合之期应"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷二·月破章第二十七"
+    },
+    {
+      "rule_id": "LY-YQ08",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神旬空应出旬冲空",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：出旬冲空",
+          "detail": "用神旬空，填冲（出旬值日/日冲空）之期应"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷一·旬空章第二十六"
+    },
+    {
+      "rule_id": "LY-YQ09",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "大象吉用神受克待克神受克",
+      "conditions": [
+        {
+          "field": "daxiang",
+          "operator": "==",
+          "value": "吉"
+        },
+        {
+          "field": "ji_shen.ke_yong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：克神受克",
+          "detail": "待克神受克之期应"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ10",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "大象凶忌神克用防忌神逢生",
+      "conditions": [
+        {
+          "field": "daxiang",
+          "operator": "==",
+          "value": "凶"
+        },
+        {
+          "field": "ji_shen.ke_yong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "凶期：忌神逢生",
+          "detail": "防克者逢生之期凶应"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ11",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "化进神应逢值逢合",
+      "conditions": [
+        {
+          "field": "hua_jin_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：逢值逢合",
+          "detail": "化进神，逢值逢合之期应"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ12",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "化退神应忌值忌冲",
+      "conditions": [
+        {
+          "field": "hua_tui_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：忌值忌冲",
+          "detail": "化退神，忌值忌冲之期退尽方应"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ13",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "世空原神动待原神值",
+      "conditions": [
+        {
+          "field": "shi_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：原神逢值",
+          "detail": "待原神逢值之期"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-YQ14",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "世衰原神静待原神冲",
+      "conditions": [
+        {
+          "field": "shuai",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：原神逢冲",
+          "detail": "待原神逢冲之期"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·卷一·各门类应期总注"
+    },
+    {
+      "rule_id": "LY-Z01",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "大吉净分>=4",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": ">=",
+          "value": 4
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大吉",
+          "detail": "事必成"
+        }
+      ],
+      "weight": 0,
+      "priority": 10,
+      "source": "增删卜易·卷一·元神忌神衰旺章"
+    },
+    {
+      "rule_id": "LY-Z02",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "小吉净分>=1",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "小吉",
+          "detail": "待时可成"
+        }
+      ],
+      "weight": 0,
+      "priority": 9,
+      "source": "增删卜易·卷一·元神忌神衰旺章"
+    },
+    {
+      "rule_id": "LY-Z03",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "平净分>=-1",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": ">=",
+          "value": -1
+        },
+        {
+          "field": "net_score",
+          "operator": "<",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "平",
+          "detail": "参详事类"
+        }
+      ],
+      "weight": 0,
+      "priority": 8,
+      "source": "增删卜易·卷一·元神忌神衰旺章"
+    },
+    {
+      "rule_id": "LY-Z04",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "凶净分>=-3",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": ">=",
+          "value": -3
+        },
+        {
+          "field": "net_score",
+          "operator": "<",
+          "value": -1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "凶",
+          "detail": "避之为吉"
+        }
+      ],
+      "weight": 0,
+      "priority": 9,
+      "source": "增删卜易·卷一·元神忌神衰旺章"
+    },
+    {
+      "rule_id": "LY-Z05",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "大凶净分<-3",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": "<",
+          "value": -3
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大凶",
+          "detail": "有救方解"
+        }
+      ],
+      "weight": 0,
+      "priority": 10,
+      "source": "增删卜易·卷一·元神忌神衰旺章"
+    },
+    {
+      "rule_id": "LY-U01",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "用神两现舍静用动",
+      "conditions": [
+        {
+          "field": "yong_two_xian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神两现",
+          "detail": "舍休囚用旺相、舍静用动、舍破用不破、舍空用不空、舍伤用不伤"
+        }
+      ],
+      "weight": 0,
+      "priority": 8,
+      "source": "增删卜易·卷二·两现章第三十二"
+    },
+    {
+      "rule_id": "LY-U02",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "用神不现寻伏神",
+      "conditions": [
+        {
+          "field": "yong_bu_xian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "寻伏神",
+          "detail": "寻本宫首卦伏神；飞神空破休囚墓绝则伏神易出"
+        }
+      ],
+      "weight": 0,
+      "priority": 8,
+      "source": "增删卜易·卷二·飞伏章第二十八"
+    },
+    {
+      "rule_id": "LY-U03",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "独发独静仍以用神为主",
+      "conditions": [
+        {
+          "field": "du_fa_or_du_jing",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "独发独静",
+          "detail": "仍以用神为主，不可执独发断吉凶"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·卷二·独发章第三十一"
+    }
+  ]
+}

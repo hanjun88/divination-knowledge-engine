@@ -1,0 +1,1749 @@
+{
+  "domain": "ziwei",
+  "count": 64,
+  "rules": [
+    {
+      "rule_id": "ZW-G01",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "君臣庆会格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "紫微"
+        },
+        {
+          "field": "命宫.辅星",
+          "operator": "contains_all",
+          "value": [
+            "左辅",
+            "右弼"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "君臣庆会",
+          "detail": "辅弼夹帝为上品，材善经邦，左府同宫尊居万乘"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "紫微斗数全书·太微赋/骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G02",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "紫府同宫格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_all",
+          "value": [
+            "紫微",
+            "天府"
+          ]
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "寅",
+            "申"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "紫府同宫",
+          "detail": "终身福厚，紫府朝垣食禄万钟，加活禄至三公"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G03",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "府相朝垣格",
+      "conditions": [
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "寅",
+            "申"
+          ]
+        },
+        {
+          "field": "财帛宫.主星",
+          "operator": "contains",
+          "value": "天府"
+        },
+        {
+          "field": "官禄宫.主星",
+          "operator": "contains",
+          "value": "天相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "府相朝垣",
+          "detail": "千钟食禄，府相同来会命宫全家食禄"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G04",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "日丽中天格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日丽中天",
+          "detail": "太阳居午，大富贵、专权之贵"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G05",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "日照雷门格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日出扶桑/日照雷门",
+          "detail": "日照雷门富贵荣华"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G06",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "月朗天门格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "太阴"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月朗天门",
+          "detail": "月朗天门进爵封侯，清要之职、忠谏之材"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G07",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "水澄桂萼格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "太阴"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "水澄桂萼",
+          "detail": "太阴居子，号曰水澄桂萼"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G08",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "石中隐玉格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "巨门"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "子",
+            "午"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "石中隐玉",
+          "detail": "子午巨门石中隐玉，更会科权禄，官高极品"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G09",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "七杀朝斗格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "七杀"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "寅",
+            "申",
+            "子",
+            "午"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "七杀朝斗/仰斗",
+          "detail": "七杀朝斗爵禄荣昌，遇魁钺左右昌曲权禄，四夷拱手"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G10",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "火贪格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "贪狼"
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains",
+          "value": "火星"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "火贪格",
+          "detail": "贪狼火星居庙旺名镇诸邦，指日立边功，封侯食禄"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G11",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "铃贪格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "贪狼"
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains",
+          "value": "铃星"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "铃贪格",
+          "detail": "贪铃并守将相之名，威镇边夷"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G12",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "巨日同宫格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_all",
+          "value": [
+            "巨门",
+            "太阳"
+          ]
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "寅",
+            "申"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "巨日同宫",
+          "detail": "巨日同宫官封三代，食禄驰名"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G13",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "巨机同宫格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_all",
+          "value": [
+            "巨门",
+            "天机"
+          ]
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "巨机同宫（卯吉）",
+          "detail": "巨机同宫公卿之位"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G14",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "机月同梁格",
+      "conditions": [
+        {
+          "field": "三方四正.主星",
+          "operator": "contains_all",
+          "value": [
+            "天机",
+            "太阴",
+            "天同",
+            "天梁"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "机月同梁",
+          "detail": "机月同梁作吏人，稳定文职"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G15",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "武贪同行格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_all",
+          "value": [
+            "武曲",
+            "贪狼"
+          ]
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "丑",
+            "未"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "武贪同行",
+          "detail": "贪武同行威镇边夷，贪武墓中居三十才发福，先贫后富"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G16",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "刑囚夹印格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "天相"
+        },
+        {
+          "field": "命宫.辅星",
+          "operator": "contains",
+          "value": "天刑"
+        },
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "廉贞"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "刑囚夹印",
+          "detail": "刑囚夹印，刑杖惟司，武勇"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G17",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "马头带剑格",
+      "conditions": [
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "午"
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains",
+          "value": "擎羊"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "马头带剑",
+          "detail": "马头带剑镇卫边疆，但非夭折则主刑伤"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G18",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "泛水桃花格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "贪狼"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "亥",
+            "子"
+          ]
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains_any",
+          "value": [
+            "擎羊",
+            "陀罗"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "泛水桃花",
+          "detail": "贪居亥子，名为犯水桃花，男女贪花迷酒丧身"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G19",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "风流彩杖格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "贪狼"
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains",
+          "value": "陀罗"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "风流彩杖",
+          "detail": "刑遇贪狼，号曰风流彩杖，风流惹祸"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G20",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "路上埋尸格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_all",
+          "value": [
+            "七杀",
+            "廉贞"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "路上埋尸",
+          "detail": "七杀廉贞同位，路上埋尸，凶横伤亡"
+        }
+      ],
+      "weight": -3,
+      "priority": 9,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G21",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "水中作冢格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "破军"
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains_any",
+          "value": [
+            "巨门",
+            "化忌"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "水中作冢",
+          "detail": "破军暗曜同乡，水中作冢，溺水横死"
+        }
+      ],
+      "weight": -3,
+      "priority": 9,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G22",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "禄马交驰格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "禄存"
+        },
+        {
+          "field": "命宫.辅星",
+          "operator": "contains",
+          "value": "天马"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "禄马交驰",
+          "detail": "禄马最喜交驰，天禄天马惊人甲第，发财远郡、白手起家"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G23",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "禄逢冲破格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_any",
+          "value": [
+            "禄存",
+            "化禄"
+          ]
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains_any",
+          "value": [
+            "地空",
+            "地劫"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "禄逢冲破",
+          "detail": "禄逢冲破，吉处藏凶"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G24",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "马遇空亡格",
+      "conditions": [
+        {
+          "field": "命宫.辅星",
+          "operator": "contains",
+          "value": "天马"
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains_any",
+          "value": [
+            "地空",
+            "地劫"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "马遇空亡",
+          "detail": "马遇空亡，终身奔走，死马/亡马"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-G25",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "日月反背格",
+      "conditions": [
+        {
+          "field": "太阳.宫位",
+          "operator": "in",
+          "value": [
+            "戌",
+            "亥",
+            "子"
+          ]
+        },
+        {
+          "field": "太阴.宫位",
+          "operator": "in",
+          "value": [
+            "辰",
+            "巳",
+            "午"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日月反背",
+          "detail": "日月最嫌反背乃为失辉，劳碌贫贱、克夫克父"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G26",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "极向离明格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "紫微"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "==",
+          "value": "午"
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "==",
+          "value": []
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "极向离明",
+          "detail": "紫微居午无杀凑，位至三公"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-G27",
+      "domain": "ziwei",
+      "category": "geju",
+      "name": "极居卯酉僧道格",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "紫微"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "卯",
+            "酉"
+          ]
+        },
+        {
+          "field": "命宫.煞星",
+          "operator": "contains_all",
+          "value": [
+            "地空",
+            "地劫"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "极居卯酉",
+          "detail": "极居卯酉多为脱俗僧人，公胥吏辈"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-M01",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "紫微守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "紫微"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "紫微守命",
+          "detail": "为人厚重面紫，与府相左右日月昌曲三合极贵；无左右为孤君亦清闲僧道"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·紫微"
+    },
+    {
+      "rule_id": "ZW-M02",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "天机守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "天机"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天机守命",
+          "detail": "身长肥胖、性急心慈机谋多变；加巨门羊陀火铃忌下局僧道"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·天机"
+    },
+    {
+      "rule_id": "ZW-M03",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "太阳守命庙旺",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太阳庙旺守命",
+          "detail": "形貌堂堂、心慈好施，文武双全；女命入庙旺夫益子"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·太阳"
+    },
+    {
+      "rule_id": "ZW-M04",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "太阳守命陷地",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太阳陷地守命",
+          "detail": "陷地加杀横发横破，夜生人失辉"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·太阳"
+    },
+    {
+      "rule_id": "ZW-M05",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "武曲守命入庙",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "武曲"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "武曲入庙守命",
+          "detail": "性刚果决、心直无毒，与昌曲同行出将入相"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·武曲"
+    },
+    {
+      "rule_id": "ZW-M06",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "天同守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "天同"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天同守命",
+          "detail": "肥满清明、仁慈耿直，与天梁左右嘉会财官双美"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·天同"
+    },
+    {
+      "rule_id": "ZW-M07",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "廉贞守命入庙",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "廉贞"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "廉贞入庙守命",
+          "detail": "身长体壮、眼露神光，入庙武职贵，遇紫微执威权"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·廉贞"
+    },
+    {
+      "rule_id": "ZW-M08",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "天府守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "天府"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天府守命",
+          "detail": "面方圆容红齿白、温良端雅，喜紫微昌曲左右禄存魁钺；命逢终是富"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-M09",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "太阴守命庙旺",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "太阴"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太阴庙旺守命",
+          "detail": "面方圆、清秀聪明，庙旺享福，月朗门天水澄桂萼"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·太阴"
+    },
+    {
+      "rule_id": "ZW-M10",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "贪狼守命入庙",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "贪狼"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "贪狼入庙守命",
+          "detail": "入庙长耸肥胖，多居武艺，遇火铃戊己生人合局"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·贪狼"
+    },
+    {
+      "rule_id": "ZW-M11",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "巨门守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "巨门"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "巨门守命",
+          "detail": "入庙敦厚清秀，不入庙五短瘦小；多疑多学少精、与人寡合"
+        }
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "紫微斗数全书·诸星问答论·巨门"
+    },
+    {
+      "rule_id": "ZW-M12",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "天相守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "天相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天相守命",
+          "detail": "相貌敦厚持重、清白好酒食、衣禄丰足；紫府左右昌曲日月嘉会位至三公"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-M13",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "天梁守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "天梁"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天梁守命",
+          "detail": "厚重清秀、聪明耿直、好济施有寿；与天机同行居翰苑善谈兵"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·天梁"
+    },
+    {
+      "rule_id": "ZW-M14",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "七杀守命庙旺",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "七杀"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "七杀庙旺守命",
+          "detail": "庙旺遇紫微掌生杀之权武职最利，七杀朝斗爵禄荣昌"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·七杀"
+    },
+    {
+      "rule_id": "ZW-M15",
+      "domain": "ziwei",
+      "category": "mingong",
+      "name": "破军守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "破军"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "破军守命",
+          "detail": "五短背厚眉宽腰斜、性刚寡合，子午入庙；破军一曜性难明"
+        }
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "紫微斗数全书·诸星问答论·破军"
+    },
+    {
+      "rule_id": "ZW-S01",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化禄守命",
+      "conditions": [
+        {
+          "field": "命宫.四化",
+          "operator": "contains",
+          "value": "化禄"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化禄守命",
+          "detail": "福德之神，守身命官禄主进财入仕，小限进喜、大限十年吉庆"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·化禄"
+    },
+    {
+      "rule_id": "ZW-S02",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化权守命",
+      "conditions": [
+        {
+          "field": "命宫.四化",
+          "operator": "contains",
+          "value": "化权"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化权守命",
+          "detail": "生杀之神，科禄相逢出将入相，会巨门武曲掌兵符"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·化权"
+    },
+    {
+      "rule_id": "ZW-S03",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化科守命",
+      "conditions": [
+        {
+          "field": "命宫.四化",
+          "operator": "contains",
+          "value": "化科"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化科守命",
+          "detail": "文墨应试之星，权禄相逢宰臣之贵，逢恶曜亦为文章秀士"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·化科"
+    },
+    {
+      "rule_id": "ZW-S04",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化忌守命入庙",
+      "conditions": [
+        {
+          "field": "命宫.四化",
+          "operator": "contains",
+          "value": "化忌"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化忌入庙反为佳",
+          "detail": "入庙反为佳，如天同在戌丁人、巨门在辰辛人、日月庙旺化忌反福"
+        }
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "紫微斗数全书·增补太微赋"
+    },
+    {
+      "rule_id": "ZW-S05",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化忌守命陷地",
+      "conditions": [
+        {
+          "field": "命宫.四化",
+          "operator": "contains",
+          "value": "化忌"
+        },
+        {
+          "field": "命宫.庙旺",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化忌守命",
+          "detail": "多管之神，守身命一生不顺；小限一年不足、大限十年悔吝"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·化忌"
+    },
+    {
+      "rule_id": "ZW-S06",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "禄权科拱命上格",
+      "conditions": [
+        {
+          "field": "三方四正.四化",
+          "operator": "contains_all",
+          "value": [
+            "化禄",
+            "化权",
+            "化科"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "三奇加会",
+          "detail": "科权禄拱名誉昭彰，作大臣之贵"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "紫微斗数全书·骨髓赋"
+    },
+    {
+      "rule_id": "ZW-S07",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "双忌冲照最凶",
+      "conditions": [
+        {
+          "field": "对宫.四化",
+          "operator": "contains",
+          "value": "化忌"
+        },
+        {
+          "field": "命宫.四化",
+          "operator": "contains",
+          "value": "化忌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "双忌冲照",
+          "detail": "化忌飞入何宫该宫受牵绊，双忌冲照对宫最凶"
+        }
+      ],
+      "weight": -3,
+      "priority": 9,
+      "source": "紫微斗数全书·诸星问答论·化忌"
+    },
+    {
+      "rule_id": "ZW-S08",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "二限太岁交临化忌",
+      "conditions": [
+        {
+          "field": "大限.四化",
+          "operator": "contains",
+          "value": "化忌"
+        },
+        {
+          "field": "流年.四化",
+          "operator": "contains",
+          "value": "化忌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "二限太岁交临",
+          "detail": "二限太岁交临化忌断然蹭蹬"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "紫微斗数全书·诸星问答论·化忌"
+    },
+    {
+      "rule_id": "ZW-X01",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "擎羊入庙",
+      "conditions": [
+        {
+          "field": "命宫.煞星",
+          "operator": "contains",
+          "value": "擎羊"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "辰",
+            "戌",
+            "丑",
+            "未"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "擎羊入庙",
+          "detail": "入庙主权贵机谋，性粗行暴但掌权"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书·诸星问答论·擎羊"
+    },
+    {
+      "rule_id": "ZW-X02",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "擎羊陷地",
+      "conditions": [
+        {
+          "field": "命宫.煞星",
+          "operator": "contains",
+          "value": "擎羊"
+        },
+        {
+          "field": "命宫.宫位",
+          "operator": "in",
+          "value": [
+            "卯",
+            "酉"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "擎羊陷地",
+          "detail": "居卯酉作祸，加火忌劫空残疾离祖"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·擎羊"
+    },
+    {
+      "rule_id": "ZW-X03",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "四杀加命平常",
+      "conditions": [
+        {
+          "field": "命宫.煞星_count",
+          "operator": ">=",
+          "value": 4
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "四杀加命",
+          "detail": "羊陀火铃四杀同宫冲破，平常不为下贱但劳碌"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "紫微斗数全书·诸星问答论·七杀"
+    },
+    {
+      "rule_id": "ZW-X04",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "空劫夹命",
+      "conditions": [
+        {
+          "field": "命宫.煞星",
+          "operator": "contains_all",
+          "value": [
+            "地空",
+            "地劫"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "空劫同宫",
+          "detail": "作事虚空、成败多端不聚财，退祖荣昌；与紫机梁同入僧道反清"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "紫微斗数全书·诸星问答论·天空地劫"
+    },
+    {
+      "rule_id": "ZW-X05",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "禄存独守无吉",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": "禄存"
+        },
+        {
+          "field": "命宫.吉星_count",
+          "operator": "==",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "禄存独守",
+          "detail": "独守无吉化为看财奴，陷空不能为福"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书·诸星问答论·禄存"
+    },
+    {
+      "rule_id": "ZW-X06",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "左右昌曲夹命",
+      "conditions": [
+        {
+          "field": "命宫.辅星",
+          "operator": "contains_all",
+          "value": [
+            "左辅",
+            "右弼"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "辅弼夹命",
+          "detail": "左辅右弼夹帝为上品，诸宫降福，文武大贵"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "紫微斗数全书·太微赋"
+    },
+    {
+      "rule_id": "ZW-P01",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "财帛宫武曲天府",
+      "conditions": [
+        {
+          "field": "财帛宫.主星",
+          "operator": "contains_any",
+          "value": [
+            "武曲",
+            "天府",
+            "太阴"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财帛宫得地",
+          "detail": "武曲丰足、天府富足、太阴入庙仓箱，求财有道"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·卷二·五财帛"
+    },
+    {
+      "rule_id": "ZW-P02",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "官禄宫紫微廉相",
+      "conditions": [
+        {
+          "field": "官禄宫.主星",
+          "operator": "contains_any",
+          "value": [
+            "紫微",
+            "太阳",
+            "廉贞",
+            "天相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官禄宫得地",
+          "detail": "官禄宫主星得地，加左右昌曲魁钺位至封侯伯"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·卷二·九宫禄"
+    },
+    {
+      "rule_id": "ZW-P03",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "夫妻宫破军主克",
+      "conditions": [
+        {
+          "field": "夫妻宫.主星",
+          "operator": "==",
+          "value": "破军"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "夫妻宫破军",
+          "detail": "男女俱克别聚主生离，武曲同克三，宜年长之妻"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "紫微斗数全书·卷二·三妻妾"
+    },
+    {
+      "rule_id": "ZW-P04",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "夫妻宫七杀早克",
+      "conditions": [
+        {
+          "field": "夫妻宫.主星",
+          "operator": "==",
+          "value": "七杀"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "夫妻宫七杀",
+          "detail": "早克；武曲同亦克，或迟娶免刑；加羊陀火铃空劫克三妻"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "紫微斗数全书·卷二·三妻妾"
+    },
+    {
+      "rule_id": "ZW-P05",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "田宅宫府荫",
+      "conditions": [
+        {
+          "field": "田宅宫.主星",
+          "operator": "contains_any",
+          "value": [
+            "天府",
+            "太阴"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "田宅宫得地",
+          "detail": "天府田园茂盛、太阴入庙田多，禄存守于田财堆金积玉"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·卷二·十田宅"
+    },
+    {
+      "rule_id": "ZW-P06",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "福德宫天同",
+      "conditions": [
+        {
+          "field": "福德宫.主星",
+          "operator": "==",
+          "value": "天同"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "福德宫天同",
+          "detail": "快乐有福有寿，福星主享福"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书·卷二·十一福德"
+    },
+    {
+      "rule_id": "ZW-P07",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "疾厄宫加杀病重",
+      "conditions": [
+        {
+          "field": "疾厄宫.煞星",
+          "operator": ">=",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "疾厄宫煞重",
+          "detail": "加羊陀火铃空劫化忌病重"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "紫微斗数全书·卷二·六疾厄"
+    },
+    {
+      "rule_id": "ZW-P08",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "父母宫太阳陷克父",
+      "conditions": [
+        {
+          "field": "父母宫.主星",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "父母宫.庙旺",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "父母宫太阳陷",
+          "detail": "太阳入庙无克，陷地克父"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书·卷二·十二父母"
+    }
+  ]
+}

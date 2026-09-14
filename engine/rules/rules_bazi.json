@@ -1,0 +1,1518 @@
+{
+  "domain": "bazi",
+  "count": 60,
+  "rules": [
+    {
+      "rule_id": "BZ-D01",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "命贵中和偏枯有损",
+      "conditions": [
+        {
+          "field": "wuxing_zhonghe",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "中和为贵",
+          "detail": "命贵中和，偏枯终于有损；理求平正，奇异不足为凭"
+        }
+      ],
+      "weight": 2,
+      "priority": 10,
+      "source": "滴天髓阐微·上篇·人道"
+    },
+    {
+      "rule_id": "BZ-D02",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "四柱流通五行生化",
+      "conditions": [
+        {
+          "field": "sizhu_liutong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "四柱流通",
+          "detail": "八字贵乎天干地支顺而不悖，接续相生为有情而顺则吉"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "滴天髓阐微·上篇·人道"
+    },
+    {
+      "rule_id": "BZ-D03",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "日主旺宜泄不宜克",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "旺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "旺宜泄",
+          "detail": "旺之极者宜泄而不宜克，宜顺其气势，弗悖其性"
+        }
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "滴天髓阐微·上篇·知命"
+    },
+    {
+      "rule_id": "BZ-D04",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "日主弱宜扶",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "弱"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "弱宜扶",
+          "detail": "弱者扶之，不能扶抑者以运扶抑之"
+        }
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "命理约言·卷一·看命总法"
+    },
+    {
+      "rule_id": "BZ-D05",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "顺逆之机",
+      "conditions": [
+        {
+          "field": "shun_ni",
+          "operator": "==",
+          "value": "顺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "顺则吉",
+          "detail": "人居覆载之中，顺则吉兮凶则悖"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "滴天髓阐微·上篇·人道"
+    },
+    {
+      "rule_id": "BZ-D06",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "昆仑之水可顺不可逆",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_ji",
+          "operator": "==",
+          "value": "水旺极"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "从旺",
+          "detail": "满局金水其势冲奔，不若顺其流为美，反取金水运"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "滴天髓阐微·上篇·知命"
+    },
+    {
+      "rule_id": "BZ-D07",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "理气进退",
+      "conditions": [
+        {
+          "field": "liqi_jin_tui",
+          "operator": "==",
+          "value": "进气"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "进气为相",
+          "detail": "将来者进是谓相，进而当令是谓旺；相妙于旺，方长之气其进无涯"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "滴天髓阐微·上篇·理气"
+    },
+    {
+      "rule_id": "BZ-D08",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "用神为核心",
+      "conditions": [
+        {
+          "field": "yongshen.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神为纲",
+          "detail": "命中至理只存用神，不拘财官印食比劫枭杀皆可为用，勿以名之美者为佳恶者为憎"
+        }
+      ],
+      "weight": 2,
+      "priority": 10,
+      "source": "滴天髓阐微·上篇·配合"
+    },
+    {
+      "rule_id": "BZ-D09",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "旺则宜泄宜伤",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "太旺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太旺宜泄",
+          "detail": "旺则宜泄宜伤，反取比劫运为美者从旺格"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "滴天髓阐微·上篇·知命"
+    },
+    {
+      "rule_id": "BZ-D10",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "损之益之归于中道",
+      "conditions": [
+        {
+          "field": "guoji_buji",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "损有余补不足",
+          "detail": "高者抑之使平，下者举之使崇，贵于折衷归于中道"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·五行总论"
+    },
+    {
+      "rule_id": "BZ-G01",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "正官格成格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "正官格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "正官格",
+          "detail": "月支本气透干为正官，宜生之助之；兼印曰官印格、兼财曰财官格"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G02",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "偏官格成格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "偏官格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "偏官格",
+          "detail": "偏官宜制之化之，兼印曰煞印格、兼财曰财煞格；食神制煞为上"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G03",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "正印格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "正印格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "正印格",
+          "detail": "印格兼官曰官印格、兼煞曰煞印格；印绶不可坏"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G04",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "财格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "财格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财格",
+          "detail": "财格兼官曰财官格、兼煞曰财煞格；用之为财不可劫"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G05",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "食神格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "食神格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "食神格",
+          "detail": "食神制煞格、食神生财格；用之食神不可夺"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G06",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "伤官格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "伤官格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "伤官格",
+          "detail": "伤官用印格、伤官生财格；伤官见官为祸百端"
+        }
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G07",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "从官格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "从官格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "从官格",
+          "detail": "日主无根满局皆官，从其官杀之气"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G08",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "从财格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "从财格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "从财格",
+          "detail": "日主无根满局皆财，从其财星之气，富"
+        },
+        {
+          "conclusion": "从格顺局",
+          "detail": "从格最忌比劫运"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G09",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "从煞格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "从煞格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "从煞格",
+          "detail": "日主无根满局皆煞，从其杀气"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G10",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "化气格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "化气格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化气格",
+          "detail": "甲日己月己时化土、乙日庚月庚时化金等，化须真不杂"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G11",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "一行得气曲直格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "曲直格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "曲直仁寿",
+          "detail": "木日全寅卯辰木方或亥卯未木局，仁寿之格"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G12",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "两神成象",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "contains",
+          "value": "两神成象"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "两神成象",
+          "detail": "水木/木火/火土/土金/金水各占两干两支，两神成象格"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-G13",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "财多身弱富屋贫人",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "弱"
+        },
+        {
+          "field": "cai_xing.duo",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财多身弱",
+          "detail": "财多身弱者不为富屋贫人，终身劳苦，妻晚子迟"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "造化元钥·甲木章"
+    },
+    {
+      "rule_id": "BZ-G14",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "煞重身轻",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "弱"
+        },
+        {
+          "field": "sha_xing.zhong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "煞重身轻",
+          "detail": "官杀旺而日主弱，须印化煞或食伤制煞"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "滴天髓阐微·上篇·理气"
+    },
+    {
+      "rule_id": "BZ-T01",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "正月甲木丙癸为用",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month.zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "初春甲木用丙癸",
+          "detail": "初春尚有余寒，得丙癸透富贵双全；癸藏丙透名寒木向阳主大富贵"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "造化元钥·三春甲木总论"
+    },
+    {
+      "rule_id": "BZ-T02",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "二月甲木用庚丁",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month.zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "仲春甲木用庚丁",
+          "detail": "木乘旺气无金必殃，先看庚次取丁，庚丁两透科甲定许"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "造化元钥·二月甲木"
+    },
+    {
+      "rule_id": "BZ-T03",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "三月甲木用庚壬",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month.zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "暮春甲木用庚壬",
+          "detail": "春深木老宜用庚金，阳盛木渴宜用壬水，庚壬为最要用神"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "造化元钥·三月甲木"
+    },
+    {
+      "rule_id": "BZ-T04",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "夏木先用癸次丁",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "in",
+          "value": [
+            "甲",
+            "乙"
+          ]
+        },
+        {
+          "field": "month.zhi",
+          "operator": "in",
+          "value": [
+            "巳",
+            "午",
+            "未"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "夏木调候用水",
+          "detail": "三夏木性枯焦，调候为急，以癸水为主要之神，次用丁火泄秀"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "造化元钥·夏月之木"
+    },
+    {
+      "rule_id": "BZ-T05",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "秋木宜金雕琢",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "in",
+          "value": [
+            "甲",
+            "乙"
+          ]
+        },
+        {
+          "field": "month.zhi",
+          "operator": "in",
+          "value": [
+            "申",
+            "酉",
+            "戌"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "秋木用金",
+          "detail": "秋木气渐凄凉，死木得金而造，庚辛必利；秋木见金必须火制"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "造化元钥·秋月之木"
+    },
+    {
+      "rule_id": "BZ-T06",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "冬木用火暖",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "in",
+          "value": [
+            "甲",
+            "乙"
+          ]
+        },
+        {
+          "field": "month.zhi",
+          "operator": "in",
+          "value": [
+            "亥",
+            "子",
+            "丑"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冬木用丙火",
+          "detail": "冬木寒冻，非丙不暖，木火为用，兼取水以润"
+        }
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "造化元钥·冬月之木"
+    },
+    {
+      "rule_id": "BZ-T07",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火逢壬为既济",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "has_water",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "丙火喜壬",
+          "detail": "丙火生旺不离壬水，丙火不畏壬水独畏戊土，水火既济为上"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·论火"
+    },
+    {
+      "rule_id": "BZ-T08",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火不离甲木",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "has_mu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "丁火喜甲",
+          "detail": "丁火衰竭不离甲木，甲木为丁火之母，甲丁相生为用"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·论火"
+    },
+    {
+      "rule_id": "BZ-T09",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金喜丁火煅炼",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "has_huo",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "庚金喜丁",
+          "detail": "庚金带杀刚健为最，无火锻炼不能成器；金火相均格名铸印"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·论金"
+    },
+    {
+      "rule_id": "BZ-T10",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金喜癸水淘洗",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "has_water",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "辛金喜癸",
+          "detail": "辛金软弱温润而清，畏土之多乐水之盈，癸水淘洗为上"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·论金"
+    },
+    {
+      "rule_id": "BZ-T11",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水喜戊土堤防",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "has_tu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "壬水喜戊",
+          "detail": "壬水冲奔非戊土不能止，得戊土堤防则水入正轨自得清平"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·论水"
+    },
+    {
+      "rule_id": "BZ-T12",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水喜辛金发源",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "has_jin",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "癸水喜辛",
+          "detail": "癸水至弱达于天津，得辛金发源源远流长"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·论水"
+    },
+    {
+      "rule_id": "BZ-T13",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "冬金须火暖",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "in",
+          "value": [
+            "庚",
+            "辛"
+          ]
+        },
+        {
+          "field": "month.zhi",
+          "operator": "in",
+          "value": [
+            "亥",
+            "子",
+            "丑"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冬金用火",
+          "detail": "冬金虽衰，见火必克，用木生火更宜有土制水，火土相资方能温木以卫火"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·冬月之金"
+    },
+    {
+      "rule_id": "BZ-T14",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "土厚须甲木疏",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "in",
+          "value": [
+            "戊",
+            "己"
+          ]
+        },
+        {
+          "field": "tu_zhong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "土厚用甲",
+          "detail": "土厚而实必须得甲木以疏辟之，譬如田畴必须犁锄开垦；无木则不灵"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "造化元钥·论土"
+    },
+    {
+      "rule_id": "BZ-T15",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "夏土燥须水润",
+      "conditions": [
+        {
+          "field": "ri_zhu.gan",
+          "operator": "in",
+          "value": [
+            "戊",
+            "己"
+          ]
+        },
+        {
+          "field": "month.zhi",
+          "operator": "in",
+          "value": [
+            "巳",
+            "午",
+            "未"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "夏土用水",
+          "detail": "夏本气泄而弱，见厚土无力克制；须水润局，否则火炎土燥生机尽灭"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "造化元钥·夏月之土"
+    },
+    {
+      "rule_id": "BZ-Q01",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "财为妻星",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "旺"
+        },
+        {
+          "field": "cai_xing.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "身旺任妻财",
+          "detail": "身旺能任其财，必为富贵；妻星得位内助贤良"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "滴天髓阐微·六亲论"
+    },
+    {
+      "rule_id": "BZ-Q02",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "官杀为夫星",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "旺"
+        },
+        {
+          "field": "guan_sha.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "身旺任官杀",
+          "detail": "身旺官杀为用，夫荣子贵"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "滴天髓阐微·六亲论"
+    },
+    {
+      "rule_id": "BZ-Q03",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "印绶为母星",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "弱"
+        },
+        {
+          "field": "yin_xing.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "弱主赖印生",
+          "detail": "身弱得印生扶，母荫庇重，学业有成"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "命理约言·六亲论"
+    },
+    {
+      "rule_id": "BZ-Q04",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "食伤为子星",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "旺"
+        },
+        {
+          "field": "shi_shang.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "旺主可泄秀",
+          "detail": "身旺食伤为用，子息贤孝，才华显露"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "命理约言·六亲论"
+    },
+    {
+      "rule_id": "BZ-Q05",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "比劫争财克妻",
+      "conditions": [
+        {
+          "field": "bi_jie.zhong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "cai_xing.ruo",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "比劫争财",
+          "detail": "比劫重重财星弱，克妻破财，兄弟争财"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "滴天髓阐微·六亲论"
+    },
+    {
+      "rule_id": "BZ-Q06",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "财多身弱妻累己",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "弱"
+        },
+        {
+          "field": "cai_xing.zhong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财多身弱",
+          "detail": "富屋贫人，妻掌家权，反为妻累"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "造化元钥·甲木章"
+    },
+    {
+      "rule_id": "BZ-Q07",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "官杀混杂",
+      "conditions": [
+        {
+          "field": "zheng_guan.you",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "qi_sha.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官杀混杂",
+          "detail": "官杀混杂须去留舒配，去官留杀或去杀留官方清"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "命理约言·卷一·看格局法"
+    },
+    {
+      "rule_id": "BZ-Q08",
+      "domain": "bazi",
+      "category": "liuqin",
+      "name": "枭神夺食",
+      "conditions": [
+        {
+          "field": "xiao_yin.you",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "shi_shen.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "枭神夺食",
+          "detail": "偏印夺食为破格，主食禄不足、子女缘薄；须偏财破枭"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "滴天髓阐微·用神"
+    },
+    {
+      "rule_id": "BZ-Y01",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "运扶用神发福",
+      "conditions": [
+        {
+          "field": "dayun.sheng_yongshen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "运扶用神",
+          "detail": "大运扶抑用神，运程配合得宜必然富贵"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "命理约言·卷一·看命总法"
+    },
+    {
+      "rule_id": "BZ-Y02",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "运逆用神主灾",
+      "conditions": [
+        {
+          "field": "dayun.ke_yongshen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "运逆用神",
+          "detail": "运程困用神，便成虚名无实，灾祸并见"
+        }
+      ],
+      "weight": -2,
+      "priority": 8,
+      "source": "滴天髓阐微·上篇·知命"
+    },
+    {
+      "rule_id": "BZ-Y03",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "从格忌逆行",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "contains",
+          "value": "从"
+        },
+        {
+          "field": "dayun.ni_shi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "从格逆运凶",
+          "detail": "从格最忌逆行逆其气势，刑耗并见"
+        }
+      ],
+      "weight": -2,
+      "priority": 9,
+      "source": "滴天髓阐微·上篇·知命"
+    },
+    {
+      "rule_id": "BZ-Y04",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "喜用岁运并临",
+      "conditions": [
+        {
+          "field": "dayun.xi",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "liunian.xi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "喜用岁运并临",
+          "detail": "喜用岁运并临，大吉大利，发福非常"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "滴天髓阐微·行运"
+    },
+    {
+      "rule_id": "BZ-Y05",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "忌神岁运并临",
+      "conditions": [
+        {
+          "field": "dayun.ji",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "liunian.ji",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌神岁运并临",
+          "detail": "忌神岁运并临，大凶，灾祸立至"
+        }
+      ],
+      "weight": -3,
+      "priority": 9,
+      "source": "滴天髓阐微·行运"
+    },
+    {
+      "rule_id": "BZ-Y06",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "阳刃驾煞宜武职",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "阳刃驾煞格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "阳刃驾煞",
+          "detail": "煞刃两停宜武职，英雄独压万人；一见癸水困了财杀主光棍"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "造化元钥·二月甲木"
+    },
+    {
+      "rule_id": "BZ-Y07",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "运补原局所缺",
+      "conditions": [
+        {
+          "field": "yuanju.que_xing",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "dayun.bu_que",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "运补所缺",
+          "detail": "原命有缺必待运之助，吉凶休咎胥由此出"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "造化元钥·五行总论"
+    },
+    {
+      "rule_id": "BZ-Y08",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "旺极行克运反祸",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "旺极"
+        },
+        {
+          "field": "dayun.ke",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "旺极见克反祸",
+          "detail": "旺之极者宜泄不宜克，逆其气势反生灾祸"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "滴天髓阐微·上篇·知命"
+    },
+    {
+      "rule_id": "BZ-X01",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "木主仁",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "木"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "木主仁",
+          "detail": "木性阳和，其性仁，有恻隐之心；身主敦厚慈悲"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "造化元钥·五行总论"
+    },
+    {
+      "rule_id": "BZ-X02",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "火主礼",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "火"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "火主礼",
+          "detail": "火性光明，其性礼，待人恭让；生居东南果断有为"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "造化元钥·五行总论"
+    },
+    {
+      "rule_id": "BZ-X03",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "土主信",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "土"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "土主信",
+          "detail": "土性浑厚，其性信，重厚宽博无所不容"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "造化元钥·五行总论"
+    },
+    {
+      "rule_id": "BZ-X04",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "金主义",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "金"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "金主义",
+          "detail": "金性严肃，其性义，果断有决断"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "造化元钥·五行总论"
+    },
+    {
+      "rule_id": "BZ-X05",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "水主智",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "水"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "水主智",
+          "detail": "水性流动，其性智，聪明机智；金水伤官人必绝顶聪明"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "造化元钥·五行总论"
+    }
+  ]
+}
