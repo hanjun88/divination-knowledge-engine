@@ -1,3 +1,8 @@
+---
+name: trauma-informed-support
+description: 创伤知情的 4F 反应、神经系统状态、SE、IFS、CPTSD 图谱与稳定化支持。Use when the user mentions 创伤、闪回、冻结、解离、CPTSD、躯体反应、IFS or polyvagal regulation; do not use as a diagnosis or crisis substitute.
+---
+
 # 创伤恢复与躯体心理治疗技能 (Trauma Recovery & Somatic Psychotherapy Skill)
 
 > **理论底本（蒸馏规则层）**：SAMHSA《创伤知情照护》TIP 57（美国联邦政府作品，public domain）创伤机制章、NICE 成人复杂创伤开放指南；Pete Walker 复杂性创伤 4F 生存反应框架（概念蒸馏）；Stephen Porges 多重迷走理论（Polyvagal Theory，科学概念蒸馏）；Peter Levine 躯体体验疗法（Somatic Experiencing，技术框架蒸馏）；Richard Schwartz 内在家庭系统（IFS，模型蒸馏）；Costa & McCrae 大五人格与 Lazarus & Folkman 压力应对理论（学术概念蒸馏）。

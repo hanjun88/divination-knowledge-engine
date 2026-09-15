@@ -28,6 +28,7 @@ divination-knowledge-engine/
 │   └── ENGINE_README.md
 ├── skills/                   # Agent技能包（八领域，book-to-skill封装，130判例）
 │   ├── SKILL.md                # 总入口（八领域路由+跨领域联动）
+│   ├── INDEX.md                 # 领域索引、触发词与维护命令
 │   ├── liuyao/                 # 六爻断卦技能（25判例）
 │   ├── ziwei/                  # 紫微斗数技能（22判例）
 │   ├── bazi/                   # 八字命理技能（22判例）
@@ -133,7 +134,7 @@ uvicorn main:app --reload
 - `shared/glossary.md`：八领域术语对照表（约150术语）
 - `shared/cross_domain.md`：跨领域联动规则（八字+依恋、紫微+疗愈、六爻+亲密等6组联合判定）
 
-每个技能含7节规范：技能描述、触发条件、输入参数、核心断法步骤、判例引用、输出格式、注意边界。现代版权书仅放蒸馏后的规则与断法，不收录原文。
+每个技能含标准 YAML frontmatter 和7节规范：技能描述、触发条件、输入参数、核心断法步骤、判例引用、输出格式、注意边界。可在仓库根目录执行 `python3 tools/validate_skills.py` 校验元数据与相对链接；GitHub Actions 会在 Skill 相关文件变更时自动运行同一校验。现代版权书仅放蒸馏后的规则与断法，不收录原文。
 
 ## 知识编译链路
 

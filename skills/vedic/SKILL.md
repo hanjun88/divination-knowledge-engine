@@ -1,3 +1,8 @@
+---
+name: vedic-divination
+description: 印度吠陀占星恒星黄道本命盘、Nakshatra、Dasha、D9 与 Yogas 分析。Use when the user asks about Vedic/Jyotish、Lagna、Rashi、Nakshatra、Dasha or Navamsha.
+---
+
 # 吠陀占星 / 印度星盘解读技能 (Vedic Astrology · Jyotish Skill)
 
 > **体系**：Parashari 吠陀占星（Sidereal Zodiac，Lahiri / Chitrapaksha ayanamsa）

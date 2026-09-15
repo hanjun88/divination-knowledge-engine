@@ -1,3 +1,8 @@
+---
+name: bazi-mingli
+description: 子平八字四柱的旺衰、用神、格局、调候与大运分析。Use when the user provides 八字、四柱、干支、日主、月令 or asks about 用神、格局、流年或大运.
+---
+
 # 八字命理技能 (Bazi Mingli Skill)
 
 > **底本**：《滴天髓阐微》（任铁樵注）、《命理约言》（陈素庵）、《造化元钥》（余春台）
