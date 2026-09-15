@@ -1,9 +1,8 @@
 # 八领域技能包总入口 (Divination & Psychology Skill Package)
 
-> **版本**：v3.0 | 2026-09-15
+> **版本**：v2.0 | 2026-09-15
 > **覆盖领域**：六爻 / 紫微斗数 / 八字 / 印度星盘(Vedic) / 西方星盘(Western) / 依恋模式 / 亲密关系 / 心理疗愈
 > **总判例数**：六爻25 + 紫微22 + 八字22 + Vedic12 + Western12 + 依恋12 + 亲密12 + 疗愈13 = **130例**
-> **Cangjie 深度蒸馏**：22部西方心理与占星典籍 → 155张RIA++能力卡 → 68个编译Skills（按书组织在各领域 `books/` 子目录）
 
 ---
 
@@ -53,50 +52,19 @@ skills/
 ├── western/                    # 西方星盘技能
 │   ├── SKILL.md                # 7节规范（7步断法）
 │   ├── cases.md                # 12配置案例
-│   ├── reference.md            # 行星象征/星座属性/宫位/相位/行运次限/四元素
-│   └── books/                  # Cangjie 蒸馏：6部占星典籍深度技能
-│       ├── the-inner-sky/      # Steven Forrest《The Inner Sky》心理原型
-│       ├── the-changing-sky/   # Steven Forrest《The Changing Sky》行运危机触发
-│       ├── astrology-karma-transformation/  # Stephen Arroyo 演化决策树
-│       ├── dynamics-of-the-unconscious/      # Stephen Arroyo 无意识动力映射
-│       ├── synastry/           # Stephen Arroyo 关系原型匹配
-│       └── light-on-life/      # de Fouw & Svoboda 吠陀占星心理原型
+│   └── reference.md            # 行星象征/星座属性/宫位/相位/行运次限/四元素
 ├── attachment/                 # 依恋模式技能
 │   ├── SKILL.md                # 7节规范（7步判定）
 │   ├── cases.md                # 12依恋风格互动案例
-│   ├── reference.md            # 四风格对比/激活机制/AAI分类/配对互动
-│   └── books/                  # Cangjie 蒸馏：5部依恋典籍深度技能
-│       ├── attached/           # Levine & Heller 依恋风格识别与激活策略
-│       ├── hold-me-tight/      # Sue Johnson EFT伴侣防御模式与修复
-│       ├── wired-for-love/     # Stan Tatkin 安全岛构建状态机
-│       ├── attachment-in-psychotherapy/  # David Wallin 治疗关系依恋矫正
-│       └── attachment-and-loss/          # John Bowlby 依恋系统进化-发展基础
+│   └── reference.md            # 四风格对比/激活机制/AAI分类/配对互动
 ├── intimate/                   # 亲密关系技能
 │   ├── SKILL.md                # 7节规范（7步判定）
 │   ├── cases.md                # 12伴侣互动案例
-│   ├── reference.md            # 互动模式/EFT步骤/冲突循环/关系阶段/欲望张力
-│   └── books/                  # Cangjie 蒸馏：5部关系实战典籍深度技能
-│       ├── seven-principles/   # Gottman 末日四骑士识别与关系修复
-│       ├── why-does-he-do-that/ # Lundy Bancroft 控制型人格解构规则
-│       ├── mating-in-captivity/ # Esther Perel 欲望与安全感冲突矩阵
-│       ├── getting-the-love-you-want/ # Harville Hendrix Imago意象匹配与伴侣对话
-│       └── zimbaro-psychology/ # 津巴多普通心理学 认知偏差与社会心理学决策框架
+│   └── reference.md            # 互动模式/EFT步骤/冲突循环/关系阶段/欲望张力
 ├── trauma/                     # 心理疗愈技能
 │   ├── SKILL.md                # 7节规范（7步判定）
 │   ├── cases.md                # 13疗愈进程案例
 │   └── reference.md            # 4F反应/Polyvagal三态/CPTSD图谱/SE技术/IFS/大五
-│   └── books/                  # Cangjie 蒸馏：6部创伤疗愈典籍深度技能
-│       ├── complex-ptsd/       # Pete Walker 4F反应识别与情绪闪回管理
-│       ├── the-body-keeps-the-score/ # van der Kolk 创伤躯体印记与多模式康复
-│       ├── waking-the-tiger/   # Peter Levine SE躯体体验核心协议
-│       ├── in-an-unspoken-voice/ # Peter Levine 创伤身体智慧与多迷走视角
-│       ├── internal-family-systems/ # Richard Schwartz IFS次人格协调协议
-│       └── polyvagal-theory/   # Deb Dana 迷走神经状态追踪与调节
-├── _bundles/                   # Cangjie Capability Bundle（编译事实源，22个verified.yaml）
-│   ├── astro/                  # 占星集群6个能力包
-│   ├── attachment/             # 依恋集群5个能力包
-│   ├── trauma/                 # 创伤集群6个能力包
-│   └── relationships/          # 关系集群5个能力包
 └── shared/
     ├── glossary.md             # 八领域术语对照表（~150术语）
     └── cross_domain.md         # 跨领域联动规则（6组联合判定）
@@ -114,29 +82,12 @@ skills/
   ├─ 含"八字/四柱/干支/日主/大运/流年/调候" → bazi（八字）
   ├─ 含"吠陀/印度星盘/Vedic/Dasha/Nakshatra/Lagna" → vedic（印度星盘）
   ├─ 含"星盘/上升/星座/相位/行运/比较盘/Transit" → western（西方星盘）
-  │     └─ 需具体典籍深度方法 → western/books/<书名>/（Cangjie蒸馏技能）
   ├─ 含"依恋/焦虑型/回避型/安全型/分离焦虑/AAI" → attachment（依恋模式）
-  │     └─ 需具体典籍深度方法 → attachment/books/<书名>/（Cangjie蒸馏技能）
   ├─ 含"伴侣/婚姻/冲突/沟通/情感需求/EFT/欲望" → intimate（亲密关系）
-  │     └─ 需具体典籍深度方法 → intimate/books/<书名>/（Cangjie蒸馏技能）
   ├─ 含"创伤/闪回/冻结/CPTSD/躯体/IFS/迷走神经/PTSD" → trauma（心理疗愈）
-  │     └─ 需具体典籍深度方法 → trauma/books/<书名>/（Cangjie蒸馏技能）
   │
   └─ 涉及多个领域 → 调用 cross_domain.md 联动规则
 ```
-
----
-
-## 3.5 Cangjie 典籍深度蒸馏技能（v3.0 新增）
-
-基于 [cangjie-skill v2.5](https://github.com/) RIA-TV++ 流水线，将22部西方心理与占星典籍蒸馏为原子化可执行能力卡。每个 `books/<书名>/` 目录包含：
-- `*-source-router/SKILL.md` — 来源路由入口（按用户意图路由到具体能力卡）
-- 各晋级能力的独立 `SKILL.md` — 可独立触发使用
-- 全部能力卡遵循 RIA++ 六段结构：R(原文引用) / I(义理解释) / A1(案例演练) / A2(触发信号) / E(执行步骤) / B(边界红线)
-
-**使用方式**：领域总入口（`western/SKILL.md` 等）提供快速判定框架；当用户问题需要具体典籍的深度方法（如"4F情绪闪回13步管理"、"Gottman末日四骑士识别"、"EFT七步对话修复"）时，深入到对应 `books/<书名>/` 目录调用具体技能。
-
-**证据来源**：全部能力卡基于合法开放证据（NCBI Bookshelf / PubMed Central / 作者官网公开内容），不收录版权书籍原文。证据文件见 `books/modern-evidence/`，能力包见 `skills/_bundles/`，蒸馏审计文档见 `docs/cangjie-distillation/`。
 
 ---
 
@@ -151,17 +102,12 @@ skills/
 
 ---
 
-## 5. 判例回溯与证据来源
+## 5. 判例回溯
 
-全部130个判例均标注出处，可与 `books/` 目录的古籍原文交叉对照：
+全部130个判例均标注出处，可与 `books/` 目录的10本古籍原文交叉对照：
 - 命理判例标注古籍章节（如 `[增删·卷三]`、`[骨髓赋]`、`[滴天髓阐微·干支总论]`）
 - 心理关系判例标注理论体系（如 `[Bowlby·依恋三部曲]`、`[CPTSD·情绪闪回]`、`[EFT·情绪聚焦]`）
 - 现代版权书仅蒸馏规则，不收录原文
-
-**Cangjie 蒸馏证据来源**（v3.0 新增）：
-- `books/modern-evidence/` — 387个合法开放证据文件（NCBI Bookshelf / PubMed Central / 作者官网）
-- `skills/_bundles/` — 22个 Capability Bundle（verified.yaml 编译事实源 + 能力卡）
-- `docs/cangjie-distillation/` — 蒸馏流水线文档（BOOK_OVERVIEW / DIGEST / GLOSSARY / 审查报告 / 修复报告）
 
 ---
 
