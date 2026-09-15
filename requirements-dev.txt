@@ -1,5 +1,0 @@
-# Repository development and verification environment.
-# Runtime dependencies remain isolated in engine/requirements.txt.
-pytest>=8.0,<9
-PyYAML>=6.0,<7
-ruff>=0.6,<1
