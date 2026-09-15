@@ -1,0 +1,31 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - 'skills/**'
+      - 'tools/**'
+      - '.github/workflows/validate-skills.yml'
+  pull_request:
+    branches: [master, main]
+    paths:
+      - 'skills/**'
+      - 'tools/**'
+      - '.github/workflows/validate-skills.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Skill metadata and links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Skill packages
+        run: python3 tools/validate_skills.py

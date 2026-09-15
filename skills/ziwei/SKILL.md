@@ -1,3 +1,8 @@
+---
+name: ziwei-divination
+description: 紫微斗数已安星命盘的格局、十二宫、四化与限运分析。Use when the user provides a Ziwei chart or asks about 命宫、星曜、四化、十二宫、大限或流年.
+---
+
 # 紫微斗数技能 (Ziwei Doushu Skill)
 
 > **底本**：《紫微斗数全书》（旧题宋·陈抟撰，明·罗洪先编，南派四卷本系统）

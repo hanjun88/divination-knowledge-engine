@@ -1,3 +1,8 @@
+---
+name: divination-psychology
+description: 八领域术数与心理关系技能总入口。Use for routing requests across 六爻、紫微斗数、八字、吠陀占星、西方占星、依恋、亲密关系与创伤疗愈, and for cross-domain analysis boundaries.
+---
+
 # 八领域技能包总入口 (Divination & Psychology Skill Package)
 
 > **版本**：v2.0 | 2026-09-15

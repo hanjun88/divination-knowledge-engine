@@ -1,3 +1,8 @@
+---
+name: intimate-relationships
+description: 亲密关系冲突循环、EFT 对话、欲望张力、阶段评估与修复策略。Use when the user asks about 伴侣冲突、追逐退缩、冷战、沟通、信任修复、婚姻或欲望与亲密.
+---
+
 # 亲密关系技能 (Intimate Relationships Skill)
 
 > **理论底本**：Sue Johnson 情绪聚焦伴侣治疗(EFT/EFCT)与《Hold Me Tight》对话框架 / Esther Perel 欲望与亲密张力框架 / John Gottman 伴侣互动研究 / 依恋理论在伴侣中的应用
