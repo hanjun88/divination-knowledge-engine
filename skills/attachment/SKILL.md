@@ -1,3 +1,8 @@
+---
+name: attachment-patterns
+description: 成人依恋风格、内部工作模型与关系互动模式分析。Use when the user asks about 焦虑型、回避型、安全型、混乱型、分离焦虑、AAI or attachment dynamics.
+---
+
 # 依恋模式技能 (Attachment Theory Skill)
 
 > **理论底本**：Bowlby 依恋理论三部曲 / Ainsworth 陌生情境实验 / Main & Hesse 成人依恋访谈(AAI) / Bartholomew 双维度四模型 / Brennan 焦虑×回避两维测绘 / Levinger & Hazan 浪漫依恋

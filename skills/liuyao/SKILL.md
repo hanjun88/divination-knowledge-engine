@@ -1,3 +1,8 @@
+---
+name: liuyao-divination
+description: 六爻纳甲排盘后的结构化断卦与应期分析。Use when the user provides a hexagram, moving lines, 世应、六亲、纳甲 or asks about a specific divination question.
+---
+
 # 六爻断卦技能 (Liuyao Divination Skill)
 
 > **底本**：《增删卜易》（野鹤老人）、《卜筮正宗》（王洪绪）、《黄金策》（刘伯温）、《易隐》（曹九锡）

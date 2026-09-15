@@ -1,3 +1,8 @@
+---
+name: western-astrology
+description: 西方热带黄道心理占星的本命盘、相位、宫位、行运、次限与关系盘分析。Use when the user asks about Western astrology、natal chart、上升、行星相位、Transit、Synastry or Composite.
+---
+
 # 西方心理占星 / 本命盘解读技能 (Western Psychological Astrology Skill)
 
 > **体系**：西方热带黄道（Tropical Zodiac，春分点 0° 白羊）· 心理占星取向
