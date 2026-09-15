@@ -40,6 +40,12 @@ divination-knowledge-engine/
 │   └── shared/
 │       ├── glossary.md         # 八领域术语对照表（~150术语）
 │       └── cross_domain.md     # 跨领域联动规则（6组联合判定）
+│   └── _catalog/cangjie/       # Cangjie 编译资产、能力包与来源证据归档
+│       ├── compiled/           # 可加载的编译子 Skill
+│       ├── bundles/            # verified.yaml 与能力卡事实源
+│       ├── docs/               # 流水线文档
+│       ├── evidence/           # 合法开放证据
+│       └── reports/            # 审查与修复报告
 └── README.md
 ```
 

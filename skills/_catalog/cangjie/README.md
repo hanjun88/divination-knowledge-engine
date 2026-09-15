@@ -47,20 +47,20 @@
 ## 目录结构
 
 ```
-cangjie-western/
+skills/_catalog/cangjie/
 ├── README.md                    # 本文件
-├── compiled-skills/             # cangjie.py compile 编译后的技能包 (pack模式)
+├── compiled/             # cangjie.py compile 编译后的技能包 (pack模式)
 │   ├── astro/                   # 占星集群 6本书
 │   ├── attachment/              # 依恋集群 5本书
 │   ├── trauma/                  # 创伤集群 6本书
 │   └── relationships/           # 关系集群 5本书
-├── capability-bundles/          # Capability Bundle (编译事实源)
+├── bundles/          # Capability Bundle (编译事实源)
 │   └── <cluster>/<book>/
 │       ├── verified.yaml        # 唯一编译事实源 (capability_id/intents/keywords/source_evidence)
 │       ├── destinations.json    # 晋级/路由去向映射
 │       ├── cards/               # RIA++ 六段能力卡 (R/I/A1/A2/E/B)
 │       └── book/                # overview.md + glossary.md
-├── source-evidence/             # 合法开放证据文件 (逐行编号)
+├── evidence/             # 合法开放证据文件 (逐行编号)
 │   └── <cluster>/<book>/
 │       ├── legal_open/          # 作者官网/NCBI/PMC/权威机构公开内容
 │       └── full_text_open/      # NCBI Bookshelf 全文章节 + manifest.json
@@ -121,14 +121,14 @@ cangjie-western/
 ## 使用方法
 
 编译后的技能包可直接喂给 Agent 使用：
-1. 将 `compiled-skills/<cluster>/<book>/` 目录放入 Agent 的 skills 目录
+1. 将 `compiled/<cluster>/<book>/` 目录放入 Agent 的 skills 目录
 2. 来源路由入口 (`*-source-router/SKILL.md`) 根据用户意图路由到具体能力卡
 3. 晋级 Skill (promoted) 可独立触发使用
 
 能力卡可通过 `cangjie.py compile` 重新编译：
 ```bash
 python3 scripts/cangjie.py compile \
-  --bundle capability-bundles/<cluster>/<book> \
+  --bundle bundles/<cluster>/<book> \
   --out <output_dir> \
   --output pack \
   --allow-over-budget

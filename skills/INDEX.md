@@ -1,6 +1,27 @@
-# Skill 领域索引
+# Skill 统一索引
 
-本目录提供一个总入口和八个可独立加载的领域 Skill。每个领域 Skill 的 `SKILL.md` 都包含标准 YAML frontmatter，供运行时按 `name` 与 `description` 进行路由；详细判例和速查资料通过同目录 Markdown 文件按需加载。
+仓库的 Skill 资产统一收敛在 `skills/` 下，分为三层：**总入口**负责路由，**八个领域包**负责日常加载，`_catalog/` 保存可追溯的批量蒸馏与编译资产。除 `_catalog/` 外，不再新增平行的 Skill 根目录。
+
+## 目录规范
+
+```text
+skills/
+├── SKILL.md                         # 唯一总入口
+├── INDEX.md                         # 本索引
+├── <domain>/SKILL.md                # 八个日常领域 Skill
+├── <domain>/{cases,reference}.md    # 领域资料
+├── shared/                          # 跨领域术语和联动规则
+└── _catalog/cangjie/                # 编译资产与来源证据归档
+    ├── compiled/                    # 可加载的 Cangjie 子 Skill
+    ├── bundles/                     # verified.yaml 与能力卡事实源
+    ├── docs/                        # 流水线文档
+    ├── evidence/                    # 开放来源证据
+    └── reports/                     # 审查与修复报告
+```
+
+`_catalog/` 是**参考与来源层**，不是第二个运行时 Skill 根目录。运行时首先使用 `skills/SKILL.md` 路由到八个领域包；只有在需要更细能力、来源证据或 Cangjie 编译产物时，才进入 `skills/_catalog/cangjie/`。
+
+## 日常领域 Skill
 
 | Skill | 领域 | 主要触发词 | 配套资料 |
 |---|---|---|---|
@@ -25,4 +46,4 @@
 python3 tools/validate_skills.py
 ```
 
-该命令检查所有 Skill 的 frontmatter、描述长度和相对链接。新增领域时，应同时新增 `skills/<domain>/SKILL.md`、本索引条目以及相应判例/参考资料，并通过校验后再提交。
+校验器会递归检查总入口、八个领域包和 Cangjie 编译子 Skill 的 frontmatter、重复名称、相对链接以及必需目录。新增日常领域时，应新增 `skills/<domain>/SKILL.md`；新增批量来源资产时，应放入 `skills/_catalog/cangjie/` 的对应层，不得再创建新的平行目录。
