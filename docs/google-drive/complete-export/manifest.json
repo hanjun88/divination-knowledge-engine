@@ -1,0 +1,117 @@
+{
+  "repository": "hanjun88/divination-knowledge-engine",
+  "branch": "chore/drive-sync-20260918",
+  "baseBranch": "master",
+  "syncDate": "2026-09-18",
+  "assets": [
+    {
+      "driveFileId": "1DRUrV05XbJFwI8ZYBXxbfdSY440jXpWFSPkmOTo-WrY",
+      "driveName": "00_八字命理与星盘Skills总览索引.md",
+      "driveUrl": "https://docs.google.com/document/d/1DRUrV05XbJFwI8ZYBXxbfdSY440jXpWFSPkmOTo-WrY/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/00_八字命理与星盘Skills总览索引.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1DRUrV05XbJFwI8ZYBXxbfdSY440jXpWFSPkmOTo-WrY",
+        "revisionId": "ANLCKQlpFnoBVDOZ9-b7sXkX7mLAJcGx_tqWMM71VzwPMHIwlYpBp2IREzf4EMTTUX4H87dPFSQBJ1bfAD6YrS9NfD6bFXdIyot_9NSMrbY",
+        "chars": 462
+      }
+    },
+    {
+      "driveFileId": "1-Z_g35uyiOo4AUeuFJWUpg0pvvgZEAzpKfiM4Xqx7qs",
+      "driveName": "SKILL_shenshi-xuankong.md",
+      "driveUrl": "https://docs.google.com/document/d/1-Z_g35uyiOo4AUeuFJWUpg0pvvgZEAzpKfiM4Xqx7qs/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_shenshi-xuankong.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1-Z_g35uyiOo4AUeuFJWUpg0pvvgZEAzpKfiM4Xqx7qs",
+        "revisionId": "ANLCKQmIhEJ6CVLemyrn98t6SkGVJb88DSe2zlQgWOf_BHNbmNEY29fgQyQzsOqjorSjqVud08h5J3w1b4BdIdVtaET4VI-_apnF_6JwHpc",
+        "chars": 3083
+      }
+    },
+    {
+      "driveFileId": "1v9j1WEkQPiQFA7DgsZVQI_75rs9kdXyQ8rAulo3-guU",
+      "driveName": "SKILL_mingli.md",
+      "driveUrl": "https://docs.google.com/document/d/1v9j1WEkQPiQFA7DgsZVQI_75rs9kdXyQ8rAulo3-guU/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_mingli.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1v9j1WEkQPiQFA7DgsZVQI_75rs9kdXyQ8rAulo3-guU",
+        "revisionId": "ANLCKQk4sdVJ6_BInydYPopahdJZgprt3sUeC4L4Wd1LemjJ_rqc3aqD_j8JicX9dxg_8JGcXdkXWq2XoSUrMEvainsdZAYGFSfGrull16Y",
+        "chars": 980
+      }
+    },
+    {
+      "driveFileId": "1hwwmXz6SNavvc9ngH55vP30mFG19nBq8r9n4qog6cj0",
+      "driveName": "SKILL_mangpai-bazi.md",
+      "driveUrl": "https://docs.google.com/document/d/1hwwmXz6SNavvc9ngH55vP30mFG19nBq8r9n4qog6cj0/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_mangpai-bazi.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1hwwmXz6SNavvc9ngH55vP30mFG19nBq8r9n4qog6cj0",
+        "revisionId": "ANLCKQkBTGO1biSZVVqodCRTbJ_DoV7FqpGuAKXKqW67PfsshKitOu8kC1o6hYH5vtqzJ4CwIrmw37He__s6oewHVNptXUoIcUsJz0Pk1dE",
+        "chars": 3153
+      }
+    },
+    {
+      "driveFileId": "1LpKZE9UxUJ34criDGf7FNU9Hw8elu__YgEiyGjqvEpI",
+      "driveName": "SKILL_bazi-client-report.md",
+      "driveUrl": "https://docs.google.com/document/d/1LpKZE9UxUJ34criDGf7FNU9Hw8elu__YgEiyGjqvEpI/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_bazi-client-report.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1LpKZE9UxUJ34criDGf7FNU9Hw8elu__YgEiyGjqvEpI",
+        "revisionId": "ANLCKQkWOyXTNgOOCuBiJrctTGMN5yL1_op-aNATWPHiR1OGAL2F3Oo7JGNV93mXvvkcHh1Mimg_J3OVvTtAxuqCXdOI6zysgKUWNTbER_s",
+        "chars": 3704
+      }
+    },
+    {
+      "driveFileId": "1_2nam2NLRGnoNVG8gUSrD4kx9P9UIZvxL5kVPV55nxk",
+      "driveName": "SKILL_bazi-v3-engine.md",
+      "driveUrl": "https://docs.google.com/document/d/1_2nam2NLRGnoNVG8gUSrD4kx9P9UIZvxL5kVPV55nxk/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_bazi-v3-engine.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1_2nam2NLRGnoNVG8gUSrD4kx9P9UIZvxL5kVPV55nxk",
+        "revisionId": "ANLCKQm4eX3Xxfs5PqtNM0N2y2D0Drl_Jl5NFPrDeE1A7bFDHmwoTdblVr_yNwD6TuJusM9flR5R12u3r29CM2dyFN3OGBzPeUkg_jVyuNg",
+        "chars": 8038
+      }
+    },
+    {
+      "driveFileId": "1rPAkylcMaPCDtuWXIL_NKe7J9b2lZOG6Ng8FMbrCq3I",
+      "driveName": "SKILL_ziwei-v3-engine.md",
+      "driveUrl": "https://docs.google.com/document/d/1rPAkylcMaPCDtuWXIL_NKe7J9b2lZOG6Ng8FMbrCq3I/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_ziwei-v3-engine.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1rPAkylcMaPCDtuWXIL_NKe7J9b2lZOG6Ng8FMbrCq3I",
+        "revisionId": "ANLCKQn2Au8RVhx6CaGDe339WCkVz8I18vD2gxNwHyWzxxjQNY0_ydy8c4R_mmJHnUhrHyVTVF6_ThyOVfaQZkOCShq_4kV_U5pqPxaSepg",
+        "chars": 2507
+      }
+    },
+    {
+      "driveFileId": "1qQJP1Vb_Hahl_k9alxocgOCl_T3l1DZqYaCBHBVAQX8",
+      "driveName": "SKILL_astrology-v3-engine.md",
+      "driveUrl": "https://docs.google.com/document/d/1qQJP1Vb_Hahl_k9alxocgOCl_T3l1DZqYaCBHBVAQX8/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_astrology-v3-engine.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1qQJP1Vb_Hahl_k9alxocgOCl_T3l1DZqYaCBHBVAQX8",
+        "revisionId": "ANLCKQmVobW0JYt9iQHD_TD731VefGy1rp56lnNlHKUOFTmva0_Z41K0ynNYhI9U_i0iPGA8MZkX3I9OLaPvPx91u4mZZr-zilxJnLAOOlc",
+        "chars": 9266
+      }
+    },
+    {
+      "driveFileId": "1ShqkZai0GZOyQQVSw3IklAtrW0SOWt4z6u3r4ZoW1kE",
+      "driveName": "SKILL_ziping-core.md",
+      "driveUrl": "https://docs.google.com/document/d/1ShqkZai0GZOyQQVSw3IklAtrW0SOWt4z6u3r4ZoW1kE/edit",
+      "repositoryPath": "docs/google-drive/complete-export/skills-reference/SKILL_ziping-core.md",
+      "mimeType": "application/vnd.google-apps.document",
+      "readback": {
+        "id": "1ShqkZai0GZOyQQVSw3IklAtrW0SOWt4z6u3r4ZoW1kE",
+        "revisionId": "ANLCKQlB2ffApp0G3YWY2AlVNy8ul6qRSu62QjzLUTHqHY7NU7yHx_a3Li8G8WJoo-4faPVqjvDMvGZ5L99vP5iVr0fmg1lAlO4jC9vNqGI",
+        "chars": 694
+      }
+    }
+  ],
+  "excludedScope": "All Drive assets not explicitly mapped to this repository and all assets belonging outside the six repositories."
+}
