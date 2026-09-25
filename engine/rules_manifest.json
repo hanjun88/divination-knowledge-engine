@@ -1,0 +1,25 @@
+{
+  "manifest_version": "1.0.0",
+  "repository": "hanjun88/divination-knowledge-engine",
+  "generated_at": "2026-09-25",
+  "rules": [
+    {
+      "domain": "bazi",
+      "path": "rules/rules_bazi.json",
+      "count": 60,
+      "sha256": "3b5490047414a8807f7125043c466a8602dd77c69d98be501942e4d175675059"
+    },
+    {
+      "domain": "liuyao",
+      "path": "rules/rules_liuyao.json",
+      "count": 82,
+      "sha256": "499e691613133bc7de4edada07ed49dbcb29f1bc86df2ba85105d0c7a9d23729"
+    },
+    {
+      "domain": "ziwei",
+      "path": "rules/rules_ziwei.json",
+      "count": 64,
+      "sha256": "dad6642244c6640cf4ef2c45b9f6079418f1544f9881a6354b18647e67461580"
+    }
+  ]
+}
