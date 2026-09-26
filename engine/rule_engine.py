@@ -15,6 +15,7 @@ Operators supported:
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 from bisect import bisect_right
@@ -321,6 +322,27 @@ class RuleEngine:
         self._cache[domain] = rules
         return rules
 
+    # ---------- content fingerprint ----------
+    def rules_file_path(self, domain: str) -> str:
+        """返回某 domain 规则实体文件的绝对路径（与 load_rules 读取的同一文件）。"""
+        if domain not in self.DOMAINS:
+            raise ValueError(f"unknown domain: {domain}; expected one of {self.DOMAINS}")
+        return os.path.join(self.rules_dir, f"rules_{domain}.json")
+
+    def rules_file_sha256(self, domain: str) -> str:
+        """计算某 domain 规则实体文件原始字节的 SHA256（hex）。
+
+        与 Provider manifest 中 rules[].sha256 的计算方式完全一致：
+        对 rules/rules_{domain}.json 文件原始字节做 SHA256。
+        Consumer 运行时以此作为内容指纹门禁（不匹配即 fail-closed）。
+        """
+        path = self.rules_file_path(domain)
+        h = hashlib.sha256()
+        with open(path, "rb") as f:
+            for chunk in iter(lambda: f.read(65536), b""):
+                h.update(chunk)
+        return h.hexdigest()
+
     # ---------- matching ----------
     def match(self, input_data: Dict[str, Any], domain: str) -> Dict[str, Any]:
         rules = self.load_rules(domain)
@@ -409,6 +431,9 @@ class RuleEngine:
         return {
             "domain": domain,
             "count": len(rules),
+            # 内容指纹：该 domain 规则实体文件原始字节的 SHA256。
+            # Consumer 端据此与 manifest rules[].sha256 比对，做 fail-closed 漂移门禁。
+            "content_sha256": self.rules_file_sha256(domain),
             "rules": [
                 {
                     "rule_id": r["rule_id"],
