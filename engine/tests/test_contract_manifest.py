@@ -41,7 +41,7 @@ def test_manifest_four_traceability_fields_present_and_nonempty():
 def test_manifest_preserves_rule_data():
     m = json.loads(MANIFEST.read_text(encoding="utf-8"))
     domains = {r["domain"]: r["count"] for r in m["rules"]}
-    assert domains == {"bazi": 60, "liuyao": 82, "ziwei": 64}, domains
+    assert domains == {"bazi": 180, "liuyao": 82, "ziwei": 64}, domains
 
 
 def test_schema_sha256_matches_openapi_file():

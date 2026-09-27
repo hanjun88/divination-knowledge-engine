@@ -1,6 +1,6 @@
 {
   "domain": "bazi",
-  "count": 60,
+  "count": 180,
   "rules": [
     {
       "rule_id": "BZ-D01",
@@ -1513,6 +1513,3246 @@
       "weight": 0,
       "priority": 5,
       "source": "造化元钥·五行总论"
+    },
+    {
+      "rule_id": "BZ-TH-0101",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "寒木向阳，丙癸两透富贵双全；春初余寒，丙火为先"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0102",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 庚金为主，丁火为辅",
+          "detail": "木旺用庚成器，丁火制金；庚丁两透伤官驾煞"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0103",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 庚金为主，壬水为辅",
+          "detail": "春深木老用庚，阳壮木渴用壬润；庚壬并透坚木成梁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0104",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丁火为辅",
+          "detail": "夏木枯焦，癸水滋润为急，丁火泄秀"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0105",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丁火为辅",
+          "detail": "五月木性焚竭，癸水滋润最急，丁火泄秀"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0106",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丁火为辅",
+          "detail": "夏末木枯，癸水为急，丁火泄秀"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0107",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 庚金为主，丁火为辅",
+          "detail": "申月金旺克木，庚金制木，丁火制金护木，壬水滋木"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0108",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，壬水为辅",
+          "detail": "酉月辛金当令克木，丁火制金，壬水润木"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0109",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 庚金为主，壬水为辅",
+          "detail": "戌月土旺木折，庚金制木，壬水润木"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0110",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，庚金为辅",
+          "detail": "亥月冬木寒冻，丁火暖局最急，庚金制木"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0111",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取丁火",
+          "detail": "子月水旺木浮，丁火暖局最急，寒木向阳"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0112",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "甲木丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，庚金为辅",
+          "detail": "丑月寒冬湿土，丁火暖局最急，庚金制木"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·甲木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0201",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "春初乙木余寒，丙火发荣，癸水滋养"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0202",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "春深乙木，丙火发荣，癸水滋养，庚金疏劈"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0203",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "暮春木老，癸水滋养，丙火暖，庚金斫削"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0204",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "巳月乙木枯焦，癸水滋润，丙火暖"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0205",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "午月乙木至枯，癸水滋润最急，丙火暖"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0206",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "未月木燥，癸水滋润，丙火暖"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0207",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "秋月乙木凋零，丙火暖局，癸水润木"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0208",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "酉月金旺克木，丙火制金暖局，癸水润"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0209",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "戌月秋末，丙火暖局，癸水润木"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0210",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "亥月冬木寒弱，丙火暖局最急，癸水润"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0211",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取丙火",
+          "detail": "子月乙木寒极，丙火暖局最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0212",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "乙木丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取丙火",
+          "detail": "丑月乙木寒冻，丙火暖局最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·乙木篇"
+    },
+    {
+      "rule_id": "BZ-TH-0301",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，庚金为辅",
+          "detail": "寅月丙火渐炎，壬水制火既济，庚金佐水"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0302",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，庚金为辅",
+          "detail": "卯月丙火相，壬水制火，庚金辅"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0303",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，庚金为辅",
+          "detail": "辰月丙火渐旺，壬水为要制火，庚金佐"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0304",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，庚金为辅",
+          "detail": "巳月丙火临官，壬水制火最急，庚金佐"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0305",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，庚金为辅",
+          "detail": "午月丙火至旺，壬水既济最急，庚金佐"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0306",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，庚金为辅",
+          "detail": "未月丙火渐退，壬水制火，庚金佐"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0307",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取壬水",
+          "detail": "申月丙火刚健，壬水制伏为要"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0308",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "酉月丙火，壬水制火，甲木引火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0309",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "戌月丙火入库，甲木引火，壬水制火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0310",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "亥月丙火绝，壬水制火，甲木引火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0311",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "子月丙火微弱，壬水制火，甲木引火最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0312",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丙火丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "丑月寒火无光，甲木引火最急，壬水制火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丙火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0401",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，庚金为辅",
+          "detail": "寅月丁火，甲木引丁，庚金劈甲"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0402",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取甲木",
+          "detail": "卯月丁火，甲木为嫡母引火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0403",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，庚金为辅",
+          "detail": "辰月丁火，甲木引丁，庚金劈甲"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0404",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "巳月丁火旺，甲木引丁，壬水制火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0405",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "午月丁火禄地，甲木引丁，壬水制火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0406",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "未月丁火，甲木引丁，壬水制火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0407",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，庚金为辅",
+          "detail": "申月丁火衰弱，甲木引丁最急，庚金劈甲"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0408",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，庚金为辅",
+          "detail": "酉月丁火柔中，甲木引丁，庚金劈甲"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0409",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "戌月丁火，甲木引丁，壬水制火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0410",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取甲木",
+          "detail": "亥月丁火衰，甲木引丁最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0411",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取甲木",
+          "detail": "子月丁火绝，甲木引丁最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0412",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "丁火丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，庚金为辅",
+          "detail": "丑月丁火寒，甲木引丁最急，庚金劈甲"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·丁火篇"
+    },
+    {
+      "rule_id": "BZ-TH-0501",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，甲木为辅",
+          "detail": "寅月土薄，丙火暖土，甲木疏土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0502",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，甲木为辅",
+          "detail": "卯月木旺克土，丙火暖土，甲木疏土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0503",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，癸水为辅",
+          "detail": "辰月土旺，甲木疏土，癸水润土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0504",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "巳月戊土燥烈，壬水润局最急，甲木疏土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0505",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "午月戊土焦干，壬水润局最急，甲木疏土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0506",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "未月戊土燥，壬水润局，甲木疏土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0507",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，癸水为辅",
+          "detail": "申月土润，甲木疏土，癸水润土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0508",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，癸水为辅",
+          "detail": "酉月土实，甲木疏土，癸水润土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0509",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，丙火为辅",
+          "detail": "戌月土旺，甲木疏土，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0510",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，甲木为辅",
+          "detail": "亥月戊土冻结，丙火暖局最急，甲木疏土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0511",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取丙火",
+          "detail": "子月戊土寒冻，丙火暖局最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0512",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "戊土丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，甲木为辅",
+          "detail": "丑月冻土寒冻，丙火暖局最急，甲木疏土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·戊土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0601",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "寅月己土寒湿，丙火暖土，癸水润土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0602",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，癸水为辅",
+          "detail": "卯月己土，丙火暖土，癸水润土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0603",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "辰月己土，癸水润土，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0604",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "巳月己土焦，癸水润土，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0605",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "午月己土焦干，癸水润局最急，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0606",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "未月己土燥热，癸水润土，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0607",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "申月己土，癸水润土，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0608",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "酉月己土，癸水润土，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0609",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 癸水为主，丙火为辅",
+          "detail": "戌月己土燥，癸水润土，丙火暖土"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0610",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取丙火",
+          "detail": "亥月己土寒，丙火暖局最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0611",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取丙火",
+          "detail": "子月己土寒冻，丙火暖局最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0612",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "己土丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取丙火",
+          "detail": "丑月己土湿寒，丙火暖局最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·己土篇"
+    },
+    {
+      "rule_id": "BZ-TH-0701",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "寅月庚金绝地，丁火煅金，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0702",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "卯月庚金胎地，丁火煅金，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0703",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "辰月庚金生，甲木引丁，壬水辅洗"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0704",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "巳月庚金长生，丁火煅金，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0705",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 专取壬水",
+          "detail": "午月庚金至柔，先以壬水泄秀润局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0706",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "未月庚金，丁火煅金，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0707",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "申月庚金临官，丁火煅炼成器最急，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0708",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "酉月庚金帝旺，丁火煅炼成器最急，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0709",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，壬水为辅",
+          "detail": "戌月庚金入库，甲木引丁，壬水泄秀"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0710",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "亥月庚金病地，丁火煅金，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0711",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "子月庚金寒冻，丁火煅暖最急，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0712",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "庚金丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丁火为主，甲木为辅",
+          "detail": "丑月庚金寒冻，丁火煅暖最急，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·庚金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0801",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "寅月辛金，壬水淘洗，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0802",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "卯月辛金，壬水淘洗，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0803",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "辰月辛金，壬水淘洗，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0804",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，己土为辅",
+          "detail": "巳月辛金被克，壬水淘洗，己土晦火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0805",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，己土为辅",
+          "detail": "午月辛金灼热，壬水淘洗最急，己土晦火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0806",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，己土为辅",
+          "detail": "未月辛金燥热，壬水淘洗，己土晦火"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0807",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "申月辛金得令，壬水淘洗最急，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0808",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "酉月辛金临官，壬水淘洗最急，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0809",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，甲木为辅",
+          "detail": "戌月辛金，壬水淘洗，甲木引丁"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0810",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，丙火为辅",
+          "detail": "亥月辛金寒，壬水淘洗，丙火暖金"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0811",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，丙火为辅",
+          "detail": "子月辛金寒冷，壬水淘洗，丙火暖金"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0812",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "辛金丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 壬水为主，丙火为辅",
+          "detail": "丑月辛金寒冻，壬水淘洗，丙火暖金最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·辛金篇"
+    },
+    {
+      "rule_id": "BZ-TH-0901",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 戊土为主，庚金为辅",
+          "detail": "寅月壬水病地，戊土堤防，庚金发水源"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0902",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 戊土为主，辛金为辅",
+          "detail": "卯月壬水，戊土堤防，辛金发水"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0903",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，庚金为辅",
+          "detail": "辰月壬水入库，甲木泄秀，庚金发水"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0904",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 庚金为主，壬水为辅",
+          "detail": "巳月壬水绝，庚金发水，壬水比助"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0905",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 庚金为主，壬水为辅",
+          "detail": "午月壬水胎，庚金发水，壬水比助"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0906",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 庚金为主，壬水为辅",
+          "detail": "未月壬水，庚金发水，壬水比助"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0907",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，戊土为辅",
+          "detail": "申月壬水临官，甲木泄秀金白水清，戊土堤防"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0908",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，戊土为辅",
+          "detail": "酉月壬水，甲木泄秀，戊土堤防"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0909",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，戊土为辅",
+          "detail": "戌月壬水，甲木泄秀，戊土堤防"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0910",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，戊土为辅",
+          "detail": "亥月壬水临官，甲木泄秀，戊土堤防"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0911",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，戊土为辅",
+          "detail": "子月壬水帝旺，甲木泄秀最急，戊土堤防"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-0912",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "壬水丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 甲木为主，戊土为辅",
+          "detail": "丑月壬水，甲木泄秀，戊土堤防最急"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·壬水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1001",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水寅月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "寅"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "寅月癸水，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1002",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水卯月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "卯"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "卯月癸水，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1003",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水辰月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "辰"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "辰月癸水入库，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1004",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水巳月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "巳"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "巳月癸水绝，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1005",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水午月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "午"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "午月癸水至弱，辛金发源最急，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1006",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水未月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "未"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "未月癸水，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1007",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水申月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "申"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "申月癸水，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1008",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水酉月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "酉"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "酉月癸水得生，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1009",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水戌月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 辛金为主，丙火为辅",
+          "detail": "戌月癸水，辛金发源，丙火暖局"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1010",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水亥月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "亥"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，辛金为辅",
+          "detail": "亥月癸水临官，丙火暖局最急，辛金发源"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1011",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水子月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "子"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，辛金为辅",
+          "detail": "子月癸水帝旺寒极，丙火暖局最急，辛金发源"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-TH-1012",
+      "domain": "bazi",
+      "category": "tiaohou",
+      "name": "癸水丑月调候",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "丑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "调候用神: 丙火为主，辛金为辅",
+          "detail": "丑月癸水寒冻，丙火暖局最急，辛金发源"
+        }
+      ],
+      "weight": 5,
+      "priority": 9,
+      "source": "造化元钥·癸水篇"
     }
   ]
 }

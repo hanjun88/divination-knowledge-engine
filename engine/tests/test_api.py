@@ -12,7 +12,7 @@ def test_health_reports_loaded_rule_counts():
     assert response.status_code == 200
     assert response.json() == {
         "status": "ok",
-        "domains": {"liuyao": 82, "ziwei": 64, "bazi": 60},
+        "domains": {"liuyao": 82, "ziwei": 64, "bazi": 180},
     }
 
 

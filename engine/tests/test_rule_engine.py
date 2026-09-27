@@ -19,7 +19,7 @@ def test_all_domain_rule_counts():
     assert {d: len(engine.load_rules(d)) for d in engine.DOMAINS} == {
         "liuyao": 82,
         "ziwei": 64,
-        "bazi": 60,
+        "bazi": 180,
     }
 
 
