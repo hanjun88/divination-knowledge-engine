@@ -1,5 +1,5 @@
 {
-  "canonical_manifest_sha": "8b4746f963b76a40281cd0aafc429a28fed458243e3864a8aaa511012809f579",
+  "canonical_manifest_sha": "115f2b911c9684f5deacb32f725ba0bf816ea6aa9a115361d52372544c399064",
   "generated_at": "2026-09-25",
   "manifest_version": "1.0.0",
   "provider_commit": "7848583b1e285a2f95b25957087783b1a89357b1",
@@ -18,10 +18,10 @@
       "sha256": "00846160fad11ee0f679c5e3397c6323b49b85e474cfda68e581474bb6da44a1"
     },
     {
-      "count": 64,
+      "count": 189,
       "domain": "ziwei",
       "path": "rules/rules_ziwei.json",
-      "sha256": "dad6642244c6640cf4ef2c45b9f6079418f1544f9881a6354b18647e67461580"
+      "sha256": "8d6050dd66ed993c7e5379fe5f184d3157e08179afdec073b928b8be538029b7"
     }
   ],
   "schema_file": "openapi_schema.json",

@@ -1,4 +1,7 @@
 """HTTP contract tests for the existing FastAPI application."""
+import json
+from pathlib import Path
+
 from fastapi.testclient import TestClient
 
 from main import app
@@ -6,20 +9,32 @@ from main import app
 
 client = TestClient(app)
 
+#: /health 暴露的三个核心 domain (与 main.py health() 保持一致)
+_HEALTH_DOMAINS = ("liuyao", "ziwei", "bazi")
+
+
+def _expected_health_counts() -> dict:
+    """从磁盘规则文件动态读取 /health 应返回的各 domain 规则数 (不硬编码)。"""
+    rules_dir = Path(__file__).resolve().parents[1] / "rules"
+    return {
+        d: len(json.loads((rules_dir / f"rules_{d}.json").read_text(encoding="utf-8"))["rules"])
+        for d in _HEALTH_DOMAINS
+    }
+
 
 def test_health_reports_loaded_rule_counts():
     response = client.get("/health")
     assert response.status_code == 200
     assert response.json() == {
         "status": "ok",
-        "domains": {"liuyao": 192, "ziwei": 64, "bazi": 294},
+        "domains": _expected_health_counts(),
     }
 
 
 def test_list_rules_and_invalid_domain():
     response = client.get("/api/rules/liuyao")
     assert response.status_code == 200
-    assert response.json()["count"] == 192
+    assert response.json()["count"] == _expected_health_counts()["liuyao"]
     assert response.json()["domain"] == "liuyao"
 
     invalid = client.get("/api/rules/no_such_domain")

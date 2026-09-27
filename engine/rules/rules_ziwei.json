@@ -1,6 +1,6 @@
 {
   "domain": "ziwei",
-  "count": 64,
+  "count": 189,
   "rules": [
     {
       "rule_id": "ZW-G01",
@@ -1744,6 +1744,4742 @@
       "weight": -1,
       "priority": 5,
       "source": "紫微斗数全书·卷二·十二父母"
+    },
+    {
+      "rule_id": "ZW-D001",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "命身宫安星法",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "命宫"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "安命身",
+          "detail": "生月起寅顺数至生月，生月宫起子时逆数安命、顺数安身；闰月归下半月"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "大抵人命俱从寅上起正月，顺数至本生月止，又自人生月起子时逆至本生时安命，顺至本生时安身……又若闰月正月生者要在二月内起安身命",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D002",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "十二宫逆排次序",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "命宫"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "十二宫序",
+          "detail": "命宫→兄弟→夫妻→子女→财帛→疾厄→迁移→奴仆→官禄→田宅→福德→父母，逆时针排列"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "安十二宫例 男女俱从逆转切忌莫顺去：一命宫、二兄弟、三妻妾、四子女、五财帛、六疾厄、七迁移、八奴仆、九官禄、十田宅、十一福德、十二父母",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D003",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "命宫干支五虎遁起",
+      "conditions": [
+        {
+          "field": "生年干",
+          "operator": "in",
+          "value": [
+            "甲",
+            "乙",
+            "丙",
+            "丁",
+            "戊",
+            "己",
+            "庚",
+            "辛",
+            "壬",
+            "癸"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "起月建",
+          "detail": "甲己年起丙寅、乙庚年起戊寅、丙辛年起庚寅、丁壬年起壬寅、戊癸年起甲寅，据纳音五行局起紫微"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "甲己之岁起丙寅，乙庚之岁起戊寅，丙辛之岁起庚寅，丁壬之岁起壬寅，戊癸之岁起甲寅",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D004",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "安紫微诸星口诀",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "紫微"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "紫府系安星",
+          "detail": "紫微天机逆行，隔一阳武天同，隔二廉贞，空三复见紫微；天府系八星顺数"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "紫微天机逆行旁，隔一阳武天同当，又隔二位廉贞地，空三复见紫微郎；天府太阴与贪狼，巨门天相及天梁，七杀空三破军位，八星顺数细推详",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D005",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "生年干四化表",
+      "conditions": [
+        {
+          "field": "生年干",
+          "operator": "in",
+          "value": [
+            "甲",
+            "乙",
+            "丙",
+            "丁",
+            "戊",
+            "己",
+            "庚",
+            "辛",
+            "壬",
+            "癸"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "十干变曜",
+          "detail": "甲廉破武阳、乙机梁紫阴、丙同机昌廉、丁阴同机巨、戊贪阴弼机、己武贪梁曲、庚阳武阴同、辛巨阳曲昌、壬梁紫辅武、癸破巨阴贪"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "甲廉破武阳为伴，乙机梁紫月交侵，丙同机昌廉贞位，丁月同机巨门寻，戊贪月弼机为主，己武贪梁曲最平，庚日武阴同为首，辛巨阳曲昌至临，壬梁紫府武宿是，癸破巨阴贪狼停",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D006",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "大限顺逆行法",
+      "conditions": [
+        {
+          "field": "性别",
+          "operator": "in",
+          "value": [
+            "阳男",
+            "阴女",
+            "阴男",
+            "阳女"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大限起宫",
+          "detail": "阳男阴女从命前一宫(父母)顺行十年一宫；阴男阳女从命后一宫(兄弟)逆行十年一宫"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "安大限诀：阳男阴女从命前一宫起顺行，是父母宫。阴男阳女从命后一宫起逆行，是兄弟宫",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D007",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "男女命强弱宫分",
+      "conditions": [
+        {
+          "field": "性别",
+          "operator": "in",
+          "value": [
+            "男",
+            "女"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "强弱宫",
+          "detail": "男命财帛官禄福德迁移田宅为强宫，子女奴仆兄弟父母为弱宫；女命夫妻子女财帛田宅福德为强"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "男命 财帛、官禄、福德、迁移、田宅为强宫，子女、奴仆、兄弟、父母为弱宫。女命 夫君、子息、财帛、田宅、福德为强，余宫皆弱",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D008",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "星曜落宫受制",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "命宫"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "星曜受制",
+          "detail": "星曜五行落宫五行相克即为受制：金入火乡、火入水乡、水入土乡、土入木乡俱为受制，兼看同度互克"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "星曜全明生克制化之机……金入火乡、火入水乡、水入土乡、土入木乡俱为受制",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D009",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "诸星闲宫减力",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "紫微"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "贪狼"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天相"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "七杀"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天梁"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天机"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "破军"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "武曲"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "星落闲宫",
+          "detail": "紫微子辰亥、贪狼寅辰、天相辰戌、七杀辰亥、天梁巳酉、天机巳、破军巳申、武曲申为闲宫，力量减等"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "紫微在子辰亥为闲宫，贪狼在寅辰为闲宫，天相在辰戌为闲宫，七杀在辰亥为闲宫，天梁在巳酉为闲宫，天机在巳为闲宫，破军在巳申为闲宫，武曲在申为闲宫",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D010",
+      "domain": "ziwei",
+      "category": "anxing",
+      "name": "命宫格局四看法",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "命宫"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "格局高下",
+          "detail": "首看命宫星曜庙旺化吉凶生克，次看身主，再三看迁移财官三方刑冲，四看福德权禄劫空庙陷"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "第一看命宫吉凶庙旺化吉化忌生克。次看身主吉凶生克。三看迁移财帛官禄三方星辰刑冲剋破。四看福德宫权禄劫空庙陷",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D011",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "紫微坐命孤君",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "紫微"
+            },
+            {
+              "NOT": {
+                "field": "命宫.辅星",
+                "operator": "contains_all",
+                "value": [
+                  "左辅",
+                  "右弼"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "紫微孤君",
+          "detail": "厚重面紫、掌爵禄消百恶；无辅弼同守则为孤君，虽美玉不足"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "紫微属土，乃中天之尊星，为帝座……诸宫降福，能消百恶……无辅弼同行，则为孤君，虽美玉不足",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D012",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "紫微府相左右昌曲吉集",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "紫微"
+            },
+            {
+              "field": "命宫.辅星",
+              "operator": "contains_all",
+              "value": [
+                "左辅",
+                "右弼"
+              ]
+            },
+            {
+              "field": "三方四正.主星",
+              "operator": "contains_any",
+              "value": [
+                "天府",
+                "天相",
+                "文昌",
+                "文曲"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "紫微富贵",
+          "detail": "得府相左右昌曲吉集无有不贵，纵有四杀冲破亦作中局"
+        }
+      ],
+      "weight": 3,
+      "priority": 8,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "若得府相、左右、昌曲吉集，无有不贵，不然亦主巨富。纵有四杀冲破，亦作中局",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D013",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "紫破同宫辰戌丑未",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "紫微",
+                "破军"
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "辰",
+                "戌",
+                "丑",
+                "未"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "紫破邪淫",
+          "detail": "为臣不忠为子不孝、男女邪淫；加吉曜则富贵堪期"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "若遇破军，在辰戌丑未，主为臣不忠，为子不孝之论……紫破命临于辰戌丑未再加吉曜富贵堪期；紫破贪狼为至淫，男女邪淫",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D014",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "紫微七杀同度巳亥化权",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "紫微",
+                "七杀"
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "巳",
+                "亥"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "紫杀武官",
+          "detail": "帝降七杀为权，加吉同位作武官之职；午宫无刑忌者甲丁己生人至公卿"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "帝降七杀为权，有吉同位，则帝相有气，诸吉咸集，作武官之职……紫微居午无刑忌甲丁己命至公卿",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D015",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天机守身命",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天机"
+            },
+            {
+              "field": "身宫.主星",
+              "operator": "contains",
+              "value": "天机"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天机善星",
+          "detail": "机谋多变性情善，逢诸吉咸集万事皆善；与天梁左右昌曲交会文清显武忠良"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天机属木，南斗第三益筭之善星也。后化气曰善……于人命，逢诸吉咸集，则万事皆善……与天梁左右，昌曲交会，文为清题，武为忠良",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D016",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天机陷地四杀冲破",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天机"
+            },
+            {
+              "NOT": {
+                "field": "命宫.庙旺",
+                "operator": "==",
+                "value": true
+              }
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "火星",
+                "铃星"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天机下局",
+          "detail": "居陷地四杀冲破为下局，主孤冤宜僧道；化忌落闲宫纵有财官亦不荣，退尽家财兼寿夭"
+        }
+      ],
+      "weight": -3,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "若居陷地，四杀冲破，是为下局。若见七杀天梁，当为僧道之清闲……天机化忌落闲宫，纵有财官亦不荣，退尽家财兼寿夭，飘蓬僧道住山中",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D017",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "机巨同临卯酉",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "天机",
+                "巨门"
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "卯",
+                "酉"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "机巨公卿",
+          "detail": "乙辛己丙生人至公卿、不富即贵；化吉者纵有财官也不终"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "巨机居卯乙辛己丙至公卿，不贵即富……巨机酉上化吉者纵有财官也不终",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D018",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "太阳居午日丽中天",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "太阳"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "==",
+              "value": "午"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日丽中天",
+          "detail": "主大富贵，有专权之贵敌国之富，庚辛丁己人富贵双全"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "太阳居午，谓之日丽中天，有专榷之贵，敌国之富……太阳居午庚辛丁己人富贵双全",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D019",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "太阳庙旺陷宫分野",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "命宫.主星",
+                  "operator": "contains",
+                  "value": "太阳"
+                },
+                {
+                  "field": "命宫.宫位",
+                  "operator": "in",
+                  "value": [
+                    "寅",
+                    "卯",
+                    "辰",
+                    "巳",
+                    "午"
+                  ]
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "命宫.主星",
+                  "operator": "contains",
+                  "value": "太阳"
+                },
+                {
+                  "field": "命宫.宫位",
+                  "operator": "in",
+                  "value": [
+                    "戌",
+                    "亥",
+                    "子"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太阳升沉",
+          "detail": "寅卯初升、辰巳升殿、午日丽中天主贵；未申偏垣先勤后惰，酉西没贵而不显，戌亥子失辉劳碌贫忙"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "在寅卯为初升，在辰巳为升殿，在午为曰丽中天，主大富贵，在未申为偏垣，作事先勤后惰，在酉为西没，贵而不显……在戍亥子为失辉",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D020",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "太阳陷加杀化忌克亲",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "太阳"
+            },
+            {
+              "NOT": {
+                "field": "命宫.庙旺",
+                "operator": "==",
+                "value": true
+              }
+            },
+            {
+              "OR": [
+                {
+                  "field": "命宫.煞星",
+                  "operator": "contains_any",
+                  "value": [
+                    "擎羊",
+                    "陀罗",
+                    "火星",
+                    "铃星"
+                  ]
+                },
+                {
+                  "field": "命宫.四化",
+                  "operator": "contains",
+                  "value": "化忌-太阳"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太阳陷克",
+          "detail": "男克父女命夫不全伤妻；化忌是非日有且目还伤"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "偏垣逢暗度，贫贱不可言。男人必克父，女命夫不全……太阳化忌是非日有目还伤",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D021",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "太阳会文昌官禄金殿传胪",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "官禄宫.主星",
+              "operator": "contains",
+              "value": "太阳"
+            },
+            {
+              "field": "官禄宫.辅星",
+              "operator": "contains",
+              "value": "文昌"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "金殿传胪",
+          "detail": "太阳会文昌于官禄，皇殿朝班富贵全美"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "太阳会文昌于官禄，皇殿朝班，富贵全美……太阳文昌在官禄皇殿朝班",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D022",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "武曲守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "武曲"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "武曲财星",
+          "detail": "性刚果决心直无毒、形小声高而量大；甲己生人福厚，入庙与昌曲同行出将入相武职最旺"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "武曲北斗第六星，属金，乃财帛宫，主财……主人刚强果断。甲巳生人福厚，出将入相",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D023",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "武曲禄马交驰",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "武曲"
+            },
+            {
+              "field": "命宫.辅星",
+              "operator": "contains_all",
+              "value": [
+                "禄存",
+                "天马"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "禄马交驰",
+          "detail": "武曲禄马交驰发财远郡，武曲迁移巨商高贾"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "与禄马交驰，发财于远郡……武曲禄马交馳發財遠郡；武曲遷移巨商高賈",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D024",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "武曲贪狼同度",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "武曲",
+                "贪狼"
+              ]
+            },
+            {
+              "NOT": {
+                "field": "命宫.煞星",
+                "operator": "contains_any",
+                "value": [
+                  "擎羊",
+                  "陀罗",
+                  "火星",
+                  "铃星"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "武贪不发少年",
+          "detail": "少年不利，三十年后方发财；加杀忌则为技艺之人"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "所谓武曲守命福非轻，贪狼不发少年人是也……武曲貪狼加殺忌技藝之人",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D025",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "武曲破军同财因财致祸",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "武曲"
+            },
+            {
+              "OR": [
+                {
+                  "field": "命宫.主星",
+                  "operator": "contains",
+                  "value": "破军"
+                },
+                {
+                  "AND": [
+                    {
+                      "field": "命宫.煞星",
+                      "operator": "contains_any",
+                      "value": [
+                        "擎羊",
+                        "陀罗",
+                        "火星"
+                      ]
+                    },
+                    {
+                      "field": "财帛宫.主星",
+                      "operator": "contains",
+                      "value": "武曲"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "武曲因祸",
+          "detail": "破军同财到手成空；遇羊陀兼火宿丧命因财；劫杀会擎羊因财持刀"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "破军同财，乡财到手而成空……武曲羊陀兼火宿喪命因財；武曲劫殺會擎羊因財持刀",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D026",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天同守身命",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天同"
+            },
+            {
+              "field": "身宫.主星",
+              "operator": "contains",
+              "value": "天同"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天同福星",
+          "detail": "谦逊温和心慈鲠直文墨精通，不忌七杀不畏诸凶，十二宫皆为福论"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "身命值之，主为人谦逊，禀性温和，心慈鲠直，文墨精通……不忌七杀相侵，不畏诸凶同度，十二宫中皆为福论",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D027",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "同梁守命寅申吏人",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "天同",
+                "天梁"
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "寅",
+                "申"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "机月同梁吏人",
+          "detail": "男得纯阳中正之心，机月同梁作吏人(吏职之命)"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "同梁守命，男得纯阳中正之心……機月同梁作吏人，命在寅申方論",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D028",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天同贪羊陀午马头带箭",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "天同",
+                "贪狼"
+              ]
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗"
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "==",
+              "value": "午"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "马头带箭",
+          "detail": "天同贪羊陀居午位为马头带箭格，镇御边疆富且贵；会四杀居巳亥为陷则残疾孤克"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天同贪羊陀居午位，丙戌镇御边疆，为马头带箭富且贵……会四杀，居巳亥为陷，残疾孤克",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D029",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "廉贞守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "廉贞"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "廉贞化囚",
+          "detail": "心狠性狂不习礼义；逢帝座执威权、遇禄存主富贵、遇文昌好礼乐、遇杀曜显武职；身命为次桃花"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "廉贞属木，北斗第五星也……化囚为杀……主人心狼性狂，不习礼义。逢帝座执威权，遇禄存主富贵，遇文昌好礼乐，遇杀曜显武职。在官禄有威权，在身命为次桃花",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D030",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "廉杀同位路上埋尸",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "廉贞",
+                "七杀"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "廉杀埋尸",
+          "detail": "路上埋尸行险遭凶；居庙旺反为积富之人，陷地化忌则贫贱残疾"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "七杀廉贞同位，路上埋尸……廉貞七殺居廟旺反為積富之人……若陷地化忌，貧賤殘疾",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D031",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "廉贞巳亥化忌火入泉乡",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "廉贞"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "巳",
+                "亥"
+              ]
+            },
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化忌-廉贞"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "火入泉乡",
+          "detail": "逢水命人化忌不为害；日月陷地化忌主大凶；遇白虎流年则刑杖难逃"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "如廉贞在亥化忌是也，火入泉乡，又逢水命人化忌也不为害……廉貞白虎刑杖難逃",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D032",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "廉贞喜天相化恶",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "廉贞"
+            },
+            {
+              "NOT": {
+                "field": "命宫.主星",
+                "operator": "contains",
+                "value": "天相"
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "廉贞浪荡",
+          "detail": "最喜天相同宫能化其恶；与贪狼同度巳亥则男多浪荡女多淫"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "此星最喜天相同宫能化其恶……廉貞七殺居巳亥流蕩天涯",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D033",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天府守命禄库",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "天府"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天府禄库",
+          "detail": "相貌清奇温良端雅，为禄库命逢终是富；能制羊陀为从化火铃为福"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天府乃南斗延寿解厄之星……能制羊陀为从，能化火铃为福……天府为禄库，命逢终是富是也",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D034",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天府日昌曲禄武巨富",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天府"
+            },
+            {
+              "OR": [
+                {
+                  "field": "命宫.辅星",
+                  "operator": "contains_all",
+                  "value": [
+                    "文昌",
+                    "文曲"
+                  ]
+                },
+                {
+                  "field": "命宫.辅星",
+                  "operator": "contains_all",
+                  "value": [
+                    "禄存",
+                    "武曲"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天府巨富",
+          "detail": "与太阳昌曲会必登首选，逢禄存武曲必有巨万之富；不喜四杀冲破"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "与太阳昌曲会，必登首选；逢禄存武曲，必有巨万之富……不喜四杀冲破，虽无宫贵，亦主财田富足",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D035",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "府相朝垣午戌",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天府"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "午",
+                "戌"
+              ]
+            },
+            {
+              "field": "三方四正.主星",
+              "operator": "contains",
+              "value": "天相"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "府相朝垣",
+          "detail": "天府居午戌天相来朝，甲人一品之贵千钟食禄；天府昌曲左右则高第恩荣"
+        }
+      ],
+      "weight": 3,
+      "priority": 8,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天府居午戌天相來朝甲人一品之貴；府相朝垣千鍾食祿……天府昌曲左右高第恩榮",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D036",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "太阴居子水澄桂萼",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "太阴"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "==",
+              "value": "子"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "水澄桂萼",
+          "detail": "得清要之职忠谏之材，丙丁生人富贵忠良，夜生人合局"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "太阴居子，号曰水澄桂萼，得清要之职，忠谏之材……太陰居子丙丁富貴忠良，夜生人合局",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D037",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "太阴庙陷分野",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "命宫.主星",
+                  "operator": "contains",
+                  "value": "太阴"
+                },
+                {
+                  "field": "命宫.庙旺",
+                  "operator": "==",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "命宫.主星",
+                  "operator": "contains",
+                  "value": "太阴"
+                },
+                {
+                  "NOT": {
+                    "field": "命宫.庙旺",
+                    "operator": "==",
+                    "value": true
+                  }
+                },
+                {
+                  "field": "命宫.煞星",
+                  "operator": "contains_any",
+                  "value": [
+                    "擎羊",
+                    "陀罗",
+                    "火星",
+                    "铃星"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太阴阳晴",
+          "detail": "酉戌亥子丑得垣主富贵；卯辰巳午未陷地落弱，遇羊陀火铃则酒色邪淫"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "以卯辰、巳午未为陷地，以酉戍亥子丑为得垣……若居陷地，则落弱之名",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D038",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "太阴会文曲妻宫蟾宫折桂",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "夫妻宫.主星",
+              "operator": "contains",
+              "value": "太阴"
+            },
+            {
+              "field": "夫妻宫.辅星",
+              "operator": "contains",
+              "value": "文曲"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "蟾宫折桂",
+          "detail": "太阴会文曲于妻宫，蟾宫折桂文章令盛；太阴羊陀必主人离财散"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "太阴会文曲于妻宫，蟾宫折桂，文章令盛……太陰羊陀必主人離財散",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D039",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "火贪铃贪骤发",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "贪狼"
+            },
+            {
+              "field": "命宫.庙旺",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "三方四正.煞星",
+              "operator": "contains_any",
+              "value": [
+                "火星",
+                "铃星"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "火贪铃贪",
+          "detail": "贪狼入庙遇火铃于庙旺，富贵全美指日立边庭，中年后骤发"
+        }
+      ],
+      "weight": 3,
+      "priority": 8,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "惟会火铃，富贵全美……若得贪狼会，旺地贵无伦。封侯居上将，勋业著边庭……贪狼遇铃火四墓宫豪富家资侯伯贵",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D040",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "泛水桃花贪居亥子",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "贪狼"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "亥",
+                "子"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "泛水桃花",
+          "detail": "贪居亥子为泛水桃花，或与羊陀同度，男女贪花迷酒丧身；刑遇贪狼号风流彩杖"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "贪居亥子，名为泛水桃花；刑遇贪狼，号曰风流彩杖……貪遇羊陀居亥子名為泛水桃花，男女貪花，迷酒喪身",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D041",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "贪狼七杀同守身命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_all",
+          "value": [
+            "贪狼",
+            "七杀"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "贪穿窬偷香",
+          "detail": "男有穿窬之体女有偷香之态；诸吉压不能为福，众凶聚愈长其奸"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "与七杀同守身命，男有穿窬之体，女有偷香之态，诸吉压，不能为福，众凶聚，愈长其奸",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D042",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "贪武同守无吉先贫后富",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "贪狼",
+                "武曲"
+              ]
+            },
+            {
+              "NOT": {
+                "field": "三方四正.主星",
+                "operator": "contains_any",
+                "value": [
+                  "紫微",
+                  "太阳",
+                  "太阴"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "贪武后富",
+          "detail": "贪武先贫而后富利己损人；若命有紫微日月左右昌曲、限逢权禄科则贵显"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "貪武先貧而後富，利己損人，命有紫微日月左右昌曲，限逢綠權科，則貴顯論",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D043",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "巨门守身命是非",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "巨门"
+            },
+            {
+              "field": "身宫.主星",
+              "operator": "contains",
+              "value": "巨门"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "巨门暗星",
+          "detail": "一生招口舌是非、面是背非、六亲寡合、交人初善终恶；会太阳则吉凶相半"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "巨门……化气为暗，在身命一生招口舌之非……其性则面是背非，六亲寡合，交人初善终恶……会太阳则吉凶相半",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D044",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "巨门子午石中隐玉",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "巨门"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "子",
+                "午"
+              ]
+            },
+            {
+              "field": "三方四正.四化",
+              "operator": "contains_any",
+              "value": [
+                "化科",
+                "化权",
+                "化禄"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "石中隐玉",
+          "detail": "巨门子午逢科权禄为石中隐玉格，富而子贵终身福厚，辛癸人上格；会羊陀火铃化忌则男盗女娼"
+        }
+      ],
+      "weight": 3,
+      "priority": 8,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "巨門子午二宮逢……三合化吉科權祿，官高極品衣紫袍……石中隱玉福興隆，富而子貴，辛癸人上格",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D045",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "巨日同宫寅申",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "巨门",
+                "太阳"
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "寅",
+                "申"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "巨日食禄驰名",
+          "detail": "巨日寅申立命食禄驰名先驰明后食禄；逢禄存则解其厄"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "巨日寅宮立命申先馳名而食祿……遇帝座则制其强，逢禄存则解其厄",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D046",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天相守命化印",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "天相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天相印星",
+          "detail": "言语诚实事不虚为化气曰印；昌曲左右加会则位至公卿衣食丰足"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天相属水，南斗第五星也……化气曰印……主人衣食丰足，昌曲左右加会，位至公卿",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D047",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天相廉贞擎羊刑杖",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天相"
+            },
+            {
+              "field": "三方四正.主星",
+              "operator": "contains",
+              "value": "廉贞"
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天相刑杖",
+          "detail": "天相遇廉贞擎羊多招刑杖难逃终身不美；陷地遇贪廉武破羊陀杀凑则巧艺安身"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天相廉貞擎羊來多招刑杖難逃，終身不美招橫禍，只宜僧道……陷地贪廉、武破，羊陀杀凑，巧艺安身",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D048",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "刑囚夹印",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "天相",
+                "廉贞"
+              ]
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "天刑"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "刑囚夹印",
+          "detail": "天刑廉贞与天相同缠为刑囚夹印格，刑杖惟司；天相能兼化廉贞之恶"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "刑囚夾印，刑杖惟司……虽佐日月之光，兼化廉贞之恶",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D049",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天梁守命寿星",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "天梁"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天梁荫星",
+          "detail": "性情磊落厚重温谦循直无私临事果决为寿星；逢昌曲左右加会位至台省"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天梁属土，南斗第二星也。司寿化气，为荫为福……于人命则性情磊落……得昌曲左右加会，位至台省",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D050",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "天梁会太阳福德极品",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天梁"
+            },
+            {
+              "field": "福德宫.主星",
+              "operator": "contains",
+              "value": "太阳"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天梁极品",
+          "detail": "会太阳于福德乃为万今声名题于王室；天梁居午位官资清显朝堂，丁己癸人合格"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "会太阳于福德，乃为万今，声名题于王室，职位临于风宪……天梁居午位官資清顯朝堂，丁己癸人合格",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D051",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "机梁同宫辰戌善谈兵",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "天梁",
+                "天机"
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "辰",
+                "戌"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "机梁善谈兵",
+          "detail": "机梁同宫善谈兵居翰苑；加吉曜富贵慈祥，加刑忌则僧道清闲"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "與天梁會合善談兵……機梁守命，加吉曜，富貴慈祥；加刑忌，僧道",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D052",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "七杀守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "七杀"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "七杀上将",
+          "detail": "性情刚急作事进退沈吟定历艰辛；庙旺遇紫微则化权、遇火铃则长其威"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "七杀，南斗第六星也，属火金，乃斗中之上将……主于身，定历艰辛……遇紫微则化权降福；遇火铃则为杀长其威",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D053",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "七杀朝斗格寅申子午",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "七杀"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "寅",
+                "申",
+                "子",
+                "午"
+              ]
+            },
+            {
+              "field": "命宫.辅星",
+              "operator": "contains_all",
+              "value": [
+                "天魁",
+                "天钺",
+                "左辅",
+                "右弼",
+                "文昌"
+              ]
+            },
+            {
+              "field": "三方四正.四化",
+              "operator": "contains_any",
+              "value": [
+                "化权",
+                "化禄"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "七杀朝斗",
+          "detail": "七杀寅申子午守命会魁钺左右文昌权禄，四夷拱手爵禄荣昌食万钟"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "七殺寅、申、子、午宮，四夷拱手服英雄。魁鉞左右文昌會，權祿名高食萬鐘……為七殺朝斗格",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D054",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "七杀入陷无制少年恶死",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "七杀"
+            },
+            {
+              "NOT": {
+                "field": "命宫.庙旺",
+                "operator": "==",
+                "value": true
+              }
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "火星",
+                "铃星"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "杀居绝地",
+          "detail": "杀居陷地凶祸如抱虎眠，杀强无制伏少年恶死到黄泉；杀居绝天天年夭似颜回"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "杀居绝地，天年夭似颜回……殺居陷地不堪言，凶禍猶如抱虎眠。若是殺強無制伏，少年惡死到黃泉",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D055",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "破军守命",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "破军"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "破军耗星",
+          "detail": "暴凶狡诈与人寡合动輒损人；居子午入庙，六癸六甲生人合格主富贵"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "破军属水，北斗弟七星也……化气曰耗。主人暴凶狡诈，其性奸猾，与人寡合……惟六癸、六甲生人合格，主富贵",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D056",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "破军民子午入庙无杀三公",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "破军"
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "子",
+                "午"
+              ]
+            }
+          ]
+        },
+        {
+          "NOT": {
+            "field": "命宫.煞星",
+            "operator": "contains_any",
+            "value": [
+              "擎羊",
+              "陀罗",
+              "火星",
+              "铃星"
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "破军三公",
+          "detail": "破军民子午宫无杀官资清显至三公，甲癸生人合格；破军暗巨同乡水中作冢"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "破軍子午宮無殺官資清顯至三公，甲癸生人合格……破軍暗巨同鄉水中作冢",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D057",
+      "domain": "ziwei",
+      "category": "zhuxing",
+      "name": "破军廉贞火铃官非",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "破军"
+            },
+            {
+              "field": "三方四正.主星",
+              "operator": "contains",
+              "value": "廉贞"
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "火星",
+                "铃星"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "破军波动",
+          "detail": "破军与廉贞火铃同度决起官非奔波动荡；遇文曲入水域则残疾离乡；惟天梁可制其恶天禄可解其狂"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "与廉贞、火铃同度，则决起官方……与文曲入于水域，残疾离乡……惟天梁可制其恶，天禄可解其狂",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D058",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "文昌守身命科甲",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "文昌"
+            },
+            {
+              "field": "身宫.辅星",
+              "operator": "contains",
+              "value": "文昌"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "文昌科甲",
+          "detail": "主科甲聪明儒雅博文广记一举成名；陷地先难后易，加擎羊火铃为巧艺之人"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "文昌主科甲，守身命，主人闲儒雅，清秀魁梧，博文广记，机变异常，一举成名，披绯衣紫，福寿双全。纵四杀冲破，不为下贱",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D059",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "文曲守命巳酉丑",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "OR": [
+                {
+                  "field": "命宫.主星",
+                  "operator": "contains",
+                  "value": "文曲"
+                },
+                {
+                  "field": "身宫.辅星",
+                  "operator": "contains",
+                  "value": "文曲"
+                }
+              ]
+            },
+            {
+              "field": "命宫.宫位",
+              "operator": "in",
+              "value": [
+                "巳",
+                "酉",
+                "丑"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "文曲科第",
+          "detail": "文曲居巳酉丑宫科第之客侯伯官贵；与贪狼火星同垣三合者将相之命；陷地遇巨门羊陀则夭折"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "文曲……主科甲文章之宿……喜六甲生人居巳酉丑宫，侯伯官贵。与贪狼火星同垣三合者，将相之格",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D060",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "辅弼夹命贵格",
+      "conditions": [
+        {
+          "field": "命宫.辅星",
+          "operator": "contains_all",
+          "value": [
+            "左辅",
+            "右弼"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "辅弼夹命",
+          "detail": "左辅右弼夹命为贵格一呼百诺居上品，不贵则大富；单守命宫无正曜则离宗庶出"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "左右夾命為貴格……若不貴則大富……輔弼單守命宮，離宗庶出",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D061",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "魁钺坐贵向贵",
+      "conditions": [
+        {
+          "field": "命宫.辅星",
+          "operator": "contains_all",
+          "value": [
+            "天魁",
+            "天钺"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "坐贵向贵",
+          "detail": "魁钺坐命守身少年登科及第遇贵人成就扶助，虽不富贵亦主聪明秀丽"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "魁、钺斗中司科之星，人命坐贵向贵，或得左右吉聚，无不富贵……必得贵人成就扶助",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D062",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "禄存守命看财奴",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "禄存"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "禄存守命",
+          "detail": "主贵爵掌人寿基慈厚信直；与紫府廉同会上局；独守无吉化则为看财奴，最嫌落陷空"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "禄存……主人贵爵，掌人寿基……若独守命而无吉化，乃看财奴耳。逢吉逞其权，遇恶败其迹。最嫌落于陷空，不能为福",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D063",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "禄马交驰发财远郡",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains_all",
+          "value": [
+            "禄存",
+            "天马"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "禄马交驰",
+          "detail": "禄存与天马同宫为禄马交驰/折鞭马，发财远郡白手起家；马遇空亡则终身奔走"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "如与禄存同宫，谓之禄马交驰，又曰折鞭马……祿馬最喜交馳……馬遇空亡終身奔走",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D064",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "擎羊守身命",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "擎羊"
+            },
+            {
+              "field": "身宫.煞星",
+              "operator": "contains",
+              "value": "擎羊"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "擎羊性暴",
+          "detail": "性粗行暴孤单翻恩为怨；入庙(辰戌丑未)性刚果决主权贵，居卯酉陷宫作祸兴殃刑克极甚"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "擎羊……守身命，性粗行暴，孤单则视亲为疏，翻恩为怨，入庙性刚果决，机谋好勇，主权贵……居卯酉作祸兴殃，刑克极甚",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D065",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "陀罗守身命",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "陀罗"
+            },
+            {
+              "field": "身宫.煞星",
+              "operator": "contains",
+              "value": "陀罗"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "陀罗暗损",
+          "detail": "心行不正暗里长流作事进退横成横破；与贪狼同度因酒色成痨，居疾厄则暗疾缠绵"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "陀罗……守身命，心行不正，暗里长流，性刚威猛，作事进退，横成横破……与贪狼同度，因酒色以成痨……居疾厄，暗疾缠绵",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D066",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "火贪同度庙旺封侯",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "火星",
+                "贪狼"
+              ]
+            },
+            {
+              "field": "命宫.庙旺",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "火贪封侯",
+          "detail": "火星与贪狼同度庙旺指日立边庭封侯上将；与羊陀会则襁褓灾迍过房出外养"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "若得贪狼会，旺地贵无伦。封侯居上将，勋业著边庭……更与羊陀会，襁褓必灾迍。过房出外养，二姓可延生",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D067",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "铃贪会照指日立边庭",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "铃星"
+            },
+            {
+              "field": "三方四正.主星",
+              "operator": "contains",
+              "value": "贪狼"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "铃贪贵显",
+          "detail": "铃星与贪狼会指日立边庭庙地财官贵；羊陀凑合则形不清孤单弃祖残伤带疾"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "若与贪狼会，指日立边庭。庙地财官贵，陷地主孤贫。羊陀若凑合，其形大不清。孤单并弃祖，残伤带疾人",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D068",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "天空地劫守身命破财",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天空"
+            },
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "地劫"
+            },
+            {
+              "field": "身宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "天空",
+                "地劫"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "劫空破财",
+          "detail": "天空地劫守身命定主破财，遇吉则吉遇凶则凶；二限逢之必凶，堆金积玉也须贫"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "二星守身命，遇吉则吉，遇凶则凶……大抵二星俱不宜见，定主破财。二限逢之必凶……堆金积玉也须贫",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D069",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "天刑守命孤刑",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "contains",
+          "value": "天刑"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天刑孤刑",
+          "detail": "天刑守命不为僧道定主孤刑不贫则夭父母不得全；入庙反为天喜神遇昌曲献策到王庭"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天刑守命，身不为僧道，定主孤刑，不贫则夭，父母不得全……入庙则吉……昌曲吉星来凑合，定然献策到王庭",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D070",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "天姚守身命风流",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.主星",
+              "operator": "contains",
+              "value": "天姚"
+            },
+            {
+              "field": "身宫.杂曜",
+              "operator": "contains",
+              "value": "天姚"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天姚阴毒",
+          "detail": "心性阴毒多疑惑风流；入庙旺主富贵多奴，会恶星则破家因色犯刑"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天姚守身命，心性阴毒，多疑惑，善颜色风流……入庙旺，主富贵，多奴……会恶星，破家败产，因色犯刑",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D071",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "天哭天虚临命",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.杂曜",
+              "operator": "contains_any",
+              "value": [
+                "天哭",
+                "天虚"
+              ]
+            },
+            {
+              "field": "父母宫.杂曜",
+              "operator": "contains_any",
+              "value": [
+                "天哭",
+                "天虚"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "哭虚破荡",
+          "detail": "天哭天虚临命或加临父母宫，破荡卖田庄穷独带刑伤六亲多不足；二限逢之哀哭断肠"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "哭虚为恶曜，临命最非常。加临父母内，破荡卖田庄。若教身命陷，穷独带刑伤……二限若逢之，哀七哭断肠",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D072",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "天伤天使夹岁限",
+      "conditions": [
+        {
+          "field": "岁限.夹宫",
+          "operator": "contains_all",
+          "value": [
+            "天伤",
+            "天使"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "伤使夹限",
+          "detail": "天伤天使夹岁限(身与岁限夹伤使中间)，更加恶曜多凶，夫子绝粮石崇破家"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "天伤安在奴仆宫，天使安在疾厄宫。身与岁限夹在伤使中间，谓之加夹地更加恶曜多凶……石崇富贵破家亡",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D073",
+      "domain": "ziwei",
+      "category": "fuyao",
+      "name": "红鸾天喜临限",
+      "conditions": [
+        {
+          "field": "岁限.杂曜",
+          "operator": "contains_any",
+          "value": [
+            "红鸾",
+            "天喜"
+          ]
+        },
+        {
+          "field": "命主年龄",
+          "operator": "<",
+          "value": 30
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "鸾喜婚姻",
+          "detail": "红鸾天喜临限年少主婚姻喜事，三十年前为吉曜；老人必主丧其妻五十年后不相宜"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "年少婚姻喜事奇，老人必主丧其妻，三十年前为吉曜，五十年后不相宜",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D074",
+      "domain": "ziwei",
+      "category": "shayao",
+      "name": "羊陀夹命夹忌败局",
+      "conditions": [
+        {
+          "field": "命宫.夹宫",
+          "operator": "contains_all",
+          "value": [
+            "擎羊",
+            "陀罗"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "羊陀夹忌",
+          "detail": "擎羊陀罗夹命为败局，命岁凶孤贫刑克；羊陀夹忌尤凶"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "羊陀夾忌為敗局……命歲凶孤貧刑克",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D075",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化禄守身命官禄科权相逢",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化禄"
+            },
+            {
+              "field": "身宫.四化",
+              "operator": "contains",
+              "value": "化禄"
+            },
+            {
+              "field": "官禄宫.四化",
+              "operator": "contains",
+              "value": "化禄"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化禄大臣",
+          "detail": "化禄守身命官禄与科权相逢必作大臣之职；小限逢主进财入仕之喜，大限十年吉庆"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "禄为福德之神，守身命官禄之位，科权相逢，必作大臣之职。小限逢之，主进财入仕之喜，大限十年，吉庆无疑",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D076",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化禄逢恶曜亦不为害",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化禄"
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "火星",
+                "铃星"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化禄不畏恶",
+          "detail": "化禄逢羊陀火忌冲照亦不为害；女人吉凑作命妇，杀凑平常"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "恶曜来临，并羊陀火忌冲照，亦不为害。女人吉凑作命妇。二限逢之，内外威严，杀凑平常",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D077",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化禄迁移子午对朝天子",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "迁移宫.四化",
+              "operator": "contains",
+              "value": "化禄"
+            },
+            {
+              "field": "迁移宫.宫位",
+              "operator": "in",
+              "value": [
+                "子",
+                "午"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化禄迁移文章冠世",
+          "detail": "化禄居迁移子午位，对朝天子夫子文章冠世(命太阳同化禄在午合此格)"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "化祿子午位遷移，夫子文章冠世，遷移在子午宮為對面朝天子",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D078",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "双禄重逢夹命",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains_all",
+              "value": [
+                "化禄",
+                "化禄"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "命宫.夹宫",
+          "operator": "contains",
+          "value": "禄存"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "双禄重逢",
+          "detail": "禄存与化禄重逢夹命双禄重逢终身富贵金满屋；禄逢冲破则吉处藏凶"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "夹禄拱贵，并化禄，命里重逢金满屋……祿逢衝破，吉處藏凶……雙祿重啟終身富貴",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D079",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "大限逢化禄",
+      "conditions": [
+        {
+          "field": "大限.四化",
+          "operator": "contains",
+          "value": "化禄"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大限化禄",
+          "detail": "大限逢化禄爵位高迁、常庶相逢当大贵、蓄积广金银"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "限中若遇禄来临，爵位高迁佐圣明，常庶相逢当大贵，自然蓄积广金银",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D080",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化权守身命科禄相迎",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化权"
+            },
+            {
+              "field": "身宫.四化",
+              "operator": "contains",
+              "value": "化权"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化权出将入相",
+          "detail": "化权守身命与科禄相迎出将入相文章冠世；小限相逢无有不吉，大限十年必然遂志"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "权星掌判生杀之神，守身命科禄相，出将入相，科权相逢，必定文章冠世……小限相逢，无有不吉，大限十年，必然遂志",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D081",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化权会巨门武曲掌兵符",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化权"
+            },
+            {
+              "field": "三方四正.主星",
+              "operator": "contains_all",
+              "value": [
+                "巨门",
+                "武曲"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化权掌兵",
+          "detail": "化权会巨门武曲必专大事掌握兵符三边镇守"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "会巨门武曲必专大事，掌握兵符……更值巨门兼武曜，三边镇守掌兵符",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D082",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化权逢羊陀耗使劫空",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化权"
+            },
+            {
+              "field": "三方四正.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "地劫",
+                "天空"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化权贻累",
+          "detail": "化权逢羊陀耗使劫空贻累官灾贬谪；女人得之内外称意可作命妇"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "如逢羊陀、耗使劫空，听说贻累，官灾贬谪。女人得之，内外称意，可作命妇",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D083",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化权遇武贪临限",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "大限.四化",
+              "operator": "contains",
+              "value": "化权"
+            },
+            {
+              "field": "大限.主星",
+              "operator": "contains_all",
+              "value": [
+                "武曲",
+                "贪狼"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "权遇武贪",
+          "detail": "化权遇武贪临限，作事求谋尽得成，士子名高添福禄庶人积金银"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "权星若遇武贪临，作事求谋尽得成，士子名高添福禄，庶人得此积金银",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D084",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "权禄重逢财官双美",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains_any",
+              "value": [
+                "化权",
+                "化禄"
+              ]
+            },
+            {
+              "field": "三方四正.四化",
+              "operator": "contains_any",
+              "value": [
+                "化权",
+                "化禄"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "权禄重逢",
+          "detail": "权禄重逢财官双美处世荣华；权禄守奴仆位纵然官贵也奔波"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "權祿重逢財官雙美……權祿守財福之位處世榮華；權祿吉星奴僕位縱然官貴也奔波",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D085",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化科守身命权禄相逢",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化科"
+            },
+            {
+              "field": "身宫.四化",
+              "operator": "contains",
+              "value": "化科"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化科宰臣",
+          "detail": "化科守身命与权禄相逢宰臣之贵；遇恶曜亦为文章秀士群英师范"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "科星上界应试，主掌文墨之星，守身命权禄相逢，宰臣之贵。如逢恶曜，亦为文章秀士，可作群英师范",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D086",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化科喜逢魁钺",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化科"
+            },
+            {
+              "field": "命宫.辅星",
+              "operator": "contains_all",
+              "value": [
+                "天魁",
+                "天钺"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化科中科第",
+          "detail": "化科最喜逢魁钺必中科第龙门一跃；嫌截路空亡旬空天空"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "主人聪明通达，最喜逢魁钺，必中科第，作宰臣之职……但嫌截路空亡、旬空、亦畏忌天空",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D087",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化科陷地苗而不秀",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化科"
+            },
+            {
+              "NOT": {
+                "field": "命宫.庙旺",
+                "operator": "==",
+                "value": true
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化科陷地",
+          "detail": "化科居陷地凶乡灯火辛勤苗而不秀；虽四杀冲破亦主富贵"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "科星居於陷地，燈火辛勤……科名陷於凶神苗而不秀……雖四殺衝破，亦為富貴",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D088",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化科二限遇文昌",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "岁限.四化",
+              "operator": "contains",
+              "value": "化科"
+            },
+            {
+              "field": "岁限.辅星",
+              "operator": "contains",
+              "value": "文昌"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "科限遇昌",
+          "detail": "化科二限遇文昌，士子逢之姓名香僧道庶人多富贵百谋百遂"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "科星二限遇文昌，士子逢之姓名香，僧道庶人多富贵，百谋百遂事英扬",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D089",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "流年昌曲拱日决然高中",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "流年.辅星",
+              "operator": "contains_any",
+              "value": [
+                "文昌",
+                "文曲"
+              ]
+            },
+            {
+              "field": "流年.四化",
+              "operator": "contains_any",
+              "value": [
+                "化禄",
+                "化科"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "流年科甲高中",
+          "detail": "流年遇昌曲三合拱照太阳与禄魁钺左右，决然高中科名"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "命逢流年昌曲，为科名科甲……三合拱照太阳，又照流年禄小限太岁逢魁钺，左右台座……决然高中无疑",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D090",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化忌守身命一生不顺",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化忌"
+            },
+            {
+              "field": "身宫.四化",
+              "operator": "contains",
+              "value": "化忌"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化忌多管",
+          "detail": "化忌守身命一生不顺招是非；小限逢之一年不足，大限十年悔吝"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "忌为多管之神，守身命，一生不顺，小限逢之，二年不足，大限十年悔吝",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D091",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "二限太岁交临化忌蹭蹬",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "岁限.四化",
+              "operator": "contains",
+              "value": "化忌"
+            },
+            {
+              "field": "流年.四化",
+              "operator": "contains",
+              "value": "化忌"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "二限忌蹭蹬",
+          "detail": "二限太岁交临化忌断然蹭蹬；文人不耐久，商贾技艺人皆不宜利"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "二限太岁交临，断然蹭蹬。文人不耐久，武人纵有官灾，口舌不妨，虽商贾枝艺人皆不宜利",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D092",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化忌会吉又兼四杀不住财",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化忌"
+            },
+            {
+              "field": "三方四正.主星",
+              "operator": "contains_any",
+              "value": [
+                "紫微",
+                "天府",
+                "文昌",
+                "文曲"
+              ]
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "火星",
+                "铃星"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌会吉不住财",
+          "detail": "化忌与紫府昌曲左右科权禄同宫又兼四杀共处，即发亦不住财功名不就一生奔波带疾"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "如会紫府、昌曲，左右科权，禄与忌同宫，又兼四杀共处，即发，亦不住财，功名亦不成就……主奔波带疾",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D093",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "化忌入庙反为吉",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化忌"
+            },
+            {
+              "OR": [
+                {
+                  "AND": [
+                    {
+                      "field": "命宫.主星",
+                      "operator": "contains",
+                      "value": "天同"
+                    },
+                    {
+                      "field": "命宫.宫位",
+                      "operator": "==",
+                      "value": "戌"
+                    }
+                  ]
+                },
+                {
+                  "AND": [
+                    {
+                      "field": "命宫.主星",
+                      "operator": "contains",
+                      "value": "巨门"
+                    },
+                    {
+                      "field": "命宫.宫位",
+                      "operator": "==",
+                      "value": "辰"
+                    }
+                  ]
+                },
+                {
+                  "AND": [
+                    {
+                      "field": "命宫.主星",
+                      "operator": "contains",
+                      "value": "太阳"
+                    },
+                    {
+                      "field": "命宫.宫位",
+                      "operator": "in",
+                      "value": [
+                        "寅",
+                        "卯",
+                        "辰",
+                        "巳",
+                        "午"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "AND": [
+                    {
+                      "field": "命宫.主星",
+                      "operator": "contains",
+                      "value": "太阴"
+                    },
+                    {
+                      "field": "命宫.宫位",
+                      "operator": "in",
+                      "value": [
+                        "酉",
+                        "戌",
+                        "亥",
+                        "子"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌星入庙反佳",
+          "detail": "天同在戌化忌(丁生)、巨门在辰化忌(辛生)遇吉反佳；太阳寅卯辰巳午、太阴酉戌亥子化忌亦为福论，纵有官灾亦不伤"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "然天同在戌化忌，丁生人遇吉，巨门在辰化忌辛生人返佳……忌星入庙反为佳，纵有官灾亦不伤",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D094",
+      "domain": "ziwei",
+      "category": "sihua",
+      "name": "忌星落陷闲宫恶杀",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.四化",
+              "operator": "contains",
+              "value": "化忌"
+            },
+            {
+              "NOT": {
+                "field": "命宫.庙旺",
+                "operator": "==",
+                "value": true
+              }
+            },
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "火星",
+                "铃星"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌落陷作祸",
+          "detail": "忌星落陷在闲宫恶杀加临作祸凶，财散人离多疾苦伤官退职孝服重逢"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "忌星落陷在闲宫，恶杀加临作祸凶，财散人离多疾苦，伤官退职孝重逢",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D095",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "命宫无正曜二姓延生",
+      "conditions": [
+        {
+          "field": "命宫.主星",
+          "operator": "==",
+          "value": []
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "命无正曜",
+          "detail": "命宫无正曜二姓延生(过房出赘随母继拜入赘或庶母所生)，须看对宫迁移星曜与三方吉拱"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "命無正曜二姓延生，或過房出繼隨母繼拜入贅，或又是庶母所生者……如命宮無正曜者，財官二宮有吉星拱照，富貴全美",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D096",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "兄弟宫巨门兄弟无义",
+      "conditions": [
+        {
+          "field": "兄弟宫.主星",
+          "operator": "contains",
+          "value": "巨门"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "巨到二宫",
+          "detail": "兄弟宫见巨门兄弟无义骨肉参商；见羊陀火铃空劫则克害招怨"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "巨到二宫，必是兄弟无义……祿存相生有兄弟見殺克害招怨",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D097",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "夫妻宫贪狼三次新郎",
+      "conditions": [
+        {
+          "field": "夫妻宫.主星",
+          "operator": "contains",
+          "value": "贪狼"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "夫妻贪狼",
+          "detail": "夫妻宫贪狼同度男女不得美三次作新郎，入庙宜迟娶；加羊陀火铃主生离"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "贪狼男女不得美，三次作新郎，入庙宜迟娶，廉贞同主克，加羊陀火铃主生离",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D098",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "夫妻宫太阴入庙加昌曲",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "夫妻宫.主星",
+              "operator": "contains",
+              "value": "太阴"
+            },
+            {
+              "field": "夫妻宫.庙旺",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "夫妻宫.辅星",
+              "operator": "contains_any",
+              "value": [
+                "文昌",
+                "文曲"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "夫妻太阴美",
+          "detail": "夫妻宫太阴入庙加昌曲夫妇贵美极美；加羊陀火铃空劫耗忌不克但主生离"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "太阴入庙男女皆贵美夫妇，加昌曲极美，加羊陀火铃空劫耗忌，不克主生离，太阳同谐老",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D099",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "子女宫加杀刑克",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "子女宫.煞星_count",
+              "operator": ">=",
+              "value": 2
+            },
+            {
+              "field": "子女宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "火星",
+                "铃星",
+                "地劫",
+                "天空"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "子女刑克",
+          "detail": "子女宫加羊陀火铃空劫杀忌，子女有刑克子少送终；本宫无星则专看对宫田宅星曜定子女数"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "若加羊陀火铃空劫杀忌主生子女有刑克……如本宫无星曜专看对宫有何星宿主有几子",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D100",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "子女宫七杀孤克",
+      "conditions": [
+        {
+          "field": "子女宫.主星",
+          "operator": "contains",
+          "value": "七杀"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "子女七杀孤",
+          "detail": "子女宫七杀守照主孤或强横败家之子，见羊陀火铃空劫全无子"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "七杀主孤一人之分……纵有不成器，必强横败家之子……见羊陀火铃空劫全无",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D101",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "财帛武曲化巨万",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "财帛宫.主星",
+              "operator": "contains",
+              "value": "武曲"
+            },
+            {
+              "field": "财帛宫.庙旺",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财帛武曲丰足",
+          "detail": "财帛宫武曲化吉有巨万家资丰足；武曲贪狼同财帛位横发资财但极怕空亡"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "武曲丰足化吉有巨万家资……武曲貪狼財宅橫發資財……加羊陀火铃不聚极怕空亡",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D102",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "财帛劫空耗忌聚散无常",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "财帛宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "地劫",
+                "天空"
+              ]
+            },
+            {
+              "field": "财帛宫.四化",
+              "operator": "contains_any",
+              "value": [
+                "化忌"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财帛劫空贫贱",
+          "detail": "财帛宫遇劫空耗忌聚散无常常生贫贱；禄存守财宅则堆金积玉"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "諸凶照財帛，聚散無常……劫空臨財福之鄉生來貧賤……祿存守於財宅堆金積玉",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D103",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "疾厄羊陀眼目昏盲",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "疾厄宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗"
+              ]
+            },
+            {
+              "field": "疾厄宫.煞星_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "疾厄羊陀",
+          "detail": "疾厄宫羊陀守照眼目昏盲；巨暗同垣于身命疾厄则疾厄沉困尪羸"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "羊陀守疾厄，眼目昏盲……忌暗同居身命疾厄，沉困尪羸",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D104",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "迁移火铃长途寂寞",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "迁移宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "火星",
+                "铃星"
+              ]
+            },
+            {
+              "field": "迁移宫.主星",
+              "operator": "contains_any",
+              "value": [
+                "天梁",
+                "天同"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "迁移火铃/财荫",
+          "detail": "迁移宫火铃同度长途寂寞；财荫(天梁天同等荫星)坐迁移则巨商高贾"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "火鈴到遷移，長途寂寞……財蔭坐於遷移，巨商高賈",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D105",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "迁移紫微同左右贵扶",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "迁移宫.主星",
+              "operator": "contains",
+              "value": "紫微"
+            },
+            {
+              "field": "迁移宫.辅星",
+              "operator": "contains_any",
+              "value": [
+                "左辅",
+                "右弼"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "迁移紫微贵人",
+          "detail": "迁移宫紫微同左右出外贵人扶持发福；破军同在外劳心不宁加羊陀火铃奔驰巧艺"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "紫微同左右出外贵人扶持发福……破军出外劳心不宁……加羊陀火铃，奔驰巧艺走途中",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D106",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "奴仆禄存奔驰七杀欺主",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "奴仆宫.主星",
+              "operator": "contains",
+              "value": "禄存"
+            },
+            {
+              "field": "奴仆宫.主星",
+              "operator": "contains",
+              "value": "七杀"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "奴仆禄杀",
+          "detail": "奴仆宫禄存守之禄居奴仆纵有官也奔驰；七杀守奴仆则欺主多盗家财"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "祿居奴僕，縱有官也奔馳……七殺欺主有剛強之僕，多盜家財",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D107",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "官禄紫府富贵刑杀枷锁",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "官禄宫.主星",
+              "operator": "contains_all",
+              "value": [
+                "紫微",
+                "天府"
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "官禄宫.主星",
+                  "operator": "contains",
+                  "value": "廉贞"
+                },
+                {
+                  "field": "官禄宫.煞星",
+                  "operator": "contains_any",
+                  "value": [
+                    "擎羊",
+                    "陀罗"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官禄紫府/刑杀",
+          "detail": "官禄宫遇紫府富而且贵；刑杀同廉贞于官禄则枷锁难逃枷杻囚徒"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "官祿遇紫府，富而且貴……刑殺同廉貞於官祿，枷杻難逃；大耗會廉貞於官祿，枷杻囚徒",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D108",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "田宅破军先破后成",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "田宅宫.主星",
+              "operator": "contains",
+              "value": "破军"
+            },
+            {
+              "field": "田宅宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "地劫",
+                "天空"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "田宅破军/空劫",
+          "detail": "田宅宫遇破军先破后成；遇空劫则祖基破荡进退不常"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "田宅遇破军，先破后成……破軍在子午宮守祖業榮昌，但見有進退，加羊陀火鈴退祖田少",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D109",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "福德空劫奔走七杀娼婢",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "福德宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "地劫",
+                "天空"
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "福德宫.主星",
+                  "operator": "contains",
+                  "value": "七杀"
+                },
+                {
+                  "field": "性别",
+                  "operator": "==",
+                  "value": "女"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "福德空劫/杀",
+          "detail": "福德宫遇空劫奔走无力；七杀单居福德(女命)必为娼婢"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "福德遇空劫，奔走無力……女人單居福德，則必為娼婢",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D110",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "父母宫加刑杀破祖",
+      "conditions": [
+        {
+          "field": "父母宫.煞星",
+          "operator": "contains_any",
+          "value": [
+            "擎羊",
+            "陀罗"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "父母刑杀",
+          "detail": "父母(相貌)宫加刑杀刑克难免破祖刑伤；陀忌耗囚守父母缠决主破祖"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "相貌加刑杀，刑克难免……陀忌耗囚之星，守父母之缠，决然破祖，刑伤兼之",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D111",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "父母日月陷克",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "太阳.庙旺",
+                  "operator": "==",
+                  "value": false
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "太阴.庙旺",
+                  "operator": "==",
+                  "value": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日月陷克父母",
+          "detail": "看父母以太阳为父太阴为母；太阳陷主先克父太阴陷主先克母；二星俱陷日生者父存夜生者母存"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "凡看父母以太阳星为父，太阴星为母。太阳在陷宫主先克父，太阴星在陷宫主先克母……日生者主父存，夜生者主母在",
+        "url": "http://ab.newdu.com/book/ms261795.html"
+      }
+    },
+    {
+      "rule_id": "ZW-D112",
+      "domain": "ziwei",
+      "category": "gongwei",
+      "name": "命身三夹凶六夹吉",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "命宫.夹宫",
+              "operator": "contains_any",
+              "value": [
+                "地劫",
+                "天空",
+                "火星",
+                "铃星",
+                "擎羊",
+                "陀罗"
+              ]
+            },
+            {
+              "field": "命宫.夹宫",
+              "operator": "contains_all",
+              "value": [
+                "紫微",
+                "天府",
+                "左辅",
+                "右弼",
+                "文昌",
+                "文曲",
+                "天魁",
+                "天钺"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "三夹凶六夹吉",
+          "detail": "命身宫被三夹(劫空火铃羊陀)凶、被六夹(紫府左右昌曲魁钺科权禄日月)吉；吉多凶少虽凶也吉"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "命宮三夾命凶六夾吉。三夾是劫空火鈴羊陀是也。六夾是紫府左右昌曲魁鉞科權祿日月是也",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D113",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "大限全吉十年安静",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "大限.庙旺",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "NOT": {
+                "field": "大限.煞星",
+                "operator": "contains_any",
+                "value": [
+                  "擎羊",
+                  "陀罗",
+                  "火星",
+                  "铃星",
+                  "地劫",
+                  "天空"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大限安静",
+          "detail": "大限行至宫分星缠全吉庙旺得地无羊陀火铃空劫，主十年安静人财全美；限内有煞忌为伴则成败不一"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "如宫分星缠全吉庙旺得地，无擎羊陀罗火铃空劫者，主十年安静，人财全美。若限内有擎羊陀罗火铃空劫忌星为伴，成败不一",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D114",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "大限陷地会煞官灾死亡",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "大限.庙旺",
+              "operator": "==",
+              "value": false
+            },
+            {
+              "field": "大限.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗",
+                "火星",
+                "铃星",
+                "地劫",
+                "天空"
+              ]
+            },
+            {
+              "field": "流年.煞星_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大限死亡",
+          "detail": "大限行至陷地值羊陀火铃空劫忌，又加流年恶杀凑合及小限巡逢凶杀，则官灾死亡立见"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "如宫分星缠陷地，值擎羊陀罗火铃空劫忌，又加流年恶杀凑合，及小限巡逢凶杀，则官灾死亡立见",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D115",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "二限怕行伤使劫空羊陀",
+      "conditions": [
+        {
+          "field": "岁限.宫位",
+          "operator": "in",
+          "value": [
+            "天伤",
+            "天使",
+            "天空",
+            "地劫",
+            "擎羊",
+            "陀罗"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "二限凶地",
+          "detail": "大小二限及太岁怕行天伤天使夹地天空地劫之地羊陀之地；须看寿星(紫微天同天梁贪狼坐命)可解"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "凡大小二限及太歲，怕行天傷天使夾地，怕行天空地劫之地，怕行擎羊陀羅之地……若逃得過須看壽星，紫微天同天梁貪狼坐命可解",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D116",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "二限太岁独守吉凶",
+      "conditions": [
+        {
+          "field": "岁限.庙旺",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "二限断法",
+          "detail": "论二限太岁吉凶须详大限独守小限独守太岁独守吉凶，岁限俱凶则凶；再看太岁冲大限小限太岁冲羊陀七杀以断寿夭荣枯"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "須詳大限獨守吉凶何如，小限獨守吉凶何如，太歲獨守吉凶何如。如歲限俱凶則凶……又看太歲沖大限小限，太歲沖羊陀七殺",
+        "url": "https://www.shidianguji.com/mid-page/7356346222958952499"
+      }
+    },
+    {
+      "rule_id": "ZW-D117",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "行限南北斗应期",
+      "conditions": [
+        {
+          "field": "性别",
+          "operator": "in",
+          "value": [
+            "阳男",
+            "阴女",
+            "阴男",
+            "阳女"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "南北斗应期",
+          "detail": "阳男阴女南斗为福阴男阳女北斗为福；北斗大限上五年应小限上半年应，南斗大限下五年应小限下半年应"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "陽男陰女南斗為福。陰男陽女北斗為福。北斗諸星吉凶，大限斷上五年應，小限斷上半年應。南斗諸星吉凶，大限斷下五年應，小限斷下半年應",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D118",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "羊陀迭并为祸最毒",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "命宫.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗"
+              ]
+            },
+            {
+              "field": "流年.煞星",
+              "operator": "contains_any",
+              "value": [
+                "擎羊",
+                "陀罗"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "羊陀迭并",
+          "detail": "命宫原有羊陀冲合流年遇流羊流陀再冲为羊陀迭并为祸最毒；入庙灾晦减轻遇紫微天相禄存三合拱照可解"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "如命中三合原有七殺守照，而流年又遇流羊流陀沖照……謂之羊陀迭並……擎羊陀羅七殺逢紫微天相祿存三合拱照可解",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D119",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "太岁在命祸福尤紧",
+      "conditions": [
+        {
+          "field": "流年.宫位",
+          "operator": "==",
+          "value": "${命宫.宫位}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太岁临命",
+          "detail": "流年太岁在命宫行限祸福尤紧；看三方对照星辰吉凶以定祸福，逢吉则吉逢凶则凶"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "凡太歲看三方對照星辰吉凶何如以定禍福，太歲在命宮行者禍福尤緊……逢吉則吉逢凶則凶",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D120",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "童子老人限遇杀最忌",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "命主年龄",
+                  "operator": "<",
+                  "value": 6
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "命主年龄",
+                  "operator": ">",
+                  "value": 60
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "童老限危",
+          "detail": "童子限如水上泡沤老人限似风中燃烛，遇杀与擎羊流年最忌；小儿命坐凶乡三五岁夭折老人限衰逢恶杀易终"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "童子限如水上泡沤，老人限似风中燃烛。遇杀与擎羊，流年最忌……小兒命坐凶鄉，三五歲必然夭析",
+        "url": "https://www.shidianguji.com/book/SDZJ0170/chapter/1jvzoopnqo0t6"
+      }
+    },
+    {
+      "rule_id": "ZW-D121",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "行限五行反克官灾",
+      "conditions": [
+        {
+          "field": "行限.五行反克",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "行限反克",
+          "detail": "安命行限遇五行反克(金人遇坎木人落离水遇艮火来兑土到东南震巽)，纵然吉曜相逢亦未免官灾脓血惊慌"
+        }
+      ],
+      "weight": -2,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "金人遇坎命須傷，木命落離有禍殃，水遇艮宮應蹇滯，火來兌上禍難藏，土到東南逢震巽，須防膿血及驚慌，縱然吉曜相逢照，未免官災鬧一場",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D122",
+      "domain": "ziwei",
+      "category": "yunian",
+      "name": "行限逢左右昌曲吉",
+      "conditions": [
+        {
+          "field": "岁限.辅星",
+          "operator": "contains_any",
+          "value": [
+            "左辅",
+            "右弼",
+            "文昌",
+            "文曲"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "限逢昌曲",
+          "detail": "行限逢吉曜左右昌曲，仕宦迁官加职士民生子发财妇人喜事商贾得益；逢奏书将军直符天使天伤羊陀火铃空劫忌则人离财散"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "紫微斗数全书",
+      "evidence": {
+        "quote": "遇左右昌曲，仕宦遷官加職，士民生子發財，婦人喜事，僧道亦利，商賈得益……羊陀火鈴空劫忌星，逢一二位，主人離財散",
+        "url": "https://www.shicihui.com/zh-tw/book/ziweidoushuquanshu/200401"
+      }
+    },
+    {
+      "rule_id": "ZW-D123",
+      "domain": "ziwei",
+      "category": "xueshu",
+      "name": "中州派星曜宫垣层级论",
+      "conditions": [
+        {
+          "field": "学派",
+          "operator": "==",
+          "value": "中州派"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "星曜层级法",
+          "detail": "论星须分十四正曜→六十星系→辅佐煞曜→化曜→杂曜→流曜层级，论宫须按命宫至父母十二宫逐宫垣研究飞躔反应"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "中州派紫微斗数深造讲义(公开目录蒸馏)",
+      "evidence": {
+        "quote": "上篇 星曜论：序论、前言、十四正曜、六十星系、辅佐煞曜总论、煞曜、化曜、杂曜总论、流曜总论、星曜庙陷。下篇 宫垣论",
+        "url": "https://www.guoxuedashi.com/a/22312bxfo/"
+      }
+    },
+    {
+      "rule_id": "ZW-D124",
+      "domain": "ziwei",
+      "category": "xueshu",
+      "name": "陆斌兆正曜分十二宫论",
+      "conditions": [
+        {
+          "field": "学派",
+          "operator": "==",
+          "value": "陆斌兆"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "正曜十二宫法",
+          "detail": "每颗正曜(紫微天机…破军)均分十二宫(命宫至相貌)逐一研究吉凶反应"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "陆斌兆紫微斗数讲义评注(公开目录蒸馏)",
+      "evidence": {
+        "quote": "目录：一、紫微星……(1)命宫……(2)兄弟……(5)财帛宫……(12)相貌(父母)宫。二、天机星：(1)命宫",
+        "url": "https://www.kancloud.cn/yinchanye/zwdsjypz/content"
+      }
+    },
+    {
+      "rule_id": "ZW-D125",
+      "domain": "ziwei",
+      "category": "xueshu",
+      "name": "天地人三盘星曜飞躔",
+      "conditions": [
+        {
+          "field": "学派",
+          "operator": "==",
+          "value": "中州派"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "三盘飞躔法",
+          "detail": "强调星曜飞躔十二宫吉凶反应须结合天地人三盘(地盘定星盘人盘应人事)，安星法与王亭之所传略有不同"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "中州派安星法及推断实例(公开试读蒸馏)",
+      "evidence": {
+        "quote": "目录含……星曜飞躔十二宫吉凶反应的研究……天地人三个盘图……第一部分为安星法，这安星法跟王亭之所得的传授略有不同",
+        "url": "https://weread.qq.com/web/reader/8da32d50727078848da131ekd3d322001ad3d9446802347"
+      }
     }
   ]
 }

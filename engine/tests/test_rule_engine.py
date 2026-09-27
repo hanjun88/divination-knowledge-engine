@@ -14,14 +14,19 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "rules_manifest.json"
 
 
+def _file_rule_counts() -> dict:
+    """从磁盘规则实体文件动态读取各 domain 的规则数 (避免硬编码, 随规则集增长自动同步)。"""
+    counts = {}
+    for d in RuleEngine.DOMAINS:
+        path = Path(RuleEngine().rules_file_path(d))
+        counts[d] = len(json.loads(path.read_text(encoding="utf-8"))["rules"])
+    return counts
+
+
 def test_all_domain_rule_counts():
     engine = RuleEngine()
-    assert {d: len(engine.load_rules(d)) for d in engine.DOMAINS} == {
-        "liuyao": 192,
-        "ziwei": 64,
-        "bazi": 294,
-        "western": 72,
-    }
+    actual = {d: len(engine.load_rules(d)) for d in engine.DOMAINS}
+    assert actual == _file_rule_counts()
 
 
 def test_unknown_domain_fails_closed():

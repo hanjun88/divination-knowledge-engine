@@ -41,7 +41,13 @@ def test_manifest_four_traceability_fields_present_and_nonempty():
 def test_manifest_preserves_rule_data():
     m = json.loads(MANIFEST.read_text(encoding="utf-8"))
     domains = {r["domain"]: r["count"] for r in m["rules"]}
-    assert domains == {"bazi": 294, "liuyao": 192, "ziwei": 64}, domains
+    # manifest 记录的规则数必须与磁盘规则实体文件实际条数一致 (不硬编码具体数值,
+    # 规则集增长后由 generate_manifest 同步刷新)。
+    expected = {}
+    for r in m["rules"]:
+        body = json.loads((ENGINE_DIR / r["path"]).read_text(encoding="utf-8"))
+        expected[r["domain"]] = len(body["rules"])
+    assert domains == expected, domains
 
 
 def test_schema_sha256_matches_openapi_file():
