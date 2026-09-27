@@ -1,0 +1,15 @@
+[run]
+source = .
+omit =
+    tests/*
+    e2e_verify.py
+    e2e_report.json
+    __pycache__/*
+
+[report]
+show_missing = True
+fail_under = 60
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if __name__ == .__main__.:

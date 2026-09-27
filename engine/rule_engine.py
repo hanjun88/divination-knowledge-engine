@@ -412,13 +412,17 @@ class RuleEngine:
             rs.sort(key=lambda r: -r.get("priority", 5))
             top = rs[0]
             # always keep top; keep lower-priority only if they are not
-            # explicitly opposed (i.e. same sign as top or zero weight)
+            # explicitly opposed. A rule "opposes" the top only when BOTH
+            # sides carry a definite (non-zero) weight AND their signs differ.
+            # A neutral top (weight 0, e.g. a generic caveat) must NOT veto
+            # lower-priority directional conclusions about the same category.
             out.append(top)
             top_sign = (top.get("weight", 0) > 0) - (top.get("weight", 0) < 0)
             for r in rs[1:]:
                 w = r.get("weight", 0)
                 sign = (w > 0) - (w < 0)
-                if sign == top_sign or w == 0:
+                opposes = top_sign != 0 and sign != 0 and top_sign != sign
+                if not opposes:
                     out.append(r)
                 # else: opposed sign with lower priority -> dropped
         # restore priority ordering
