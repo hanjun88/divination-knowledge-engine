@@ -1,21 +1,21 @@
 {
-  "canonical_manifest_sha": "71ade6f81930b84fe3125dbf6798dd5c315c0f2c56f8a7a77574b979b458cb5d",
+  "canonical_manifest_sha": "8b4746f963b76a40281cd0aafc429a28fed458243e3864a8aaa511012809f579",
   "generated_at": "2026-09-25",
   "manifest_version": "1.0.0",
   "provider_commit": "7848583b1e285a2f95b25957087783b1a89357b1",
   "repository": "hanjun88/divination-knowledge-engine",
   "rules": [
     {
-      "count": 180,
+      "count": 294,
       "domain": "bazi",
       "path": "rules/rules_bazi.json",
-      "sha256": "b5093b59395a1d0dd5584a78aefa9e21f5b3c64916d2aed6b619d7cfd13e39ec"
+      "sha256": "dc8d2d154f18282dc9ca2dae0e3ad46f3ce6ff05b4780873ed366bea3ad752c4"
     },
     {
-      "count": 82,
+      "count": 192,
       "domain": "liuyao",
       "path": "rules/rules_liuyao.json",
-      "sha256": "499e691613133bc7de4edada07ed49dbcb29f1bc86df2ba85105d0c7a9d23729"
+      "sha256": "00846160fad11ee0f679c5e3397c6323b49b85e474cfda68e581474bb6da44a1"
     },
     {
       "count": 64,

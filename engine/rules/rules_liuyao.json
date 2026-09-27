@@ -1,6 +1,6 @@
 {
   "domain": "liuyao",
-  "count": 82,
+  "count": 192,
   "rules": [
     {
       "rule_id": "LY-M01",
@@ -2174,6 +2174,3353 @@
       "weight": 0,
       "priority": 5,
       "source": "增删卜易·卷二·独发章第三十一"
+    },
+    {
+      "rule_id": "LY-D001",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "占父母文书宅舍取父母爻为用",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "父母",
+            "祖父母",
+            "师长",
+            "宅舍",
+            "舟车",
+            "衣服",
+            "文章",
+            "文书"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "取父母爻为用神",
+          "detail": "凡占祖父母、父母、师长、家主、墙城宅舍、舟车衣服、章奏文章，俱以父母爻为用神"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·用神分类",
+      "evidence": {
+        "quote": "凡占祖父母、父母、师长、家主……及墙城、宅舍、舟车、衣服……章奏文章、馆室，俱以父母爻为用神。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D002",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "占功名官府疾病盗贼取官鬼爻为用",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "功名",
+            "官府",
+            "丈夫",
+            "疾病",
+            "盗贼",
+            "忧疑",
+            "鬼神"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "取官鬼爻为用神",
+          "detail": "凡占功名、官府、雷电、鬼神、丈夫、病症、尸首、逆风，俱以官鬼爻为用神"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·用神分类",
+      "evidence": {
+        "quote": "凡占功名、官府、雷电、鬼神、丈夫……病症、尸首、逆风，俱以官鬼爻为用神。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D003",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "占兄弟朋友取兄弟爻为用",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "兄弟",
+            "姊妹",
+            "结盟",
+            "朋友",
+            "知交"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "取兄弟爻为用神",
+          "detail": "凡占兄弟、姊妹、结盟同寅，及知交朋友，俱以兄弟爻为用神"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·用神分类",
+      "evidence": {
+        "quote": "凡占兄弟、姊妹、姊妹丈、妻之兄弟、世兄弟、结盟同寅，及知交朋友，俱以兄弟爻为用神。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D004",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "占妻妾财物买卖取妻财爻为用",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "妻妾",
+            "财物",
+            "钱财",
+            "买卖",
+            "物价",
+            "晴"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "取妻财爻为用神",
+          "detail": "凡占妻妾、友人妻妾婢仆、物价钱财珠宝、问天晴明，俱以妻财爻为用神"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·用神分类",
+      "evidence": {
+        "quote": "凡占……妻妾，及友人之妻妾婢仆、物价、钱财珠宝金银……及问天时、晴明，俱以妻财爻为用神。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D005",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "占儿女药材僧道解忧取子孙爻为用",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "儿女",
+            "孙侄",
+            "女婿",
+            "门生",
+            "药材",
+            "僧道",
+            "六畜",
+            "解忧"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "取子孙爻为用神(福德解忧之神)",
+          "detail": "凡占儿女、孙侄、女婿、门生、忠臣良将、药材僧道、六畜禽鸟、解忧避祸，俱以子孙爻为用神"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·用神分类",
+      "evidence": {
+        "quote": "凡占儿女、孙、侄、女婿、门生、忠臣、良将、药材、僧道、六畜、禽鸟、顺风、解忧避祸……俱以子孙爻为用神。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D006",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "自占以世爻为用无交之人以应爻为用",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "自身病",
+            "寿数",
+            "出行吉凶",
+            "仇人",
+            "地头",
+            "无交之人"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "自占以世爻为用；无交他人以应爻为用",
+          "detail": "世为自己应为他人；占自身损益以世爻为用，占无深交之人以应爻为用"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·世应",
+      "evidence": {
+        "quote": "世为自己，应作他人……凡占自己疾病，或问寿数，或问出行吉凶，诸凡损益自身者，以世爻为用也……凡占无尊卑之称呼、未曾深交之朋友……俱以应爻为用神也。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D007",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "仆隶驱使以财为用庇护身者以父母为用",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "仆隶",
+            "婢妾",
+            "驱使",
+            "城垣",
+            "宅舍",
+            "舟车",
+            "衣服"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "驱使之物以财爻为用；庇护我身者以父母爻为用",
+          "detail": "一切抚养庇护我身者以父母爻为用，金银婢仆等驱使之类以财爻为用"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·用神分类",
+      "evidence": {
+        "quote": "一切抚养庇护我身者，以父母爻为用神……金银对象、婢仆等一切驱使之类，以财爻为用神是也。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D008",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "用神不现寻伏神",
+      "conditions": [
+        {
+          "field": "yong_bu_xian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神不现，于本宫首卦寻伏神",
+          "detail": "用神不现者以日月为用神，倘日月非用神，须于本宫首卦寻之，盖本宫首卦六亲俱全"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "增删卜易·伏神",
+      "evidence": {
+        "quote": "用神不现者，即以日月为用神。倘日月非用神，须于本宫首卦寻之。盖本宫之首卦六亲俱全之故耳。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy36.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D009",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "用神两现舍休囚取旺相",
+      "conditions": [
+        {
+          "field": "yong_two_xian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神两现：舍休囚取旺相、舍静取动、舍空破取不空不破",
+          "detail": "用神两现，舍休囚用旺相、舍静用动、舍空破用不空不破；多占合参"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "增删卜易·用神两现",
+      "evidence": {
+        "quote": "舍休囚用旺相、舍静用动、舍空破用不空不破。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy36.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D010",
+      "domain": "liuyao",
+      "category": "quyong",
+      "name": "占身命同参世身命三爻",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "占身命同参世爻、身爻(月卦)、本命爻",
+          "detail": "命爻与世身相生相合，主衣禄安享"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "易隐·身命",
+      "evidence": {
+        "quote": "凡占身命，有三重焉，世爻，身爻（月卦），与本命爻，是也……命爻与世身二爻相生相合，主衣禄安享。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62612.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D011",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "用神临月建当权得令",
+      "conditions": [
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "S+=3.0 当权得令旺相",
+          "detail": "爻值月建旺相当权，逢空不空逢伤无害；出月降为+1.0"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "爻值月建，旺相当权，逢空不空，逢伤无害。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D012",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建生扶或克用神",
+      "conditions": [
+        {
+          "operator": "wuxing_sheng",
+          "left": "${month_wx}",
+          "right": "${yong_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "S+=2.0 月建生用",
+          "detail": "月建生用或比和则衰而亦旺；月建克用则S-=2.0"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "爻之衰弱者，能生之、合之、比之、拱之、扶之，衰而亦旺；爻之强旺者，能冲之、克之、刑之、破之，旺而亦衰。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D013",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建合用神为月合",
+      "conditions": [
+        {
+          "operator": "liuhe",
+          "left": "${month_zh}",
+          "right": "${yong_shen.zhi}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "S+=1.5 月合有用但事迟滞",
+          "detail": "爻逢月合而有用，乃有用之爻；合主事迟滞，待冲开"
+        }
+      ],
+      "weight": 1.5,
+      "priority": 7,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "爻逢月合而有用，爻逢月破以无功。月建合爻，则为月合，乃有用之爻也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D014",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建冲用为月破",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月破：动则暂破S-=2，静无扶则真破S-=4",
+          "detail": "月建冲爻即为月破；破而安静又值旬空衰弱被克害，谓真破到底破矣"
+        }
+      ],
+      "weight": -3,
+      "priority": 8,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "月建冲爻，即为月破，乃无用之爻也。如破而安静再值旬空衰弱，遇动爻月建日辰克害，此等月破谓之真破，到底破矣！",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D015",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "临月建旬内仍作空论",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "临月建旬内仍空，出旬方实",
+          "detail": "爻值月建旺相当权，古有逢空不空之说，余试不然，在旬内者毕竟为空"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "爻值月建，旺相当权……古有此说，余试不然，在旬内者，毕竟为空。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D016",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "临月建逢动爻克待时",
+      "conditions": [
+        {
+          "field": "ke_yong_dong_count",
+          "operator": ">=",
+          "value": 1
+        },
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "临月建逢伤，待冲去伤爻之日应吉",
+          "detail": "逢伤亦伤却有待时之用；他爻又来克制，用爻虽临月建亦难敌"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "逢伤亦伤，却有待时之用……只恐他爻又来克制，用爻虽临月建，亦难敌矣。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D017",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "大象凶月内暂不碍出月受殃",
+      "conditions": [
+        {
+          "field": "daxiang",
+          "operator": "==",
+          "value": "凶"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大象凶者月内暂不碍，出此月定受其殃",
+          "detail": "克多生少大象凶，月内还许不碍，出月定受其殃"
+        }
+      ],
+      "weight": -2,
+      "priority": 5,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "大象固凶，在月内还许不碍，出此月定受其殃。克少生多者，大象吉也；克多生少者，大象凶也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D018",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "用神临月建太旺防折",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": ">=",
+          "value": 5
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "太旺防折，交秋遇金冲克恐破败",
+          "detail": "正月占卦用神临寅木月建谓之太旺，交秋遇金冲克不无破败，故器满则倾"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "正月占卦，用神临寅木月建，谓之太旺，若到交秋遇金冲克，不无破败，故谓之器满则倾。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D019",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "月建生忌神为助纣为虐",
+      "conditions": [
+        {
+          "operator": "wuxing_sheng",
+          "left": "${month_wx}",
+          "right": "${ji_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月建生忌神则克用权重加倍(-3.0)",
+          "detail": "生扶忌神乃助恶而为虐；得月建克制忌神名为有救"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "生扶忌神，乃助恶而为虐……得月建克制忌神者，名为有救。若月建反生忌神者，乃助恶而为虐也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D020",
+      "domain": "liuyao",
+      "category": "month",
+      "name": "四时旺相月建提纲",
+      "conditions": [
+        {
+          "field": "month_zh",
+          "operator": "in",
+          "value": [
+            "寅",
+            "卯",
+            "辰",
+            "巳",
+            "午",
+            "未",
+            "申",
+            "酉",
+            "戌",
+            "亥",
+            "子",
+            "丑"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "四时旺相：木火土金水各月当令，余作休囚",
+          "detail": "正月寅木旺火相，三月辰土旺木有余气；当令者旺，我生者相，余作休囚"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "增删卜易·四时旺相",
+      "evidence": {
+        "quote": "正月建寅，寅木旺，卯木次之……木旺生火，火为相，其余金、水、土，俱作休囚。三月建辰，辰土旺……木虽不旺，犹有余气。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy17.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D021",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "用神值日辰中天日丽",
+      "conditions": [
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${day_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "S+=3.0 值日辰与月建同权",
+          "detail": "日辰为六爻之主宰，司四时之旺相，与月建同功；当日有效过日降+0.5"
+        }
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "增删卜易·日辰章",
+      "evidence": {
+        "quote": "日辰为六爻之主宰，司四时之旺相……四时俱旺，操生杀之权，与月建同功。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy19.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D022",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日辰生比或克用神",
+      "conditions": [
+        {
+          "operator": "wuxing_sheng",
+          "left": "${day_wx}",
+          "right": "${yong_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "S+=2.0 日辰生用",
+          "detail": "日辰生之合之旺之；比之扶之；克之则S-=1.5"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "增删卜易·日辰章",
+      "evidence": {
+        "quote": "爻之衰弱者，日辰能生之、合之、旺之；同类者，比之、扶之；爻之强旺者，能刑之、冲之、克之、绝之、墓之。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy19.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D023",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日冲静爻分暗动日破",
+      "conditions": [
+        {
+          "operator": "liuchong",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日冲旺相静爻为暗动+1.5，冲休囚静爻为日破-2.5",
+          "detail": "冲旺相之静爻即为暗动，冲衰弱之静爻则为日破，愈加无用"
+        }
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "增删卜易·日辰章",
+      "evidence": {
+        "quote": "冲旺相之静爻，即为暗动，冲衰弱之静爻，则为日破。爻之旺而静者，冲之则为暗动，愈得其力；爻之衰而静者，冲之则为日破，愈加无用。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy19.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D024",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "旬空被日辰冲为冲空则实",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "operator": "liuchong",
+          "left": "${day_zh}",
+          "right": "${yong_shen.zhi}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "冲空则实，起而为用待出旬",
+          "detail": "爻遇旬空，日辰冲起而为用，谓之冲空则实"
+        }
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "增删卜易·日辰章",
+      "evidence": {
+        "quote": "爻遇旬空，日辰冲起而为用，谓之冲空则实。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy19.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D025",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "用神被合住待合处逢冲",
+      "conditions": [
+        {
+          "field": "yong_shen.feng_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "合处逢冲：凶神合处喜逢冲，吉神合住不宜冲",
+          "detail": "爻逢合住遇日建以冲开，谓之合处逢冲"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·日辰章",
+      "evidence": {
+        "quote": "爻逢合住，遇日建以冲开，谓之合处逢冲。但凶神合处喜逢冲，吉神合住又不宜冲也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy19.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D026",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "用神临日建如山如陵",
+      "conditions": [
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${day_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "临日建则月冲不破月克无伤动克不为殃",
+          "detail": "爻临日建，月冲不破，月克无伤，逢动爻之克亦不为害，化回头之克亦不为殃；叠叠来克则寡不敌众"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "增删卜易·日辰章",
+      "evidence": {
+        "quote": "爻临日建，月冲不破，月克无伤，逢动爻之克，亦不为害，化回头之克，亦不为殃……爻临日建，而月建动爻同来克者，如寡不敌众。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy19.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D027",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "日辰克用不堪亲生合易成",
+      "conditions": [
+        {
+          "operator": "wuxing_ke",
+          "left": "${day_wx}",
+          "right": "${yong_shen.wx}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日辰克用作事不堪亲",
+          "detail": "日辰克用不堪亲，日辰与用相生合，作事何愁不起心"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "问卦先须看日辰，日辰克用不堪亲，日辰与用相生合，作事何愁不起心。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D028",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "旺相动爻逢冲不散",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "旺相者冲之不散，休囚者间有冲散",
+          "detail": "旺相者冲之不散，有气者冲之不散，休囚者间有冲散，千百中之一二"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·动爻",
+      "evidence": {
+        "quote": "旺相者，冲之不散；有气者，冲之不散；休囚者，间有冲散，亦千百中之一二耳。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy27.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D029",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "用神双临月建日辰极旺",
+      "conditions": [
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${month_zh}"
+        },
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${day_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "双临S>=+6极旺事必成应期速",
+          "detail": "爻值月建乃为旺矣，爻临日建似此之强如山如陵，与月建同权"
+        }
+      ],
+      "weight": 4,
+      "priority": 10,
+      "source": "增删卜易·日辰章",
+      "evidence": {
+        "quote": "爻值月建，乃为旺矣……爻临日建……似此之强，如山如陵，似与月建同权。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy19.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D030",
+      "domain": "liuyao",
+      "category": "day",
+      "name": "月克日生可相敌动爻决吉凶",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": "==",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月克日生可相敌无大凶；动爻生扶愈旺，动爻来克则危",
+          "detail": "月克日生遇帮扶而愈旺，月生日克逢克制而亦衰"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "月克日生，遇帮扶而愈旺，月生日克，逢克制而亦衰。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D031",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "原神旺相临日月生用有力",
+      "conditions": [
+        {
+          "field": "yuan_shen.you_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神有力，生用权重+2.5",
+          "detail": "元神旺相，或临日月，或得日月动爻生扶者，一也"
+        }
+      ],
+      "weight": 2.5,
+      "priority": 7,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "元神旺相，或临日月，或得日月动爻生扶者，一也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D032",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "原神动化回头生进神有力",
+      "conditions": [
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_sheng_benwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神动化回头生/进神，生用+2.5",
+          "detail": "元神动，化回头生，及化进神者，二也"
+        }
+      ],
+      "weight": 2.5,
+      "priority": 7,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "元神动，化回头生，及化进神者，二也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D033",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "原神长生于日辰有力",
+      "conditions": [
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神长生帝旺于日辰，生用+2.5",
+          "detail": "元神长生、帝旺于日辰，三也"
+        }
+      ],
+      "weight": 2.5,
+      "priority": 6,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "元神长生、帝旺于日辰，三也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D034",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "原神忌神同动贪生忘克",
+      "conditions": [
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "ji_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌神反生原神，贪生忘克，吉更倍",
+          "detail": "元神与忌神同动，忌神反生原神，是名贪生忘克，用神根蒂深固，其吉更倍"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "元神与忌神同动，四也。忌神反生原神，是名贪生忘克，则用神根蒂深固矣，其吉更倍矣。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D035",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "原神旺动临空化空待出旬",
+      "conditions": [
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "hua_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神旺动临空化空，旬内+1出旬+2.5",
+          "detail": "元神旺动临空化空，动不为空，待冲空实空之日而为有用"
+        }
+      ],
+      "weight": 1.5,
+      "priority": 6,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "元神旺动，临空、化空，五也……动不为空，待冲空、实空之日，而为有用。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D036",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "原神休囚不动见生不生",
+      "conditions": [
+        {
+          "field": "yuan_shen.wu_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神无力，生用权重清零",
+          "detail": "元神休囚不动，或动而休囚又被伤克，见生不生，无力生用，虽有如无"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "元神休囚不动，或动而休囚，又被伤克，一也……以上元神见生不生，无力生用神，乃无用之元神也，虽有如无。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D037",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "原神休囚空破退绝墓无力",
+      "conditions": [
+        {
+          "field": "yuan_shen.wu_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原神休囚逢空破/化退/衰绝/入墓/化绝克破，生用清零",
+          "detail": "元神休囚又逢旬空月破，动化退神，衰而又绝，入三墓，动化绝克破散"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "元神休囚，又逢旬空、月破，二也。元神休囚，动化退神，三也。元神衰而又绝，四也。元神入三墓，五也。元神休囚，动而化绝、化克、化破、化散，六也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D038",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "忌神有力克用势同斧钺",
+      "conditions": [
+        {
+          "field": "ji_shen.you_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌神有力，克用权重-3.0诸占大凶",
+          "detail": "忌神旺相临日月动爻生扶、动化回头生进神、旺动临空、长生于日辰、与仇神同动，势同斧钺"
+        }
+      ],
+      "weight": -3,
+      "priority": 8,
+      "source": "增删卜易·忌神",
+      "evidence": {
+        "quote": "忌神旺相，或遇日月动爻生扶，或临日月，一也。忌神动，化回头生、化进神，二也。忌神旺动，临空、化空，三也。忌神长生帝旺于日辰，四也。忌神与仇神同动，五也。以上乃有力之忌神，势同斧钺，诸占大凶。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D039",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "忌神无力克用清零化凶为吉",
+      "conditions": [
+        {
+          "field": "ji_shen.wu_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌神无力，克用权重清零，化凶为吉",
+          "detail": "忌神休囚不动被克、静临空破、入三墓、衰动化退、衰而又绝、动化绝克破散"
+        }
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "增删卜易·忌神",
+      "evidence": {
+        "quote": "忌神休囚不动，动而休囚，被日月动爻克，一也。忌神静，临空破，二也。忌神入三墓，三也。忌神衰，动化退神，四也。忌神衰而又绝，五也。忌神动，化绝、化克、化破、化散，六也。忌神与元神同动，七也。以上乃无力之忌神也，诸占化凶为吉。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D040",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "忌神与原神同动贪生忘克",
+      "conditions": [
+        {
+          "field": "ji_shen.dong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yuan_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "忌神生原神，忌不克用，化凶为吉",
+          "detail": "忌神与元神同动，忌神贪生忘克，原神生用神"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·忌神",
+      "evidence": {
+        "quote": "忌神与元神同动，七也（无力之忌神）。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D041",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "用神无根树无根寒谷不回春",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "==",
+          "value": "休囚"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神无根强制S<=-5，原神再旺难生",
+          "detail": "用神月破日克休囚无气，虽有生扶奈何生之不起，如树无根寒谷不回春"
+        }
+      ],
+      "weight": -5,
+      "priority": 9,
+      "source": "增删卜易·元神",
+      "evidence": {
+        "quote": "用神无根……虽有生扶，奈何生之不起，如树无根，寒谷不回春也。倘若用神无根，谓之元神有力亦难生，忌神无力亦休喜。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy11.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D042",
+      "domain": "liuyao",
+      "category": "yuanji",
+      "name": "仇神发动大凶",
+      "conditions": [
+        {
+          "field": "chou_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "仇神发动则原神被伤用神无根忌神倍力，大凶",
+          "detail": "制克原神生扶忌神者为仇神；卦中仇神发动，原神被伤，用神无根，忌神倍力"
+        }
+      ],
+      "weight": -3,
+      "priority": 8,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "制克原神生扶忌神者，即是仇神也。如卦中仇神发动，则原神被伤，用神无根，忌神倍力，其祸可胜道耶。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D043",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化回头生为化吉",
+      "conditions": [
+        {
+          "field": "hua_sheng_benwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动化回头生，S+=2.5",
+          "detail": "用神元神动化回头生、化长生、化帝旺、化比助、化日月，皆为化吉"
+        }
+      ],
+      "weight": 2.5,
+      "priority": 8,
+      "source": "增删卜易·动化",
+      "evidence": {
+        "quote": "用神化吉：凡用神元神，动化回头生、化长生、化帝旺、化比助、化日月，皆为化吉。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy32.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D044",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化回头克为化凶",
+      "conditions": [
+        {
+          "field": "hua_ke_benwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动化回头克，S-=3.0诸占凶",
+          "detail": "用神元神动化回头克、化绝、化墓、化空、化鬼、化退神皆为化凶；卦化克不论衰旺皆凶"
+        }
+      ],
+      "weight": -3,
+      "priority": 9,
+      "source": "增删卜易·动化",
+      "evidence": {
+        "quote": "用神化凶：凡用神元神，动化回头克、化绝、化墓、化空、化鬼、化退神，皆为化凶。凡遇卦化克者，不论用神之衰旺，皆以凶推。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy32.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D045",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化进神如春木久长",
+      "conditions": [
+        {
+          "field": "hua_jin_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动化进神，所喜者S+=1.5",
+          "detail": "进神：亥化子寅化卯巳化午申化酉丑化辰辰化未未化戌戌化丑，如春木之荣有源之水"
+        }
+      ],
+      "weight": 1.5,
+      "priority": 7,
+      "source": "增删卜易·进退神",
+      "evidence": {
+        "quote": "进神：亥化子，寅化卯，巳化午，申化酉，丑化辰，辰化未，未化戌，戌化丑……进神者，由此而前进也，如春木之荣，有源之水，久远长久之象。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy37.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D046",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化退神如秋木凋零",
+      "conditions": [
+        {
+          "field": "hua_tui_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动化退神，所喜者S-=1.5",
+          "detail": "退神：子化亥卯化寅午化巳酉化申，由此而渐退，如秋天花木渐渐凋零"
+        }
+      ],
+      "weight": -1.5,
+      "priority": 7,
+      "source": "增删卜易·进退神",
+      "evidence": {
+        "quote": "退神：子化亥，卯化寅，午化巳，酉化申……退神者：由此而渐退也，如秋天花木，渐渐凋零。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy37.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D047",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动化空出旬填实恢复",
+      "conditions": [
+        {
+          "field": "hua_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动化空暂S-=1，出旬填实恢复",
+          "detail": "旺不为空，动不为空，动而化空皆不为空；旺动化空不因空而废"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "增删卜易·旬空",
+      "evidence": {
+        "quote": "旺不为空，动不为空，动而化空……皆不为空。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy30.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D048",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "用神动化墓绝鬼破",
+      "conditions": [
+        {
+          "field": "hua_jue",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神动化墓/绝/鬼/破，S-=2.0",
+          "detail": "用神元神动化回头克、化绝、化墓、化空、化鬼、化退神皆为化凶；化墓待冲开化绝待逢生"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "增删卜易·动化",
+      "evidence": {
+        "quote": "用神化凶：凡用神元神，动化回头克、化绝、化墓、化空、化鬼、化退神，皆为化凶。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy32.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D049",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "动而逢合为合绊静逢合为合起",
+      "conditions": [
+        {
+          "field": "he_ban",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "动逢合为合绊事迟滞待冲开；静逢合为合起",
+          "detail": "静而逢合谓之合起；动而逢合谓之合绊；动与日月动爻合者反不能动"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·合章",
+      "evidence": {
+        "quote": "爻之合者，静而逢合，谓之合起；动而逢合，谓之合绊……爻动，或与日月动爻合者，谓之动逢合而绊住，反不能动之意。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy21.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D050",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "六冲变六合散而复聚",
+      "conditions": [
+        {
+          "field": "liu_bian_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "六冲变六合：散而复聚先难后成",
+          "detail": "六冲变合，散而复聚离而必合；婚姻先吴越后朱陈，功名始难终荣，身命先否后泰"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "增删卜易·六合章",
+      "evidence": {
+        "quote": "六冲变合，散而复聚，离而必合，此婚一定还成……占婚姻，先吴越而后朱陈；占功名，始则艰难，终须荣显；占身命，先否后泰。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy21.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D051",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "六合变六冲先合后离",
+      "conditions": [
+        {
+          "field": "he_bian_chong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "六合变六冲：先合后离得而复失",
+          "detail": "诸占先合后离先亲后疏先荣后悴得而复失成而复败；惟官非盗贼结绝事反宜"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "增删卜易·六冲章",
+      "evidence": {
+        "quote": "凡得六合变六冲者，诸占先合后离，先亲后疏，先浓后淡，先荣后悴，初好后迟，先亨后否，得而复失，成而复败……惟占官非、盗贼、结绝事者最宜。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy23.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D052",
+      "domain": "liuyao",
+      "category": "bian",
+      "name": "卦遇反吟反复不常",
+      "conditions": [
+        {
+          "field": "fu_yin",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "反吟：成而败败而成反复不常",
+          "detail": "皆主成而败败而成有而即无；用神旺相不变冲克则事必成但反复，化回头冲克则大凶"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "增删卜易·反吟",
+      "evidence": {
+        "quote": "皆主成而败、败而成，有而即无、无而即有，得而失、失而得……以上用神旺相，不变冲克者，虽则反伏，事亦必成，只恐用神化回头之冲克者，即如卦变，大凶之象。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy29.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D053",
+      "domain": "liuyao",
+      "category": "xunkong",
+      "name": "用神旺相旬空为假空",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "假空S-=1暂，出旬填实到底不空",
+          "detail": "旺不为空动不为空动而化空伏而旺相皆不为空，有日建动爻生扶者亦不为空"
+        }
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "增删卜易·旬空",
+      "evidence": {
+        "quote": "旺不为空，动不为空，动而化空，伏而旺相，皆不为空，有日建动爻生扶者，亦不为空。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy30.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D054",
+      "domain": "liuyao",
+      "category": "xunkong",
+      "name": "用神休囚旬空为真空",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚",
+            "死"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "真空S-=5到底空无恢复",
+          "detail": "月破为空有气不动亦为空伏而被克亦为空；真空者春土夏金秋木冬火"
+        }
+      ],
+      "weight": -5,
+      "priority": 9,
+      "source": "增删卜易·旬空",
+      "evidence": {
+        "quote": "月破为空，有气不动亦为空，伏而被克亦为空，真空为空。真空者：春土、夏金、秋是木，三冬逢火是真空。如休囚安静或日辰克动……静逢月破值此旬空者，谓之真空到底空矣！",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy30.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D055",
+      "domain": "liuyao",
+      "category": "xunkong",
+      "name": "旬空占近远应期",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "近事旬内空出旬应；远事应出空之日",
+          "detail": "在旬内固为空，然有冲空之日实空之时；远在一旬之外许应于出空之日；大象不吉方到底空"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·旬空",
+      "evidence": {
+        "quote": "如在旬内，固为空矣，然又有冲空之日、实空之时；如远在一旬之外，许应于出空之日；若占远大之事……大象不吉，始可谓到底之空。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy30.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D056",
+      "domain": "liuyao",
+      "category": "yuepo",
+      "name": "月破爻发动出月填实不破",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "月破发动：出月/值日/逢合不破",
+          "detail": "动者亦能生克他爻，目下虽破出月不破；月破最喜逢合填实，远应年月近应日时"
+        }
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "动者亦能生克他爻，变者亦能生克本爻，目下虽破出月不破矣！今日虽破，值日不破矣！月破最喜逢合填实，远应年月，近应日时。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D057",
+      "domain": "liuyao",
+      "category": "yuepo",
+      "name": "月破安静空弱被克为真破",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        },
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "真破到底无恢复",
+          "detail": "破而安静再值旬空衰弱，遇动爻月建日辰克害，此等月破谓之真破到底破矣"
+        }
+      ],
+      "weight": -5,
+      "priority": 9,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "如破而安静再值旬空衰弱，遇动爻月建日辰克害，此等月破谓之真破，到底破矣！",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D058",
+      "domain": "liuyao",
+      "category": "fushen",
+      "name": "伏神有六易引出",
+      "conditions": [
+        {
+          "field": "yong_bu_xian",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "fu_shen.you_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "伏神得日月生/旺相/飞神生/动爻生/冲飞/飞空破，易引出",
+          "detail": "伏神有用者六：得日月生、旺相、得飞神生、得动爻生、得日月动爻冲克飞神、得飞神空破休囚墓绝"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·伏神",
+      "evidence": {
+        "quote": "伏神有用者六：伏神得日月生者，一也。伏神旺相者，二也。伏神得飞神生者，三也。伏神得动爻生者，四也。伏神得遇日月动爻冲克飞神者，五也。伏神得遇飞神空破休囚墓绝者，六也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy36.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D059",
+      "domain": "liuyao",
+      "category": "fushen",
+      "name": "伏神五终不得出",
+      "conditions": [
+        {
+          "field": "yong_bu_xian",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "fu_shen.wu_li",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "伏神休囚无气被克墓绝空破，终不得出",
+          "detail": "伏神终不得出者五：休囚无气、被日月冲克、被旺相飞神克害、墓绝于日月飞爻、休囚值旬空月破"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "增删卜易·伏神",
+      "evidence": {
+        "quote": "伏神终不得出者五：伏神休囚无气者，一也。伏神被日月冲克者，二也。伏神被旺相之飞神克害者，三也。伏神墓绝于日月飞爻者，四也。伏神休囚，值旬空月破者，五也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy36.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D060",
+      "domain": "liuyao",
+      "category": "fushen",
+      "name": "飞来生伏得长生飞来克伏受制",
+      "conditions": [
+        {
+          "field": "fu_shen.guanxi",
+          "operator": "==",
+          "value": "sheng"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "飞来生伏得长生，无用亦作吉断",
+          "detail": "飞来生伏谓之得长生，无用亦为有用便作吉断；飞来克伏谓之受制，有用亦无用即以凶推"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·伏神",
+      "evidence": {
+        "quote": "亥水而生寅木，谓之飞来生伏得长生……无用亦为有用，便作吉断。辰土而克子水，谓之飞来克伏遭克害，名为伏神受制，有用亦无用矣，即以凶推。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy36.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D061",
+      "domain": "liuyao",
+      "category": "fushen",
+      "name": "伏神应期值日或冲飞",
+      "conditions": [
+        {
+          "field": "yong_bu_xian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "伏神应期：待伏神值日出现之日或冲飞神之日",
+          "detail": "空下伏神易于引拔；应子日者，子水冲克午火之飞神，生起卯木之伏神故也"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·伏神",
+      "evidence": {
+        "quote": "空下伏神，易于引拔……许甲午日出空必得。应子日者，子水冲克午火之飞神，生起卯木之伏神故也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy36.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D062",
+      "domain": "liuyao",
+      "category": "fushen",
+      "name": "伏居空地事与心违",
+      "conditions": [
+        {
+          "field": "yong_bu_xian",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "shi_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神伏居空地事与心违；旺相伏空出空则出",
+          "detail": "伏居空地，事与心违；凡用神旺相而遇旬空，出空之日则出矣"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "伏居空地，事与心违。凡用神旺相而遇旬空，出空之日则出矣。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy36.html",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D063",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "长生墓绝四节点查表",
+      "conditions": [
+        {
+          "field": "biao",
+          "operator": "==",
+          "value": "shengwangmujue"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "金巳生酉旺丑墓寅绝；木亥生卯旺未墓申绝；火寅生午旺戌墓亥绝；水土申生子旺辰墓巳绝",
+          "detail": "只验生旺墓绝，余十干沐浴等不用"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·生旺墓绝",
+      "evidence": {
+        "quote": "金长生在巳，旺在酉，墓在丑，绝在寅。木长生在亥，旺在卯，墓在未，绝在申。火长生在寅，旺在午，墓在戌，绝在亥。水、土长生在申，旺在子，墓在辰，绝在巳。余得验者，只验生旺墓绝，其余不验。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy31.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D064",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "金休囚遇巳论克不论生",
+      "conditions": [
+        {
+          "field": "yong_shen.wx",
+          "operator": "==",
+          "value": "金"
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "金休囚遇巳火多论克不论生；土休囚遇巳方论绝，旺相遇巳反论生",
+          "detail": "金爻休囚无气再遇巳午火多者，烈火煎金则论克不论生；土旺相遇巳反能生土"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "增删卜易·生旺墓绝",
+      "evidence": {
+        "quote": "金爻休囚无气，再遇巳午火多者，烈火煎金，则论克不论生……土爻虽绝于巳，必须休囚无气，又逢巳者，方谓之绝。若土爻旺相……再遇巳爻者，巳火反能生土，则论生不论绝。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy31.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D065",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "世用休囚入墓为真墓",
+      "conditions": [
+        {
+          "field": "yong_shen.ru_mu",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "世用休囚被克入三墓为真入墓凶危；旺相有扶入墓待冲开",
+          "detail": "惟世爻用爻休囚被克而又入墓者为是；旺相者非真，待冲开墓库之年月遂心"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "增删卜易·三墓",
+      "evidence": {
+        "quote": "惟世爻、用爻休囚被克，而又入墓者为是也……自占看世爻，世爻旺相者非真；代占看用神，用神旺相者非真。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy38.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D066",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "墓神被冲破不为真墓",
+      "conditions": [
+        {
+          "field": "mu_shen.bei_chongpo",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "墓破如破网容易而出，不为真墓",
+          "detail": "墓神被日月动爻冲破者亦不为真，盖墓破即如破网容易而出也"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "增删卜易·三墓",
+      "evidence": {
+        "quote": "墓神被日月动爻冲破者，亦不为真。盖，墓破即如破网，容易而出也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy38.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D067",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "占病世用入墓冲开应吉凶",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "病"
+        },
+        {
+          "field": "yong_shen.ru_mu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "占病入墓：世旺冲开之月日愈，休囚空破冲开之日危，近病空墓出空即愈",
+          "detail": "占疾病，世旺得地冲开之月日而愈；休囚空破冲开之月日而危；近病者空则无妨出空即愈"
+        }
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "增删卜易·三墓",
+      "evidence": {
+        "quote": "占疾病，世旺得地，冲开之月日而愈；休囚空破，冲开之月日而危；近病者，空则无妨，出空即愈。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy38.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D068",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "用神绝待生逢绝处逢生",
+      "conditions": [
+        {
+          "field": "hua_jue",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神绝于日辰/动化绝，待长生生旺之日应事",
+          "detail": "绝逢生而事成；化绝待逢生"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "绝逢生而事成。化绝待逢生。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D069",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "入墓难克带旺非空",
+      "conditions": [
+        {
+          "field": "yong_shen.ru_mu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "入墓之爻难被克；带旺者非空",
+          "detail": "入墓难克，带旺非空"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "入墓难克，带旺非空。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D070",
+      "domain": "liuyao",
+      "category": "mu",
+      "name": "用爻重叠喜墓库收藏",
+      "conditions": [
+        {
+          "field": "yong_two_xian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "两现用神喜墓库以收藏，不宜再旺动",
+          "detail": "用爻重叠，喜墓库以收藏"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "用爻重叠，喜墓库以收藏。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D071",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神发动应期逢合",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：动而逢合之日",
+          "detail": "如逢合住须冲破以成功……动而逢合"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策·应期",
+      "evidence": {
+        "quote": "如逢合住，须冲破以成功……动而逢合。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D072",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神安静旺应期逢冲",
+      "conditions": [
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": false
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：静待冲起之日",
+          "detail": "静得冲而暗兴；用神旺相安静，待逢冲日"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策·应期",
+      "evidence": {
+        "quote": "静得冲而暗兴。用神旺相安静，待逢冲日。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D073",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神旬空应期出空填实",
+      "conditions": [
+        {
+          "field": "yong_shen.xun_kong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：出旬/填实(值日)/冲实之日",
+          "detail": "空逢冲而有用……出空之日则不空也"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·旬空",
+      "evidence": {
+        "quote": "空逢冲而有用……出空之日则不空也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy30.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D074",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神月破应期出月填实逢合",
+      "conditions": [
+        {
+          "field": "yong_shen.yue_po",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：出月/填实(值日)/逢合之日",
+          "detail": "月破最喜逢合填实，远应年月近应日时"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "月破最喜逢合填实，远应年月，近应日时。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D075",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神入墓应期冲墓",
+      "conditions": [
+        {
+          "field": "yong_shen.ru_mu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：冲开墓库之日",
+          "detail": "占功名，世旺得地，冲开墓库之年月成名"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·三墓",
+      "evidence": {
+        "quote": "占功名，世旺得地，冲开墓库之年月成名。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy38.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D076",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神被合住应期冲开",
+      "conditions": [
+        {
+          "field": "yong_shen.feng_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：冲开合爻之日",
+          "detail": "如逢合住，须冲破以成功；若逢合住必待冲开"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策·应期",
+      "evidence": {
+        "quote": "如逢合住，须冲破以成功。若逢合住，必待冲开。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D077",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神伏藏应期值日冲飞",
+      "conditions": [
+        {
+          "field": "yong_bu_xian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "应期：伏神值日出现之日/冲飞神之日",
+          "detail": "伏无提拔终徒尔，飞不推开亦枉然；空下伏神易于引拔"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策·应期",
+      "evidence": {
+        "quote": "伏无提拔终徒尔，飞不推开亦枉然。空下伏神，易于引拔。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D078",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "临月建应本月临日辰应当日",
+      "conditions": [
+        {
+          "field": "yong_shen.zhi",
+          "operator": "==",
+          "value": "${month_zh}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "临月建事应本月内，临日辰事应当日",
+          "detail": "爻值月建旺相当权；应本月升者卯官而值月令也"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "增删卜易·月将章",
+      "evidence": {
+        "quote": "爻值月建……旺相当权。应本月升者，卯官而值月令也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy18.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D079",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "进退神应期逢值逢合冲",
+      "conditions": [
+        {
+          "field": "hua_jin_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "进神应期逢值逢合月日；退神应期逢值逢冲月日(退应较远)",
+          "detail": "进神者久远长久之象；退神者渐渐凋零"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·进退神",
+      "evidence": {
+        "quote": "进神者……久远长久之象；退神者……渐渐凋零。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy37.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D080",
+      "domain": "liuyao",
+      "category": "yingqi",
+      "name": "用神休囚待生旺成事",
+      "conditions": [
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "休",
+            "囚"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "休囚必待生旺之月日而成事",
+          "detail": "若遇休囚必生旺而成事；衰则逢旺而达，病则遇生而安，绝处逢生者发"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策·应期",
+      "evidence": {
+        "quote": "若遇休囚，必生旺而成事。衰则逢旺而达，病则遇生而安。绝处逢生者发。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D081",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "求财财旺居库大豪富",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "求财"
+        },
+        {
+          "field": "cai_shen.ru_ku",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "cai_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财爻旺相居库，主大豪富",
+          "detail": "何知人家大豪富？财爻旺相又居库；财居辰戌丑未四库旺相者农工商贾致富"
+        }
+      ],
+      "weight": 3,
+      "priority": 7,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "何知人家大豪富？财爻旺相又居库。财居辰戌丑未四库旺相者，农工商贾致富。",
+        "source_url": "http://ab.newdu.com/book/ms199241.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D082",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "求财财衰伏鬼无财贫寒",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "求财"
+        },
+        {
+          "field": "cai_shen.ruo",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财带耗休囚/财伏鬼下/六爻无财/财化空绝死破，主贫寒",
+          "detail": "何知人家多贫贱？财爻带耗休囚见；六爻无财者财伏鬼下者皆主贫"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "何知人家多贫贱？财爻带耗休囚见。六爻无财者，财伏鬼下者，皆主贫也。",
+        "source_url": "http://ab.newdu.com/book/ms199241.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D083",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "财克世分目下与终身",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "求财"
+        },
+        {
+          "field": "cai_shen.ke_shi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "目下之财财克世必得；终身财福财克世反主受财之累",
+          "detail": "占目下之财财克世者必得；占终身之财福财克世者乃生平受财之原因财之害"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·求财",
+      "evidence": {
+        "quote": "占目下之财，财克世者必得；占终身之财福，财克世者，乃生平受财之累，因财之害也。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy44.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D084",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "兄爻持世耗财莫聚",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "终身财福"
+        },
+        {
+          "field": "shi_shen",
+          "operator": "==",
+          "value": "兄弟"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "兄爻持世财莫能聚；旺则贫而好义衰则疾病官非",
+          "detail": "兄爻持世乃耗财之神；旺则贫而好义，衰则多疾病官非；得日月生扶贫而乐"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "增删卜易·求财",
+      "evidence": {
+        "quote": "兄爻持世，乃耗财之神……旺则贫而好义，衰则多疾病官非；得日月生扶，贫而乐；得日月作财而合世，富而骄。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy44.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D085",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "财福旺相生合世身富家",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "求财",
+            "终身财福"
+          ]
+        },
+        {
+          "field": "cai_fu_wang",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财爻旺相子孙旺动生财得日月生合世身，财源滚滚",
+          "detail": "财福带月日动变来生合世身者富；衰财持世得日月动爻生扶合助者爆发兴家"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "易隐",
+      "evidence": {
+        "quote": "财福带月日动变来生合世身者富。财爻、福爻本来旺相者……乃生成之富足……倘遇衰财持世，或得日月动爻生扶合助者，爆发兴家。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62613.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D086",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "正变卦有无财定先后贫富",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "终身财福"
+        },
+        {
+          "field": "zheng_bian_cai",
+          "operator": "==",
+          "value": "wu_to_you"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "正卦无财变卦有/世财死绝化生旺，先贫后富；反则先富后贫",
+          "detail": "正卦无财变卦有或世财死绝化生旺者先贫后富；正卦有财变卦无或世财生旺化死绝空破者先富后贫"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "易隐",
+      "evidence": {
+        "quote": "正卦无财变卦有，或世财死绝，化生旺者，先贫后富也。正卦有财变卦无，或世财生旺化死绝空破者，先富后贫也。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62613.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D087",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "占婚用神旺世应相合婚成",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "婚姻"
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "男占以财为用女占以官为用；用神旺与世相生合卦逢六合则婚成",
+          "detail": "占婚必成然必用神有气相宜"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "增删卜易·六合章",
+      "evidence": {
+        "quote": "占婚必成……然必用神有气相宜。男占妻财为用、女占官鬼为用。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy21.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D088",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "占婚六冲六合互变",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "婚姻"
+        },
+        {
+          "field": "liu_bian_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "占婚六冲变六合先难后成；六合变六冲先成后散",
+          "detail": "六冲变合散而复聚；六合变六冲先亲后疏"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易",
+      "evidence": {
+        "quote": "六冲变合，散而复聚，离而必合。六合变六冲……先亲后疏。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy21.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D089",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "占婚财鬼空亡世应俱空大忌",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "婚姻"
+        },
+        {
+          "field": "shi_ying_jukong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财空妻失鬼空夫亡；世应俱空人无准实难遂百年",
+          "detail": "世应俱空人无准实；财空者鳏，鬼空者寡"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "世应俱空，人无准实。财空者鳏，鬼空者寡。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D090",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "近病逢冲即愈久病逢冲则死",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "病"
+        },
+        {
+          "field": "jin_bing",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.chong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "近病逢冲即愈；久病逢冲则死",
+          "detail": "惟占病有远近之分，近病逢冲即愈，久病逢冲则死"
+        }
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "增删卜易·六冲章",
+      "evidence": {
+        "quote": "惟占病，有远近之分，不用用神，近病逢冲即愈，久病逢冲则死。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy23.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D091",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "占病子孙持世遇良医药效",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "病"
+        },
+        {
+          "field": "shi_shen",
+          "operator": "==",
+          "value": "子孙"
+        },
+        {
+          "field": "yong_shen.ru_mu",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "占病以官鬼为病症子孙为医药；子孙持世旺相遇良医；用神无救入墓则病危",
+          "detail": "何知人家病要死？用神无救又入墓；子孙持世占近事必遇良医"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "何知人家病要死？用神无救又入墓。子孙持世……占近事……必遇良医。",
+        "source_url": "http://ab.newdu.com/book/ms199241.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D092",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "官鬼持世临白虎克世罪凶",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "病"
+        },
+        {
+          "field": "shi_shen",
+          "operator": "==",
+          "value": "官鬼"
+        },
+        {
+          "field": "lin_baihu",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "gua_ke_shi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官鬼持世临白虎刀动克世主罪凶病危；子孙化退临月建虽退不退",
+          "detail": "世临卯木酉金鬼动冲克世爻加临白虎谓之白虎刀，主罪之凶极"
+        }
+      ],
+      "weight": -3,
+      "priority": 7,
+      "source": "增删卜易",
+      "evidence": {
+        "quote": "世临卯木……酉金鬼动，冲克世爻，加临白虎，谓之白虎刀，主罪之凶极。子孙化退神……动变皆属秋金，当权得令，占近事岂可曰退？",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy20.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D093",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "身命世持财禄龙喜荣华",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        },
+        {
+          "field": "shi_chi_cailu_longxi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "世持财禄龙喜主田庄之乐荣华；世身月破必犯殇殀，岁冲身位定生疾厄",
+          "detail": "如世持财禄龙喜则田庄之乐；月破世爻必犯殇殀，岁冲身位定生疾厄"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "易隐",
+      "evidence": {
+        "quote": "如世持财禄龙喜，则田庄之乐也。月破世爻，必犯殇殀也。岁冲身位，定生疾厄也。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62612.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D094",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "身命世入墓乡到老多戾",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        },
+        {
+          "field": "shi.ru_mu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "世入墓乡到老求谋多戾；卦身两动一生起倒无恒；世强无助自己支持世弱得扶因人竖立",
+          "detail": "世入墓乡到老求谋多戾；卦身两动一生起倒无恒；世强无助自己支持；世弱得扶因人竖立"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "易隐",
+      "evidence": {
+        "quote": "世入墓乡，到老求谋多戾。卦身两动，一生起倒无恒。世强无助，自己支持。世弱得扶，因人竖立。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62612.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D095",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "身命六冲虚花六合稳实",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        },
+        {
+          "field": "ben_gua",
+          "operator": "==",
+          "value": "六冲卦"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "身命六冲卦诸事虚花一事无成；六合卦百般稳实终身荣华",
+          "detail": "六冲则诸事虚花，六合则百般稳实；正变六冲没齿不成一事，后先六合终身享尽荣华"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "易隐",
+      "evidence": {
+        "quote": "六冲则诸事虚花。六合则百般稳实。正变六冲，没齿不成一事。后先六合，终身享尽荣华。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62612.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D096",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "身命官鬼克世鬼旺身衰身伤家倾",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        },
+        {
+          "field": "gui_ke_shi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官鬼克世/鬼旺身衰主身伤家倾多招刑宪小人残疾；世动变鬼克世或日月作鬼克世更凶",
+          "detail": "凡遇官鬼克世世爻旺者一生多招刑宪；若鬼旺身衰乃身伤家倾之兆"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "增删卜易·身命",
+      "evidence": {
+        "quote": "凡遇官鬼克世，世爻旺者，一生多招刑宪……若鬼旺身衰，乃身伤家倾之兆……如世爻动而变鬼克世，及日月作鬼克世者，更凶。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy44.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D097",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "身命子孙持世孤立清高",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        },
+        {
+          "field": "shi_shen",
+          "operator": "==",
+          "value": "子孙"
+        },
+        {
+          "field": "cai_shi",
+          "operator": "==",
+          "value": "失陷"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "子孙持世孤立无助又财爻失陷主清高绝俗(僧道寒儒)；青龙子孙持世无气纵清高热是寒儒",
+          "detail": "遇龙子而无气纵清高亦是寒儒；慕道修行皆为子孙持世"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "增删卜易·身命",
+      "evidence": {
+        "quote": "遇龙子而无气，纵清高亦是寒儒。慕道修行，皆为子孙持世。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy44.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D098",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "行人用神化墓旺必归",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "行人"
+        },
+        {
+          "field": "yong_shen.ru_mu",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "行人用神化墓/入动墓而用神旺必归；空破休囚化墓非病于乡即流落异境",
+          "detail": "占行人用神化墓或入动墓者，用神旺必归；用神空破休囚非病于他乡即流落异境"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "增删卜易·三墓",
+      "evidence": {
+        "quote": "占行人，用神化墓，或入动墓者，用神旺必归；用神空破休囚，非病于他乡，即流落于异境。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy38.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D099",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "出行世被合住有事绊",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "出行"
+        },
+        {
+          "field": "shi.feng_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "出行世爻被合住有事绊不能动身；世动化进神但月破则目下不能行",
+          "detail": "世动被子日合住，合住必有事绊不能动身；世临寅木动而化进神因系月破目下未必能行出月方可"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "增删卜易",
+      "evidence": {
+        "quote": "世动，被子日合住。余曰：合住必有事绊，不能动身。世临寅木动而化进神，合当就行，因系月破，目下未必能行，出月方可。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy21.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D100",
+      "domain": "liuyao",
+      "category": "gezhan",
+      "name": "家宅六爻乱动宅不宁游魂无安家",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "in",
+          "value": [
+            "家宅",
+            "身命"
+          ]
+        },
+        {
+          "field": "liu_yao_luan_dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "家宅六爻俱乱动宅不宁；游魂卦占身命一生无安家乐业之所，归魂卦诸事拘泥",
+          "detail": "何知人家宅不宁？六爻俱动乱纷纷；游魂行千里占身命一生无安家乐业之所，归魂不出疆诸事拘泥"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "何知人家宅不宁？六爻俱动乱纷纷。游魂行千里……占身命，一生无安家乐业之所……归魂不出疆，诸事拘泥不行。",
+        "source_url": "http://ab.newdu.com/book/ms199241.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D101",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "卦太过损之斯成不及益之则利",
+      "conditions": [
+        {
+          "field": "net_score",
+          "operator": ">=",
+          "value": 5
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神过旺(太过)损之斯成待克损月日；过衰(不及)益之则利待生扶",
+          "detail": "人有贤不肖之殊卦有过不及之异；太过者损之斯成，不及者益之则利"
+        }
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "人有贤不肖之殊，卦有过不及之异。太过者损之斯成，不及者益之则利。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D102",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "用神有气无他故所做皆成",
+      "conditions": [
+        {
+          "field": "yong_shen.wangshuai",
+          "operator": "in",
+          "value": [
+            "旺",
+            "相"
+          ]
+        },
+        {
+          "field": "ke_yong_dong_count",
+          "operator": "==",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神有气无他故所做皆成；主象徒存更被伤凡谋不易",
+          "detail": "用神有气无他故所做皆成；主象徒存更被伤凡谋不易"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "用神有气无他故，所做皆成；主象徒存更被伤，凡谋不易。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D103",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "用神有伤须救无故勿空",
+      "conditions": [
+        {
+          "field": "ji_shen.ke_yong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神有伤病得原神日月制忌为救则吉；无故旺空勿遽断凶待出空",
+          "detail": "有伤须救，无故勿空"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "有伤须救，无故勿空。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D104",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "凶星避之则吉神煞敌之无伤",
+      "conditions": [
+        {
+          "field": "you_xiong_sha",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "卦遇凶星避之则吉敌之无伤；虎兴遇吉神不害其吉，龙动逢凶曜难掩其凶",
+          "detail": "卦遇凶星避之则吉，爻逢忌煞敌之无伤；虎兴而遇吉神不害其为吉，龙动而逢凶曜难掩其为凶"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "黄金策",
+      "evidence": {
+        "quote": "卦遇凶星，避之则吉。爻逢忌煞，敌之无伤。虎兴而遇吉神不害其为吉，龙动而逢凶曜难掩其为凶。",
+        "source_url": "https://m.qimao.com/shuku/211444/",
+        "book": "黄金策"
+      }
+    },
+    {
+      "rule_id": "LY-D105",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "六神为附和之神不可单凭",
+      "conditions": [
+        {
+          "field": "liu_shen.lin_gua",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "六神为附和之神：卦吉逢青龙更吉，卦凶逢蛇虎更凶，不可单凭六神断生死",
+          "detail": "六神竟而不验耶？非也，乃附和之神耳；卦之吉者逢青龙而更吉，卦之凶者逢蛇虎而更凶"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·六神",
+      "evidence": {
+        "quote": "六神竟而不验耶？非也，乃附和之神耳。卦之吉者，逢青龙而更吉；卦之凶者，逢蛇虎而更凶。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy20.html",
+        "book": "增删卜易"
+      }
+    },
+    {
+      "rule_id": "LY-D106",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "发动青龙临用进财白虎丧病",
+      "conditions": [
+        {
+          "field": "liu_shen",
+          "operator": "==",
+          "value": "青龙"
+        },
+        {
+          "field": "yong_shen.dong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "发动青龙临用进财进禄；临仇忌无益反主酒色成灾；白虎主丧病官司",
+          "detail": "发动青龙附用通进财进禄福无穷，临仇遇忌都无益酒色成灾在此中；白虎交重丧恶事官司病患必成凶"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "发动青龙附用通，进财进禄福无穷，临仇遇忌都无益，酒色成灾在此中。白虎交重丧恶事，官司病患必成凶，持金动克妨人口，遇火生身便不同。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D107",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "六亲变化进退神各有所主",
+      "conditions": [
+        {
+          "field": "liu_qin_bian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "妻财化进神钱财入宅；官鬼化进神求官应疾；兄弟化退神无所忌；父母化进神文书许",
+          "detail": "妻财化进神钱财入宅来；官化进神禄求官应疾；兄弟化退神凡占无所忌；父母化父母进神文书许"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "卜筮正宗",
+      "evidence": {
+        "quote": "妻财化进神，钱财入宅来……官化进神禄，求官应疾连……兄弟化退神，凡占无所忌……父母化父母，进神文书许。",
+        "source_url": "https://www.guoxuedashi.com/a/4181jeew/55805n.html",
+        "book": "卜筮正宗"
+      }
+    },
+    {
+      "rule_id": "LY-D108",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "官鬼持身世贴身鬼分脏腑",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        },
+        {
+          "field": "shi_shen",
+          "operator": "==",
+          "value": "官鬼"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官鬼持身世名贴身鬼：带破碎杀主破相，乾头咳坎耳肾离眼心坤腹胃兑齿唇；伏鬼胎里宿疾化鬼新染",
+          "detail": "官鬼持身世爻名贴身鬼，带破碎杀主破相；在乾宫主头咳嗽，坎主耳肾，离主眼目心经，坤主肚腹胸胃，兑主牙齿缺唇；伏鬼胎里宿疾，化鬼新染之疾"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "易隐",
+      "evidence": {
+        "quote": "官鬼持身世爻，或持用爻，名贴身鬼。如带破碎杀主有破相。在乾宫主头而咳嗽之疾。坎主雨耳，肾家之疾……离主眼目心经之疾。坤主肚腹胸胃之疾。兑主牙齿缺唇之疾。伏鬼者为胎里宿疾……化鬼则后来新染之疾也。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62613.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D109",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "身命大象旺相生时荣昌",
+      "conditions": [
+        {
+          "field": "divination_type",
+          "operator": "==",
+          "value": "身命"
+        },
+        {
+          "field": "daxiang",
+          "operator": "==",
+          "value": "旺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大象旺相生时家道荣昌；大象休囚资囊萧索；伏藏无本宫大象必无祖业",
+          "detail": "大象旺相生时家道荣昌；大象休囚此际资囊萧索；伏藏之卦无本宫大象者必无祖业"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "易隐",
+      "evidence": {
+        "quote": "大象旺相，生时家道荣昌。大象休囚，此际资囊萧索。故伏藏之卦无本宫大象者，必无祖业也。",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/yiyin/62612.html",
+        "book": "易隐"
+      }
+    },
+    {
+      "rule_id": "LY-D110",
+      "domain": "liuyao",
+      "category": "zongpan",
+      "name": "一事可多占合参决恍惚",
+      "conditions": [
+        {
+          "field": "guo_youhu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "卦恍惚/用神不现可命再占多占合参；卦吉者许出旬不空卦凶者许到底空",
+          "detail": "后得多占之法，凡遇旬空命之再占，卦吉者许之出旬而不空，卦凶者许之空矣；多占之法能消除许多疑惑"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "增删卜易·多占",
+      "evidence": {
+        "quote": "后得多占之法，凡遇旬空，命之再占，卦吉者，许之出旬而不空；卦凶者，许之空矣。多占之法，能消除许多疑惑。",
+        "source_url": "https://www.quanxue.cn/qt_mingxiang/zengshanpy/zengshanpy30.html",
+        "book": "增删卜易"
+      }
     }
   ]
 }

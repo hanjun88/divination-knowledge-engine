@@ -1,0 +1,1989 @@
+{
+  "domain": "western",
+  "count": 72,
+  "rules": [
+    {
+      "rule_id": "WE-D001",
+      "domain": "western",
+      "category": "dignity",
+      "name": "太阳在狮子座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "狮子座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "太阳在狮子座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D002",
+      "domain": "western",
+      "category": "dignity",
+      "name": "太阳在白羊座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "白羊座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "太阳在白羊座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D003",
+      "domain": "western",
+      "category": "dignity",
+      "name": "太阳在水瓶座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "水瓶座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "太阳在水瓶座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D004",
+      "domain": "western",
+      "category": "dignity",
+      "name": "太阳在天秤座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "太阳"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天秤座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "太阳在天秤座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D005",
+      "domain": "western",
+      "category": "dignity",
+      "name": "月亮在巨蟹座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "月亮"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "巨蟹座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "月亮在巨蟹座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D006",
+      "domain": "western",
+      "category": "dignity",
+      "name": "月亮在金牛座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "月亮"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "金牛座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "月亮在金牛座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D007",
+      "domain": "western",
+      "category": "dignity",
+      "name": "月亮在摩羯座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "月亮"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "摩羯座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "月亮在摩羯座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D008",
+      "domain": "western",
+      "category": "dignity",
+      "name": "月亮在天蝎座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "月亮"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天蝎座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "月亮在天蝎座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D009",
+      "domain": "western",
+      "category": "dignity",
+      "name": "水星在双子座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "水星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "双子座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "水星在双子座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D010",
+      "domain": "western",
+      "category": "dignity",
+      "name": "水星在处女座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "水星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "处女座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "水星在处女座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D011",
+      "domain": "western",
+      "category": "dignity",
+      "name": "水星在处女座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "水星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "处女座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "水星在处女座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D012",
+      "domain": "western",
+      "category": "dignity",
+      "name": "水星在射手座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "水星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "射手座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "水星在射手座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D013",
+      "domain": "western",
+      "category": "dignity",
+      "name": "水星在双鱼座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "水星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "双鱼座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "水星在双鱼座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D014",
+      "domain": "western",
+      "category": "dignity",
+      "name": "水星在双鱼座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "水星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "双鱼座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "水星在双鱼座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D015",
+      "domain": "western",
+      "category": "dignity",
+      "name": "金星在金牛座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "金星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "金牛座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "金星在金牛座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D016",
+      "domain": "western",
+      "category": "dignity",
+      "name": "金星在天秤座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "金星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天秤座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "金星在天秤座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D017",
+      "domain": "western",
+      "category": "dignity",
+      "name": "金星在双鱼座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "金星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "双鱼座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "金星在双鱼座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D018",
+      "domain": "western",
+      "category": "dignity",
+      "name": "金星在天蝎座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "金星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天蝎座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "金星在天蝎座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D019",
+      "domain": "western",
+      "category": "dignity",
+      "name": "金星在白羊座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "金星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "白羊座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "金星在白羊座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D020",
+      "domain": "western",
+      "category": "dignity",
+      "name": "金星在处女座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "金星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "处女座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "金星在处女座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D021",
+      "domain": "western",
+      "category": "dignity",
+      "name": "火星在白羊座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "火星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "白羊座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "火星在白羊座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D022",
+      "domain": "western",
+      "category": "dignity",
+      "name": "火星在天蝎座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "火星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天蝎座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "火星在天蝎座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D023",
+      "domain": "western",
+      "category": "dignity",
+      "name": "火星在摩羯座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "火星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "摩羯座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "火星在摩羯座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D024",
+      "domain": "western",
+      "category": "dignity",
+      "name": "火星在天秤座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "火星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天秤座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "火星在天秤座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D025",
+      "domain": "western",
+      "category": "dignity",
+      "name": "火星在金牛座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "火星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "金牛座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "火星在金牛座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D026",
+      "domain": "western",
+      "category": "dignity",
+      "name": "火星在巨蟹座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "火星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "巨蟹座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "火星在巨蟹座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D027",
+      "domain": "western",
+      "category": "dignity",
+      "name": "木星在射手座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "木星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "射手座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "木星在射手座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D028",
+      "domain": "western",
+      "category": "dignity",
+      "name": "木星在双鱼座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "木星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "双鱼座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "木星在双鱼座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D029",
+      "domain": "western",
+      "category": "dignity",
+      "name": "木星在巨蟹座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "木星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "巨蟹座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "木星在巨蟹座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D030",
+      "domain": "western",
+      "category": "dignity",
+      "name": "木星在双子座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "木星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "双子座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "木星在双子座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D031",
+      "domain": "western",
+      "category": "dignity",
+      "name": "木星在处女座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "木星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "处女座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "木星在处女座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D032",
+      "domain": "western",
+      "category": "dignity",
+      "name": "木星在摩羯座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "木星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "摩羯座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "木星在摩羯座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D033",
+      "domain": "western",
+      "category": "dignity",
+      "name": "土星在摩羯座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "土星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "摩羯座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "土星在摩羯座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D034",
+      "domain": "western",
+      "category": "dignity",
+      "name": "土星在水瓶座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "土星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "水瓶座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "土星在水瓶座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D035",
+      "domain": "western",
+      "category": "dignity",
+      "name": "土星在天秤座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "土星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天秤座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "土星在天秤座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D036",
+      "domain": "western",
+      "category": "dignity",
+      "name": "土星在巨蟹座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "土星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "巨蟹座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "土星在巨蟹座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D037",
+      "domain": "western",
+      "category": "dignity",
+      "name": "土星在狮子座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "土星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "狮子座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "土星在狮子座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D038",
+      "domain": "western",
+      "category": "dignity",
+      "name": "土星在白羊座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "土星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "白羊座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "土星在白羊座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D039",
+      "domain": "western",
+      "category": "dignity",
+      "name": "天王星在水瓶座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "天王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "水瓶座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "天王星在水瓶座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D040",
+      "domain": "western",
+      "category": "dignity",
+      "name": "天王星在天蝎座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "天王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天蝎座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "天王星在天蝎座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D041",
+      "domain": "western",
+      "category": "dignity",
+      "name": "天王星在狮子座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "天王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "狮子座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "天王星在狮子座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D042",
+      "domain": "western",
+      "category": "dignity",
+      "name": "天王星在金牛座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "天王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "金牛座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "天王星在金牛座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D043",
+      "domain": "western",
+      "category": "dignity",
+      "name": "海王星在双鱼座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "海王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "双鱼座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "海王星在双鱼座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D044",
+      "domain": "western",
+      "category": "dignity",
+      "name": "海王星在狮子座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "海王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "狮子座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "海王星在狮子座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D045",
+      "domain": "western",
+      "category": "dignity",
+      "name": "海王星在巨蟹座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "海王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "巨蟹座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "海王星在巨蟹座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D046",
+      "domain": "western",
+      "category": "dignity",
+      "name": "海王星在处女座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "海王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "处女座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "海王星在处女座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D047",
+      "domain": "western",
+      "category": "dignity",
+      "name": "海王星在水瓶座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "海王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "水瓶座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "海王星在水瓶座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D048",
+      "domain": "western",
+      "category": "dignity",
+      "name": "冥王星在天蝎座入庙（庙）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "冥王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天蝎座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "ruler",
+          "detail": "冥王星在天蝎座入庙（庙）（Rulership），weight=+5",
+          "level": "ruler",
+          "score": 5
+        }
+      ],
+      "weight": 5,
+      "priority": 10,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D049",
+      "domain": "western",
+      "category": "dignity",
+      "name": "冥王星在白羊座旺相（旺）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "冥王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "白羊座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "exaltation",
+          "detail": "冥王星在白羊座旺相（旺）（Exaltation），weight=+4",
+          "level": "exaltation",
+          "score": 4
+        }
+      ],
+      "weight": 4,
+      "priority": 9,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D050",
+      "domain": "western",
+      "category": "dignity",
+      "name": "冥王星在金牛座失势（落）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "冥王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "金牛座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "detriment",
+          "detail": "冥王星在金牛座失势（落）（Detriment），weight=-4",
+          "level": "detriment",
+          "score": -4
+        }
+      ],
+      "weight": -4,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-D051",
+      "domain": "western",
+      "category": "dignity",
+      "name": "冥王星在天秤座落陷（陷）",
+      "conditions": [
+        {
+          "field": "planet",
+          "operator": "==",
+          "value": "冥王星"
+        },
+        {
+          "field": "sign",
+          "operator": "==",
+          "value": "天秤座"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "fall",
+          "detail": "冥王星在天秤座落陷（陷）（Fall），weight=-5",
+          "level": "fall",
+          "score": -5
+        }
+      ],
+      "weight": -5,
+      "priority": 5,
+      "source": "西洋占星·Essential Dignities（庙旺落陷）"
+    },
+    {
+      "rule_id": "WE-A001",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：合相",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "合相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "合相",
+          "detail": "合相 标准角距 0°，容许度 ±8°",
+          "angle": 0,
+          "orb": 8
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A002",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：六分相",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "六分相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "六分相",
+          "detail": "六分相 标准角距 60°，容许度 ±4°",
+          "angle": 60,
+          "orb": 4
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A003",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：四分相",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "四分相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "四分相",
+          "detail": "四分相 标准角距 90°，容许度 ±6°",
+          "angle": 90,
+          "orb": 6
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A004",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：三分相",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "三分相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "三分相",
+          "detail": "三分相 标准角距 120°，容许度 ±6°",
+          "angle": 120,
+          "orb": 6
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A005",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：梅花相",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "梅花相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "梅花相",
+          "detail": "梅花相 标准角距 150°，容许度 ±2°",
+          "angle": 150,
+          "orb": 2
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A006",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：对分相",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "对分相"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "对分相",
+          "detail": "对分相 标准角距 180°，容许度 ±8°",
+          "angle": 180,
+          "orb": 8
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A007",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：半六分",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "半六分"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "半六分",
+          "detail": "半六分 标准角距 30°，容许度 ±1.5°",
+          "angle": 30,
+          "orb": 1.5
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A008",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：八分体",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "八分体"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "八分体",
+          "detail": "八分体 标准角距 45°，容许度 ±2°",
+          "angle": 45,
+          "orb": 2
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-A009",
+      "domain": "western",
+      "category": "aspect",
+      "name": "相位：补八分",
+      "conditions": [
+        {
+          "field": "aspect",
+          "operator": "==",
+          "value": "补八分"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "补八分",
+          "detail": "补八分 标准角距 135°，容许度 ±2°",
+          "angle": 135,
+          "orb": 2
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·相位容许度（Aspect Orbs）"
+    },
+    {
+      "rule_id": "WE-H01",
+      "domain": "western",
+      "category": "house",
+      "name": "第1宫·命宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "命宫",
+          "detail": "第1宫（命宫）：自我、外貌、性格、人生态度",
+          "house": 1,
+          "area": "自我、外貌、性格、人生态度"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H02",
+      "domain": "western",
+      "category": "house",
+      "name": "第2宫·财帛宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财帛宫",
+          "detail": "第2宫（财帛宫）：金钱、物质、价值观、自我价值",
+          "house": 2,
+          "area": "金钱、物质、价值观、自我价值"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H03",
+      "domain": "western",
+      "category": "house",
+      "name": "第3宫·兄弟宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 3
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "兄弟宫",
+          "detail": "第3宫（兄弟宫）：沟通、学习、兄弟姐妹、短途旅行",
+          "house": 3,
+          "area": "沟通、学习、兄弟姐妹、短途旅行"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H04",
+      "domain": "western",
+      "category": "house",
+      "name": "第4宫·田宅宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 4
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "田宅宫",
+          "detail": "第4宫（田宅宫）：家庭、根基、房产、内心、父母",
+          "house": 4,
+          "area": "家庭、根基、房产、内心、父母"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H05",
+      "domain": "western",
+      "category": "house",
+      "name": "第5宫·子女宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 5
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "子女宫",
+          "detail": "第5宫（子女宫）：恋爱、创造、娱乐、子女、自我表达",
+          "house": 5,
+          "area": "恋爱、创造、娱乐、子女、自我表达"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H06",
+      "domain": "western",
+      "category": "house",
+      "name": "第6宫·奴仆宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 6
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "奴仆宫",
+          "detail": "第6宫（奴仆宫）：工作、健康、日常、服务、宠物",
+          "house": 6,
+          "area": "工作、健康、日常、服务、宠物"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H07",
+      "domain": "western",
+      "category": "house",
+      "name": "第7宫·夫妻宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 7
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "夫妻宫",
+          "detail": "第7宫（夫妻宫）：婚姻、伴侣、合作、公开敌人",
+          "house": 7,
+          "area": "婚姻、伴侣、合作、公开敌人"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H08",
+      "domain": "western",
+      "category": "house",
+      "name": "第8宫·疾厄宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 8
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "疾厄宫",
+          "detail": "第8宫（疾厄宫）：死亡、重生、性、他人资源、深度转化",
+          "house": 8,
+          "area": "死亡、重生、性、他人资源、深度转化"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H09",
+      "domain": "western",
+      "category": "house",
+      "name": "第9宫·迁移宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 9
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "迁移宫",
+          "detail": "第9宫（迁移宫）：高等教育、哲学、远行、信仰、法律",
+          "house": 9,
+          "area": "高等教育、哲学、远行、信仰、法律"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H10",
+      "domain": "western",
+      "category": "house",
+      "name": "第10宫·官禄宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 10
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官禄宫",
+          "detail": "第10宫（官禄宫）：事业、社会地位、名誉、权威、父母",
+          "house": 10,
+          "area": "事业、社会地位、名誉、权威、父母"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H11",
+      "domain": "western",
+      "category": "house",
+      "name": "第11宫·福德宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 11
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "福德宫",
+          "detail": "第11宫（福德宫）：朋友、团体、希望、理想、社交",
+          "house": 11,
+          "area": "朋友、团体、希望、理想、社交"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    },
+    {
+      "rule_id": "WE-H12",
+      "domain": "western",
+      "category": "house",
+      "name": "第12宫·玄秘宫",
+      "conditions": [
+        {
+          "field": "house",
+          "operator": "==",
+          "value": 12
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "玄秘宫",
+          "detail": "第12宫（玄秘宫）：潜意识、隐秘、灵性、自我毁灭、隔离",
+          "house": 12,
+          "area": "潜意识、隐秘、灵性、自我毁灭、隔离"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西洋占星·后天十二宫（Houses）"
+    }
+  ]
+}

@@ -12,17 +12,17 @@ def test_health_reports_loaded_rule_counts():
     assert response.status_code == 200
     assert response.json() == {
         "status": "ok",
-        "domains": {"liuyao": 82, "ziwei": 64, "bazi": 180},
+        "domains": {"liuyao": 192, "ziwei": 64, "bazi": 294},
     }
 
 
 def test_list_rules_and_invalid_domain():
     response = client.get("/api/rules/liuyao")
     assert response.status_code == 200
-    assert response.json()["count"] == 82
+    assert response.json()["count"] == 192
     assert response.json()["domain"] == "liuyao"
 
-    invalid = client.get("/api/rules/western")
+    invalid = client.get("/api/rules/no_such_domain")
     assert invalid.status_code == 400
 
 

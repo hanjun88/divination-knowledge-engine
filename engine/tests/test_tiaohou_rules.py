@@ -32,7 +32,7 @@ def _load_th_rules():
 def test_rules_file_loads():
     engine, rules, th = _load_th_rules()
     assert isinstance(rules, list)
-    assert len(rules) == 180
+    assert len(rules) == 294
     assert RULES_PATH.exists()
 
 

@@ -1,6 +1,6 @@
 {
   "domain": "bazi",
-  "count": 180,
+  "count": 294,
   "rules": [
     {
       "rule_id": "BZ-D01",
@@ -4753,6 +4753,3143 @@
       "weight": 5,
       "priority": 9,
       "source": "造化元钥·癸水篇"
+    },
+    {
+      "rule_id": "BZ-D001",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "四柱接续相生有情而顺",
+      "conditions": [
+        {
+          "field": "sizhu_liutong",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "shun_ni",
+          "operator": "==",
+          "value": "顺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "有情而顺主吉",
+          "detail": "干弱支生、支衰干辅，接续相生为有情而顺，主吉"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "顺者接续相生，悖者反克为害，故吉凶判然。如天干气弱，地支生之；地支神衰，天干辅之，皆为有情而顺则吉",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D002",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "干支相克无情而悖",
+      "conditions": [
+        {
+          "field": "shun_ni",
+          "operator": "==",
+          "value": "悖"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "无情而悖主凶",
+          "detail": "天干衰弱地支抑之，地支气弱天干克之，皆为无情而悖则凶"
+        }
+      ],
+      "weight": -2,
+      "priority": 7,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "如天干衰弱，地支抑之；地支气弱，天干克之，皆为无情而悖则凶也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D003",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "命贵中和偏枯有损",
+      "conditions": [
+        {
+          "field": "wuxing_zhonghe",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "命贵中和吉，偏枯终于有损",
+          "detail": "四柱流通五行生化则吉；四柱缺陷五行偏枯终于有损；理求平正奇异不足为凭"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "人之八字，最宜四柱流通，五行生化；大忌四柱缺陷，五行偏枯……命贵中和，偏枯终于有损；理求平正，奇异不足为凭",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D004",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "用之神不可劫伤坏夺",
+      "conditions": [
+        {
+          "field": "yongshen.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用之财不可劫用之官不可伤用之印不可坏用之食不可夺",
+          "detail": "用神所赖之十神不可被劫伤坏夺；非用神则虽财官食印皆可被劫伤坏夺"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "滴天髓阐微·用神",
+      "evidence": {
+        "quote": "用之为财不可劫，用之为官不可伤，用之印绶不可坏，用之食神不可夺……不用财星尽可劫，不用官星尽可伤，不用印绶尽可坏，不用食神尽可夺",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/ditiansuichanwei/33469.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D005",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "日主旺极宜泄不宜克",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_ji",
+          "operator": "==",
+          "value": "旺极"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "旺极宜泄不宜克宜顺其气势弗悖其性",
+          "detail": "某五行当令成势无克泄，宜顺其气势引通，不可强制"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "大凡旺之极者，宜泄而不宜克，宜顺其气势，弗悖其性也",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/ditiansuichanwei/33469.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D006",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "昆仑之水可顺不可逆",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "水"
+        },
+        {
+          "field": "ri_zhu.wang_ji",
+          "operator": "==",
+          "value": "旺极"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "水势冲奔可顺不可逆，行金水运反美行土运逆性则凶",
+          "detail": "水旺逢金其势冲奔，一点甲木枯浮难泄水气，不若顺其流为美"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "此造水旺逢金，其势冲奔，一点甲木枯浮，难泄水气，如止其流，反成水患，不若顺其流为美……此所谓昆仑之水，可顺而不可逆也",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/ditiansuichanwei/33469.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D007",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "日主喜神宜旺相忌神宜休囚",
+      "conditions": [
+        {
+          "field": "yongshen.you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日主喜神宜旺相不宜休囚；凶煞忌神宜休囚不宜旺相",
+          "detail": "相妙于旺(方长进无涯)，休甚于囚(方退未能遽复)"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "为日主，为喜神，宜旺相，不宜休囚；为凶煞，为忌神，宜休囚，不宜旺相。然相妙于旺……休甚乎囚……相则方长之气其进无涯也……休则方退之气未能遽复也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D008",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "取用神当审衰旺去留舒配",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "未定"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "取用神不拘十神之名，当审日主衰旺喜忌，当抑则抑当扶则扶",
+          "detail": "命中至理只存用神，不拘财官印比劫食伤枭杀，勿以名之美恶为憎，去留舒配取裁确当"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "命中至理，只存用神，不拘财、官、印绶、比劫、食伤、枭杀，皆可为用，勿以名之美者为佳，恶者为憎。果能审日主之衰旺，用神之喜忌，当抑则抑，当扶则扶，所谓去留舒配，取裁确当",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D009",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "九月甲木杀重生化有情",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "==",
+          "value": "戌"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九月甲木进气庚金退气壬水贴身丁火通根，用火敌杀发科",
+          "detail": "甲木休困已极庚金禄旺克之，然九月甲木进气壬水贴身丁火通根身库，天干一生一制生化有情"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "甲木休困已极，庚金禄旺克之……不知九月甲木进气，壬水贴身相生，不伤丁火。丁火虽弱，通根身库……天干一生一制，地支又遇长生，四柱生化有情",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D010",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "五阳干刚健五阴干柔顺",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "in",
+          "value": [
+            "甲",
+            "丙",
+            "戊",
+            "庚",
+            "壬"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "五阳干性刚健不畏财杀有恻隐心；五阴干性柔顺见势忘义多骄谄",
+          "detail": "阳不堪受克阴不甚畏克，阴易于他从阳难于他从"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "五阳之性刚健，故不畏财煞，而有恻隐之心，其处世不苟且；五阴之性柔顺，故见势忘义，而有鄙吝之心，其处世多骄谄。是以柔能克制刚，刚不能制克柔也",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D011",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "甲木春初得火仲春宜泄秋不容土",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "甲木春初得火发荣，仲春旺极宜泄菁英，秋生不容虚薄之土培根",
+          "detail": "强木得火方化其顽；秋土生金泄气最虚薄，故秋不容土"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "生于春初，木嫩气寒，得火而发荣；生于仲春，旺极之势，宜泄其菁英，所谓强木得火，方化其顽……生于秋，失时就衰……秋土生金泄气，最为虚薄……故秋不容土也",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D012",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "甲木火炽乘龙水宕骑虎",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "甲"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "寅午戌全透丙丁火炽宜坐辰(湿土水库)；申子辰全透壬癸水宕宜坐寅纳水不浮",
+          "detail": "火炽乘龙，水宕骑虎"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "柱中寅午戌全，又透丙丁，不惟泄气太过，而木且被焚，宜坐辰，辰为水库，其土湿，湿土能生木泄火，所谓火炽乘龙也。申子辰全又透壬癸，水泛木浮，宜坐寅，寅乃火土生地，木之禄旺，能纳水气，不致浮泛，所谓水宕骑虎也",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D013",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "乙木怀丁抱丙跨凤乘猴",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "in",
+          "value": [
+            "申",
+            "酉"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "乙木生申酉月得丙丁透干制金有水不争克，不畏金强",
+          "detail": "怀丁抱丙，跨凤乘猴"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "生于申酉月，或乙酉日，得丙丁透出天干，有水不相争克，制化得宜，不畏金强",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D014",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "乙木虚湿骑马亦忧藤萝系甲",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "乙"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "in",
+          "value": [
+            "亥",
+            "子"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "亥子月虚湿无丙丁戌未燥土虽午亦难发；天干甲透地支寅藏则藤萝系甲可春可秋",
+          "detail": "虚湿之地骑马亦忧"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "生于亥子月，四柱无丙丁，又无戌未燥土，即使年支有午，亦难发生也。天干甲透，地支寅藏，此谓鸢萝系松柏，春固得助，秋亦合扶，故可春可秋",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D015",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "丙火虎马犬乡遇甲必焚",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丙"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "丙火支坐寅午戌再遇甲来生必致焚灭；泄威用己土遏焰用壬顺性用辛",
+          "detail": "虎马犬乡火势过烈，再见甲木转生转致焚灭"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "虎马犬乡者，支坐寅午戌，火势已过于猛烈，若再见甲木来生，转致焚灭也。由此论之，泄其威，须用己土；遏其焰，必要壬水；顺其性，还须辛金",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D016",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "丁火干透甲乙秋不畏金",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "丁"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "丁干透甲乙印秋生不畏金；支藏寅卯冬产不忌水；有嫡母甲木可秋可冬",
+          "detail": "干透甲乙秋生不畏金，支藏寅卯冬产不忌水"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "干透甲乙，秋生不畏金；支藏寅卯，冬产不忌水……生于秋冬，得一甲木，则倚之不灭，而焰至无穷也，故曰可秋可冬",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D017",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "戊土春夏水润秋冬火暖",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "戊"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "戊土春夏火旺宜水润燥则物枯；秋冬水多宜火暖湿则物病；坐寅申怕冲宜静",
+          "detail": "艮坤寅申之月春受克气虚宜静秋多泄体薄怕冲"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "生于春夏，火旺宜水润之，则万物发生，燥则物枯；生于秋冬，水多宜火暖之，则万物化成，湿则物病。艮坤者，寅申之月也……春则受克，气虚宜静；秋则多泄，体薄怕冲",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D018",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "己土不愁木盛不畏水狂",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "己"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "己土性柔不愁木盛不畏水狂；火少火晦金多金光；宜中土气深固得丙火暖之",
+          "detail": "湿土能敛火晦火、生金润金；得丙火去阴湿更滋万物"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "不愁木盛者，其性柔和，木藉以培养，木不克也。不畏水狂者，其体端凝，水得以纳藏，水不冲也。水少火晦者，丁火也，阴土能敛火，晦火也。金多金光者，辛金也，湿土能生金，润金也。柱中土气深固，又得丙火去其阴湿之气，更足以滋生万物",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D019",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "庚金得壬而清得丁而锐",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "庚"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "庚金得壬水而清得丁火而锐；遇丑辰湿土生逢未戌燥土脆；能伐甲合乙反弱",
+          "detail": "壬水引通刚杀之性，丁火良冶销熔成器"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "得水而清者，壬水也，壬水发生，引通刚杀之性，便觉淬厉晶莹。得火而锐者，丁火也，丁火阴柔，不与庚金为敌，良冶销熔，遂成剑戟……生于春夏，其气稍弱，遇丑辰之湿土则生，逢未戌之燥土则脆。甲木正敌，力能伐之；与乙相合，转觉有情",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D020",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "辛金畏戊叠乐壬盈热喜母寒喜丁",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "辛"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "辛金畏戊土重叠涸水埋金，乐壬水盈润土养金；夏得己晦火生金冬得丁温水养金",
+          "detail": "热则喜母寒则喜丁"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "畏土之叠者，戊土太重，而涸水埋金；乐水之盈者，壬水有余，而润土养金也……生于夏而火多，有己土则晦火而生金；生于冬而水旺，有丁火则温水而养金。所谓热则喜母，寒则喜丁也",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D021",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "壬水申子辰全透癸顺泄",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "壬"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "壬水申子辰全透癸水势冲奔，纵戊己土不能止须用木泄顺其势；合丁化木则有情",
+          "detail": "强制反成水患，必须用木泄之"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "如申子辰全，又透癸水，其势泛滥，纵有戊己之土，亦不能止其流，若强制之，反冲激而成水患，必须用木泄之，顺其气势，不至于冲奔也。合丁化木，又能生火，不息之妙，化则有情也",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D022",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "癸水至弱逢龙而化",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "癸"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "癸水至弱至静得辰而化，不愁火土多(多则从化)不论庚辛(金多反浊)；合戊见丙丁透化火真",
+          "detail": "逢龙即化，柱中得丙火透露引出化神乃为真"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·天干",
+      "evidence": {
+        "quote": "癸水非雨露之谓，乃纯阴之水。发源虽长，其性极弱……得龙而运，变化不测。所谓逢龙即化，龙即辰也……不愁火土者，至弱之性，见火土多即从化矣；不论庚辛者，弱水不能泄金气，所谓金多反浊，癸水是也。合戊见火者，阴极则阳生……柱中得丙火透露，引出化神，乃为真也",
+        "source_url": "https://quanxue.cn/qt_mingxiang/ditian/ditian09.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D023",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "阳支动速阴支静迟",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "in",
+          "value": [
+            "甲",
+            "丙",
+            "戊",
+            "庚",
+            "壬"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "阳支性动而强吉凶之验恒速；阴支性静而专祸福之应较迟",
+          "detail": "在局在运均以此意消息"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "阳支性动而强，吉凶之验恒速；阴支性静而弱，祸福之应较迟。在局在运，均以此意消息之",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D024",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "生方怕动库宜开败地逢冲",
+      "conditions": [
+        {
+          "field": "chong_type",
+          "operator": "==",
+          "value": "生方"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "生方(寅申巳亥)逢冲两败俱伤忌冲动；四库宜冲开；四败(子午卯酉)逢冲用金水可冲用木火不可冲",
+          "detail": "须活看不可执一"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "生方怕动者，两败俱伤也……库宜开者，然亦有宜不宜……败地逢冲仔细推者，子、午、卯、酉之专气也，用金水则可冲，用木火则不可冲。然亦须活看，不可执一",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D025",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "阴阳同生同死四长生",
+      "conditions": [
+        {
+          "field": "changsheng_lun",
+          "operator": "==",
+          "value": "tongqi"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "不可专执阳生阴死；古法只有四长生阴阳同生同死；乙遇亥以印论丁遇酉以财论",
+          "detail": "若执定阴阳顺逆论命则大谬"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "古人取格，丁遇酉以财论，乙遇午、己遇酉、辛遇子、癸遇卯，以食神泄气论，俱不以生论。乙遇亥、癸遇申以印论，俱不以死论……由此观之，阴阳同生同死可知也，若执定阴阳顺逆，而以阳生阴死，阴生阳死论命，则大谬矣",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D026",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "干支覆载顺遂者昌",
+      "conditions": [
+        {
+          "field": "sizhu_liutong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "干以支为载支以干为覆，天地顺遂精粹者昌，乖悖混乱者亡",
+          "detail": "喜甲乙载寅卯则生旺载申酉则克败"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "取用干支之法，干以载之支为切，支以覆之干为切。如喜甲乙，而载以寅卯亥子，则生旺，载以申酉，则克败矣……天地顺遂而精粹者昌，阴阳乖悖而混乱者亡",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D027",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "天全一气地不载偏枯",
+      "conditions": [
+        {
+          "field": "tianquan_yiqi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天干四甲四乙天全一气而地支无生化受克反克，为地不载主偏枯贫贱",
+          "detail": "须地升天降方流通，无升降反冲克则偏枯贫贱"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "天全一气者，天干四甲、四乙……皆是也。地支不载者，地支与天干无生化也……必须地支之气上升，天干之气下降，则流通生化，而不至于偏枯，又得岁运安顿，非富亦贵矣。如无升降之情，反有冲克之势，皆为偏枯而贫贱矣",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D028",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "地支全方成势天干顺泄",
+      "conditions": [
+        {
+          "field": "diquan_fang",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "地支全方成势，天干须顺其势：旺神在提纲只宜泄不宜制，旺神在别支则制之有力",
+          "detail": "旺神在提纲乃制神绝地，强制则激而肆逞"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "大凡支全三物，其势旺盛。如旺神在提纲，天干必须顺其气势，泄之可也；如旺神在别支，天干制之有力，制之可也。何以旺神在提纲，只宜泄而不宜制？夫旺神在提纲者，必制神之绝地也，如强制之，不得其性，用激而肆逞矣",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D029",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "两气合象不可破",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "contains",
+          "value": "两气"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "两气合而成象一路澄清必位高禄重，中途混乱恐职弃家倾；忌见克破之神",
+          "detail": "相克务须均敌切忌偏重偏轻"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "两气双清，非独木火二形也，如土金、金水、水木，木火、火土，相生各半五局。即相克之五局亦是也……相克务须均敌，切忌偏重偏轻……一路澄清，必位高而禄重；中途混乱，恐职弃而家倾",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D030",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "独象喜行化地忌破局",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "contains",
+          "value": "专旺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "独象(曲直炎上稼穑从革润下)喜行化地食伤泄秀，化神要昌；忌行破局之运",
+          "detail": "一方秀气不杂克神，见金运谓破局凶多吉少"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "独象喜行化地，而化神要昌……木日，或方或局全，不杂金为曲直；火日，或方或局全，不杂水为炎上……皆从一方之秀气……见金运，谓破局，凶多吉少",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D031",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "方局齐来干头无反复",
+      "conditions": [
+        {
+          "field": "fangju_jilai",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "方局齐来须干头无反复：天干有火泄精英不见金水；有火见水或无火见金谓干头反复主困",
+          "detail": "要天干顺其气势为妙"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "方局齐来，其气旺盛，要天干顺其气势为妙……须要天干有火，泄其精英，不见金水，则干头无反复……如天干无火而仍生木，逢凶有解。苟有火而见水，或无火而见金，此谓干头反复",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D032",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "八格取法月令透干司令",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "八格先观月令所得何支次看天干透出何神再究司令定真假然后取用以分清浊；月逢禄刃无格可取另寻别支",
+          "detail": "此实依经顺理"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "八格者，命中之正理也。先观月令所得何支，次看天干透出何神，再究司令以定真假，然后取用，以分清浊，此实依经顺理，若月逢禄刃，无格可取，须审日主之喜忌另寻别支透出天干者，借以为用",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D033",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "体用颠倒旺极不可抑弱极不可扶",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_ji",
+          "operator": "==",
+          "value": "旺极"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "旺则抑弱则扶为常；旺极不可抑反宜扶之，弱极不可扶反宜抑之(从强从弱)",
+          "detail": "五行颠倒之妙用"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "旺则抑之，弱则扶之，虽不易之法，然有不易中之变易者……旺则抑之，如不可抑，反宜扶之；弱则扶之，如不可扶，反宜抑之。此命理之真机，五行颠倒之妙用也。盖旺极者抑之，抑之反激而有害，则宜从其强而扶之；弱极者扶之，扶之徒劳而无功，则宜从其弱而抑之",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D034",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "扶抑取用五法",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_shuai",
+          "operator": "==",
+          "value": "旺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日旺印多用财，日旺官杀轻用财，日旺比劫多用食伤；日弱官杀旺用印，日弱财旺用比劫",
+          "detail": "此扶抑取用之正"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "日主旺，印绶多，必要财星为用；日主旺，官杀轻，亦以财星为用。日主旺，比劫多，劫我财星，以食伤为用……日主弱，官杀旺，则以印绶为用，日主弱，食伤多，亦以印绶为用；日主弱，财星旺，则以比劫为用",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D035",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "人元司令须出现引助",
+      "conditions": [
+        {
+          "field": "lingling_chuxian",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天干为用须地支司令，地支人元须天干引助；司令必须出现方能助格辅用",
+          "detail": "总云人元必须司令则能引吉制凶"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "总云人元必须司令，则能引吉制凶；司令必须出现，方能助格辅用……地支人元必得天干引助，天干为用，必要地支司令",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D036",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "干多不如根重",
+      "conditions": [
+        {
+          "field": "ri_zhu.you_gen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日干月令休囚但年日时有根便能受财官食伤当杀；干多不如根重(长生禄旺为重根墓库余气为轻根)",
+          "detail": "天干得一比肩不如支中得一余气墓库"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "日干不论月令休囚，只要四柱有根，便能受财官食神而当伤官七杀。长生禄旺，根之重者也；墓库余气，根之轻者也。天干得一比肩，不如地支得一余气墓库……得二比肩，不如支中得一长生禄旺……盖比肩如朋友之相扶，通根如家室之可托，干多不如根重，理固然也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D037",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "得时不旺失时不弱",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "木"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "春木虽强金太重无火制为得时不旺逢土生金必夭；秋木虽弱木根深为失时不弱遇官透能受",
+          "detail": "干庚辛支申酉无火制而不富，逢土生而必夭"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "有如春木虽强，金太重而木亦危；干庚辛而支申酉，无火制而不富，逢土生而必夭，是得时不旺也。秋木虽弱，木根深而木亦强，干甲乙而支寅卯，遇官透而能受，逢水生而太过，是失时不弱也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D038",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "五行颠倒太旺旺极太衰衰极",
+      "conditions": [
+        {
+          "field": "ri_zhu.wang_ji",
+          "operator": "==",
+          "value": "太旺"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "五行太旺似金喜火炼；旺极似火喜水克；太衰似水宜金生；衰极似土宜火生",
+          "detail": "五行各例类推"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "木太旺者而似金，喜火之炼也；木旺极者而似火，喜水之克也……木太衰者而似水也，宜金以生之；木衰极者而似土也，宜火以生之",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D039",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "两神相战通关为要",
+      "conditions": [
+        {
+          "field": "tongguan_you",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "两神相战中间有通关之神则通达；印被财坏合住冲坏隔则须岁运引通，关一通求名求利皆遂",
+          "detail": "通关者引通克制之神也"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "通关者，引通克制之神也……若杀重喜印，杀露印亦露，杀藏印亦藏，此显然通达……倘原局无印，必须岁运逢印，向而通之……或被合住，则冲开之；或被冲坏，则合化之；或隔一物，则克去之……此关一通，所谓琴遇子期，马逢伯乐",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D040",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "官杀混杂勿分喜憎",
+      "conditions": [
+        {
+          "field": "guan_sha.hunza",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官杀混杂勿以官为喜杀为憎：身弱者官皆是杀，身旺者杀皆是官；只要无财有印便为佳造",
+          "detail": "官杀一类"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "然官杀一类，勿以官为喜，杀为憎，身弱者官皆是杀，身旺者杀皆是官，只要无财有印，便为佳造",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D041",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "一清到底有精神富贵真",
+      "conditions": [
+        {
+          "field": "yiqing_dadi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "命局一清到底有精神生平富贵真；局有浊气得一神有力或行运扫浊则寒谷回春",
+          "detail": "清而有气精神贯足，清而无气精神枯槁即不贫即贱"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "一清到底有精神，管取生平富贵真。澄浊求清清得去，时来寒谷也回春……清而有气，则精神贯足；清而无气，则精神枯槁。精神枯即邪气入，邪气入则清气散，清气散则不贫即贱矣",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D042",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "财官印贴源头更长",
+      "conditions": [
+        {
+          "field": "cai_guan_yin_tie",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "正官格身弱有印忌财，财不现则清；财与官贴官与印贴印与日贴则财生官官生印印生身源头更长，行运助印自富贵",
+          "detail": "印之源头更长矣"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "如财与官贴，官与印贴，印与日主贴，则财生官，官生印，印生身，印之源头更长矣，至行运再助其印绶，自然富贵矣",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D043",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "喜神得地贴身忌神失势远隔为清",
+      "conditions": [
+        {
+          "field": "xishen_tie",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "喜神宜得地逢生与日主紧贴，忌神宜失势临绝与日主远隔为清；反此为浊",
+          "detail": "总之喜忌远近"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "总之喜神宜得地逢生，与日主紧贴者佳；忌神宜失势临绝，与日主远隔者美",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D044",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "满盘浊气苦一局清枯也苦",
+      "conditions": [
+        {
+          "field": "manpan_zhuo",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "满盘浊气动不能去浊令人苦；一局清枯亦苦；半浊半清多成多败",
+          "detail": "宁使清中浊不可清中枯"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "满盘浊气令人苦，一局清枯也苦人，半浊半清犹是可，多成多败度晨昏……宁使清中浊，不可清中枯。夫浊者，虽成败不一，多有险阻，倘遇行运得所，扫除浊气，亦有起发之机",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D045",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "真神聚得假神不损富贵",
+      "conditions": [
+        {
+          "field": "zhenshen_ju_de",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "所用之神在提纲司令又透干聚得真，不为假神破损生平富贵；假神紧贴真神相克冲暗化忌神则终为碌碌庸人",
+          "detail": "真者得时秉令假者失时退气"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "滴天髓阐微·真假",
+      "evidence": {
+        "quote": "真者，得时秉令之神也；假者，失时退气之神也。言日主所用之神，在提纲司令，又透出天干，谓聚得真，不为假神破损，生平富贵矣。纵有假神，安顿得好，不与真神紧贴，或被闲神合住，或遥隔无力，亦无害也。倘与真神紧贴，或相克相冲，或合真神，暗化忌神，终为碌碌庸人矣",
+        "source_url": "https://www.diancang.xyz/xuanxuewushu/ditiansuichanwei/33490.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D046",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "刚柔相济克泄引从",
+      "conditions": [
+        {
+          "field": "gangrou_xiangji",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "刚者济之以柔柔者济之以刚：得时当令用食神泄秀，失时休囚用食神制杀；宜活用勿执一",
+          "detail": "克泄引从四字宜详审"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "刚柔相济者也，柔者济之以刚，刚者济之以柔……是以泄者有生生之妙，克者有成就之功，引者有和悦之情，从者有变化之妙。克、泄、引、从四字，宜详审之……宜活用，切勿执一而论也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D047",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "乘权成势只可顺不可逆",
+      "conditions": [
+        {
+          "field": "mou_xing_shicheng",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "某五行乘权得势成局只可顺其势引通之；勉强克制激怒其性必罹凶咎",
+          "detail": "不可逆者其气势而已"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "不可逆者，其气势而已矣……不有从旺神而不可克制者……只可顺其气势以引通之，则其流行而为福矣，若勉强得制，激怒其性，必罹凶咎",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D048",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "寒甚要暖暖至要寒",
+      "conditions": [
+        {
+          "field": "han_nuan",
+          "operator": "==",
+          "value": "寒甚"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "八字寒甚要暖有气遇暖而发；暖至要寒有根逢寒而成；寒甚暖无气反以无寒为美",
+          "detail": "寒极暖之机暖极寒之兆"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "寒虽甚，要暖有气，暖虽至，要寒有根，则能生成万物。若寒甚而暖无气，过于暖者，反以无寒为宜也。盖寒极暖之机，暖极寒之兆也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D049",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "木生夏令藉水金生冬令用火",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": "木"
+        },
+        {
+          "field": "month_zhi",
+          "operator": "in",
+          "value": [
+            "巳",
+            "午"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "木生夏令精华发泄必藉壬癸生丑辰湿土培，见未戌燥土反助火；金生冬令可用丙丁见丑辰湿土反助水",
+          "detail": "外有余内虚脱"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "是以木生夏令，精华发泄，外有余而内实虚脱，必藉壬癸以生之，丑辰湿土以培之……若见未戌燥土，反助火而不能晦火，纵有水，亦不能为力也。金生冬令，虽然泄气休囚，竟可用丙丁；若见丑辰湿土，反助水而不能制水，纵有火，亦不能为力也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D050",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "木火伤官要湿金水伤官要燥",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "木火伤官"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "木火伤官要湿(水润之)；金水伤官要燥(火暖之)，燥湿不可偏",
+          "detail": "水火成其燥者吉土水成其湿者吉"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "如水火而成其燥者吉，木火伤官要湿也；土水而成其湿者吉，金水伤官要燥也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D051",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "吉神太露凶物深藏",
+      "conditions": [
+        {
+          "field": "jishen_lu_tiangan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "吉神透天无根起争夺之风；凶物藏地成养虎之患；故吉神深藏终身福凶物明透易制化",
+          "detail": "吉神显露通根当令者露亦无害"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "吉神太露，起争夺之风；凶物深藏，成养虎之患……吉神显露，通根当令者，露亦无害；凶物深藏，失时休囚者，藏亦无妨",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D052",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "强众敌寡去寡强寡敌众成众",
+      "conditions": [
+        {
+          "field": "ri_zhu_dang",
+          "operator": "==",
+          "value": "众"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日主党众敌官星之寡势在去寡，岁运扶众抑寡；日主弱寡而官杀财星成众势在成众，岁运扶寡抑众",
+          "detail": "如日主之党众敌官星之寡"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "强众而敌寡者，势在去其寡；强寡而敌众者，势在成乎众……如日主之党众，敌官星之寡，势在尽去其官，岁运宜扶众抑寡则吉……官星虽寡，得财星扶则强，岁运宜扶寡而抑众者吉",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D053",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "震兑相战五理攻成润从暖",
+      "conditions": [
+        {
+          "field": "jinmu_zhan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "金木相战五法：春初木嫩金坚用火攻，仲春木旺金衰用土成，夏令木泄金燥用水润，秋令木凋金锐用土从，冬令木衰金寒用火暖",
+          "detail": "攻成润从暖"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "震兑之理有五，攻、成、润、从、暖也。春初之木，木嫩金坚，火以攻之；仲春之木，木旺金衰，土以成之；夏令之木，木泄金燥，水以润之；秋令之木，木凋金锐，土以从之；冬令之木，木衰金寒，火以暖之",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D054",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "坎离相见五理升降和解制",
+      "conditions": [
+        {
+          "field": "water_fire_zhan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "水火相见五法：天干离衰地支坎旺须木升，天干坎衰地支离旺须金降，皆火皆水须木和，皆水皆火须金解，交战视强者制之",
+          "detail": "升降和解制"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "相持之理有五，升、降、和、解、制也。升者，天干离衰，地支坎旺，必得地支有木，则地气上升；降者，天干坎衰，地支离旺，必得天干有金，则天气下降；和者，天干皆火，地支皆水，必须有木运以和之；解者，天干皆水，地支皆火，必须有金运以解之；制者，水火交战于干支，必须岁运视其强者而制之",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D055",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "天战犹可地战急火",
+      "conditions": [
+        {
+          "field": "dizhi_zhan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天干战而地支安静犹可；地支战而天干不能为力势速凶；天地交战必凶须合神会神成局息动气方化吉",
+          "detail": "天干气专易制化，地支气杂难制化"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "天战犹自可，地战急如火……天干气专，而得地支安静，易于制化，故天战犹自可也；地支气杂，天干虽顺静，难于制化，故地战急如火也……如甲寅、庚申、乙卯、辛酉……天地交战，虽有合神会神，亦不息其动气，其势速凶",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D056",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "用神伏藏被合反宜冲而动",
+      "conditions": [
+        {
+          "field": "yongshen.fucang_or_behe",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用神伏藏或被合柱中无引用之神，反宜冲而动之方能发用；合有宜不宜冲亦有宜不宜",
+          "detail": "须深究之"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "至于用神伏藏或用神被合，柱中无引用之神，反宜冲而动之，方能发用。故合有宜不宜，冲亦有且不宜也，须深究之",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D057",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "大运盖头截脚",
+      "conditions": [
+        {
+          "field": "dayun.gai_tou",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "喜行某运而干支盖头(干克支)吉运减半；截脚(支绝干)十年皆否",
+          "detail": "盖头吉运减半，截脚十年皆否"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "何谓盖头？如喜木运而遇庚寅辛卯……何谓截脚？如喜木运而遇甲申、乙酉……盖干头喜支，运以重支，则吉凶减半；截脚不载干，支不载干，则十年皆否",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D058",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "喜运干支喜忌盖头截脚",
+      "conditions": [
+        {
+          "field": "dayun.xi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "喜行某运宁使天干生地支(荫厚)弗使地支生天干(气泄)；喜木最优甲寅乙卯次甲辰乙未壬寅癸卯；喜火最优丙午丁未",
+          "detail": "天干生地支荫厚，地支生天干气泄"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "宁使天干生地支，弗使地支生天干；天干生地支而荫厚，地支生天干而气泄……喜行木运，必要甲寅乙卯，次则甲辰、乙亥、壬寅、癸卯；喜行火运，必要丙午丁未，次则丙寅、丁卯、丙戌、丁巳",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D059",
+      "domain": "bazi",
+      "category": "dayun",
+      "name": "岁运天克地冲旺相无碍休囚必凶",
+      "conditions": [
+        {
+          "field": "dayun.tianke_dichong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "岁运天克地冲：日主旺相虽凶无碍，休囚必罹凶咎；日犯岁君旺相无咎休囚必凶；太岁以天干为重",
+          "detail": "最凶者天克地冲"
+        }
+      ],
+      "weight": -1,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "最凶者天克地冲，岁运冲克，日主旺相虽凶无碍，日主休囚必罹凶咎。日犯岁君，日主旺相无咎，日主休囚必凶；岁君犯日，亦同此论",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D060",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "刃杀神清掌生杀兵权",
+      "conditions": [
+        {
+          "field": "ren_sha_shenqing",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "羊刃当权敌杀杀旺无财印绶用刃，刃杀神清气势特主掌生杀兵权(文官兵刑)；刃旺敌杀而有财官神气不清则为武将",
+          "detail": "兵权獬豸弁冠客"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "兵权獬豸弁冠客，刃煞神清气势特……局中杀旺无财，印绶用刃者，或无印而有羊刃者，此谓杀刃神清也。气势特者，刃旺当权也，必文官而掌生杀之任……若刃旺敌杀，局中无食神印绶，而有财官者，气势虽特，神气不清，乃武将之命也",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D061",
+      "domain": "bazi",
+      "category": "xingqing",
+      "name": "十干阴阳取用先看生克",
+      "conditions": [
+        {
+          "field": "day_gan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "十干只以阴阳取用，先看生克次看制化；阳不堪受克阴不甚畏克，阴易他从阳难他从",
+          "detail": "辟甲为栋梁乙为藤萝等比喻"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "只以阴阳取用，先看生克，随看制化，阴阳皆然。惟阳不堪受克，阴不甚畏克。阴易于他从，阳难于他从。此则少为异耳",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D062",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "地支生克以本气为主",
+      "conditions": [
+        {
+          "field": "dizhi.bengqi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "地支生克制化以本气为主(寅先甲后丙戊，申先庚后壬)；阳支动吉凶发速阴支静祸福应缓",
+          "detail": "与天干无异"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "分别取用，亦为刚柔健顺之理，与天干无异。但生克制化，其理多端，盖因一支所藏，或二干，或三干故耳，然以本气为主。如寅必先甲而后及丙戊，申必先庚而后及壬，余支皆然。至于阳支性动，吉凶之发恒速。阴支性静，祸福之应较缓",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D063",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "干合忌分合争合",
+      "conditions": [
+        {
+          "field": "tiangan.he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "干合(甲己丙辛戊癸庚乙壬丁)忌分合与争合；日遇合神即无争夺亦寻常未贵当合四柱观之",
+          "detail": "财官皆吉神所忌分合争合"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "财官皆吉神也，所忌分合，如甲合己而又见一甲，己合甲而又见一己是也。又忌争合，如甲合己，而又见一己，己合甲而又见一甲是也……然日遇合神，即无奋争，亦寻常未贵，当合四柱观之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D064",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "忌神贪合不为祸吉神贪合不为福",
+      "conditions": [
+        {
+          "field": "jishen.bei_he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日干畏忌神得邻干合去忌神则贪合不为祸；日干喜吉神被邻干合去则贪合不为福",
+          "detail": "喜忌之法宜仿此推"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "若癸日畏己，得甲合之，则贪合而不为癸祸。壬日爱己，遭甲合之，则贪合而不为壬福。喜忌之法，宜仿此意而推",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D065",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "干合美名恶名为妄说",
+      "conditions": [
+        {
+          "field": "tiangan.he",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "甲己中正乙庚仁义丙辛威制戊癸无情等美名恶名皆妄说当辟",
+          "detail": "人命遇甲己乙庚不必皆中正仁义"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "旧说以甲己为中正之合，乙庚为仁义之合……丙辛为威制之合，戊癸为无情之合……诚如是，则人命遇甲己乙庚作合，宜皆中正仁义，何以少许奸邪？……是必妄说之当辟者也",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D066",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "三刑吉凶本自四柱",
+      "conditions": [
+        {
+          "field": "sanxing",
+          "operator": "in",
+          "value": [
+            "寅巳申",
+            "丑戌未"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "命遇寅巳申丑戌未三刑：吉则职掌刑名威柄凶则刑祸；子卯刑多不吉自刑不甚计较；刑之吉凶实由四柱本吉本凶",
+          "detail": "三刑之法不足深信"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "凡命遇寅巳申，或丑戌未三刑，吉则职掌刑名威柄，凶则刑祸。子卯之刑多不吉。辰午酉亥自刑不甚计较……人命有遇刑而操威柄者，四柱本吉耳。有遇刑而获凶祸者，四柱本凶耳。非必皆刑之故",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D067",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "六害力逊三刑不宜多见",
+      "conditions": [
+        {
+          "field": "liuhai",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "六害(子未丑午寅巳卯辰申亥酉戌)力逊三刑，命中不宜多见；吉害凶未必去凶，凶害吉亦能损吉",
+          "detail": "六合力逊三合故六害逊三刑"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "大抵六合之力逊于三合，故六害之力逊于三刑。人命中不宜多见。以吉害凶，未必能去凶，以凶害吉，亦能损吉",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D068",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "旺相休囚相妙于旺休甚于囚",
+      "conditions": [
+        {
+          "field": "wangxiangxiuqiu",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "将来者进为相当令为旺功成为休退无气为囚；日主喜神欲旺相，凶煞忌神欲休囚；相妙于旺休甚于囚",
+          "detail": "与滴天髓互参"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "将来者进是为相，进而当令是为旺，成功者退是为休，退而无气是为囚……凡四柱干支，须辨旺相休囚，或日主，或喜神，欲旺相不欲休囚。或凶煞，或忌神，欲休囚不欲旺相。然相妙于旺，旺则极盛之物，其退反速，相则方长之气，其进无涯也。休甚于囚，囚则既极之势，必将渐生，休则方退之神，未能遽复也",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D069",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "十干阴阳同生同死墓位",
+      "conditions": [
+        {
+          "field": "changsheng_lun",
+          "operator": "==",
+          "value": "tongqi"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "阴阳同生同死为是，古人只有四长生；墓木必于未火必于戌金必于丑水土必于辰",
+          "detail": "甲乙一木同生同死"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "则阴阳同生同死为是。考广录云，甲乙一木，而分阴阳，非可以死木活木岐而二之，既为一木，同生同死。故古人只有四长生，此说可为确据矣。其论墓则木必于未，火必于戌，金必于丑，水土必于辰",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D070",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "土之生旺墓贯八方",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "土"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "土位中央贯八方旺四季不必与四行同例；土以巳午为生寅卯为克申酉为泄亥子为财四季为旺",
+          "detail": "不必拘拘十二位"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "土位乎中央，贯乎八方，旺乎四季，原不必与四行同例……则论土之法，只当以巳午为生，寅卯为克，申酉为泄，亥子为财，四季为旺，更自合理。何必拘拘数十二位乎",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D071",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "地支藏干同时作用看天易看地难",
+      "conditions": [
+        {
+          "field": "dizhi.canggan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "地支藏干可同时生克、合中带冲、冲中带情；故看天干易看地支难",
+          "detail": "寅中甲生寅中戊泄等"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "天干作用，生则生，合则合，冲则冲，克则克。地支作用，则有种种不同者焉。寅中甲木生火矣，而又有戊食泄火……如寅亥合矣，而寅中之丙，亥中之壬，未尝不冲……如寅申冲矣，而申中之庚，与寅中之甲仍有情……故看天干易，看地支难",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D072",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "干通根支受荫",
+      "conditions": [
+        {
+          "field": "ganzhi_tonggen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "取用干支干以载支为切支以覆干为切；干通根于支支逢生扶根坚冲克根拔；支受荫于干干逢生扶荫盛克则荫衰",
+          "detail": "根与荫"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "取用干支之法，干以载之之支为切，支以覆之之干为切……不特此也，干通根于支，支逢生扶则干之根坚，支逢冲克则干之根拔矣。支受荫于干，干逢生扶则支之荫盛，干逢冲克则支之荫衰矣",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D073",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "建禄专禄归禄不可言格",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "contains",
+          "value": "禄"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "禄非生非克只是地支一比肩不可言格；凡命皆从生克取六格，禄只能助官之吉",
+          "detail": "旧书建禄喜官归禄忌官之说无据"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫人命穷达吉凶，须合四柱取断，安有一支之禄，遂可言格者。凡命皆从生克而取，故有官煞印财食伤六格，禄则非生非克，直是地支中一比肩耳……禄之为用，但能助官之吉，建禄专禄亦犹是也，何助为格乎",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D074",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "干支一气不可遽言三公",
+      "conditions": [
+        {
+          "field": "tianquan_yiqi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "四甲戌四乙酉等天全一地支一气不可遽言位至三公；须合财官印食取用，干支各一字必有缺陷，贫贱凶祸颇多",
+          "detail": "旧书天干一气地支相同位至三公之说不验"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "旧书有云，天干一气，地支相同，人命值此，位至三公。尝考……干支一气者绝少，而一气之命，贫贱凶祸者颇多。盖人命须合财官印食取用，干支各一字，则必有所缺陷矣",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D075",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "两干不杂三朋须全局斟酌",
+      "conditions": [
+        {
+          "field": "sanpeng",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "一主遇两官两印两财两食犹须全局斟酌；两煞两枭两劫两伤则求制求救不暇；三朋非官印财食可用即太重为害",
+          "detail": "不可轻言富贵"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫一主遇两官两印两财两食，犹须以全局斟酌。设使一主两煞两枭两劫两伤，则求制求救，尚且不暇，可易言富贵乎？旧又取天干三同或地支三同，名为三朋……倘系煞伤枭劫，岂非大害乎",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D076",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "专取一时为格不可拘",
+      "conditions": [
+        {
+          "field": "shige",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "论命当合观四柱，吉神处处可用凶神处处可畏；月令取格尚不可拘况专取一时",
+          "detail": "时上偏财时上一位贵等"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫论命当合观四柱，苟属吉神，处处可用。苟属凶神，处处可畏。即云时为归宿，特吉神喜时上生旺，凶神喜时上死绝耳……夫月令取格，只当之理，犹不可拘，况专取一时为格耶",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D077",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "金神格三不通当削",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "金神格"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "金神格(甲己日遇乙丑己巳癸酉时)三不通：金强伐木得水正可滋木，火制则秀气尽，弱土何自存——当削",
+          "detail": "其说三不通"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫果金强伐木，则得水正可滋木泄金，何以忌之，一不通也。使遇顽木，浊土，正恃此一点金气，琢削疏通，用火制之，秀气尽矣，二不通也。己日火值金神结党，不用火制，弱土何以自存？三不通也。则金神之当削，决也",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D078",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "魁罡日德并削",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "魁罡"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "魁罡(庚辰壬辰戊戌庚戌)日德：辰戌为阴阳灭绝之地诸干不宜坐，同一庚辰何以为魁罡又为日德忽猛忽慈无据——并削",
+          "detail": "绝不得同宫之理"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫辰戌既为阴阳灭绝之地，则诸干皆不宜坐，何以取之，况同一庚戊也，何以坐辰则慈，坐戌则猛？同一庚辰也，何以又为魁罡，又为日德？……绝不得魁罡与日德同宫之理，并削之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D079",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "壬骑龙背格无据",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "壬骑龙背"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "壬骑龙背(壬辰日辰多暗冲戌中财官)：壬日辰多安得舍叠逢显煞用暗冲官星；戌中戊乃壬之煞从无冲煞为用——此格无据",
+          "detail": "冲官为用从不冲煞"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫壬日辰多，安得舍叠逢之显煞，而用暗冲之官星。况戌中之戊，乃壬之煞，命家但有冲官为用，从无冲煞为用，则此格之无据决矣",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D080",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "三奇格不足为奇",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "三奇"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "三奇(乙丙丁/财官印全)：乙日遇丙丁丙日遇乙为印遇丁为劫等何奇之有；财官食全何命无之何足为奇——并置之",
+          "detail": "宜并置之"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "若只此三字，乙日遇丙丁，或入木火通明之格。丙日遇乙虽印，遇丁则劫矣。丁日遇乙为枭，遇丙则亦劫矣。又如甲日遇之，则一劫一食一伤。庚日遇之，则一财一煞一官，何奇之有……夫财官食具全，何命无之……何足为奇，宜并置之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D081",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "学堂学馆不足定贵秀",
+      "conditions": [
+        {
+          "field": "xuetang",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "学堂学馆(日干长生月时支/官杀生禄)：一字之生禄何足定文学贵秀，日干太强官杀太旺又逢生旺适为累——宜削",
+          "detail": "干支岂有堂馆"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫一字之生与禄，何足以定其文学贵秀，使日干或太强，官煞或太旺，而又逢生与禄，是适为累耳。况干支不过阴阳之气，有何堂馆？……宜削之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D082",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "生肖字形煞皆陋妄当辟",
+      "conditions": [
+        {
+          "field": "shengxiao_zisha",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "支属生肖及字形煞(平头曲脚悬针倒戈)皆陋妄穿凿之说当亟辟；人命值此四支贵者多矣",
+          "detail": "干支岂在一画一竖"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "此目十二支所属，与人命何涉？旧书多有据以论命……此等陋妄之说，宜亟辟之……夫古圣人制立干支，各有意义，即以形象论，岂在一画一竖乎？……故亟辟之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D083",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "土旺以四季为旺",
+      "conditions": [
+        {
+          "field": "ri_zhu.wx",
+          "operator": "==",
+          "value": "土"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "土与火同，但春夏随母相旺可通；秋冬照例休囚不可处九月戌十二月丑；论土只当以四季辰戌丑未为旺余月论生克",
+          "detail": "与BZ-D070互参"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "土与火同，但春夏随母相旺，理犹可通，秋冬照例休囚，何以处九月之戌，十二月之丑乎，故论土只当以四季为旺。余月但论生克为是",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D084",
+      "domain": "bazi",
+      "category": "liqi",
+      "name": "禄刃是取用法非衰旺序",
+      "conditions": [
+        {
+          "field": "luren_lun",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "衰病官旺是十干历十二支盛衰序；禄刃是十干遇十二支取用法；异类有生克取财官同类无生克取禄刃——二者昭然两义",
+          "detail": "不可藉口阳顺阴逆"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "衰病官旺者，十干历十二支，盛衰之序也。失时退气则为衰病，当时得气则为官旺也。禄刃者十干遇十二支，取用之法也。异类有生克，则取财官，同类无生克，则取禄刃也。昭然两义，何容籍口乎",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D085",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "三合局逢冲紧贴为破局",
+      "conditions": [
+        {
+          "field": "sanhe_jie",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "三合局(亥卯未木寅午戌火巳酉丑金申子辰水)杂冲字紧贴为破局；冲字不紧贴或在外紧贴则会局损局两论；二支会局相贴为妙逢冲即破",
+          "detail": "须天干领出可用"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "滴天髓阐微·任铁樵注",
+      "evidence": {
+        "quote": "凡会忌冲，如亥卯未木局，杂一酉丑字于其中，而以与所冲之神紧贴，是为破局。虽冲字杂地其中，而不紧贴，或冲字处于其外而紧贴，则会局与损局两论，其二支会局者，以相贴为妙，逢冲即破，他字间之，亦遥隔无力，须天干领出可用",
+        "source_url": "https://shixingji.club/public/ditiansui",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D086",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "合禄格只以食神正印正论",
+      "conditions": [
+        {
+          "field": "heluge",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "合禄格(戊日庚申时暗合乙官/癸日庚申时暗合戊官)：专时能合亦能冲；旧书所忌干支犯者富贵甚多——只应以食神正印正论，局无官星合四柱取断",
+          "detail": "无据"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "但专时能合，则亦能冲，安见庚申时，不冲甲寅，为戊之禄，癸之伤乎……旧书所载庚申时忌某干支，甲寅时忌某干支，然人犯诸忌者，富贵甚多。可见戊日庚申时，只应以食神论；癸日庚申时，只应以正印论……即局无官星，自可合四柱取断耳",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D087",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "胞胎说推之不合当削",
+      "conditions": [
+        {
+          "field": "baotai",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "胞胎(甲申乙酉丙子丁亥等受气)：五行绝处即胎元推之不合；支皆带煞带枭乃克身夺食之物柱中逢之尚须处置——故削之",
+          "detail": "且胎中带之何以为美"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "无论阴阳同生同死，即据其说推之。甲申乙酉庚寅辛卯是皆逢绝。若丙戌绝于亥，何以取子与寅？丁己绝于子，何以取亥？……夫煞乃克身之物，枭乃夺食之神，柱中逢之，尚须处置，胎中带之，乃以为美耶，故削之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D088",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "六乙鼠贵格无验当削",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "六乙鼠贵"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "六乙鼠贵(乙日丙子时子动庚为乙官)：乙遇丙为伤官遇子为偏印俱无可取；尝见是日时成木火通明局者贵显，照旧说推详杳无一验——故削",
+          "detail": "无验"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "乙日遇丙为伤官，遇子为偏印，俱无可取。倘以为天乙贵人所临而用之，则凡日贵临时者多矣，何可胜取……尝见人命生于是日是时，成木火通明之局者，往往贵显。若止照旧说推详，杳无一验。故削之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D089",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "福德秀气格妄创当削",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "福德秀气"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "福德秀气(五阴日遇巳酉丑)：阴阳干遇金局或为官杀印财食伤当审时令扶抑，岂因三朋遂为秀气；阳干三朋遇寅午戌申子辰岂无秀气——妄创故削",
+          "detail": "无据"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫阴阳干遇地支金局，或为官煞，或为印财，或为食伤，当须审时令，议扶抑，岂因日主三朋遇之，遂为秀气乎？设遇亥卯未木局，其理亦同，何独不取乎？阳干三朋，遇寅午戌，申子辰，岂无秀气乎？……此实妄创之格，故削之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D090",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "青龙伏形等格宜削",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "contains",
+          "value": "伏形"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "青龙伏形等格(甲乙日坐金)：日支坐官杀何遽当权持势，即会局兼坐财印亦得不问天干不考全局；伏形乃受制而伏与当全得势有分——宜削",
+          "detail": "无据"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫日支坐官煞，何遽当权持势，即是官煞会局，或兼坐财印，亦得不问天干，不考全局乎？且旧注伏形，言伏于金也，夫受制而伏，与当全得势，必有分矣……宜削之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D091",
+      "domain": "bazi",
+      "category": "geju",
+      "name": "遥合格宜亟辟",
+      "conditions": [
+        {
+          "field": "geju",
+          "operator": "==",
+          "value": "遥合"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "遥合格(子遥巳丑遥巳以支中所藏暗合化神取官)：子巳向非合神，诸支所藏如此者多；并化神而动之以为我有何理——宜亟辟之",
+          "detail": "渺茫"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "命理约言·陈素庵",
+      "evidence": {
+        "quote": "夫子巳向非合神，若从支中所藏癸戊论合，则诸支所藏如此者多矣，可胜取乎？……即强以此支所藏合彼所藏为用，己属渺茫。乃并其所藏化神而动之，以为我用，有是理否……若更以遥为说，何干何支，不可牵合乎，宜亟辟之",
+        "source_url": "http://ab.newdu.com/book/ms201033.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D092",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "盲派弃日主旺衰专看结构做功",
+      "conditions": [
+        {
+          "field": "pai",
+          "operator": "==",
+          "value": "盲派"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "盲派放弃日主旺衰传统用神，专看结构做功与象，以宾主体用为入手",
+          "detail": "通过刑冲化合定象"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "盲派特点：1、放弃了日主旺衰，以研究命局的象，也就是表述来论命。2、象（宾主、体用）：把年月日时分为宾主，把十神分为体用。通过刑冲化合定象",
+        "source_url": "https://m.doc88.com/p-6834782175182.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D093",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "盲派分宾主宫位",
+      "conditions": [
+        {
+          "field": "binzhu.gongwei",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日柱为主位，日柱以外为宾位；财官在主位是我的财官，在宾位是别人的财官",
+          "detail": "什么是自己的什么是别人的"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "所谓主，就是日主，日支也为主位。所谓宾，是日主以外的干支（有时时柱也为主）……如果财、官在主位，就是我的财、官；反之，财、官在宾位，就是别人的财、官",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D094",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "盲派分体用十神",
+      "conditions": [
+        {
+          "field": "benti.shishen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "体=日主比肩禄印食(自己及本钱工具)；用=财官伤(目的追求)；此用与传统用神不同",
+          "detail": "本钱与目的"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "我们的本钱为体……什么是体：如日主、比肩、禄、印、食都是体。什么是用：用就是我们的目的、我的追求……如财、官、伤；但要注意，这个用与传统命理中所说用神是有区别的",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D095",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "做功与功神废神",
+      "conditions": [
+        {
+          "field": "zuogong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "宾主体用间刑冲克穿合墓等作用称做功；参与者为功神(耗能生效率)，不参与者为废神(耗能不生效率)",
+          "detail": "功神废神"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "我们将体、用或宾、主之间的作用关系称作做功，将参与做功八字中的神称用功神，将不参与做功的八字中的神称为废神……功神就是消耗能量产生效率为做功；废神就是消耗能量又不产生效率",
+        "source_url": "https://www.docin.com/touch_new/preview_new.do?id=667603187",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D096",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "正向与反向做功",
+      "conditions": [
+        {
+          "field": "zuogong.fanxiang",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "用主位体求宾位用为正向做功；主位用与宾位体作用为反向做功，反向效率一般大于正向",
+          "detail": "正向反向"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "如用我主位的体来追求得到别人宾位的用，我们把这种作用过程称为正向做功；还有一种反向做功，就是主位的用与宾位的体作用，称之谓反向做功。一般地反向做功的效率都大于正向做功",
+        "source_url": "https://www.docin.com/touch_new/preview_new.do?id=667603187",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D097",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "大富大贵须势功两全",
+      "conditions": [
+        {
+          "field": "shihegong",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大富大贵须既有势又有功：势=某五行势力大，功=此势有制伏对象；有势无功到老空，有功无势辛苦一世",
+          "detail": "有势又有功定是富贵翁"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "大富大贵的八字，既要有势，又要有功……有势没有功，到老一场空；有功没有势，辛苦活一世。没功也没势，就是差八字；有势又有功，定是富贵翁",
+        "source_url": "https://www.sina.cn/news/detail/5277550508247066.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D098",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "制用结构",
+      "conditions": [
+        {
+          "field": "zuogong.jiegou",
+          "operator": "==",
+          "value": "zhiyong"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "制用结构：比劫制财、伤官去官、食伤制杀、印制食伤、财来制印",
+          "detail": "制用五局"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "4.1制用结构：1.比肩去财、2.伤官去官、3.食伤制杀、4.印制食伤、5.财来制印",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D099",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "化用结构杀印相生",
+      "conditions": [
+        {
+          "field": "zuogong.jiegou",
+          "operator": "==",
+          "value": "huayong"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "化用结构：用印化官杀(杀印相生)，大多当官靠贵人或平台",
+          "detail": "杀印相生"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "4.3化用结构：用印化官杀，这种结构大多为当官的……杀印相生则是靠贵人或平台",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D100",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "生用墓用结构",
+      "conditions": [
+        {
+          "field": "zuogong.jiegou",
+          "operator": "==",
+          "value": "shengyong"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "生用：食伤生财食伤泄秀(一般不发大财)；墓用=得到控制占据拥有之意",
+          "detail": "生用墓用"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "4.4生用结构：食伤生财、食伤泄秀（一般不发大财）4.5墓用结构：得到、控制、占据、拥有等意思",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D101",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "看八字从日柱入手",
+      "conditions": [
+        {
+          "field": "ruShou",
+          "operator": "==",
+          "value": "rizhu"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "从日柱入手：先看日干合他干(合正官正财=追求此物)，无合看食伤贴生，无合无生看八字有势所做之功；日干无功看日支所做之功(支为干之躯体)",
+          "detail": "日干无功看坐支"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "要从日柱入手，即先看日干，再看日支……其一，日干是否与它干有合……其二，如日干无合，就看日干是否有生……其三，如果日干无生无合，但八字有势，那就看这个势在命局中所做的功……为什么日干无功就要看其坐支呢？……地支所做的功就是天干的",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D102",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "日干支做功一致以日柱为主",
+      "conditions": [
+        {
+          "field": "rizhuan_gong_yizhi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日干支做功意向一致以日柱为主；不一致则弃地支之功以日干意向为主；必以功神为分析核心",
+          "detail": "功神为核心"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "如果日干参与做功，则以日干为主；如果日干没有做功而日支参与做功，则以日支为主。如日柱干支都做功，且日干与日支表达的意思一致时，则以日柱为主；如果日干支做功意向不一致，就弃地支之功，而以日干的意向为主。一定要以功神作为分析八字的核心",
+        "source_url": "https://www.sina.cn/news/detail/5277550508247066.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D103",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "日主合官有财生官级别大",
+      "conditions": [
+        {
+          "field": "rizhu.heguan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "日主合官且官完整又有财生官则官级别大；无财生官只合无根之官级别大不了(无元神)",
+          "detail": "官之元神"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "日主合官，官完整，又有财来生，官的级别就大。没有财来生官，只合一个没有根的官，官的级别就大不了，没有元神之故",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D104",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "官生印印生身有力为当官",
+      "conditions": [
+        {
+          "field": "guan_yin_shen",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "官生印印生身有力贴身则当官，官大小看根气；只印生身无官层次差；官生坐下印日主出印库年上财生官为大官一把手",
+          "detail": "一把手组合"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "只要命中有官生了印，印生身有力（贴身），就是当官的，至于官的大小，还要看根气之有无。只有印生身而无官，则层次差很多……如果自己坐下是印，时上有印库，年上再有财生官，官又直接生坐下的印，日主也出自印库（同宫），这种组合，就是大官，而且是一把手",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D105",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "比劫生食伤不见财官当官",
+      "conditions": [
+        {
+          "field": "bi_jie_shi_shang",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "jian_caiguan",
+          "operator": "==",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "原命比劫生食伤不见财官则一定当官(食伤旺暗制官伤官伤尽)；比劫虚食伤弱往老师断；食伤旺制住旺官为大管制弱官为小官",
+          "detail": "孩子王"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "原命有比劫生食伤，而且不见财和官，这个命一定是当官的，因食伤旺暗制官……如果比劫虚，食伤弱就往老师上断，因为老师是孩子王……食伤旺，见到官，又能制住官，官也旺，是大官。食伤旺，官弱是小官",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D106",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "主位食伤不破坏皆管理者",
+      "conditions": [
+        {
+          "field": "zhuwei_shishang",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "主位有食伤且不被破坏(或破坏小)则每个命都是管理者(白领)；当官一看食伤旺衰二看有无要制之官",
+          "detail": "制官大做事大"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "只要主位有食伤的，且食伤不被破坏，或破坏的程度小，每一个命都是管理者，也就是白领。是不是当官的，一是看食伤旺不旺，二是要看有没有对应要制的官。如果制住的官大，做的事就大（官大），制的官弱，做的事就小（官小）",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D107",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "枭神夺食分宫位",
+      "conditions": [
+        {
+          "field": "xiaoshen_duoshi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "枭在自己家(日时)家有禄食神在外(年月)则可夺，食神被制住即为财富；伤官在日时印在年月(家里要保护)为不好组合",
+          "detail": "枭夺食可不可夺看宫位"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "枭神夺食，如果枭在自己家里，而且家里还有禄，食神在外面，就可以夺，此时的食神被制住了就是财富。所以……印克伤官，伤官配印是好的组合。但如果伤官在日时，印在年月，反而是不好的组合，因为家里的东西要保护",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D108",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "家里星不与外面关系则自做事",
+      "conditions": [
+        {
+          "field": "jiwai_wuguanxi",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "自己家里(日时)的星不与外面(年月)发生关系(无合冲天透地藏)则自己做事不参与社会事物(不取财官)",
+          "detail": "不取财官"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "自己家里的星若不与外面的星发生关系，就是自己在做事，不参与社会上的事物（取财官）。【无合、冲、天透地藏等】",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D109",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "废神多无功才功神多有才干",
+      "conditions": [
+        {
+          "field": "feishen_duo",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "废神多大多没才干；功神多才干才华较强；以禄做功层次低，地支禄多成势做功不差但身心忙碌",
+          "detail": "禄做功层次低"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "八字中废神多，大多没有多少才干；而功神多的人，才干，才华都比较强……以禄做功的层次比较低；地支禄多而成势做功，尽管命局不会太差，也有身心忙碌之意",
+        "source_url": "https://www.sina.cn/news/detail/5277550508247066.html",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D110",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "羊刃合杀大平台",
+      "conditions": [
+        {
+          "field": "yangren_heshao",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "羊刃合杀不全代表政府(只说有大平台)，有运动员武官；须看与官方有无联系断公检法或企业；阳刃耗体力需共担风险",
+          "detail": "大平台"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "羊刃合杀，不完全代表政府（只是说有大的平台）。好多有名气的运动员是羊刃合杀，也有的是武官（也要看与官方有没有联系，从而断是公检法的，还是企业的）。阳刃毕竟是耗体力的，而且是需要和别人一起共担风险的",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D111",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "六穿皆凶特殊制忌可获暴利",
+      "conditions": [
+        {
+          "field": "liuchuan",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "穿(害)：子未丑午寅巳卯辰申亥酉戌，最隐蔽持久伤害多见为凶；仅特殊格局以穿制尽忌神无救应时获暴利但伴巨大风险后遗症",
+          "detail": "六穿皆凶"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "三、穿（害）：最隐蔽、持久的伤害。积极（极少）：仅在特殊格局中，以穿的方式制尽忌神，且忌神无救应时，可获暴利。但多伴随巨大风险与后遗症。消极（多见）：六穿皆凶：子未穿、丑午穿、寅巳穿、卯辰穿、申亥穿、酉戌穿。穿是一种深刻的、缓慢的、难以调和的伤害",
+        "source_url": "https://m.weibo.cn/detail/5262490367951298",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D112",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "盲派宾主多层次须变通",
+      "conditions": [
+        {
+          "field": "binzhu.cengci",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "宾主层次：宫位日柱为主；六神禄印比肩为主食神财为主杀刃劫为宾；用神喜神为主忌神仇神为宾——宾主相对有层次须变通不可死套",
+          "detail": "宾主有层次"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "其次，以六神看，禄印比肩为主，他神为宾；食神、财星为主，杀刃劫为宾。最后，以用神喜神为主，忌神仇神为宾。这么复杂的宾主关系应起来需要变通，不能死套。宾主是有层次的和相对的",
+        "source_url": "http://www.docin.com/touch_new/preview_new.do?html=1&id=34105209",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D113",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "比劫制财局木火有势",
+      "conditions": [
+        {
+          "field": "zuogong.jiegou",
+          "operator": "==",
+          "value": "bijie_zhicai"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "比劫制财局：劫财合制月上财星，某五行有势财被制干净，劫财同象等于日主自己取财；局中官杀无制为病，行运去病则发财",
+          "detail": "比劫制财发财例"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "丁火日主年支见禄，禄上坐丙火劫财，丙合制了月上辛财。局中木火有势，辛财被制得很干净。午为禄。丙午柱同象，丙制财等于日主自己取财，这就是比劫制财局。但时上壬子官杀无制，是局中的病……走甲午运，午直接冲子，去了局中的病，此运发财",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
+    },
+    {
+      "rule_id": "BZ-D114",
+      "domain": "bazi",
+      "category": "mangpai",
+      "name": "财制比劫局换象财当财看",
+      "conditions": [
+        {
+          "field": "zuogong.jiegou",
+          "operator": "==",
+          "value": "caizhi_bijie"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "财制比劫局：财旺制劫须换象劫财当财看；合把被制之劫拉回主位，食神合印为控制管理之象；每字都做功则结构好",
+          "detail": "换象"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "段建业盲派(公开来源蒸馏)",
+      "evidence": {
+        "quote": "局中木火结党，寅申冲做功，寅财旺，制了申劫，为财制劫财结构。这种情况要换象，劫财当财看。天干戊癸合，食神合印，为控制管理的意思……巳申合，把被制的申财，又拉回主位，戊癸合就表示了管理此财之象，命局结构很好，每个字都在做功",
+        "source_url": "https://www.bilibili.com/opus/1080501887825870856",
+        "book": ""
+      }
     }
   ]
 }

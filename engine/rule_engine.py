@@ -300,7 +300,7 @@ def _num(x: Any) -> float:
 class RuleEngine:
     """Loads rules per domain, matches facts, resolves conflicts."""
 
-    DOMAINS = ("liuyao", "ziwei", "bazi")
+    DOMAINS = ("liuyao", "ziwei", "bazi", "western")
     RULES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rules")
 
     def __init__(self, rules_dir: Optional[str] = None):

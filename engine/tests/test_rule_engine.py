@@ -17,15 +17,16 @@ MANIFEST = ROOT / "rules_manifest.json"
 def test_all_domain_rule_counts():
     engine = RuleEngine()
     assert {d: len(engine.load_rules(d)) for d in engine.DOMAINS} == {
-        "liuyao": 82,
+        "liuyao": 192,
         "ziwei": 64,
-        "bazi": 180,
+        "bazi": 294,
+        "western": 72,
     }
 
 
 def test_unknown_domain_fails_closed():
     with pytest.raises(ValueError, match="unknown domain"):
-        RuleEngine().load_rules("western")
+        RuleEngine().load_rules("no_such_domain")
 
 
 def test_empty_facts_do_not_match():
