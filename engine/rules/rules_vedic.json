@@ -1,0 +1,3217 @@
+{
+  "domain": "vedic",
+  "count": 100,
+  "rules": [
+    {
+      "rule_id": "VE-D001",
+      "domain": "vedic",
+      "category": "graha_framework",
+      "name": "Lagn与九曜会合断善恶",
+      "conditions": [
+        {
+          "field": "chart.evaluated",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "以Lagn+九曜断善恶",
+          "detail": "必须同时依据Lagn(上升星座)与九曜的会合/分离关系推断善恶"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Based on Lagn and the Grahas, joining and departing from each other, the native's good and bad effects are deducted.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D002",
+      "domain": "vedic",
+      "category": "graha_framework",
+      "name": "Graha定义",
+      "conditions": [
+        {
+          "field": "chart.nakshatra_count",
+          "operator": "==",
+          "value": 27
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "七曜+罗计为Graha",
+          "detail": "仅取在27 Nakshatra中运行的七曜+罗睺计都；恒星(Nakshatra)不算Graha"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Those, that have no movements, are the Nakshatras (asterisms). Those are called 'Grahas', that move through the Nakshatras in the zodiac.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D003",
+      "domain": "vedic",
+      "category": "graha_nature",
+      "name": "天然吉凶星",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "grahas.Surya.natural",
+              "operator": "==",
+              "value": "malefic"
+            },
+            {
+              "field": "grahas.Shani.natural",
+              "operator": "==",
+              "value": "malefic"
+            },
+            {
+              "field": "grahas.Mangal.natural",
+              "operator": "==",
+              "value": "malefic"
+            },
+            {
+              "field": "grahas.Rahu.natural",
+              "operator": "==",
+              "value": "malefic"
+            },
+            {
+              "field": "grahas.Ketu.natural",
+              "operator": "==",
+              "value": "malefic"
+            },
+            {
+              "field": "moon.paksha",
+              "operator": "==",
+              "value": "waning"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天然凶星",
+          "detail": "Surya/Shani/Mangal/残月/Rahu/Ketu为天然凶星，其余为天然吉星"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Among these, Sūrya, Śani, Mangal, decreasing Candr, Rahu and Ketu … are malefics, while the rest are benefics.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D004",
+      "domain": "vedic",
+      "category": "graha_nature",
+      "name": "Budha遇凶转凶",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "grahas.Budha.with_malefic",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        },
+        {
+          "field": "grahas.Budha.natural",
+          "operator": "==",
+          "value": "benefic"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Budha转凶",
+          "detail": "Budha(水星)与任一凶星会合即转为凶星"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Budh, however, is a malefic, if he joins a malefic.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D005",
+      "domain": "vedic",
+      "category": "graha_nature",
+      "name": "残月Budha转吉",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "moon.paksha",
+                  "operator": "==",
+                  "value": "waning"
+                },
+                {
+                  "field": "moon.with_benefic",
+                  "operator": "==",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "moon.paksha",
+                  "operator": "==",
+                  "value": "waning"
+                },
+                {
+                  "field": "moon.benefic_drishti",
+                  "operator": "==",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "残月遇吉转吉",
+          "detail": "残月(Krishna Paksha)天然为凶；若与吉星会合或受吉星Drishti(目视相位)则即使在残月也转吉"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "waning Candr is a malefic … Should Candr be Yuti with a benefic, or receiving a Drishti from a benefic, she turns a benefic, even if in a waning state.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D006",
+      "domain": "vedic",
+      "category": "graha_nature",
+      "name": "残月与Budha同宫皆吉",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "moon.paksha",
+              "operator": "==",
+              "value": "waning"
+            },
+            {
+              "field": "grahas.Budha.bhava",
+              "operator": "==",
+              "value": "${moon.bhava}"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "残月Budha同宫",
+          "detail": "残月与Budha同宫则二者皆转为吉星"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If waning Candr and Budh are together, both are benefics.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D007",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜身心诸指示",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "in",
+          "value": [
+            "atman",
+            "manas",
+            "strength",
+            "speech",
+            "knowledge",
+            "semen",
+            "grief"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜指示",
+          "detail": "Surya=灵魂(ātman)、Candra=心意(manas)、Mangal=体力、Budha=言语、Guru=知识安乐、Shukra=精液生殖、Shani=悲伤"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Sūrya is the soul of all. Candr is the mind. Mangal is one's strength. Budh is speech-giver, while Guru confers Knowledge and happiness. Śukr governs semen, while Śani denotes grief.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D008",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜社会角色",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "social_role"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜角色",
+          "detail": "Surya/Candra=王者、Mangal=军队统帅、Budha=太子、Guru/Shukra=大臣、Shani=仆人、Rahu/Ketu=士兵"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Of royal status are Sūrya and Candr, while Mangal is the Army chief. Prince-apparent is Budh. The ministerial Grahas are Guru and Śukr. Śani is a servant. Rahu and Ketu form the Grah Army.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D009",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜性别",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "gender"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜性别",
+          "detail": "Budha与Shani为中性、Candra与Shukra为女性、Surya/Mangal/Guru为男性"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Budh and Śani are neuters. Candr and Śukr are females, while Sūrya, Mangal and Guru are males.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D010",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜五大元素",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "element"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜五行",
+          "detail": "Guru=空(ākāśa)、Shani=风(vāyu)、Mangal=火(agni)、Shukra=水(jala)、Budha=地(pṛthvī)"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The Panchabhutas, space, air, fire, water and earth, are, respectively, governed by Guru, Śani, Mangal, Śukr and Budh.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D011",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜种姓",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "caste"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜种姓",
+          "detail": "Guru/Shukra=婆罗门、Surya=刹帝利王族、Candra/Budha=吠舍商业、Shani=首陀罗"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Guru and Śukr are Brahmins. Sūrya is a royal Grah, while Candr and Budh belong to commercial community. Śani rules the Sudras.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D012",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜三德guna",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "guna"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜三德",
+          "detail": "日月+Guru=萨埵(sattva)、Shukra/Budha=罗阇(rajas)、Mangal/Shani=答磨(tamas)"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Sattvic Grahas are the luminaries and Guru, Śukr and Budha are Rajasik, while Mangal and Śani are Tamasic.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D013",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜体质dhātu",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "dhatu"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜体质",
+          "detail": "Surya=骨、Candra=血、Mangal=骨髓、Budha=皮肤、Guru=脂肪、Shukra=精液、Shani=肌肉"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Bones, blood, marrow, skin, fat, semen and muscles are, respectively, denoted by Sūrya, Candr, Mangal, Budh, Guru, Śukr and Śani.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D014",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜味觉",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "taste"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜味觉",
+          "detail": "Surya=辛、Candra=咸、Mangal=苦、Budha=混合、Guru=甜、Shukra=酸、Shani=涩"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Pungent, saline, bitter, mixed, sweet, acidulous and astringent are, respectively, tastes lorded by Sūrya, Candr, Mangal, Budh, Guru, Śukr and Śani.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D015",
+      "domain": "vedic",
+      "category": "graha_significator",
+      "name": "九曜季节ritu",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "season"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九曜季节",
+          "detail": "Shukra=春、Mangal=夏、Candra=雨、Budha=秋、Guru=初冬、Shani=严冬；Rahu=8月、Ketu=3月"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Vasanta, Greeshma, Varsh, Sarad, Hemanta and Sisir … governed by Śukr, Mangal, Candr, Budh, Guru and Śani. Rahu and Ketu denote 8 months and 3 months.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D016",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "九曜方向力量",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "directional_strength"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "方向力量",
+          "detail": "Budha/Guru东方最强、Surya/Mangal南方最强、Shani西方最强、Candra/Shukra北方最强"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Strong in the East are Budh and Guru. Sūrya and Mangal are so in the South, while Śani is the only Grah, that derives strength in the West. Candr and Śukr are endowed with vigour, when in the North.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D017",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "九曜昼夜力量",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "temporal_strength"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "昼夜力量",
+          "detail": "Candra/Mangal/Shani夜间强、Budha昼夜皆强、Surya/Guru/Shukra仅昼间强"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "strong during night are Candr, Mangal and Śani, while Budh is strong during day and night. The rest (Guru, Sūrya and Śukr) are strong only in daytime.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D018",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "半月与至点强弱",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "paksha_strength"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "半月强弱",
+          "detail": "凶星在黑半月强、吉星在白半月强；Dakshinayana凶星强、Uttarayana吉星强"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "During the dark half malefics are strong. Benefics acquire strength in the bright half … Malefics and benefics are, respectively, strong in Dakshinayan and Uttarayan.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D019",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "擢升落陷表",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "grahas.Surya.dignity",
+              "operator": "==",
+              "value": "exalted"
+            },
+            {
+              "field": "grahas.Mangal.dignity",
+              "operator": "==",
+              "value": "exalted"
+            },
+            {
+              "field": "grahas.Guru.dignity",
+              "operator": "==",
+              "value": "exalted"
+            },
+            {
+              "field": "grahas.Shukra.dignity",
+              "operator": "==",
+              "value": "exalted"
+            },
+            {
+              "field": "grahas.Shani.dignity",
+              "operator": "==",
+              "value": "exalted"
+            },
+            {
+              "field": "grahas.Budha.dignity",
+              "operator": "==",
+              "value": "exalted"
+            },
+            {
+              "field": "moon.dignity",
+              "operator": "==",
+              "value": "exalted"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "擢升表",
+          "detail": "Surya=Mesh10°、Candra=Vrishabh3°、Mangal=Makar28°、Budha=Kanya15°、Guru=Kark5°、Shukra=Meen27°、Shani=Tula20°；对宫为落陷"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula. The deepest exaltation degrees are … 10, 3, 28, 15, 5, 27 and 20 … And in the seventh Rāśi … each Grah has its own debilitation.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D020",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "Mulatrikona根三角",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "grahas.Surya.dignity",
+              "operator": "==",
+              "value": "moolatrikona"
+            },
+            {
+              "field": "grahas.Mangal.dignity",
+              "operator": "==",
+              "value": "moolatrikona"
+            },
+            {
+              "field": "grahas.Guru.dignity",
+              "operator": "==",
+              "value": "moolatrikona"
+            },
+            {
+              "field": "grahas.Shukra.dignity",
+              "operator": "==",
+              "value": "moolatrikona"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Mooltrikon",
+          "detail": "Surya=Simha前20°、Mangal=Mesh前12°、Budha=Kanya擢升后5°、Guru=Dhanu前三分之一、Shukra=Tula前半、Shani=Kumbh"
+        }
+      ],
+      "weight": 2,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "In Simh the first 20 degrees are Sūrya's Mooltrikon … Mangal has the first 12 degrees in Mesh … The first one third of Dhanu is the Mooltrikon of Guru.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D021",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "吉星效力比例",
+      "conditions": [
+        {
+          "field": "grahas.best_dignity",
+          "operator": "in",
+          "value": [
+            "exalted",
+            "moolatrikona",
+            "own",
+            "friendly",
+            "neutral",
+            "debased"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "吉星效力比",
+          "detail": "擢升=100%、Mulatrikona=75%、本垣=50%、友星垣=25%、中性垣=12.5%、落陷/敌星垣=0%(凶效反向)"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth. It is half beneficial in its own Bhava. Its beneficence is one fourth in a friendly Rāśi. In an equal's Rāśi one eighth … nil in debilitation, or enemy's camp.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D022",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "天然友谊计算",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "natural_friendship"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天然友谊",
+          "detail": "取某曜Mooltrikona所在宫第2/4/5/8/9/12宫主为天然友；擢升宫主亦为友；其余为敌；同时为友为敌则中性"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Note the Rāśis, which are the 2nd, 4th, 5th, 8th, 9th and 12th from the Mooltrikon of a Grah. The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D023",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "临时友谊计算",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "temporary_friendship"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "临时友谊",
+          "detail": "两曜相距第2/3/4/10/11/12宫位互为临时友；其余为临时敌"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The Grah, posited in the 2nd, 3rd, 4th, 10th, 11th, or the 12th from another, becomes a mutual friend. There is enmity otherwise.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D024",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "综合亲疏判定",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "overall_friendship"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "综合亲疏",
+          "detail": "天然+临时皆友=极友；一友一中=友；一敌一友=中性；一敌一中=敌；皆敌=极敌"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Should two Grahas be naturally and temporarily friendly, they become extremely friendly. Friendship on one count and neutrality on another count make them friendly. Enmity on one count combined with affinity on the other turns into equality.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D025",
+      "domain": "vedic",
+      "category": "strength_dignity",
+      "name": "九曜相对力量排序",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "relative_strength"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "力量排序",
+          "detail": "由弱到强：Shani < Mangal < Budha < Guru < Shukra < Candra < Surya"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "stronger than the other in the ascending are Śani, Mangal, Budh, Guru, Śukr, Candr and Sūrya.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D026",
+      "domain": "vedic",
+      "category": "graha_framework",
+      "name": "Gulika喀拉虚曜计算",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "gulika"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Gulika计算",
+          "detail": "将昼夜时长八等分，从周日主起顺次配七曜，Shani所占份即Gulika；Surya份=Kala、Mangal份=Mrtyu、Guru份=Yamaghantaka、Budha份=Ardhaprahara"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Divide the day duration into eight equal parts … Whichever portion is ruled by Śani, will be the portion of Gulik … Sūrya's portion is Kaal, Mangal's portion is Mrityu, Guru's portion is Yamaghantak and Budh's portion is Ardhaprahar.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D027",
+      "domain": "vedic",
+      "category": "graha_framework",
+      "name": "Pranapada出生吉凶",
+      "conditions": [
+        {
+          "field": "chart.pranapada_bhava",
+          "operator": "in",
+          "value": [
+            2,
+            5,
+            9,
+            4,
+            10,
+            11
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Pranapada吉位",
+          "detail": "Pranapada落命盘第2/5/9/4/10/11宫出生吉祥；落其余宫位不吉"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The birth will be auspicious, if Pranapad falls in the 2nd, 5th, 9th, 4th, 10th, or 11th from the natal Lagn. In other Bhavas Pranapad indicates an inauspicious birth.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D028",
+      "domain": "vedic",
+      "category": "graha_framework",
+      "name": "副曜合日损族合月损寿",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "upagraha.conjunct",
+              "operator": "==",
+              "value": "Surya"
+            },
+            {
+              "field": "upagraha.conjunct",
+              "operator": "==",
+              "value": "Candra"
+            },
+            {
+              "field": "upagraha.conjunct",
+              "operator": "==",
+              "value": "Lagna"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "副曜为患",
+          "detail": "Dhuma/Vyatipata/Parivesa/Indradhanu/Upaketu合Surya则家族衰败；合Candra损寿命；合Lagn损智慧"
+        }
+      ],
+      "weight": -2,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If one of these afflicts Sūrya, the native's dynasty will decline, while Candr and Lagn, respectively, associated with one of these, will destroy the longevity and wisdom.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-3-grah-characters-and-description"
+      }
+    },
+    {
+      "rule_id": "VE-D029",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "十六分盘清单",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "varga_list"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Shodashvarga",
+          "detail": "D1 Rasi、D2 Hora、D3 Dreksana、D4 Chaturthamsa、D7 Saptamsa、D9 Navamsa、D10 Dasamsa、D12 Dvadasamsa、D16 Shodasamsa、D20 Vimsamsa、D24 Chaturvimsamsa、D27 Saptavimsamsa、D30 Trimsamsa、D40 Khavedamsa、D45 Akshavedamsa、D60 Shashtiamsa"
+        }
+      ],
+      "weight": 0,
+      "priority": 1,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The names are Rāśi, Horā, Dreshkan, Chaturthāńś, Saptāńś, Navāńś, Dashāńś, Dvadashāńś, Shodashāńś, Vimshāńś, Chaturvimshāńś, Saptavimshāńś, Trimshāńś, Khavedāńś, Akshavedāńś and Shashtiāńś.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-6-the-sixteen-divisions-of-a-r-i"
+      }
+    },
+    {
+      "rule_id": "VE-D030",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "Hora(D2)分法",
+      "conditions": [
+        {
+          "field": "query.varga",
+          "operator": "==",
+          "value": "D2"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Hora分宫",
+          "detail": "奇星座前半宫属Surya后半属Candra；偶星座相反"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The first half of an odd Rāśi is the Hora, ruled by Sūrya. While the second half is the Hora of Candr. The reverse is true in the case of an even Rāśi.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-6-the-sixteen-divisions-of-a-r-i"
+      }
+    },
+    {
+      "rule_id": "VE-D031",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "Navamsa(D9)起算",
+      "conditions": [
+        {
+          "field": "query.varga",
+          "operator": "==",
+          "value": "D9"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Navamsa起算",
+          "detail": "移动星座从本宫起算、固定星座从第9宫起算、双重星座从第5宫起算；依次为Deva/Manusya/Rakshasa三类"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The Navāńś calculation are for a Movable Rāśi from there itself, for a Fixed Rāśi from the 9th thereof and for a Dual Rāśi from the 5th thereof. They go by designations Deva, Manushya and Rakshasa.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-6-the-sixteen-divisions-of-a-r-i"
+      }
+    },
+    {
+      "rule_id": "VE-D032",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "Trimsamsa(D30)度数",
+      "conditions": [
+        {
+          "field": "query.varga",
+          "operator": "==",
+          "value": "D30"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Trimsamsa度数",
+          "detail": "奇星座中Mangal 5°、Shani 5°、Guru 8°、Budha 7°、Shukra 5°；偶星座次序反转"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The Trimshāńś Lords for an odd Rāśi are Mangal, Śani, Guru, Budh and Śukr. Each of them in order rules 5, 5, 8, 7 and 5 degrees … In the case of an even Rāśi … reversed.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-6-the-sixteen-divisions-of-a-r-i"
+      }
+    },
+    {
+      "rule_id": "VE-D033",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "Shashtyamsa(D60)主",
+      "conditions": [
+        {
+          "field": "query.varga",
+          "operator": "==",
+          "value": "D60"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "D60计算",
+          "detail": "忽略星座位置，取该曜在本宫内已行度数×2÷12取余+1所得星座主即D60主；D60名60种吉凶名"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "To calculate the Shashtiāńś Lord ignore the Rāśi position of a Grah and take the degrees it traversed in that Rāśi. Multiply that figure by 2 and divide the degrees by 12. Add 1 to the remainder.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-6-the-sixteen-divisions-of-a-r-i"
+      }
+    },
+    {
+      "rule_id": "VE-D034",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "分盘分类Vargabala",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "vargabala"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Vargabala分级",
+          "detail": "6好分盘2-6组合为Kimshuka/Vyanjana/Chamara/Chatra/Kundala；10分盘体系2=Parijata…10=Shridhama"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-6-the-sixteen-divisions-of-a-r-i"
+      }
+    },
+    {
+      "rule_id": "VE-D035",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "好分盘判定",
+      "conditions": [
+        {
+          "field": "grahas.in_good_varga",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "好分盘",
+          "detail": "该曜在分盘中位于擢升/Mulatrikona/本垣/Kendra主所主星座方算好分盘；燃烧/战败/虚弱/Sayana等Avastha的分盘不计吉"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "the divisions, falling in the Grah's exaltation Rāśi, Mooltrikon Rāśi, own Rāśi and the Rāśis owned by the Lord of a Kendra from the Arudha Lagn, are all to be considered (as good Vargas). The divisions of a combust Grah, defeated Grah, weak Grah … be all ignored.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-6-the-sixteen-divisions-of-a-r-i"
+      }
+    },
+    {
+      "rule_id": "VE-D036",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "天然吉凶层级",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "natural_hierarchy"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "天然层级",
+          "detail": "天然吉星强弱：Shukra>Guru>Budha>满月；天然凶星(由弱到强)：残月<Surya<Shani<Mangal，Mangal最凶"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Natural benefic hierarchy (strongest to least): Venus > Jupiter > Mercury > Full Moon. Natural malefic hierarchy (least to most malefic): Waning Moon < Sun < Saturn < Mars. Mars is the worst malefic planet.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D037",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "Kendrajatva Dosas",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "grahas.benefic.owns_kendra",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "grahas.benefic.kendra_owner",
+              "operator": "in",
+              "value": [
+                "Shukra",
+                "Guru",
+                "Budha",
+                "Chandra"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Kendra主损吉性",
+          "detail": "天然吉星同时为Kendra(1/4/7/10)宫主则丧失部分吉星性(Kendrajatva Dosa)；Shukra损失最大、Candra最小"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Natural benefics who own Kendras (1, 4, 7, 10) lose their benefic quality. The fall in benefic ability is proportional to the planet's natural benefic strength: Most severe loss: Venus; Next: Jupiter; Next: Mercury; Least: Moon.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D038",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "宫位组功能性质",
+      "conditions": [
+        {
+          "field": "bhava.group",
+          "operator": "in",
+          "value": [
+            "trikona",
+            "kendra",
+            "dusthana_tri",
+            "ubhaya"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "宫位组吉凶",
+          "detail": "Trikona(1/5/9)恒为吉、Kendra(1/4/7/10)中性、3/6/11恒为凶、2/8/12由同住星决定"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Trikona (1,5,9): Always benefic … Kendra (1,4,7,10): Neutral for all … 3,6,11: Always malefic/challenging … 2,8,12: Determined by sahachara and other house owned.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D039",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "Parivartana最强Raja Yoga",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "kendra_lord.in_trikona_sign",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "trikona_lord.in_kendra_sign",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Parivartana Yoga",
+          "detail": "Kendra主与Trikona主之间交换(Parivartana)形成最强Raja Yoga，主贵或大富"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Exchange of houses (Parivartana yoga) — one is in the other's sign … The most powerful form is exchange — each sitting in the other's house.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D040",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "本垣Raja Yoga",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "kendra_lord.own_sign",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "trikona_lord.own_sign",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "本垣Raja Yoga",
+          "detail": "Kendra主与Trikona主同住各自本垣形成次强Raja Yoga"
+        }
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Together in one of their own houses — one or both in the house they own.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D041",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "三宫会合Raja Yoga",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "kendra_lord.bhava",
+              "operator": "==",
+              "value": 3
+            },
+            {
+              "field": "trikona_lord.bhava",
+              "operator": "==",
+              "value": 3
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "三宫合Raja Yoga",
+          "detail": "Kendra主与Trikona主在第三宫会合形成Raja Yoga(强度次于本垣会合)"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Together in another sign — conjunction in a 3rd sign.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D042",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "互为完整Drishti成Yoga",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "kendra_lord.full_aspect_trikona",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "trikona_lord.full_aspect_kendra",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "相位Raja Yoga",
+          "detail": "Kendra主与Trikona主互相完整Drishti(相位)形成Raja Yoga(强度次于会合)"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Full mutual aspect — both aspecting each other closely.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D043",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "部分相位弱Yoga",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "kendra_lord.partial_aspect_trikona",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "部分相位Yoga",
+          "detail": "Kendra主与Trikona主仅有部分相位，Raja Yoga仍成立但力量最弱"
+        }
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Partial aspect — even partial aspect counts, but gives weaker results.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D044",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "Yogakaraka判定",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "graha.owns_both_kendra_trikona",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "AND": [
+                {
+                  "field": "kendra_lord.bhava",
+                  "operator": "in",
+                  "value": [
+                    5,
+                    9
+                  ]
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "trikona_lord.bhava",
+                  "operator": "in",
+                  "value": [
+                    1,
+                    4,
+                    7,
+                    10
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Yogakaraka",
+          "detail": "某曜同时主Kendra与Trikona为Yogakaraka(最强功能吉星)；或Kendra主落Trikona、Trikona主落Kendra亦算"
+        }
+      ],
+      "weight": 3,
+      "priority": 9,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "A planet is Yogakaraka when it simultaneously touches BOTH Kendra AND Kona: 1. Owns both Kendra and Trikona … 2. Kendra lord placed in a Trikona house … 3. Trikona lord placed in a Kendra house.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D045",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "Raja Yoga被取消",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "kendra_lord.owns_dusthana",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "trikona_lord.owns_dusthana",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Raja Yoga取消",
+          "detail": "参与Raja Yoga的任一曜同时主3/6/11宫则Raja Yoga被取消(尤其6宫主完全取消Trikona吉性)"
+        }
+      ],
+      "weight": -3,
+      "priority": 8,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If either the Kendra lord or the Trikona lord ALSO owns a malefic house (3, 6, 11), the Raj Yoga is cancelled/greatly reduced … The 6th house cancels the trine.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D046",
+      "domain": "vedic",
+      "category": "graha_nature",
+      "name": "RahuKetu功能性质",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "grahas.Rahu.natural",
+              "operator": "in",
+              "value": [
+                "benefic",
+                "malefic"
+              ]
+            },
+            {
+              "field": "grahas.Ketu.natural",
+              "operator": "in",
+              "value": [
+                "benefic",
+                "malefic"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "罗计功能吉凶",
+          "detail": "Rahu/Ketu不按其传统守护星座(水瓶/天蝎)论，而按所落宫位+会合星曜的功能性质判定"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Rahu and Ketu as benefic or malefic: 1. House they occupy → they behave as the lord of that house; 2. Planets they associate with … 3. Forget Aquarius/Scorpio ownership.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D047",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "RahuKetu作Yogakaraka",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "grahas.Rahu.bhava",
+              "operator": "in",
+              "value": [
+                1,
+                4,
+                7,
+                10,
+                5,
+                9
+              ]
+            },
+            {
+              "field": "grahas.Rahu.associated_lord",
+              "operator": "in",
+              "value": [
+                "kendra",
+                "trikona"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "罗计Yogakaraka",
+          "detail": "Rahu/Ketu落Kendra或Trikona且与另一类(Kendra/Trikona)主会合则充当Yogakaraka"
+        }
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If Rahu/Ketu is in a Kendra OR Trikona AND associated with the lord of the other type → becomes Yogakaraka … Rahu in 10th with 9th lord association can give good career in Rahu dasha.",
+        "url": "https://www.parasara.net/learn/bphs-ch34-v8-18-natural-hierarchy-raj-yoga-formation-cancellation-rahu-ketu-yogakaraka-l178"
+      }
+    },
+    {
+      "rule_id": "VE-D048",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "主用Vimshottari体系",
+      "conditions": [
+        {
+          "field": "chart.dasha_choice",
+          "operator": "==",
+          "value": "default"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Vimshottari主用",
+          "detail": "对一般人群取Vimshottari(120年体系)，因其为principal one"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "daśā viṃśottarī cātrā grāhyā mukhyā … A full lifespan of one hundred and twenty years … the Vimśottarī daśā … is considered the principal one.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D049",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "九大运年限表",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "dasha_years"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大运年限",
+          "detail": "Surya=6、Candra=10、Mangal=7、Rahu=18、Guru=16、Shani=19、Budha=17、Ketu=7、Shukra=20(合计120年)"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The years for these daśās, in sequence, are: six, ten, seven, eighteen, sixteen, nineteen, nineteen, seven, and twenty (corresponding to Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu, and Venus).",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D050",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "起运主计算",
+      "conditions": [
+        {
+          "field": "chart.birth_nakshatra_count",
+          "operator": "in",
+          "value": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "起运主",
+          "detail": "从Krittika(昴宿)起数至出生Nakshatra÷9取余，余数所对应星即为起运主"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The number of nakṣatras counted from Kṛttikā up to the birth nakṣatra should be divided by nine. From the remainder, the daśā lord is to be determined.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D051",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "大运主排序",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "dasha_order"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大运排序",
+          "detail": "从Krittika起：Surya→Candra→Mangal→Rahu→Guru→Shani→Budha→Ketu→Shukra(依āśaṅkurāguśabukeśupūrvā口诀)"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Starting from the 'Kṛttikā' nakṣatra, and repeating the cycle three times, the lords of the daśās are the planets, in sequence … (Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu, Venus).",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D052",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Ashotar触发",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "grahas.Rahu.bhava",
+              "operator": "in",
+              "value": [
+                1,
+                4,
+                7,
+                10,
+                5,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "field": "grahas.Rahu.bhava",
+          "operator": "!=",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "改用Ashotari",
+          "detail": "Rahu落Kendra或Trikona(从Lagnesha起算)且不在Lagn，则改用Ashotari Dasha(从Ardra起算)"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "the Aṣṭottarī planetary period system should be understood … when the shadowy planet Rahu is situated in a quadrant (kendra) or a trine (koṇa) house from the lord of the ascendant, provided Rahu itself is not in the ascendant.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D053",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Shodasottari触发",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "lagna.hora",
+                  "operator": "==",
+                  "value": "Moon"
+                },
+                {
+                  "field": "moon.paksha",
+                  "operator": "==",
+                  "value": "waning"
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "lagna.hora",
+                  "operator": "==",
+                  "value": "Sun"
+                },
+                {
+                  "field": "moon.paksha",
+                  "operator": "==",
+                  "value": "waxing"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "改用Shodasottari",
+          "detail": "Lagn落Candra Hora且生在黑半月、或落Surya Hora且生在白半月，则改用Shodasottari Dasha"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "the Ṣoḍaśottarī dasha system should be particularly considered when the ascendant falls in the Moon's hora during the dark fortnight, or when it falls in the Sun's hora during the bright fortnight.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D054",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Dvadashottari触发",
+      "conditions": [
+        {
+          "field": "lagna.navamsha.lord",
+          "operator": "==",
+          "value": "Shukra"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "改用Dvadashottari",
+          "detail": "生在Shukra的Navamsa，则改用Dvadashottari Dasha"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "For a person born in the navamsha (a divisional chart) ruled by Venus, the Dvādaśottarī dashā system should be applied.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D055",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Shatabdik触发Vargottama",
+      "conditions": [
+        {
+          "field": "lagna.vargottama",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "改用Shatabdik",
+          "detail": "Lagn为Vargottama(D1与D9同星座)则改用Shatabdik(百岁)Dasha"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the Ascendant (lagna) is in vargottama, the hundred-year dasha should be considered.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D056",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Chaturashitika触发",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "grahas.from_10th.lord.bhava",
+              "operator": "==",
+              "value": 10
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "改用Chaturashitika",
+          "detail": "第10宫主(Karmasha)自坐第10宫，则改用Chaturashitika(84年)Dasha"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the lord of the 10th house (karma bhāva) is situated in the 10th house, the eighty-four year dasha should be known.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D057",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Shashtisama触发",
+      "conditions": [
+        {
+          "field": "grahas.Surya.rashi",
+          "operator": "==",
+          "value": "${lagna_sign}"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "改用Shashtisama",
+          "detail": "Surya落Lagn星座，则改用Shashtisama(60年)Dasha"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the Sun (arka) is situated in the Lagna (ascendant) sign, then a Daśā of sixty years should be considered.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D058",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Yogin体系",
+      "conditions": [
+        {
+          "field": "chart.dasha_system",
+          "operator": "==",
+          "value": "yogini"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "八Yogini",
+          "detail": "八Yogini依次为Mangala、Pingala、Dhanya、Bhramari、Bhadrika、Ulka、Siddha、Sankata，分别主Candra/Surya/Guru/Mangal/Budha/Shani/Shukra/Rahu"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Maṅgalā, Piṅgalā, Dhanyā, Bhrāmarī, Bhadrikā, and similarly Ulkā, Siddhā, and Saṅkaṭā – these eight are declared to be the Yoginīs. From Maṅgalā arose the Moon; from Piṅgalā, the Sun.",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D059",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Tara恒星吉凶",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "tara"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "九Tara",
+          "detail": "从强Kendra曜起算，九Tara依次为Janma、Sampat、Vipat、Kshema、Pratyari、Sadhaka、Badha、Maitra、Paramamaitra"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Birth, Wealth, Adversity, Well-being, Adversary, Accomplishment, Affliction; and Friendly, Very Friendly (these are the Tārās) … calculated from a strong planet located in an angular house (kendra).",
+        "url": "https://enjoylearningsanskrit.com/scriptures/parashara/chapter-46/"
+      }
+    },
+    {
+      "rule_id": "VE-D060",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Surya大运顺遂",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "current_dasha.lord",
+              "operator": "==",
+              "value": "Surya"
+            },
+            {
+              "field": "grahas.Surya.dignity",
+              "operator": "in",
+              "value": [
+                "exalted",
+                "own",
+                "moolatrikona"
+              ]
+            },
+            {
+              "field": "grahas.Surya.bhava",
+              "operator": "in",
+              "value": [
+                1,
+                4,
+                5,
+                7,
+                9,
+                10,
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Surya大运吉",
+          "detail": "Surya大运期内Surya落擢升/本垣/Kendra/Trikona/Labha(11宫)，该Mahadasha主富贵顺遂"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Surya Bhukti 1-3. if Surya is exalted, in his own Bhava, in Labha, in a Kendra, or in a Trikona.",
+        "url": "https://barbarapijan.com/bpa/VimshottariDasha/Surya_Mahadasha_BPHS.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D061",
+      "domain": "vedic",
+      "category": "dasha",
+      "name": "Candra大运超常财富",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "current_dasha.lord",
+              "operator": "==",
+              "value": "Chandra"
+            },
+            {
+              "field": "moon.dignity",
+              "operator": "in",
+              "value": [
+                "exalted",
+                "own"
+              ]
+            },
+            {
+              "field": "moon.bhava",
+              "operator": "in",
+              "value": [
+                1,
+                4,
+                5,
+                7,
+                9,
+                10,
+                11
+              ]
+            },
+            {
+              "field": "moon.benefic_associated",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Candra大运暴富",
+          "detail": "Candra在擢升/本垣/Kendra/11/9/5宫、受吉星会合相位且与10/9/4宫主关联，Candra Mahadasha期获超常财富奢华"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Moon be in her sign of exaltation, in her own sign, in kendra, in the 11th, 9th or 5th, be associated or aspected by benefics, be fully powerful and be associated with the lord of the 10th, the 9th or the 4th. There will be extraordinary gains of wealth and luxuries.",
+        "url": "https://sanjayrath.com/wp-content/uploads/BPHS-BJC2.pdf"
+      }
+    },
+    {
+      "rule_id": "VE-D062",
+      "domain": "vedic",
+      "category": "bhava",
+      "name": "12宫主落Lagn",
+      "conditions": [
+        {
+          "field": "lord_of.bhava_12.bhava",
+          "operator": "==",
+          "value": 1
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "12主落1宫",
+          "detail": "12宫主(Vyayesha)落Lagn则挥霍体弱痰病缺财缺学"
+        }
+      ],
+      "weight": -1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If the 12th lord is in the ascendant, the native will be a spendthrift, be weak in constitution, will suffer from phlegmatic disorders, and be devoid of wealth and learning.",
+        "url": "https://www.jyotishvidya.com/ch24.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D063",
+      "domain": "vedic",
+      "category": "bhava",
+      "name": "12宫主落2宫",
+      "conditions": [
+        {
+          "field": "lord_of.bhava_12.bhava",
+          "operator": "==",
+          "value": 2
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "12主落2宫",
+          "detail": "12宫主落第2宫则恒为吉祥/宗教事务花钱、语善"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If the 12th lord is in the 2nd, the native will always spend on auspicious deeds, be religious, will speak sweetly.",
+        "url": "https://www.jyotishvidya.com/ch24.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D064",
+      "domain": "vedic",
+      "category": "bhava",
+      "name": "Dusthana主落Dusthana反助",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "dusthana_lord.bhava",
+              "operator": "in",
+              "value": [
+                6,
+                8,
+                12
+              ]
+            },
+            {
+              "field": "dusthana_lord.also_dusthana",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Dusthana互落",
+          "detail": "Dusthana(6/8/12)宫主落另一Dusthana则其凶力被中和反生暗中之助"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the lord of a Dusthana (6th, 8th, or 12th) is placed in another dusthana, it becomes powerless to harm and secretly powerful to help.",
+        "url": "https://www.parasara.net/learn/12th-house-verses-gati-wandering-sinful-l126"
+      }
+    },
+    {
+      "rule_id": "VE-D065",
+      "domain": "vedic",
+      "category": "bhava",
+      "name": "12宫Rahu吉凶道",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "grahas.Rahu.bhava",
+                  "operator": "==",
+                  "value": 12
+                },
+                {
+                  "field": "bhava_12.conjunct",
+                  "operator": "contains_any",
+                  "value": [
+                    "Surya",
+                    "Mangal",
+                    "Shani"
+                  ]
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "field": "bhava_12.has_natural_benefic",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "field": "lord_of.bhava_12.dignity",
+                  "operator": "==",
+                  "value": "exalted"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "12宫Gati",
+          "detail": "12宫有Rahu且会合Surya/Mangal/Shani，或12主与凶星同则来世Naraka；若12宫有天然吉星、12主擢升且与功能吉星同则Moksha"
+        }
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Bad gati = Rahu in 12H + Sun/Mars/Saturn + 12L with malefic = Naraka … Good gati/moksha = natural benefic in 12H + 12L exalted + 12L with functional benefic.",
+        "url": "https://www.parasara.net/learn/12th-house-verses-gati-wandering-sinful-l126"
+      }
+    },
+    {
+      "rule_id": "VE-D066",
+      "domain": "vedic",
+      "category": "bhava",
+      "name": "Mangal寡妇Kujadosa",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "grahas.Mangal.bhava",
+              "operator": "in",
+              "value": [
+                12,
+                4,
+                7,
+                8
+              ]
+            },
+            {
+              "field": "grahas.Mangal.benefic_aspected",
+              "operator": "==",
+              "value": false
+            },
+            {
+              "field": "chart.gender",
+              "operator": "==",
+              "value": "female"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Kujadosa寡宿",
+          "detail": "Mangal落Lagn之12/4/7/8宫且无吉星相位会合，则女性命主成寡妇(Kujadosa)"
+        }
+      ],
+      "weight": -2,
+      "priority": 6,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The woman born becomes a widow, if Mangal be in the 12th, 4th, 7th, or 8th from Lagn, without aspect by, or association with any benefic.",
+        "url": "https://divyachadhava.com/en/sanatan-sahitya/bphs-chapter-80-female-horoscopy"
+      }
+    },
+    {
+      "rule_id": "VE-D067",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Atmakaraka取最高度",
+      "conditions": [
+        {
+          "field": "chart.atmakaraka_degrees_max",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Atmakaraka",
+          "detail": "在七曜(日至土)或八曜(含Rahu)中取度数最高者为Atmakaraka(灵魂指示星)"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Among the seven planets from the Sun to Saturn, or among the eight including Rahu, the planet which has attained the highest number of degrees becomes the ātmakāraka.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D068",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Amatyakaraka次高度",
+      "conditions": [
+        {
+          "field": "chart.amatyakaraka_degrees_second",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Amatyakaraka",
+          "detail": "Atmakaraka取定后取次高度数者为Amatyakaraka(顾问/事业指示星)"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "After the ātmakāraka the planet that has advanced to the highest degree becomes Amatyakaraka.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D069",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Atmakaraka吉凶不自动为吉",
+      "conditions": [
+        {
+          "field": "atmakaraka.dignity",
+          "operator": "in",
+          "value": [
+            "exalted",
+            "own",
+            "moolatrikona",
+            "debased",
+            "enemy"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "AK吉凶看配置",
+          "detail": "Atmakaraka吉凶视其擢升/落陷、与吉凶星会合而定，不因其身份自动为吉"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The ātmakāraka gives benefic or malefic results depending on his disposition like debility or exaltation, association with benefics or malefics.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D070",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha为白羊畏鼠",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Mesha"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Aries",
+          "detail": "Karakamsha(Atmakaraka在Navamsa所落星座)为Meṣa(白羊)则受鼠/猫等啮虫之恐"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If the ātmakāraka is in Aries Navamsha, the native can be subject to the fears or bites from rats, cats and the like.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D071",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha金牛四足兽",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Vrishabha"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Taurus",
+          "detail": "Karakamsha为Vrishabha(金牛)则受四足兽之恐或由此得乐"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If the ātmakāraka is in Taurus Navamsha, he will have fear or happiness from the quadrupeds.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D072",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha双子皮肤病",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Mithuna"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Gemini",
+          "detail": "Karakamsha为Mithuna(双子)则患疥癣等皮肤病或体胖"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "ātmakāraka is in Gemini Navamsha, the native suffers from itches and other skin ailments; and the native may become stout or bulky.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D073",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha巨蟹畏水麻风",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Karkata"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Cancer",
+          "detail": "Karakamsha为Karkata(巨蟹)则畏水、患麻风"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If ātmakāraka is in Cancer Navamsha, there is fear from water and from leprosy.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D074",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha狮子畏犬",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Simha"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Leo",
+          "detail": "Karakamsha为Simha(狮子)则畏犬/虎等猫科"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If the ātmakāraka is in Leo Navamsha, fear or trouble arises from dogs and other canine animals.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D075",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha处女火苦",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Kanya"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Virgo",
+          "detail": "Karakamsha为Kanya(处女)则受火、疥癣、肥胖之苦"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If the ātmakāraka is in the Virgo Navamsha, the native suffers from fire and other things attributed to Gemini.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D076",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha天秤经商",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Tula"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Libra",
+          "detail": "Karakamsha为Tula(天秤)则从商、精于织作"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the ātmakāraka is in the Libra Navamsha, the native will be in trade and commerce.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D077",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha射手坠落",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Dhanu"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Sagittarius",
+          "detail": "Karakamsha为Dhanu(射手)则有从高处/乘物坠落之虞"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the ātmakāraka is in the Navamsha of Sagittarius, the native is subject to accidents by falling from a conveyance or from a high place.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D078",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha摩羯水虫",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Makara"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Capricorn",
+          "detail": "Karakamsha为Makara(摩羯)则受水生物/鸟/植物/皮肤病/创伤之扰"
+        }
+      ],
+      "weight": -1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the ātmakāraka is in the Navamsha of Capricorn, native has troubles from aquatic animals, birds, plants, skin ailments, wounds or tumors.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D079",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha水瓶营建",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Kumbha"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Aquarius",
+          "detail": "Karakamsha为Kumbha(水瓶)则从事水池、湖、园、路、庙、香客招待所等营建"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the ātmakāraka is in Aquarius Navamsha, the native will have work related to tanks, lakes, gardens, roads, temples, rest houses for pilgrims.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D080",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Karakamsha双鱼解脱",
+      "conditions": [
+        {
+          "field": "atmakaraka.navamsha_sign",
+          "operator": "==",
+          "value": "Meena"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karaka-Pisces",
+          "detail": "Karakamsha为Mina(双鱼)则行正法、得解脱(Moksha)"
+        }
+      ],
+      "weight": 2,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the ātmakāraka is in Pisces Navamsha, the native will do righteous things and will attain final liberation or emancipation (Moksha).",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D081",
+      "domain": "vedic",
+      "category": "karaka",
+      "name": "Ista Devata指示",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "ishta_devata"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Ista Devata",
+          "detail": "在Navamsa中取Atmakaraka之第12宫，该宫或其主指示Ista Devata(个人守护本尊)"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "Within the navamsha-varga, find the 12th-amsha from the ātmakāraka. The graha or upagraha who lives in the 12th-from-ātmakāraka-in-navamsha = the significator of the ishta-devata.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D082",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "寿命三档",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "lord_of.bhava_2.strong",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "lord_of.bhava_8.strong",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "寿命档",
+          "detail": "Lagn与第7宫主皆强落Kendra(1/4/7/10)长寿；落Panaphara(2/5/8/11)中等寿；落Apoklima(3/6/9/12)短寿"
+        }
+      ],
+      "weight": 1,
+      "priority": 5,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If the lords of the second and the eighth from Lagna are strong and occupy Kendra (1,4,7,10), Panaphara (2,5,8,11) and Apoklima (3,6,9,12), They cause respectively long, middle and short lives.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D083",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "AK落8宫减寿",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "atmakaraka.bhava",
+              "operator": "==",
+              "value": 8
+            },
+            {
+              "field": "atmakaraka.bhava_from_7th",
+              "operator": "==",
+              "value": 8
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "AK减寿一Kaksha",
+          "detail": "Atmakaraka落在Lagn与第7宫第8宫或与第8宫同，按寿命判定缩减一Kaksha"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When the eighth houses from Lagna and the seventh have the ātmakāraka or when they are with the ātmakāraka, then the terms of longevity mentioned should be reduced.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D084",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "AK被凶夹或5/9有凶减寿",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "atmakaraka.between_malefics",
+              "operator": "==",
+              "value": true
+            },
+            {
+              "field": "malefic.trine_from_atmakaraka",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "AK受克减寿",
+          "detail": "Atmakaraka被凶星夹在中间，或凶星在其5/9宫则寿命缩减"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The same reduction applies when The ātmakāraka is between malefics or when malefics are in his trine (houses 5 and 9 from him).",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D085",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "Shani为AK减运",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "atmakaraka",
+              "operator": "==",
+              "value": "Shani"
+            }
+          ]
+        },
+        {
+          "field": "Shani.conjunct_atmakaraka",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "Shani.bhava",
+          "operator": "in",
+          "value": [
+            2,
+            12,
+            7
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Shani减运",
+          "detail": "Shani为Atmakaraka、或合Atmakaraka、或落Lagn/7/2/12宫则所主Dasha年限缩减"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The period of (the Dasha) of a sign is reduced (a) when Saturn becomes the ātmakāraka or joins the ātmakāraka; (b) When Saturn is in the second or twelfth from Lagna or the seventh.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D086",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "死期判定",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "death_dasha"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "死期",
+          "detail": "从Lagn或Atmakaraka起取3/8/12宫主中最强者，其Dasha期为死期"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "From the ātmakāraka or Janma Lagna, Take the lords of the third, eighth and twelfth houses. The strongest among these brings about death.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D087",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "Karakakendra Dasha",
+      "conditions": [
+        {
+          "field": "chart.dasha_system",
+          "operator": "==",
+          "value": "karakakendra"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Karakakendra大运",
+          "detail": "从Atmakaraka起所有Kendra/Panaphara/Apoklima各宫每宫9年；奇宫顺时针偶宫逆时针"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "The signs that are in Kendra, panaphara and Apoklima from the ātmakāraka, have each a duration of nine years. When the ātmakāraka is in an odd sign, the Dashas proceed as 1, 4, 7, 10, 2, 5, 8, 11, 3, 6, 9, 12.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D088",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "Jaimini Raja Yoga",
+      "conditions": [
+        {
+          "AND": [
+            {
+              "field": "bhava_5.from_lagna_lord",
+              "operator": "contains_any",
+              "value": [
+                "Guru",
+                "Shukra",
+                "Chandra"
+              ]
+            },
+            {
+              "field": "bhava_5.from_atmakaraka",
+              "operator": "contains_any",
+              "value": [
+                "Guru",
+                "Shukra",
+                "Chandra"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Jaimini掌权Yoga",
+          "detail": "从Lagn与Atmakaraka起5宫有Guru/Shukra/Candra同则掌权"
+        }
+      ],
+      "weight": 2,
+      "priority": 6,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If from the lords of the first and seventh houses from the ātmakāraka, fifth house has Jupiter, Venus, or the Moon, the native has political or governmental power or authority.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D089",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "Shani/Ketu落7死段",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "field": "Shani.bhava_from_atmakaraka",
+                  "operator": "==",
+                  "value": 7
+                }
+              ]
+            },
+            {
+              "field": "Ketu.bhava_from_atmakaraka",
+              "operator": "==",
+              "value": 7
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "7宫死段",
+          "detail": "Shani落Atmakaraka之第7宫死在该Kaksha前段；Ketu落7死在第三段"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "When The seventh from the ātmakāraka has Saturn, death comes in the first part of the Kakshya. If Ketu is in the seventh from ātmakāraka, death is in the third part of the concerned Kakshya.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D090",
+      "domain": "vedic",
+      "category": "longevity",
+      "name": "Shani合AK月落Lagn减Kaksha",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "Shani.conjunct_atmakaraka",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        },
+        {
+          "field": "Shani.conjunct_moon",
+          "operator": "==",
+          "value": true
+        },
+        {
+          "field": "Shani.bhava",
+          "operator": "==",
+          "value": 1
+        },
+        {
+          "field": "Shani.bhava_from_atmakaraka",
+          "operator": "in",
+          "value": [
+            12,
+            4,
+            6
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Shani多处减寿",
+          "detail": "Shani合Atmakaraka或Candra、或落Lagn减一Kaksha；或Shani落AK/Lagn/Candra之12/4/6宫亦减"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Brihat Parashara Hora Shastra (BPHS)",
+      "evidence": {
+        "quote": "If Saturn is with the ātmakāraka or the Moon, or if he is in Lagna, one Kakshya gets reduced. One Kakshya gets reduced if Saturn is in the twelfth, fourth or sixth from ātmakāraka, Lagna, or the Moon.",
+        "url": "https://barbarapijan.com/bpa/Amsha/karaka_atmakaraka_jaimini.htm"
+      }
+    },
+    {
+      "rule_id": "VE-D091",
+      "domain": "vedic",
+      "category": "modern",
+      "name": "Jyotish入门框架",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "learning_framework"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Vidya/Karma框架",
+          "detail": "入门Jyotish不应从行星落星座/宫位效果开始背，而应先理解Jyotish作为Vidya(知识)、Karma(业)及其支分(Hora/Ganita/Samhita)"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "It does not rely upon effects of planets in signs and houses (which is indeed a very bad way to start astrology) … Before starting anything about astrology, it tells you what is Jyotish, what is Vidya, what is Karma, and what are Jyotish's limbs.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D092",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "Mahapurusha Yoga与Kesari",
+      "conditions": [
+        {
+          "OR": [
+            {
+              "field": "chart.has_mahapurusha_yoga",
+              "operator": "==",
+              "value": true
+            }
+          ]
+        },
+        {
+          "AND": [
+            {
+              "field": "Guru.bhava_from_moon",
+              "operator": "in",
+              "value": [
+                1,
+                4,
+                7,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Mahapurusha/Kesari",
+          "detail": "Mahapurusha Yoga显现于native外观主要取决于dispositor强度；Jupiter与Candra成Kendra为Kesari Yoga(非Gaja-Kesari)"
+        }
+      ],
+      "weight": 1,
+      "priority": 4,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "Mahapurush Yoga is usually evident from the façade of native and in horoscope it is mainly dependent upon strength of its dispositor; Jupiter in kendra to Moon forms Kesari Yoga, not the Gaja Kesari Yoga.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D093",
+      "domain": "vedic",
+      "category": "yoga",
+      "name": "Neecha Bhanga谨慎",
+      "conditions": [
+        {
+          "field": "grahas.debilitated.with_bhanga",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "落陷假肢论",
+          "detail": "评估Neechabhanga Raja Yoga时debility is debility，Bhanga仅如假肢而非痊愈，落陷星仍须按其管领之生活领域受损"
+        }
+      ],
+      "weight": -1,
+      "priority": 4,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "According to authors 'a debility is debility', and Neecha Bhanga is no more perfect than is prosthesis applied to a limbless body.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D094",
+      "domain": "vedic",
+      "category": "nakshatra",
+      "name": "Nakshatra解读法",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "nakshatra_interpretation"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Nakshatra总断",
+          "detail": "解读Nakshatra不应按其所在Rashi或Vimshottari主来附会，而应基于其Devata、象征、传说与古典总断"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "The authors simply avoid interpreting lunar mansions on the basis of signs where they lie, or under the cover of lords according to Vimshottari Dasha scheme … explanations of Nakshatras rest upon deities, symbols, legends and general effects.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D095",
+      "domain": "vedic",
+      "category": "method",
+      "name": "Phaladeepika 18原则",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "house_analysis_framework"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "18宫位原则",
+          "detail": "综合断盘以Phaladipika二颂提炼18条宫位分析原则作为基本框架"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "Authors pick just two verses of Phaladeepika, synthesize them, and extract 18 basic principles for house analysis.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D096",
+      "domain": "vedic",
+      "category": "bhava",
+      "name": "3宫归类Leena Bhava",
+      "conditions": [
+        {
+          "field": "bhava.group",
+          "operator": "==",
+          "value": "leena"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Leena Bhava",
+          "detail": "3/6/8/12总称Leena Bhava(隐没宫)；Dusthana一般仅指6/8/12"
+        }
+      ],
+      "weight": 0,
+      "priority": 2,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "On page 120, the 3rd house is categorized as one of the Dussthanas. In fact, 'Leena Bhavas' is correct term for the group of 3rd, 6th, 8th and 12th houses.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D097",
+      "domain": "vedic",
+      "category": "method",
+      "name": "Vimshottari+Gochar预测",
+      "conditions": [
+        {
+          "field": "query.aspect",
+          "operator": "==",
+          "value": "forecasting"
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "大运过运并断",
+          "detail": "预测以Vimshottari Dasha与Gochar(过运)为主，Mahadasha/Antardasha分别断"
+        }
+      ],
+      "weight": 0,
+      "priority": 3,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "Forecasting techniques (Vimshottari Dasha and Gochar) are dealt in chapter eleven. Account of Dasha is brief without emphasize on computational aspect and individual effect of Mahadasa and Antardasas.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D098",
+      "domain": "vedic",
+      "category": "graha_nature",
+      "name": "自然与功能吉凶并行",
+      "conditions": [
+        {
+          "field": "grahas.natural_malefic_functional_benefic",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "吉凶并行",
+          "detail": "自然凶星同时为功能吉星不放弃其天然凶义；天然吉星主凶宫也不突然全凶——两类性质并行显现"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "a natural malefic planet does not lose its maleficence by simultaneously becoming functional benefic. Similarly, a natural benefic does not suddenly and permanently turn into evil by just owning evil houses … both natural and functional characteristics of a planet manifest side by side.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D099",
+      "domain": "vedic",
+      "category": "graha_nature",
+      "name": "会合相位能量交换",
+      "conditions": [
+        {
+          "field": "benefic.malefic_conjunction",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "能量交换",
+          "detail": "吉星与凶星相会，凶星领域得吉化、吉星领域被凶蚀；closer orb影响越大"
+        }
+      ],
+      "weight": 0,
+      "priority": 4,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "When a benefic and malefic mutually conjoin or aspect each other then they exchange their positive and negative energies … the exchange of energies depends upon closeness of conjunction or aspect.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    },
+    {
+      "rule_id": "VE-D100",
+      "domain": "vedic",
+      "category": "varga",
+      "name": "Vargottama微增",
+      "conditions": [
+        {
+          "field": "grahas.vargottama",
+          "operator": "==",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "conclusion": "Vargottama微增",
+          "detail": "Vargottama(D1与D9同星座)仅略微增强该星潜能，不等于落本垣；若处于星座首尾度数则增益甚微"
+        }
+      ],
+      "weight": 1,
+      "priority": 3,
+      "source": "Light on Life (de Fouw & Svoboda, 公开书评蒸馏)",
+      "evidence": {
+        "quote": "Vargottama (i.e. planet in same Rashi and Navamsa) may slightly enhance potential of a planet, but does not make a planet as if it is in its own sign. This is especially true when a Vargottama planet is relegating at concluding or initial degree of a sign.",
+        "url": "https://saptarishisastrology.com/5-must-read-for-jyotish-beginners-by-m-imran/"
+      }
+    }
+  ]
+}

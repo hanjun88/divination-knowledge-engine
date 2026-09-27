@@ -1,16 +1,10 @@
 {
-  "canonical_manifest_sha": "115f2b911c9684f5deacb32f725ba0bf816ea6aa9a115361d52372544c399064",
+  "canonical_manifest_sha": "73b89235e7f3b99aebded2a4421a2bf59dc0b851d176becc07350de055c307e9",
   "generated_at": "2026-09-25",
   "manifest_version": "1.0.0",
-  "provider_commit": "7848583b1e285a2f95b25957087783b1a89357b1",
+  "provider_commit": "6c799e63eb142fc1235db7c6034fc9b2f9804e2c",
   "repository": "hanjun88/divination-knowledge-engine",
   "rules": [
-    {
-      "count": 294,
-      "domain": "bazi",
-      "path": "rules/rules_bazi.json",
-      "sha256": "dc8d2d154f18282dc9ca2dae0e3ad46f3ce6ff05b4780873ed366bea3ad752c4"
-    },
     {
       "count": 192,
       "domain": "liuyao",
@@ -22,6 +16,24 @@
       "domain": "ziwei",
       "path": "rules/rules_ziwei.json",
       "sha256": "8d6050dd66ed993c7e5379fe5f184d3157e08179afdec073b928b8be538029b7"
+    },
+    {
+      "count": 294,
+      "domain": "bazi",
+      "path": "rules/rules_bazi.json",
+      "sha256": "dc8d2d154f18282dc9ca2dae0e3ad46f3ce6ff05b4780873ed366bea3ad752c4"
+    },
+    {
+      "count": 100,
+      "domain": "vedic",
+      "path": "rules/rules_vedic.json",
+      "sha256": "6147dbe096478624cd5e5582b61ab05a4e41125066aa66ba0912ed1f845c8df5"
+    },
+    {
+      "count": 72,
+      "domain": "western",
+      "path": "rules/rules_western.json",
+      "sha256": "d3326f158aac36c12249dbf9b4fd15ed7145e2665f70c07e0bd2d5c81b2cd405"
     }
   ],
   "schema_file": "openapi_schema.json",
