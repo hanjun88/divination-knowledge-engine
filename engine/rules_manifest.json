@@ -1,8 +1,8 @@
 {
-  "canonical_manifest_sha": "73b89235e7f3b99aebded2a4421a2bf59dc0b851d176becc07350de055c307e9",
+  "canonical_manifest_sha": "051c266a8681421a4ff734810ead399e9818cc512637ae897d9f28fe952536cc",
   "generated_at": "2026-09-25",
   "manifest_version": "1.0.0",
-  "provider_commit": "6c799e63eb142fc1235db7c6034fc9b2f9804e2c",
+  "provider_commit": "7d5d0bd6ad80bce785210636c135ea2ad52ef773",
   "repository": "hanjun88/divination-knowledge-engine",
   "rules": [
     {
@@ -37,6 +37,6 @@
     }
   ],
   "schema_file": "openapi_schema.json",
-  "schema_sha256": "5bab9d494e61c402a56f17c763e28e2fcaf94189d93b6e051bec77589cff7856",
+  "schema_sha256": "0b8aa3760eea494877e9f828e4842e0d8d8dfb016e34ab44cf3c006e77ecc53d",
   "schema_version": "1.0.0"
 }
