@@ -1,0 +1,642 @@
+{
+  "domain": "astrology",
+  "count": 42,
+  "rules": [
+    {
+      "rule_id": "AST-P01",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "太阳象征核心自我与生命力",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "sun"}
+      ],
+      "actions": [
+        {"conclusion": "Sun = 核心自我", "detail": "太阳象征个人意志、生命力、人生目标与父性能量，代表我们渴望成为的理想形象与生命力源泉"}
+      ],
+      "weight": 2,
+      "priority": 10,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P02",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "月亮象征情绪与内在需求",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "moon"}
+      ],
+      "actions": [
+        {"conclusion": "Moon = 情绪自我", "detail": "月亮象征情绪反应、内在安全感、潜意识需求与母性能量，代表我们本能的情感习惯与滋养方式"}
+      ],
+      "weight": 2,
+      "priority": 10,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P03",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "水星象征思维与沟通",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "mercury"}
+      ],
+      "actions": [
+        {"conclusion": "Mercury = 思维沟通", "detail": "水星象征思维模式、语言表达、学习能力与短途旅行，掌管信息处理与理性交流的方式"}
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P04",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "金星象征爱与价值观",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "venus"}
+      ],
+      "actions": [
+        {"conclusion": "Venus = 爱与美", "detail": "金星象征爱情关系、审美品味、金钱价值观与社交愉悦，代表我们如何给予和接受爱"}
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P05",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "火星象征行动与欲望",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "mars"}
+      ],
+      "actions": [
+        {"conclusion": "Mars = 行动力", "detail": "火星象征行动力、勇气、竞争欲与性能量，代表我们如何追求目标与表达愤怒"}
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P06",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "木星象征扩张与幸运",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "jupiter"}
+      ],
+      "actions": [
+        {"conclusion": "Jupiter = 扩张幸运", "detail": "木星象征成长、扩张、机遇、哲学信仰与高等教育，是占星中第一大吉星，带来乐观与 luck"}
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P07",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "土星象征限制与业力",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "saturn"}
+      ],
+      "actions": [
+        {"conclusion": "Saturn = 限制考验", "detail": "土星象征责任、纪律、结构、限制与时间考验，代表必须面对的课题与通过努力获得的成熟"}
+      ],
+      "weight": -1,
+      "priority": 9,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P08",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "天王星象征变革与突破",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "uranus"}
+      ],
+      "actions": [
+        {"conclusion": "Uranus = 突变革新", "detail": "天王星象征突发变革、反叛意识、自由精神与科技突破，代表打破旧模式的觉醒力量"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P09",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "海王星象征梦幻与消融",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "neptune"}
+      ],
+      "actions": [
+        {"conclusion": "Neptune = 梦幻消融", "detail": "海王星象征幻想、直觉、灵性、幻觉与牺牲，代表边界消融的领域，既带来灵感也带来迷醉"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-P10",
+      "domain": "astrology",
+      "category": "planet_meanings",
+      "name": "冥王星象征蜕变与重生",
+      "conditions": [
+        {"field": "planet", "operator": "==", "value": "pluto"}
+      ],
+      "actions": [
+        {"conclusion": "Pluto = 毁灭重生", "detail": "冥王星象征权力、转化、死亡与重生、潜意识深层力量，代表通过彻底瓦解实现蜕变的过程"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "西方占星传统·行星含义"
+    },
+    {
+      "rule_id": "AST-S01",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "火象星座热情行动力",
+      "conditions": [
+        {"field": "element", "operator": "==", "value": "fire"}
+      ],
+      "actions": [
+        {"conclusion": "火象特质", "detail": "火象星座（白羊/狮子/射手）具热情、直觉、行动力与自我表达倾向，偏向乐观但易冲动"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "西方占星传统·四元素"
+    },
+    {
+      "rule_id": "AST-S02",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "土象星座务实稳定",
+      "conditions": [
+        {"field": "element", "operator": "==", "value": "earth"}
+      ],
+      "actions": [
+        {"conclusion": "土象特质", "detail": "土象星座（金牛/处女/摩羯）具务实、感官、稳定与物质建构能力，偏重实际但易固执"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "西方占星传统·四元素"
+    },
+    {
+      "rule_id": "AST-S03",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "风象星座思维社交",
+      "conditions": [
+        {"field": "element", "operator": "==", "value": "air"}
+      ],
+      "actions": [
+        {"conclusion": "风象特质", "detail": "风象星座（双子/天秤/水瓶）具理性、社交、思维与沟通特质，偏好理念但易疏离"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "西方占星传统·四元素"
+    },
+    {
+      "rule_id": "AST-S04",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "水象星座情感直觉",
+      "conditions": [
+        {"field": "element", "operator": "==", "value": "water"}
+      ],
+      "actions": [
+        {"conclusion": "水象特质", "detail": "水象星座（巨蟹/天蝎/双鱼）具情感深度、直觉、共情与滋养能力，敏感但易情绪波动"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "西方占星传统·四元素"
+    },
+    {
+      "rule_id": "AST-S05",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "本位星座开创主导",
+      "conditions": [
+        {"field": "modality", "operator": "==", "value": "cardinal"}
+      ],
+      "actions": [
+        {"conclusion": "本位特质", "detail": "本位星座（白羊/巨蟹/天秤/摩羯）为季节起点，具开创、主动与领导力，易启动但难坚持"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "西方占星传统·三特质"
+    },
+    {
+      "rule_id": "AST-S06",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "固定星座稳定执着",
+      "conditions": [
+        {"field": "modality", "operator": "==", "value": "fixed"}
+      ],
+      "actions": [
+        {"conclusion": "固定特质", "detail": "固定星座（金牛/狮子/天蝎/水瓶）为季节中段，具稳定、持续与执着特质，可靠但抗拒改变"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "西方占星传统·三特质"
+    },
+    {
+      "rule_id": "AST-S07",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "变动星座灵活适应",
+      "conditions": [
+        {"field": "modality", "operator": "==", "value": "mutable"}
+      ],
+      "actions": [
+        {"conclusion": "变动特质", "detail": "变动星座（双子/处女/射手/双鱼）为季节尾声，具灵活、适应与多变特质，善调谐但易涣散"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "西方占星传统·三特质"
+    },
+    {
+      "rule_id": "AST-S08",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "白羊座开创之火",
+      "conditions": [
+        {"field": "sign", "operator": "==", "value": "aries"}
+      ],
+      "actions": [
+        {"conclusion": "Aries 白羊", "detail": "白羊座为黄道第一宫，火星守护，具开创勇气、冲劲与竞争性，冲动直接不喜迂回"}
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西方占星传统·十二星座"
+    },
+    {
+      "rule_id": "AST-S09",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "金牛座稳固之土",
+      "conditions": [
+        {"field": "sign", "operator": "==", "value": "taurus"}
+      ],
+      "actions": [
+        {"conclusion": "Taurus 金牛", "detail": "金牛座金星守护，具感官享受、耐心与稳定积累，固执执着重视物质安全"}
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西方占星传统·十二星座"
+    },
+    {
+      "rule_id": "AST-S10",
+      "domain": "astrology",
+      "category": "zodiac_signs",
+      "name": "双子座多变之风",
+      "conditions": [
+        {"field": "sign", "operator": "==", "value": "gemini"}
+      ],
+      "actions": [
+        {"conclusion": "Gemini 双子", "detail": "双子座水星守护，具好奇心、沟通力与多元思维，善交际但注意力易分散"}
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西方占星传统·十二星座"
+    },
+    {
+      "rule_id": "AST-H01",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第一宫自我外貌",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 1}
+      ],
+      "actions": [
+        {"conclusion": "1st House", "detail": "第一宫为上升点所在宫，掌管外貌气质、自我形象、人生开端与对外展现的面具"}
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H02",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第二宫财富资源",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 2}
+      ],
+      "actions": [
+        {"conclusion": "2nd House", "detail": "第二宫掌管个人财富、收入来源、价值观与有形资源，代表自我价值的物质体现"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H03",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第三宫沟通手足",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 3}
+      ],
+      "actions": [
+        {"conclusion": "3rd House", "detail": "第三宫掌管沟通、近距离旅行、手足邻里与早期教育，代表日常信息交流方式"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H04",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第四宫家庭根基",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 4}
+      ],
+      "actions": [
+        {"conclusion": "4th House", "detail": "第四宫为天底IC，掌管家庭、母亲、不动产与内在根基，代表情感安全感的源头"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H05",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第五宫创造恋爱",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 5}
+      ],
+      "actions": [
+        {"conclusion": "5th House", "detail": "第五宫掌管恋爱、创意表达、子女与娱乐游戏，代表自我展现与快乐追求"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H06",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第六宫工作健康",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 6}
+      ],
+      "actions": [
+        {"conclusion": "6th House", "detail": "第六宫掌管日常工作、健康饮食、服务与同事关系，代表劳动与身体调适"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H07",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第七宫伴侣关系",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 7}
+      ],
+      "actions": [
+        {"conclusion": "7th House", "detail": "第七宫为下降点，掌管婚姻伴侣、商业合伙与一对一关系，代表投射于他人的自我"}
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H08",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第八宫深度转化",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 8}
+      ],
+      "actions": [
+        {"conclusion": "8th House", "detail": "第八宫掌管死亡重生、性、共同财产与潜意识，代表通过危机实现深度转化的领域"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H09",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第九宫高等哲学",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 9}
+      ],
+      "actions": [
+        {"conclusion": "9th House", "detail": "第九宫掌管高等教育、长途旅行、哲学信仰与法律，代表意义探索与世界观扩展"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-H10",
+      "domain": "astrology",
+      "category": "houses",
+      "name": "第十宫事业名声",
+      "conditions": [
+        {"field": "house", "operator": "==", "value": 10}
+      ],
+      "actions": [
+        {"conclusion": "10th House", "detail": "第十宫为天顶MC，掌管事业、社会地位、名声与父亲形象，代表外在成就与公众角色"}
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "西方占星传统·十二宫位"
+    },
+    {
+      "rule_id": "AST-A01",
+      "domain": "astrology",
+      "category": "aspects",
+      "name": "合相能量融合",
+      "conditions": [
+        {"field": "aspect_type", "operator": "==", "value": "conjunction"}
+      ],
+      "actions": [
+        {"conclusion": "Conjunction 合相", "detail": "合相0度为两颗行星能量融合集中，性质取决于参与行星，通常增强彼此能量但也带来紧张"}
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "西方占星传统·相位"
+    },
+    {
+      "rule_id": "AST-A02",
+      "domain": "astrology",
+      "category": "aspects",
+      "name": "六分相和谐机会",
+      "conditions": [
+        {"field": "aspect_type", "operator": "==", "value": "sextile"}
+      ],
+      "actions": [
+        {"conclusion": "Sextile 六分相", "detail": "六分相60度为火/风或水/土同性质间的和谐相位，带来机遇与流畅沟通，但需主动把握"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "西方占星传统·相位"
+    },
+    {
+      "rule_id": "AST-A03",
+      "domain": "astrology",
+      "category": "aspects",
+      "name": "四分相挑战张力",
+      "conditions": [
+        {"field": "aspect_type", "operator": "==", "value": "square"}
+      ],
+      "actions": [
+        {"conclusion": "Square 四分相", "detail": "四分相90度为 square 挑战相位，代表内在冲突与行动压力，需通过磨合解决但促发成长"}
+      ],
+      "weight": -1,
+      "priority": 8,
+      "source": "西方占星传统·相位"
+    },
+    {
+      "rule_id": "AST-A04",
+      "domain": "astrology",
+      "category": "aspects",
+      "name": "三分相和谐流溢",
+      "conditions": [
+        {"field": "aspect_type", "operator": "==", "value": "trine"}
+      ],
+      "actions": [
+        {"conclusion": "Trine 三分相", "detail": "三分相120度为同元素间的和谐相位，代表天赋与流畅能量，但易导致懒散依赖"}
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "西方占星传统·相位"
+    },
+    {
+      "rule_id": "AST-A05",
+      "domain": "astrology",
+      "category": "aspects",
+      "name": "对分相对立张力",
+      "conditions": [
+        {"field": "aspect_type", "operator": "==", "value": "opposition"}
+      ],
+      "actions": [
+        {"conclusion": "Opposition 对分相", "detail": "对分相180度为两极对立张力，代表关系中的拉扯与平衡需求，需整合对立双方"}
+      ],
+      "weight": -1,
+      "priority": 8,
+      "source": "西方占星传统·相位"
+    },
+    {
+      "rule_id": "AST-A06",
+      "domain": "astrology",
+      "category": "aspects",
+      "name": "梅花相调整摩擦",
+      "conditions": [
+        {"field": "aspect_type", "operator": "==", "value": "quincunx"}
+      ],
+      "actions": [
+        {"conclusion": "Quincunx 梅花相", "detail": "梅花相150度为不协调相位，代表需要不断调整与适应的领域，常带来微妙摩擦与无解感"}
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "西方占星传统·相位"
+    },
+    {
+      "rule_id": "AST-T01",
+      "domain": "astrology",
+      "category": "transits",
+      "name": "木星行运扩张机遇",
+      "conditions": [
+        {"field": "transit_planet", "operator": "==", "value": "jupiter"},
+        {"field": "aspect_to_natal", "operator": "in", "value": ["conjunction", "trine", "sextile"]}
+      ],
+      "actions": [
+        {"conclusion": "Jupiter Transit 吉运", "detail": "木星约12年绕行黄道一周，行运与本命星形成和谐相位时带来扩张、机遇与乐观期"}
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "西方占星传统·行运"
+    },
+    {
+      "rule_id": "AST-T02",
+      "domain": "astrology",
+      "category": "transits",
+      "name": "土星行运考验成熟",
+      "conditions": [
+        {"field": "transit_planet", "operator": "==", "value": "saturn"},
+        {"field": "aspect_to_natal", "operator": "in", "value": ["conjunction", "square", "opposition"]}
+      ],
+      "actions": [
+        {"conclusion": "Saturn Transit 考验期", "detail": "土星约29.5年周期，行运困难相位时带来责任压力与限制，是重建结构与成熟的考验期"}
+      ],
+      "weight": -1,
+      "priority": 9,
+      "source": "西方占星传统·行运"
+    },
+    {
+      "rule_id": "AST-T03",
+      "domain": "astrology",
+      "category": "transits",
+      "name": "土星回归29岁与58岁",
+      "conditions": [
+        {"field": "transit_planet", "operator": "==", "value": "saturn"},
+        {"field": "aspect_to_natal", "operator": "==", "value": "conjunction_natal_saturn"}
+      ],
+      "actions": [
+        {"conclusion": "Saturn Return", "detail": "土星回归约每29.5年发生，是人生重要的成年与中年转折点，迫使面对现实并重新定位"}
+      ],
+      "weight": 0,
+      "priority": 9,
+      "source": "西方占星传统·行运"
+    },
+    {
+      "rule_id": "AST-T04",
+      "domain": "astrology",
+      "category": "transits",
+      "name": "天王星行运突变觉醒",
+      "conditions": [
+        {"field": "transit_planet", "operator": "==", "value": "uranus"},
+        {"field": "aspect_to_natal", "operator": "in", "value": ["conjunction", "square", "opposition"]}
+      ],
+      "actions": [
+        {"conclusion": "Uranus Transit", "detail": "天王星84年周期，行运困难相位时带来突发变化、觉醒与反叛，打破旧有生活模式"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "西方占星传统·行运"
+    },
+    {
+      "rule_id": "AST-T05",
+      "domain": "astrology",
+      "category": "transits",
+      "name": "海王星行运迷幻消融",
+      "conditions": [
+        {"field": "transit_planet", "operator": "==", "value": "neptune"},
+        {"field": "aspect_to_natal", "operator": "in", "value": ["conjunction", "square", "opposition"]}
+      ],
+      "actions": [
+        {"conclusion": "Neptune Transit", "detail": "海王星165年周期，行运困难相位时带来理想破灭、边界模糊与灵性迷醉，需警惕幻觉"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "西方占星传统·行运"
+    },
+    {
+      "rule_id": "AST-T06",
+      "domain": "astrology",
+      "category": "transits",
+      "name": "冥王星行运深度转化",
+      "conditions": [
+        {"field": "transit_planet", "operator": "==", "value": "pluto"},
+        {"field": "aspect_to_natal", "operator": "in", "value": ["conjunction", "square", "opposition"]}
+      ],
+      "actions": [
+        {"conclusion": "Pluto Transit", "detail": "冥王星248年周期，行运困难相位时带来权力斗争与彻底瓦解重建，是深度心理转化的长周期"}
+      ],
+      "weight": 0,
+      "priority": 8,
+      "source": "西方占星传统·行运"
+    }
+  ]
+}

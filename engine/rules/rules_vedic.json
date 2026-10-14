@@ -1,0 +1,502 @@
+{
+  "domain": "vedic",
+  "count": 33,
+  "rules": [
+    {
+      "rule_id": "VED-G01",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "太阳Surya灵魂与父亲",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "sun"}
+      ],
+      "actions": [
+        {"conclusion": "Surya 太阳", "detail": "太阳为Atmakaraka灵魂指示星，象征灵魂、父亲、权威与活力；居巨蟹为弱，居白羊为旺"}
+      ],
+      "weight": 1,
+      "priority": 8,
+      "source": "BPHS·Brihat Parashara Hora Shastra·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G02",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "月亮Chandra心与母亲",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "moon"}
+      ],
+      "actions": [
+        {"conclusion": "Chandra 月亮", "detail": "月亮象征心念、母亲、情绪与公众生活；居金牛为旺居天蝎为弱，为Lagna后最重要之盘主"}
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G03",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "水星Budha智慧沟通",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "mercury"}
+      ],
+      "actions": [
+        {"conclusion": "Budha 水星", "detail": "水星象征智慧、沟通、商业与数学头脑；居处女为旺居双鱼为弱，与吉星相合则增智"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G04",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "金星Shukra享受与婚姻",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "venus"}
+      ],
+      "actions": [
+        {"conclusion": "Shukra 金星", "detail": "金星象征妻子、爱情、享乐与艺术；居双鱼为旺居处女为弱，为婚姻与享乐之指示星"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G05",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "火星Mangala勇气兄弟",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "mars"}
+      ],
+      "actions": [
+        {"conclusion": "Mangala 火星", "detail": "火星象征勇气、兄弟、土地与外科；居摩羯为旺居巨蟹为弱，角宫得位则成Mangalik"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G06",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "木星Guru智慧之子",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "jupiter"}
+      ],
+      "actions": [
+        {"conclusion": "Guru 木星", "detail": "木星为第一吉星，象征智慧、子女、财富与宗教；居巨蟹为旺居摩羯为弱，居Kendra极吉"}
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G07",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "土星Shani业力与长寿",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "saturn"}
+      ],
+      "actions": [
+        {"conclusion": "Shani 土星", "detail": "土星为业力之星，象征苦劳、长寿、奴隶与纪律；居天秤为旺居白羊为弱，Sade Sati七年为考验"}
+      ],
+      "weight": -1,
+      "priority": 9,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G08",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "Rahu北交点幻象野心",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "rahu"}
+      ],
+      "actions": [
+        {"conclusion": "Rahu 罗睺", "detail": "罗睺为北交点，象征幻象、扩张、外来事物与执念；居金牛为旺居天蝎为弱，易带来迷妄与野心"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-G09",
+      "domain": "vedic",
+      "category": "grahas",
+      "name": "Ketu南交点解脱",
+      "conditions": [
+        {"field": "graha", "operator": "==", "value": "ketu"}
+      ],
+      "actions": [
+        {"conclusion": "Ketu 计都", "detail": "计都为南交点，象征解脱、灵性、斩断与前世业力；居天蝎为旺居金牛为弱，带来出离心"}
+      ],
+      "weight": 0,
+      "priority": 7,
+      "source": "BPHS·Graha Adhyaya"
+    },
+    {
+      "rule_id": "VED-R01",
+      "domain": "vedic",
+      "category": "rashis",
+      "name": "牡 Mesha白羊火象",
+      "conditions": [
+        {"field": "rashi", "operator": "==", "value": "aries"}
+      ],
+      "actions": [
+        {"conclusion": "Mesha 牡羊", "detail": "牡羊为火象移动宫，火星守护，象征勇气、进取与领导力；此月座者行动迅速但易冲动"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "BPHS·Rashi Adhyaya"
+    },
+    {
+      "rule_id": "VED-R02",
+      "domain": "vedic",
+      "category": "rashis",
+      "name": "Vrishabha金牛土象",
+      "conditions": [
+        {"field": "rashi", "operator": "==", "value": "taurus"}
+      ],
+      "actions": [
+        {"conclusion": "Vrishabha 金牛", "detail": "金牛为土象固定宫，金星守护，象征稳定、财富与享受；此月座者固执但忠诚可靠"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "BPHS·Rashi Adhyaya"
+    },
+    {
+      "rule_id": "VED-R03",
+      "domain": "vedic",
+      "category": "rashis",
+      "name": "Mithuna双子风象",
+      "conditions": [
+        {"field": "rashi", "operator": "==", "value": "gemini"}
+      ],
+      "actions": [
+        {"conclusion": "Mithuna 双子", "detail": "双子为风象双生宫，水星守护，象征沟通、智力与多才；此月座者善辩但易三心二意"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "BPHS·Rashi Adhyaya"
+    },
+    {
+      "rule_id": "VED-R04",
+      "domain": "vedic",
+      "category": "rashis",
+      "name": "Karka巨蟹水象",
+      "conditions": [
+        {"field": "rashi", "operator": "==", "value": "cancer"}
+      ],
+      "actions": [
+        {"conclusion": "Karka 巨蟹", "detail": "巨蟹为水象移动宫，月亮守护，象征家庭、母性与情感；此月座者感性顾家但易波动"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "BPHS·Rashi Adhyaya"
+    },
+    {
+      "rule_id": "VED-R05",
+      "domain": "vedic",
+      "category": "rashis",
+      "name": "Simha狮子火象",
+      "conditions": [
+        {"field": "rashi", "operator": "==", "value": "leo"}
+      ],
+      "actions": [
+        {"conclusion": "Simha 狮子", "detail": "狮子为火象固定宫，太阳守护，象征王权、尊严与领导；此月座者高傲慷慨但爱面子"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "BPHS·Rashi Adhyaya"
+    },
+    {
+      "rule_id": "VED-R06",
+      "domain": "vedic",
+      "category": "rashis",
+      "name": "Kanya处女土象",
+      "conditions": [
+        {"field": "rashi", "operator": "==", "value": "virgo"}
+      ],
+      "actions": [
+        {"conclusion": "Kanya 处女", "detail": "处女为土象双生宫，水星守护，象征分析、服务与纯洁；此月座者细致完美但易挑剔"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "BPHS·Rashi Adhyaya"
+    },
+    {
+      "rule_id": "VED-N01",
+      "domain": "vedic",
+      "category": "nakshatras",
+      "name": "Ashwini起头之星",
+      "conditions": [
+        {"field": "nakshatra", "operator": "==", "value": "ashwini"}
+      ],
+      "actions": [
+        {"conclusion": "Ashwini", "detail": "Ashwini为首宿，由Ashwini双马童主管，象征开端、速度与疗愈；Ketu主掌，具开创与迅捷特质"}
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "BPHS·Nakshatra Chintamani"
+    },
+    {
+      "rule_id": "VED-N02",
+      "domain": "vedic",
+      "category": "nakshatras",
+      "name": "Rohini月之最爱",
+      "conditions": [
+        {"field": "nakshatra", "operator": "==", "value": "rohini"}
+      ],
+      "actions": [
+        {"conclusion": "Rohini", "detail": "Rohini为月亮最爱的星宿，婆罗门Brahma主管，象征丰饶、成长与美貌；月亮喜乐于此"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "BPHS·Nakshatra Chintamani"
+    },
+    {
+      "rule_id": "VED-N03",
+      "domain": "vedic",
+      "category": "nakshatras",
+      "name": "Mrigashira搜寻之星",
+      "conditions": [
+        {"field": "nakshatra", "operator": "==", "value": "mrigashira"}
+      ],
+      "actions": [
+        {"conclusion": "Mrigashira", "detail": "Mrigashira为鹿首宿，Soma主管，象征搜寻、好奇与温柔；月宿中较柔和但易漂泊"}
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "BPHS·Nakshatra Chintamani"
+    },
+    {
+      "rule_id": "VED-N04",
+      "domain": "vedic",
+      "category": "nakshatras",
+      "name": "Ardra风暴之宿",
+      "conditions": [
+        {"field": "nakshatra", "operator": "==", "value": "ardra"}
+      ],
+      "actions": [
+        {"conclusion": "Ardra", "detail": "Ardra为湿润暴风宿，Rahu主管Rudra神，象征破坏与革新；情绪激烈但具深层转化力"}
+      ],
+      "weight": 0,
+      "priority": 5,
+      "source": "BPHS·Nakshatra Chintamani"
+    },
+    {
+      "rule_id": "VED-N05",
+      "domain": "vedic",
+      "category": "nakshatras",
+      "name": "Magha权力之宿",
+      "conditions": [
+        {"field": "nakshatra", "operator": "==", "value": "magha"}
+      ],
+      "actions": [
+        {"conclusion": "Magha", "detail": "Magha为大宿，Pitrs祖先主管，象征王权、尊严与家族传承；Ketu主掌，重传统与权威"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "BPHS·Nakshatra Chintamani"
+    },
+    {
+      "rule_id": "VED-N06",
+      "domain": "vedic",
+      "category": "nakshatras",
+      "name": "Pushya吉祥之宿",
+      "conditions": [
+        {"field": "nakshatra", "operator": "==", "value": "pushya"}
+      ],
+      "actions": [
+        {"conclusion": "Pushya", "detail": "Pushya为最吉祥宿之一，土星主管Brihaspati祭主，象征滋养、繁荣与祝福；大事择此宿"}
+      ],
+      "weight": 2,
+      "priority": 7,
+      "source": "BPHS·Nakshatra Chintamani"
+    },
+    {
+      "rule_id": "VED-D01",
+      "domain": "vedic",
+      "category": "divisional_charts",
+      "name": "D1 Rasi本命盘",
+      "conditions": [
+        {"field": "divisional_chart", "operator": "==", "value": "D1"}
+      ],
+      "actions": [
+        {"conclusion": "D1 Rasi Chart", "detail": "D1本命盘为整体生活指示盘，主掌人生总体框架、身体与世俗成就；所有判断之根本"}
+      ],
+      "weight": 2,
+      "priority": 10,
+      "source": "BPHS·Divisional Charts Adhyaya"
+    },
+    {
+      "rule_id": "VED-D02",
+      "domain": "vedic",
+      "category": "divisional_charts",
+      "name": "D9 Navamsha婚姻盘",
+      "conditions": [
+        {"field": "divisional_chart", "operator": "==", "value": "D9"}
+      ],
+      "actions": [
+        {"conclusion": "D9 Navamsha", "detail": "D9九分盘为婚姻与内在力量指示盘，主掌婚姻、配偶与D1行星之成熟状态；D1吉须D9佐证方实"}
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "BPHS·Navamsha Adhyaya"
+    },
+    {
+      "rule_id": "VED-D03",
+      "domain": "vedic",
+      "category": "divisional_charts",
+      "name": "D10 Dashamsha事业盘",
+      "conditions": [
+        {"field": "divisional_chart", "operator": "==", "value": "D10"}
+      ],
+      "actions": [
+        {"conclusion": "D10 Dashamsha", "detail": "D10十分盘为事业与社会成就指示盘，主掌职业方向、名声与工作领域之细节"}
+      ],
+      "weight": 1,
+      "priority": 7,
+      "source": "BPHS·Divisional Charts Adhyaya"
+    },
+    {
+      "rule_id": "VED-D04",
+      "domain": "vedic",
+      "category": "divisional_charts",
+      "name": "D7 Saptamsha子女盘",
+      "conditions": [
+        {"field": "divisional_chart", "operator": "==", "value": "D7"}
+      ],
+      "actions": [
+        {"conclusion": "D7 Saptamsha", "detail": "D7七分盘为子女指示盘，主掌子嗣数量、子女福分与生育相关议题"}
+      ],
+      "weight": 1,
+      "priority": 6,
+      "source": "BPHS·Divisional Charts Adhyaya"
+    },
+    {
+      "rule_id": "VED-Y01",
+      "domain": "vedic",
+      "category": "yogas",
+      "name": "Raja Yoga王者组合",
+      "conditions": [
+        {"field": "yoga_name", "operator": "==", "value": "raja_yoga"}
+      ],
+      "actions": [
+        {"conclusion": "Raja Yoga", "detail": "Kendra角宫主与Trikona三角宫主互相联结（合相/互视/互宫），形成王权组合，主掌权贵与成功"}
+      ],
+      "weight": 3,
+      "priority": 10,
+      "source": "BPHS·Yoga Adhyaya"
+    },
+    {
+      "rule_id": "VED-Y02",
+      "domain": "vedic",
+      "category": "yogas",
+      "name": "Dhana Yoga财富组合",
+      "conditions": [
+        {"field": "yoga_name", "operator": "==", "value": "dhana_yoga"}
+      ],
+      "actions": [
+        {"conclusion": "Dhana Yoga", "detail": "2宫、11宫主与5宫、9宫主互相关联形成财富组合，主掌富裕、收入丰盛与物质丰足"}
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "BPHS·Yoga Adhyaya"
+    },
+    {
+      "rule_id": "VED-Y03",
+      "domain": "vedic",
+      "category": "yogas",
+      "name": "Pancha Mahapurusha五大人格",
+      "conditions": [
+        {"field": "yoga_name", "operator": "in", "value": ["ruchaka", "bhadra", "hamsa", "malavya", "sasa"]}
+      ],
+      "actions": [
+        {"conclusion": "Pancha Mahapurusha", "detail": "火土水木土五星居本庙或旺宫于Kendra，分别成Ruchaka/Bhadra/Hamsa/Malavya/Sasa五大人格瑜伽，主掌非凡成就"}
+      ],
+      "weight": 2,
+      "priority": 9,
+      "source": "BPHS·Pancha Mahapurusha Yoga"
+    },
+    {
+      "rule_id": "VED-Y04",
+      "domain": "vedic",
+      "category": "yogas",
+      "name": "Gajakesari Yoga象狮组合",
+      "conditions": [
+        {"field": "grahas_in_kendra.moon", "operator": "==", "value": true},
+        {"field": "grahas_in_kendra.jupiter", "operator": "==", "value": true}
+      ],
+      "actions": [
+        {"conclusion": "Gajakesari Yoga", "detail": "木星在月亮所在宫的Kendra（1/4/7/10宫）形成象狮瑜伽，主掌智慧、名声与幸福，受人尊敬"}
+      ],
+      "weight": 2,
+      "priority": 8,
+      "source": "BPHS·Yoga Adhyaya"
+    },
+    {
+      "rule_id": "VED-Y05",
+      "domain": "vedic",
+      "category": "yogas",
+      "name": "Kala Sarpa Yoga时间蛇",
+      "conditions": [
+        {"field": "all_planets_between", "operator": "==", "value": "rahu_ketu_axis"}
+      ],
+      "actions": [
+        {"conclusion": "Kala Sarpa Yoga", "detail": "七颗行星全部位于Rahu-Ketu轴线一半之内形成时间蛇瑜伽，主掌命运起伏大、业力重，需努力方能成功"}
+      ],
+      "weight": -1,
+      "priority": 7,
+      "source": "Jaimini Sutra·Kala Sarpa"
+    },
+    {
+      "rule_id": "VED-Y06",
+      "domain": "vedic",
+      "category": "yogas",
+      "name": "Chandra-Mangala Yoga月火组合",
+      "conditions": [
+        {"field": "grahas_conjunction", "operator": "==", "value": "moon_mars"}
+      ],
+      "actions": [
+        {"conclusion": "Chandra-Mangala Yoga", "detail": "月亮与火星合相（或互视）形成月火瑜伽，主掌行动力强但情绪易燥，有财富获取能力"}
+      ],
+      "weight": 0,
+      "priority": 6,
+      "source": "BPHS·Yoga Adhyaya"
+    },
+    {
+      "rule_id": "VED-A01",
+      "domain": "vedic",
+      "category": "ayanamsa",
+      "name": "Lahiri岁差标准",
+      "conditions": [
+        {"field": "ayanamsa_system", "operator": "==", "value": "lahiri"}
+      ],
+      "actions": [
+        {"conclusion": "Lahiri Ayanamsa", "detail": "Lahiri岁差为印度官方标准（1955年春分点），约每年50.2角秒，用于将热带黄道转为恒星黄道"}
+      ],
+      "weight": 1,
+      "priority": 9,
+      "source": "BPHS·Ayanamsa Prakarana"
+    },
+    {
+      "rule_id": "VED-A02",
+      "domain": "vedic",
+      "category": "ayanamsa",
+      "name": "恒星黄道与热带黄道差",
+      "conditions": [
+        {"field": "zodiac_system", "operator": "==", "value": "sidereal"}
+      ],
+      "actions": [
+        {"conclusion": "Sidereal Zodiac", "detail": "吠陀占星用恒星黄道，以实际恒星为基准，与西方热带黄道相差约24度（2025年约24.17度）"}
+      ],
+      "weight": 2,
+      "priority": 10,
+      "source": "BPHS·Ayanamsa Prakarana"
+    }
+  ]
+}
